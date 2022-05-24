@@ -2,12 +2,12 @@
 
 # -- Project information
 
-project = 'Lumache'
-copyright = '2021, Graziella'
-author = 'Graziella'
+project = 'Extended Matrix'
+copyright = '2022, Emanuel Demetrescu'
+author = 'Emanuel Demetrescu'
 
-release = '0.1'
-version = '0.1.0'
+release = '1.2'
+version = '1.2.8'
 
 # -- General configuration
 
