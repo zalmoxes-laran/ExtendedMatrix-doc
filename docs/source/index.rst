@@ -8,6 +8,7 @@ It does ....
 Check out the :doc:`usage` section for further information, including
 how to :ref:`installation` the project.
 for the description of the nodes, see :ref:`nodes`
+for the properties, see :ref:`properties`
 
 .. note::
 
@@ -20,3 +21,4 @@ Contents
 
    usage
    nodes
+   properties
