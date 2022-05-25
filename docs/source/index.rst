@@ -1,5 +1,5 @@
 Welcome to Extended Matrix documentation!
-===================================
+=========================================
 
 **Extended Matrix** is ...
 
