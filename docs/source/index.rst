@@ -22,3 +22,4 @@ Contents
    usage
    nodes
    properties
+   geometry
