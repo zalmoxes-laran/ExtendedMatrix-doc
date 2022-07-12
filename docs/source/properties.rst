@@ -4,7 +4,7 @@ Properties of the EM
 .. _whatareproperties:
 
 What is a property ?
-----------------------------
+--------------------
 
 A property is..
 
