@@ -3,17 +3,15 @@ Nodes of the EM
 
 EM uses two sets of standardized nodes: USV and validation nodes (see Fig. 1). The USV nodes represent virtual stratigraphic units (according to a specific typology) while the validation nodes express the reconstruction process behind the USV. These nodes are connected each other by arcs in the same way that it happens with the archaeological Matrix of Harris.
 
-.. figure:: img/Nodes.png
+.. image:: img/Nodes.png
     :width: 400
     :align: center
-    EM nodes description.
 
 Validation nodes have a unique name (as well as the USVs) in order to be correctly referenced. They follow a name convention model (see Fig. 2): extractor nodes are composed by a “D” plus a sequence of numbers  (i.e the first extractor of an EM will be #01). Combiner and document nodes uses respectively the “C” and “D.” prefix.
 
-.. figure:: img/name-conventions.png
+.. image:: img/name-conventions.png
     :width: 200
     :align: center 
-    Name conventions for the validation nodes
 
 Extended Matrix nodes include all the graphic elements on the two-dimensional canvas except for the connecting lines between them, which are called arcs or connectors.
 
@@ -27,7 +25,7 @@ USV nodes, examples of use
 Example of USV/s (structural virtual stratigraphic unit)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-.. figure:: img/B01.png
+.. image:: img/B01.png
   :width: 400
   :align: center 
 
@@ -36,7 +34,7 @@ On top of a podium SU01 there is a SU02 (in situ), fragmented due to a -SU03 (de
 Example of USV/n (non structural virtual stratigraphic unit)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-.. figure:: img/B02.png
+.. image:: img/B02.png
   :width: 400
   :align: center 
 
@@ -45,7 +43,7 @@ There are only the remains of a podium SU01. A USV/n 100 hypothetical reconstruc
 Example of a series of USV/n (non structural virtual stratigraphic unit)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-.. figure:: img/B03.png
+.. image:: img/B03.png
   :width: 400
   :align: center 
 
@@ -54,7 +52,7 @@ There are only the remains of a podium SU01. A USV/n 100  hypothetical reconstru
 Example of a USV/s and a series of USV/n
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-.. figure:: img/B04.png
+.. image:: img/B04.png
   :width: 400
   :align: center 
 
@@ -63,7 +61,7 @@ On top of a podium SU01 there is a column SU02 (in situ) fragmented due to a -SU
 Example of a USV/n based on Special Finds (non in situ) elements
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-.. figure:: img/B05.png
+.. image:: img/B05.png
   :width: 400
   :align: center 
 
@@ -72,7 +70,7 @@ There are only the remains of a podium SU01 with a collapsed column SF01. A USV/
 Example of a USV/n series based on Special Finds (non in situ) elements
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-.. figure:: img/B06.png
+.. image:: img/B06.png
   :width: 400
   :align: center 
 
@@ -81,7 +79,7 @@ There are only the remains of a podium SU01 with a collapsed column SF01 (specia
 Cumulative example of different USV nodes used togheter
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-.. figure:: img/B07.png
+.. image:: img/B07.png
   :width: 400
   :align: center 
 
@@ -97,7 +95,7 @@ The USV is a hypothesis with three levels of certainty (structural-non structura
 Example of a property based on a single source
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-.. figure:: img/EM_Reference_CHART_C_a.jpg
+.. image:: img/EM_Reference_CHART_C_a.jpg
   :width: 400
   :align: center 
 
@@ -106,7 +104,7 @@ There is a fragmentary lintel SU003 and a reconstructed USV/s 100 is provisioned
 Example of a property based on two sources
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-.. figure:: img/EM_Reference_CHART_C_b.jpg
+.. image:: img/EM_Reference_CHART_C_b.jpg
   :width: 400
   :align: center 
 
@@ -115,7 +113,7 @@ There is a fragmentary lintel SU003 on top of two columns SU001 and SU002. A USV
 Example of a validation node table
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-.. figure:: img/EM_Reference_CHART_C_graph.jpg
+.. image:: img/EM_Reference_CHART_C_graph.jpg
   :width: 400
   :align: center 
 
