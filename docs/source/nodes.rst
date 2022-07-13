@@ -39,40 +39,71 @@ There are only the remains of a podium SU01. A USV/n 100 hypothetical reconstruc
 Example of a series of USV/n (non structural virtual stratigraphic unit)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
+.. image:: img/B03.png
+  :width: 400
+
 There are only the remains of a podium SU01. A USV/n 100  hypothetical reconstruction series of columns is provisioned (without physical destruction signs that prove the presence of a column). The series node allows to instance several USV/n at once.
 
-.. image:: img/B03.png
+Example of a USV/s and a series of USV/n
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. image:: img/B04.png
   :width: 400
 
 On top of a podium SU01 there is a column SU02 (in situ) fragmented due to a -SU03 (destruction of the upper part of the column). A USV/s 100 hypothetical reconstruction is provisioned in order to restore the destruction’s action -SU03. A series USV/n 101 is provided in order to complete the peristasis of the temple.
 
 Example of a USV/n based on Special Finds (non in situ) elements
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. image:: img/B05.png
+  :width: 400
 
 There are only the remains of a podium SU01 with a collapsed column SF01. A USV/n 100 hypothetical reconstruction is provisioned using the SF as a source. This kind of USV/n has a special status: see “USV and validation nodes” section on top of this page.
 
 Example of a USV/n series based on Special Finds (non in situ) elements
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. image:: img/B06.png
+  :width: 400
 
 There are only the remains of a podium SU01 with a collapsed column SF01 (special find 01). A USV/n 100 series hypothetical reconstruction of the columnade is provisioned using the SF as a source.
 
 Cumulative example of different USV nodes used togheter
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. image:: img/B07.png
+  :width: 400
 
 USV/s and USV/n are used togheter. Different -SU allow to propose different USV/s.
 
 .. _validation_nodes_examples_use:
 
 Validation nodes: examples of use
-----------------------------------
+---------------------------------
+
 The USV is a hypothesis with three levels of certainty (structural-non structural-special find reintegration) that have some properties; these properties are based on: sources (nodes), interpretation of sources (extractor nodes) and reasoning (combiner nodes), following the DIKW schema Data-Information-Wisdom-Knowledge.
 
 Example of a property based on a single source
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. image:: img/EM_Reference_CHART_C_a.jpg
+  :width: 400
 
 There is a fragmentary lintel SU003 and a reconstructed USV/s 100 is provisioned. A “decoration” property is declared and supported by a source D.01 (picture of the Temple of Mars at Rome). The interpretation of the source #01 extracts the part of the source useful to support the property above “decoration”. The content of paradata nodes are visible at paragraph 3.3.
 
 Example of a property based on two sources
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. image:: img/EM_Reference_CHART_C_b.jpg
+  :width: 400
 
 There is a fragmentary lintel SU003 on top of two columns SU001 and SU002. A USV/s 100 provide a hypothesis of virtual reconstruction and two properties are declared: lenght and decoration (see previous paragraph). The lenght property is based on two sources, namely the position of the columns used to extract the overall lenght of the lintel. The content of paradata nodes are visible at paragraph 3.3.
 
 Example of a validation node table
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. image:: img/EM_Reference_CHART_C_graph.jpg
+  :width: 400
 
 List of nodes used in the paragraphs 3.1 and 3.2:
 
