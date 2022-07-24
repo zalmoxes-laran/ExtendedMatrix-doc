@@ -40,4 +40,15 @@ Placement
 Placement is the property that defines the exact location of geometry, either in local or global coordinates. The main sources from which to infer the positioning property of geometry are technical drawings, excavation plans, and photogrammetric models.
 
 
+.. _material:
 
+Material
+--------
+Material property defines the material(s) of which the object is made. This characteristic can be inferred from various sources, such as excavation reports, ancient sources etc.
+
+
+.. _color:
+
+Color
+--------
+The color property defines the original color(s) of the object. As with the :ref:`material` property, it can be defined from excavation reports and ancient sources.
