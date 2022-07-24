@@ -28,4 +28,15 @@ Examples of existence to be made explicit are USD, USV/n and VSF whose certainty
 Geometry
 --------
 
-The geometry property blah blah blah
+The geometry property defines the dimensions of the object (length, width, thickness).  
+Within the Extended Matrix, the geometry property can be defined, for example, by a floor plan or photogrammetric model of the area to be reconstructed.
+
+.. _placement:
+
+Placement
+--------
+
+Placement is the property that defines the exact location of geometry, either in local or global coordinates. The main sources from which to infer the positioning property of geometry are technical drawings, excavation plans, and photogrammetric models.
+
+
+
