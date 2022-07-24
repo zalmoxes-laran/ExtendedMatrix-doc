@@ -22,3 +22,6 @@ Contents
    nodes
    properties
    geometry
+   placement
+   material
+   color

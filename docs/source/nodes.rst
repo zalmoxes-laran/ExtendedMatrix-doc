@@ -155,6 +155,8 @@ It connects to these properties:
 * existence
 * geometry
 * placement
+* material
+* color
 * etc..
 
 
