@@ -154,8 +154,8 @@ It connects to these properties:
 
 * existence
 * geometry
+* placement
 * etc..
-
 
 
 .. +------------------------+------------+----------+----------+

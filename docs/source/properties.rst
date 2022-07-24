@@ -6,7 +6,8 @@ Properties of the EM
 What is a property ?
 --------------------
 
-A property is..
+A property is an element that defines a quality of the object to be represented. 
+Properties include
 
 
 .. _existence:
