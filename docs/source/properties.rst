@@ -29,7 +29,7 @@ Examples of existence to be made explicit are USD, USV/n and VSF whose certainty
 Geometry
 --------
 
-The geometry property defines the dimensions of the object (length, width, thickness).  
+The geometry property defines the dimensions of the object (length, width, thickness, shape).  
 Within the Extended Matrix, the geometry property can be defined, for example, by a floor plan or photogrammetric model of the area to be reconstructed.
 
 .. _placement:
