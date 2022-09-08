@@ -16,8 +16,9 @@ A granularity matter and the archaeological stratigraphy
 As in figure 1, current limitations in virtual reconstruction are mainly in the data granularity: (a) the model obtained from the survey, or “reality based model”, (b) the “source granularity approach”: the model is divided according to a single source typology (square brackets) but each segment is normally based on different sources blended together (curly brackets). In this approach, the process used to obtain the stratigraphic unit from its sources remains only “into the mind of the archaeologists”. (c) The proposed approach: it is possible to provide the source details for each SU. (d) The Extended Matrix regarding the previous Figure c. Taking in mind this situation, the EM granularity is based on the archaeological stratigraphy: it permits to have a per-object description of the reconstruction processes.
 
 .. _equivocacies:
+
 Common equivocacies about stratigraphic reading
------------------------------------------------
+------------------------------------------------
 
 A very common equivocacy about stratigraphy is that it concerns just earth strata or remains. The importance that archaeologists grant to the stratigraphy is directly connected to the need to have a tool as much “wide” as possible in term of semantic representation: dealing with a brush stroke on a canvas (painting stratigraphy annotation from x-ray), trees on a landscape, deposits of earth, architectonical elements or graffiti carved in a painted wall, the tool used is the same: the SU. It has a wide scope: it means “result of an action” and it is intended to be applied to every cultural element on a chronological timeline. These actions can be natural (earthquake interface of destruction, a tree, an interface of a flooding from the near river) or anthropic (a foundation, a lintel, the decoration of a lintel etc..). An interesting thing is that the SU, despite the fact that it can refer to different objects, can have always a precise and actual 4D representation (time and geometry).
 
