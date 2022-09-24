@@ -6,8 +6,8 @@ Welcome to Extended Matrix documentation!
 In a wider perspective and due to its abstract approach, the Extended Matrix can be used as a human readable metaphor to ingest and present liquid semantic data. In other words, the nodes that compone the paradata section can be used to track and annotate in a simple but effective way several data provenance path exceeding the traditional reconstruction process it was firstly applied to.
 
 Check out the :doc:`usage` section for further information, including how to :ref:`installation` the project.
-For the description of the nodes, see :ref:`nodes`
-For the properties, see :ref:`properties`
+For the description of the nodes, see :doc:`nodes`
+For the properties, see :doc:`properties`
 
 .. note::
 
@@ -17,8 +17,10 @@ Contents
 --------
 
 .. toctree::
+   :maxdepth: 2
 
    usage
+   stratigraphic_approach
    nodes
    properties
    geometry
@@ -31,3 +33,4 @@ Contents
    decoration
    interpretation
    
+

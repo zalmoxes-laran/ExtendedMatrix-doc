@@ -35,7 +35,7 @@ Within the Extended Matrix, the geometry property can be defined, for example, b
 .. _placement:
 
 Placement
---------
+----------
 
 Placement is the property that defines the exact location of geometry, either in local or global coordinates. The main sources from which to infer the positioning property of geometry are technical drawings, excavation plans, and photogrammetric models.
 
