@@ -25,3 +25,9 @@ Contents
    placement
    material
    color
+   shape
+   measures
+   type
+   decoration
+   interpretation
+   

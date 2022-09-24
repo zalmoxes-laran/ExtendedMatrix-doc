@@ -52,3 +52,38 @@ Material property defines the material(s) of which the object is made. This char
 Color
 --------
 The color property defines the original color(s) of the object. As with the :ref:`material` property, it can be defined from excavation reports and ancient sources.
+
+
+.. _shape:
+
+Shape
+--------
+The shape of an object is a fundamental property for its reconstruction. In cases where the object has been preserved in its entirety, its shape can be inferred from photographs, surveys, drawings and descriptions. In the case where it has not been preserved, it can be inferred from ancient written and iconographic sources or from studies of the :ref:`type` of the artifact.
+
+
+.. _measures:
+
+Measures
+---------
+The measurements of an object (height, width and depth) define its size and volume.
+
+
+.. _type:
+
+Type
+------
+The type property defines the classification of the object based on basic taxonomic criteria that are common to a group of artifacts, such as shape, material, decoration etc.
+
+
+.. _decoration:
+
+Decoration
+------------
+Decoration is a feature of the surface of an artifact. It can be made during the production of the object (e.g. mold decoration, relief decoration etc.) or after it (e.g. graffiti) and can be a useful feature for dating it. The sources to draw on for the decoration property are varied, and depend on the nature of the object being examined: they include ancient sources as well as excavation reports, studies of the classification and typology of finds in a context, photogrammetric surveys etc. 
+
+
+.. _interpretation:
+
+Interpretation
+---------------
+Interpretation is the property that defines the function of an object or the reason for an action within the context that is to be reconstructed. Information on interpretation can be gathered from excavation reports.
