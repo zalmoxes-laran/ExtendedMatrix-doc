@@ -17,6 +17,14 @@ Extended Matrix nodes include all the graphic elements on the two-dimensional ca
 
 Nodes are divided into three major families: stratigraphic units, sources, and interpretation and reasoning nodes.
 
+.. image:: img/USV_reconstruction.jpg
+    :width: 400
+    :align: center
+
+    Example of recontruction of a USV through the EM approach.
+
+
+
 .. _taxonomy:
 
 Taxonomy of the EM
@@ -25,8 +33,8 @@ Taxonomy of the EM
 Validation nodes can have different values. These lists are not “closed”: users of the EM can add values in case of necessity.
 
 .. image:: img/Taxonomy.png
-  :width: 200
-  :align: center 
+    :width: 200
+    :align: center 
 
 Taxonomy of terms in validation nodes
 
