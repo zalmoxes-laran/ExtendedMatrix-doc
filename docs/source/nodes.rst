@@ -25,7 +25,7 @@ Taxonomy of the EM
 Validation nodes can have different values. These lists are not “closed”: users of the EM can add values in case of necessity.
 
 .. image:: img/Taxonomy.png
-  :width: 400
+  :width: 200
   :align: center 
 
 Taxonomy of terms in validation nodes
@@ -106,7 +106,7 @@ Connecting an SU with other existing ones (if any) is possible via a connector (
   :width: 400
   :align: center
 
-  Conectors among nodes
+  Connectors among nodes
 
 
 .. _usnodes_examples:
