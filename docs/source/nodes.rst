@@ -17,6 +17,91 @@ Extended Matrix nodes include all the graphic elements on the two-dimensional ca
 
 Nodes are divided into three major families: stratigraphic units, sources, and interpretation and reasoning nodes.
 
+.. _taxonomy:
+
+Taxonomy of the EM
+------------------
+
+Validation nodes can have different values. These lists are not “closed”: users of the EM can add values in case of necessity.
+
+.. image:: img/Taxonomy.png
+  :width: 400
+  :align: center 
+
+Taxonomy of terms in validation nodes
+
+
+.. _stratigraphicunits:
+
+General background on stratigraphic units
+-----------------------------------------
+
+A stratigraphic unit in some academic scholarships is also known as locus or context. It indicates the result of an action that occurred at a specific moment in time. The result (the construction of a wall, the destruction of a roof, is the silt deposited on top of structures following a flood, the chemical change of surfaces due to a fire) in turn have a life span that ends with the moment it is defunctionalized (destroyed, abandoned, buried). 
+
+Stratigraphic units that are of different types: real stratigraphic unit relating to something still existing or stratigraphically documented, documentary stratigraphic tip that the family of virtual stratigraphic units (relating to objects that no longer exist and need to be reconstructed). Abstract limits that are of different types: real stratigraphic unit relating to something still existing or stratigraphically documented, documentary stratigraphic tip that the family of virtual stratigraphic units (relating to objects that no longer exist and need to be reconstructed)
+
+.. _us:
+
+Stratigraphic Unit - US
+-----------------------
+
+It is the graphic and conceptual sign we use to number and define objects found still in situ (and noted using the techniques of stratigraphic reading).
+
+
+.. _usd:
+
+Documentary Stratigraphic Unit - USD
+------------------------------------
+
+The Documentary Stratigraphic Unit (USD) represents an element whose existence is certain due to a source considered reliable (a text, a drawing).
+
+It connects to these properties:
+
+* existence
+* geometry
+* placement
+* material
+* color
+* etc..
+
+.. _combiners:
+
+Combiners
+-------------------
+
+Combinator nodes can combine information provided by two extraction nodes and pass the resulting value to a property.
+
+
+.. _extractors:
+
+Extractors
+-----------------
+
+Extractor nodes can extract specific information from a source and pass it to a property.
+
+
+.. _property:
+
+Property nodes
+-----------------
+
+A property node validates a USV it is connected to. Examples of properties are "material", "dimension", "placement", etc. See :doc:`properties` for more examples.
+
+
+.. _source:
+
+Sources
+-----------------
+
+A source node feeds a property of a USV it is connected to (throught an extractor node). A source can be an image, a text, a reference, a 3D model etc.. More documents need a combiner node.
+
+.. _relations:
+
+Relations among nodes
+-----------------------
+
+
+
 .. _usnodes_examples:
 
 USV nodes, examples of use
@@ -119,76 +204,6 @@ Example of a validation node table
 
 List of nodes used in the paragraphs 3.1 and 3.2:
 
-.. _taxonomy:
-
-Taxonomy of the EM
-------------------
-
-Validation nodes can have different values. These lists are not “closed”: users of the EM can add values in case of necessity.
-
-.. _stratigraphicunits:
-
-General background on stratigraphic units
------------------------------------------
-
-A stratigraphic unit in some academic scholarships is also known as locus or context. It indicates the result of an action that occurred at a specific moment in time. The result (the construction of a wall, the destruction of a roof, is the silt deposited on top of structures following a flood, the chemical change of surfaces due to a fire) in turn have a life span that ends with the moment it is defunctionalized (destroyed, abandoned, buried). 
-
-Stratigraphic units that are of different types: real stratigraphic unit relating to something still existing or stratigraphically documented, documentary stratigraphic tip that the family of virtual stratigraphic units (relating to objects that no longer exist and need to be reconstructed). Abstract limits that are of different types: real stratigraphic unit relating to something still existing or stratigraphically documented, documentary stratigraphic tip that the family of virtual stratigraphic units (relating to objects that no longer exist and need to be reconstructed)
-
-.. _us:
-
-Stratigraphic Unit - US
------------------------
-
-It is the graphic and conceptual sign we use to number and define objects found still in situ (and noted using the techniques of stratigraphic reading).
-
-
-.. _usd:
-
-Documentary Stratigraphic Unit - USD
-------------------------------------
-
-The Documentary Stratigraphic Unit (USD) represents an element whose existence is certain due to a source considered reliable (a text, a drawing).
-
-It connects to these properties:
-
-* existence
-* geometry
-* placement
-* material
-* color
-* etc..
-
-.. _combinators:
-
-Combinators
--------------------
-
-Combinator nodes can combine information provided by two extraction nodes and pass the resulting value to a property.
-
-
-.. _extractors:
-
-Extractors
------------------
-
-Extractor nodes can extract specific information from a source and pass it to a property.
-
-
-.. _property:
-
-Property nodes
------------------
-
-A property node validates a USV it is connected to. Examples of propertier are "material", "dimension", "placement", etc.. See :doc:`properties` for more examples.
-
-
-.. _document:
-
-Sources
------------------
-
-A source node feeds a property of a USV it is connected to (throught an extractor node). A source can be an image, a text, a reference, a 3D model etc.. More documents need a combiner node.
 
 
 .. +------------------------+------------+----------+----------+
