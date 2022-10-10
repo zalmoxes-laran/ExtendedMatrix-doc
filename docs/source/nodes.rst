@@ -100,6 +100,13 @@ A source node feeds a property of a USV it is connected to (throught an extracto
 Relations among nodes
 -----------------------
 
+Connecting an SU with other existing ones (if any) is possible via a connector (a line with a terminal arrow connecting two nodes). In EM by convention the arrow always points to the oldest object (arrow pointing from top to bottom).
+
+.. image:: img/Connectors.png
+  :width: 400
+  :align: center
+
+  Conectors among nodes
 
 
 .. _usnodes_examples:
