@@ -159,6 +159,37 @@ It connects to these properties:
 * color
 * etc..
 
+.. _combinators:
+
+Combinators
+-------------------
+
+Combinator nodes can combine information provided by two extraction nodes and pass the resulting value to a property.
+
+
+.. _extractors:
+
+Extractors
+-----------------
+
+Extractor nodes can extract specific information from a source and pass it to a property.
+
+
+.. _property:
+
+Property nodes
+-----------------
+
+A property node validates a USV it is connected to. Examples of propertier are "material", "dimension", "placement", etc.. See :ref:`properties` for more examples.
+
+
+.. _document:
+
+Sources
+-----------------
+
+A source node feeds a property of a USV it is connected to (throught an extractor node). A source can be an image, a text, a reference, a 3D model etc.. More documents need a combiner node.
+
 
 .. +------------------------+------------+----------+----------+
 .. | Header row, column 1   | Header 2   | Header 3 | Header 4 |
