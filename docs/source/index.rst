@@ -23,14 +23,6 @@ Contents
    stratigraphic_approach
    nodes
    properties
-   geometry
-   placement
-   material
-   color
-   shape
-   measures
-   type
-   decoration
-   interpretation
+   time_management
    
 
