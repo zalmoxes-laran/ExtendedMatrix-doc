@@ -180,7 +180,7 @@ Extractor nodes can extract specific information from a source and pass it to a 
 Property nodes
 -----------------
 
-A property node validates a USV it is connected to. Examples of propertier are "material", "dimension", "placement", etc.. See :ref:`properties` for more examples.
+A property node validates a USV it is connected to. Examples of propertier are "material", "dimension", "placement", etc.. See :doc:`properties` for more examples.
 
 
 .. _document:
