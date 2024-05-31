@@ -3,7 +3,7 @@ Nodes of the EM
 
 EM uses two sets of standardized nodes: USV and validation nodes (see Fig. 1). The USV nodes represent virtual stratigraphic units (according to a specific typology) while the validation nodes express the reconstruction process behind the USV. These nodes are connected each other by arcs in the same way that it happens with the archaeological Matrix of Harris.
 
-.. image:: img/Nodes.png
+.. image:: img/EM_Reference_CHART_A.jpg
     :width: 400
     :align: center
 
