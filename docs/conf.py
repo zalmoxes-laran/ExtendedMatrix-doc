@@ -6,8 +6,8 @@ project = 'Extended Matrix'
 copyright = '2024, Emanuel Demetrescu'
 author = 'Emanuel Demetrescu'
 
-release = '1.4'
-version = '1.4.0'
+release = '1.5'
+version = '1.5.0'
 
 # -- General configuration
 
