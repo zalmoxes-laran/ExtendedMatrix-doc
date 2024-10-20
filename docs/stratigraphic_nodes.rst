@@ -159,10 +159,13 @@ For example:
 2. **Collapse of a Painted Ceiling**:
    When a ceiling collapses, the event can involve both displacement and rotation. For instance, a fragment of a painted ceiling might fall from a height of 3 meters and rotate 180 degrees before coming to rest on the floor. The event node captures the movement (spatial displacement, rotation) and the forces at play. The resulting stratigraphic unit would then be the fragments on the floor, possibly broken, but distinct from the original ceiling. 
 
-   In this example, a simulation could demonstrate how the fragment, constrained by its attachment at one side (e.g., due to incannaciatura), rotated during its fall, showing that it did not break during its 180-degree rotation. This validated stratigraphic event is key to understanding how the unit was transformed.
+   In this example, a simulation could demonstrate how the fragment, constrained by its attachment at one side (e.g., the crack follow the direction of the internal "incannucciatura" - made by small bamboo canes which create the structure of the plaster), rotated during its fall, showing that it did not break during its 180-degree rotation. This validated stratigraphic event is key to understanding how the unit was transformed.
 
 3. **Cut for a New Window**:
    In the case of cutting through a wall to create a new window, the event is the cutting action itself, which modifies the wall. The resulting stratigraphic unit is the modified wall with the new window. The stratigraphic event details the process of cutting, while the unit is the altered wall that remains after the event.
+
+4. **In case of bradisysm**:
+   In the case of a bradisysm, a wall is no more in the same position as in the past: the present position is the found USM while the previous wall was simpy 30 cm upper on the z axis: between such an original wall and the changed ond (it changed the position due to the bradysism) a Stratigraphic Event node is provided to ensure a full description of the bradysism (using paradtaat nodes).
 
 **Properties**
 
