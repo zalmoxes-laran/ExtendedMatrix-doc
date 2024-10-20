@@ -20,7 +20,7 @@ Contents
    :maxdepth: 2
    :caption: Contents:
 
-  usage
+   usage
    nodes_intro
    stratigraphic_nodes
    stratigraphic_approach
