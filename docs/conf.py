@@ -17,6 +17,9 @@ extensions = [
     'sphinx.ext.autodoc',
     'sphinx.ext.autosummary',
     'sphinx.ext.intersphinx',
+    'sphinx.ext.viewcode',
+    'sphinx.ext.napoleon',
+    'sphinx.ext.todo',
 ]
 
 intersphinx_mapping = {
@@ -36,3 +39,7 @@ epub_show_urls = 'footnote'
 
 # Enable numref
 numfig = True
+
+
+
+
