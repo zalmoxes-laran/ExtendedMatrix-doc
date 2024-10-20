@@ -11,7 +11,7 @@ For the properties, see :ref:`properties`
 
 .. note::
 
-   This documentation is under continuous editing.
+   This documentation is related to a EM 1.5 development version: please pay attention that modifications may occur before releasing the final version.
 
 Contents
 --------

@@ -115,10 +115,6 @@ Cumulative example of different USV nodes used togheter
 USV/s and USV/n are used togheter. Different -SU allow to propose different USV/s.
 
 
-
-
-
-
 .. _usd:
 
 Documentary Stratigraphic Unit - USD
@@ -138,8 +134,12 @@ It connects to these properties:
 
 .. _se:
 
-**New** Stratigraphic Event Node
---------------------------------
+.. _note:
+
+  Starting from here expect new features for EM 1.5
+
+New Stratigraphic Event Node
+----------------------------
 
 A **Stratigraphic Event Node** represents an event or action that precedes and results in the formation of a stratigraphic unit. This new node captures not just the unit itself, but the process that leads to the creation, modification, or transformation of the unit. By introducing this concept, it is possible to model both the temporal and spatial dimensions of how a stratigraphic unit comes to exist.
 
