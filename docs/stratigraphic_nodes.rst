@@ -10,7 +10,7 @@ A stratigraphic unit in some academic scholarships is also known as locus or con
 
 Stratigraphic units that are of different types: real stratigraphic unit relating to something still existing or stratigraphically documented, documentary stratigraphic tip that the family of virtual stratigraphic units (relating to objects that no longer exist and need to be reconstructed). Abstract limits that are of different types: real stratigraphic unit relating to something still existing or stratigraphically documented, documentary stratigraphic tip that the family of virtual stratigraphic units (relating to objects that no longer exist and need to be reconstructed)
 
----
+-----------------------
 
 .. _us:
 
@@ -19,7 +19,7 @@ Stratigraphic Unit - US
 
 It is the graphic and conceptual sign we use to number and define objects found still in situ (and noted using the techniques of stratigraphic reading).
 
----
+-----------------------
 
 .. _usvnodes:
 
@@ -37,7 +37,7 @@ Example of USV/s (structural virtual stratigraphic unit)
 
 On top of a podium SU01 there is a SU02 (in situ), fragmented due to a -SU03 (destruction of the upper part of the column). A USV/s 100 hypothetical reconstruction is provisioned in order to restore the action of destruction -SU03.
 
----
+-----------------------
 
 USV/n node:
 -----------
@@ -53,6 +53,7 @@ Example of USV/n (non structural virtual stratigraphic unit)
 
 There are only the remains of a podium SU01. A USV/n 100 hypothetical reconstruction is provisioned (without physical destruction signs that prove the presence of a column).
 
+-----------------------
 
 .. _usvseries:
 
