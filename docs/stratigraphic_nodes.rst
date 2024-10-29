@@ -35,6 +35,7 @@ Example of USV/s (structural virtual stratigraphic unit)
   :width: 400
   :align: center 
 
+
 On top of a podium SU01 there is a SU02 (in situ), fragmented due to a -SU03 (destruction of the upper part of the column). A USV/s 100 hypothetical reconstruction is provisioned in order to restore the action of destruction -SU03.
 
 -----------------------
