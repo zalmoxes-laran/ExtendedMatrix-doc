@@ -23,7 +23,7 @@ It is the graphic and conceptual sign we use to number and define objects found 
 
 .. _usvnodes:
 
-USV/s node:
+USV/s - Structural Virtual Stratigraphic Unit node:
 -----------
 
 Lorem ipsum [definition]
