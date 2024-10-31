@@ -43,7 +43,7 @@ Example
   :width: 400
   :align: center 
 
-On top of a podium SU01 there is a SU02 (in situ), fragmented due to a -SU03 (destruction of the upper part of the column). A USV/s 100 hypothetical reconstruction is provisioned in order to restore the action of destruction -SU03.
+  On top of a podium SU01 there is a SU02 (in situ), fragmented due to a -SU03 (destruction of the upper part of the column). A USV/s 100 hypothetical reconstruction is provisioned in order to restore the action of destruction -SU03.
 
 -----------------------
 
@@ -63,7 +63,7 @@ Example
   :width: 400
   :align: center 
 
-There are only the remains of a podium SU01. A USV/n 100 hypothetical reconstruction is provisioned (without physical destruction signs that prove the presence of a column).
+  There are only the remains of a podium SU01. A USV/n 100 hypothetical reconstruction is provisioned (without physical destruction signs that prove the presence of a column).
 
 -----------------------
 
@@ -76,7 +76,7 @@ USV series node:
   :width: 128px
   :align: left
 
-A series of USVn objects, like a colonnade or a sequence of acroteria, considered as a whole. This seriation node acts as a proxy for the entire group.
+  A series of USVn objects, like a colonnade or a sequence of acroteria, considered as a whole. This seriation node acts as a proxy for the entire group.
 
 Example
 ~~~~~~~
@@ -85,7 +85,7 @@ Example
   :width: 400
   :align: center 
 
-There are only the remains of a podium SU01. A USV/n 100 hypothetical reconstruction series of columns is provisioned (without physical destruction signs that prove the presence of a column). The series node allows to instance several USV/n at once.
+  There are only the remains of a podium SU01. A USV/n 100 hypothetical reconstruction series of columns is provisioned (without physical destruction signs that prove the presence of a column). The series node allows to instance several USV/n at once.
 
 Example
 ~~~~~~~
@@ -94,7 +94,7 @@ Example
   :width: 400
   :align: center 
 
-On top of a podium SU01 there is a column SU02 (in situ) fragmented due to a -SU03 (destruction of the upper part of the column). A USV/s 100 hypothetical reconstruction is provisioned in order to restore the destruction’s action -SU03. A series USV/n 101 is provided in order to complete the peristasis of the temple.
+  On top of a podium SU01 there is a column SU02 (in situ) fragmented due to a -SU03 (destruction of the upper part of the column). A USV/s 100 hypothetical reconstruction is provisioned in order to restore the destruction’s action -SU03. A series USV/n 101 is provided in order to complete the peristasis of the temple.
 
 .. _sfnodes:
 
@@ -114,7 +114,7 @@ Example
   :width: 400
   :align: center 
 
-There are only the remains of a podium SU01 with a collapsed column SF01. A USV/n 100 hypothetical reconstruction is provisioned using the SF as a source. This kind of USV/n has a special status: see “USV and validation nodes” section on top of this page.
+  There are only the remains of a podium SU01 with a collapsed column SF01. A USV/n 100 hypothetical reconstruction is provisioned using the SF as a source. This kind of USV/n has a special status: see “USV and validation nodes” section on top of this page.
 
 Example 
 ~~~~~~~
@@ -132,7 +132,7 @@ Cumulative example of different USV nodes used together
   :width: 400
   :align: center 
 
-USV/s and USV/n are used together. Different -SU allow to propose different USV/s.
+  USV/s and USV/n are used together. Different -SU allow to propose different USV/s.
 
 .. _usd:
 
@@ -159,10 +159,10 @@ It connects to these properties:
 
 .. _note:
 
-  Starting from here expect new features for EM 1.5
 
-New Stratigraphic Event Node
-----------------------------
+
+Stratigraphic Event Node
+------------------------
 
 A **Stratigraphic Event Node** represents an event or action that precedes and results in the formation of a stratigraphic unit. This new node captures not just the unit itself, but the process that leads to the creation, modification, or transformation of the unit. By introducing this concept, it is possible to model both the temporal and spatial dimensions of how a stratigraphic unit comes to exist.
 
