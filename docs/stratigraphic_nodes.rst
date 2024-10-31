@@ -21,7 +21,7 @@ Stratigraphic Unit - US
   :width: 128px
   :align: left
 
-It is the graphic and conceptual sign we use to number and define objects found still in situ (and noted using the techniques of stratigraphic reading).
+It is the result of an action happened in the past. It defines objects found still in situ (and noted using the techniques of stratigraphic reading).
 
 -----------------------
 
