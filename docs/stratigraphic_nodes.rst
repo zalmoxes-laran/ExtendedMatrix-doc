@@ -17,6 +17,10 @@ Stratigraphic units that are of different types: real stratigraphic unit relatin
 Stratigraphic Unit - US
 -----------------------
 
+.. image:: img/2D/US.png
+  :width: 128px
+  :align: left
+
 It is the graphic and conceptual sign we use to number and define objects found still in situ (and noted using the techniques of stratigraphic reading).
 
 -----------------------
@@ -26,7 +30,11 @@ It is the graphic and conceptual sign we use to number and define objects found 
 USV/s node:
 -----------
 
-Lorem ipsum [definition]
+.. image:: img/2D/USVs.png
+  :width: 128px
+  :align: left
+
+Structural Virtual Stratigraphic Unit, a reconstruction hypothesis based on an in situ fragmented SU. It acts as a restoration of a -SU, making its presence "physically proven."
 
 Example of USV/s (structural virtual stratigraphic unit)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -35,7 +43,6 @@ Example of USV/s (structural virtual stratigraphic unit)
   :width: 400
   :align: center 
 
-
 On top of a podium SU01 there is a SU02 (in situ), fragmented due to a -SU03 (destruction of the upper part of the column). A USV/s 100 hypothetical reconstruction is provisioned in order to restore the action of destruction -SU03.
 
 -----------------------
@@ -43,7 +50,11 @@ On top of a podium SU01 there is a SU02 (in situ), fragmented due to a -SU03 (de
 USV/n node:
 -----------
 
-Lorem ipsum [definition]
+.. image:: img/2D/USVn.png
+  :width: 128px
+  :align: left
+
+Non-structural Virtual Stratigraphic Unit, a reconstruction hypothesis based on "sources" such as comparisons or general rules. It is not connected to a -SU and, as a result, is not "physically proven."
 
 Example of USV/n (non structural virtual stratigraphic unit)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -61,7 +72,11 @@ There are only the remains of a podium SU01. A USV/n 100 hypothetical reconstruc
 USV series node:
 ----------------
 
-Lorem ipsum [definition]
+.. image:: img/2D/serUSV.png
+  :width: 128px
+  :align: left
+
+A series of USVn objects, like a colonnade or a sequence of acroteria, considered as a whole. This seriation node acts as a proxy for the entire group.
 
 Example of a series of USV/n (non structural virtual stratigraphic unit)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -70,8 +85,7 @@ Example of a series of USV/n (non structural virtual stratigraphic unit)
   :width: 400
   :align: center 
 
-There are only the remains of a podium SU01. A USV/n 100  hypothetical reconstruction series of columns is provisioned (without physical destruction signs that prove the presence of a column). The series node allows to instance several USV/n at once.
-
+There are only the remains of a podium SU01. A USV/n 100 hypothetical reconstruction series of columns is provisioned (without physical destruction signs that prove the presence of a column). The series node allows to instance several USV/n at once.
 
 Example of a USV/s and a series of USV/n
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -87,7 +101,11 @@ On top of a podium SU01 there is a column SU02 (in situ) fragmented due to a -SU
 Special Find node:
 ------------------
 
-Lorem Ipsum [definition]
+.. image:: img/2D/SF.png
+  :width: 128px
+  :align: left
+
+Refers to a non-in situ element (fragmented or intact) that needs to be repositioned. It is a real object with several known properties (color, material, etc.) except for the original position.
 
 Example of a USV/n based on Special Finds (non in situ) elements
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -105,23 +123,25 @@ Example of a USV/n series based on Special Finds (non in situ) elements
   :width: 400
   :align: center 
 
-There are only the remains of a podium SU01 with a collapsed column SF01 (special find 01). A USV/n 100 series hypothetical reconstruction of the columnade is provisioned using the SF as a source.
+There are only the remains of a podium SU01 with a collapsed column SF01 (special find 01). A USV/n 100 series hypothetical reconstruction of the colonnade is provisioned using the SF as a source.
 
-
-Cumulative example of different USV nodes used togheter
+Cumulative example of different USV nodes used together
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. image:: img/B07.png
   :width: 400
   :align: center 
 
-USV/s and USV/n are used togheter. Different -SU allow to propose different USV/s.
-
+USV/s and USV/n are used together. Different -SU allow to propose different USV/s.
 
 .. _usd:
 
 Documentary Stratigraphic Unit - USD
 ------------------------------------
+
+.. image:: img/2D/USD.png
+  :width: 128px
+  :align: left
 
 The Documentary Stratigraphic Unit (USD) represents an element whose existence is certain due to a source considered reliable (a text, a drawing).
 
@@ -162,13 +182,11 @@ For example:
 2. **Collapse of a Painted Ceiling**:
    When a ceiling collapses, the event can involve both displacement and rotation. For instance, a fragment of a painted ceiling might fall from a height of 3 meters and rotate 180 degrees before coming to rest on the floor. The event node captures the movement (spatial displacement, rotation) and the forces at play. The resulting stratigraphic unit would then be the fragments on the floor, possibly broken, but distinct from the original ceiling. 
 
-   In this example, a simulation could demonstrate how the fragment, constrained by its attachment at one side (e.g., the crack follow the direction of the internal "incannucciatura" - made by small bamboo canes which create the structure of the plaster), rotated during its fall, showing that it did not break during its 180-degree rotation. This validated stratigraphic event is key to understanding how the unit was transformed.
-
 3. **Cut for a New Window**:
    In the case of cutting through a wall to create a new window, the event is the cutting action itself, which modifies the wall. The resulting stratigraphic unit is the modified wall with the new window. The stratigraphic event details the process of cutting, while the unit is the altered wall that remains after the event.
 
 4. **In case of bradisysm**:
-   In the case of a bradisysm, a wall is no more in the same position as in the past: the present position is the found USM while the previous wall was simpy 30 cm upper on the z axis: between such an original wall and the changed ond (it changed the position due to the bradysism) a Stratigraphic Event node is provided to ensure a full description of the bradysism (using paradtaat nodes).
+   In the case of a bradisysm, a wall is no more in the same position as in the past: the present position is the found USM while the previous wall was simply 30 cm upper on the z axis: between such an original wall and the changed one (it changed the position due to the bradisysm) a Stratigraphic Event node is provided to ensure a full description of the bradisysm (using paradatat nodes).
 
 **Properties**
 
@@ -189,13 +207,3 @@ It connects to these nodes:
 
 * Stratigraphic Unit
 * Property Node
-
-.. +------------------------+------------+----------+----------+
-.. | Header row, column 1   | Header 2   | Header 3 | Header 4 |
-.. | (header rows optional) |            |          |          |
-.. +========================+============+==========+==========+
-.. | body row 1, column 1   | column 2   | column 3 | column 4 |
-.. +------------------------+------------+----------+----------+
-.. | body row 2             | ciao       | ciao     |          |
-.. +------------------------+------------+----------+----------+
-
