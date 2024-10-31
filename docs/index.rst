@@ -26,6 +26,7 @@ Contents
    stratigraphic_approach
    validation_nodes
    properties
+   alternate_hypotheses
 
 Indices and tables
 ==================
