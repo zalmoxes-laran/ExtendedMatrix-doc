@@ -43,7 +43,7 @@ Example
   :width: 400
   :align: center 
 
-  On top of a podium SU01 there is a SU02 (in situ), fragmented due to a -SU03 (destruction of the upper part of the column). A USV/s 100 hypothetical reconstruction is provisioned in order to restore the action of destruction -SU03.
+On top of a podium SU01 there is a SU02 (in situ), fragmented due to a -SU03 (destruction of the upper part of the column). A USV/s 100 hypothetical reconstruction is provisioned in order to restore the action of destruction -SU03.
 
 -----------------------
 
@@ -63,7 +63,7 @@ Example
   :width: 400
   :align: center 
 
-  There are only the remains of a podium SU01. A USV/n 100 hypothetical reconstruction is provisioned (without physical destruction signs that prove the presence of a column).
+There are only the remains of a podium SU01. A USV/n 100 hypothetical reconstruction is provisioned (without physical destruction signs that prove the presence of a column).
 
 -----------------------
 
@@ -85,7 +85,7 @@ Example
   :width: 400
   :align: center 
 
-  There are only the remains of a podium SU01. A USV/n 100 hypothetical reconstruction series of columns is provisioned (without physical destruction signs that prove the presence of a column). The series node allows to instance several USV/n at once.
+There are only the remains of a podium SU01. A USV/n 100 hypothetical reconstruction series of columns is provisioned (without physical destruction signs that prove the presence of a column). The series node allows to instance several USV/n at once.
 
 Example
 ~~~~~~~
@@ -114,7 +114,7 @@ Example
   :width: 400
   :align: center 
 
-  There are only the remains of a podium SU01 with a collapsed column SF01. A USV/n 100 hypothetical reconstruction is provisioned using the SF as a source. This kind of USV/n has a special status: see “USV and validation nodes” section on top of this page.
+There are only the remains of a podium SU01 with a collapsed column SF01. A USV/n 100 hypothetical reconstruction is provisioned using the SF as a source. This kind of USV/n has a special status: see “USV and validation nodes” section on top of this page.
 
 Example 
 ~~~~~~~
@@ -132,7 +132,7 @@ Cumulative example of different USV nodes used together
   :width: 400
   :align: center 
 
-  USV/s and USV/n are used together. Different -SU allow to propose different USV/s.
+USV/s and USV/n are used together. Different -SU allow to propose different USV/s.
 
 .. _usd:
 
