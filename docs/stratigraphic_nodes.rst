@@ -36,8 +36,8 @@ USV/s node:
 
 Structural Virtual Stratigraphic Unit, a reconstruction hypothesis based on an in situ fragmented SU. It acts as a restoration of a -SU, making its presence "physically proven."
 
-Example of USV/s (structural virtual stratigraphic unit)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Example
+~~~~~~~
 
 .. image:: img/B01.png
   :width: 400
@@ -56,8 +56,8 @@ USV/n node:
 
 Non-structural Virtual Stratigraphic Unit, a reconstruction hypothesis based on "sources" such as comparisons or general rules. It is not connected to a -SU and, as a result, is not "physically proven."
 
-Example of USV/n (non structural virtual stratigraphic unit)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Example
+~~~~~~~
 
 .. image:: img/B02.png
   :width: 400
@@ -78,8 +78,8 @@ USV series node:
 
 A series of USVn objects, like a colonnade or a sequence of acroteria, considered as a whole. This seriation node acts as a proxy for the entire group.
 
-Example of a series of USV/n (non structural virtual stratigraphic unit)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Example
+~~~~~~~
 
 .. image:: img/B03.png
   :width: 400
@@ -87,8 +87,8 @@ Example of a series of USV/n (non structural virtual stratigraphic unit)
 
 There are only the remains of a podium SU01. A USV/n 100 hypothetical reconstruction series of columns is provisioned (without physical destruction signs that prove the presence of a column). The series node allows to instance several USV/n at once.
 
-Example of a USV/s and a series of USV/n
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Example
+~~~~~~~
 
 .. image:: img/B04.png
   :width: 400
@@ -107,8 +107,8 @@ Special Find node:
 
 Refers to a non-in situ element (fragmented or intact) that needs to be repositioned. It is a real object with several known properties (color, material, etc.) except for the original position.
 
-Example of a USV/n based on Special Finds (non in situ) elements
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Example
+~~~~~~~
 
 .. image:: img/B05.png
   :width: 400
@@ -116,8 +116,8 @@ Example of a USV/n based on Special Finds (non in situ) elements
 
 There are only the remains of a podium SU01 with a collapsed column SF01. A USV/n 100 hypothetical reconstruction is provisioned using the SF as a source. This kind of USV/n has a special status: see “USV and validation nodes” section on top of this page.
 
-Example of a USV/n series based on Special Finds (non in situ) elements
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Example 
+~~~~~~~
 
 .. image:: img/B06.png
   :width: 400
