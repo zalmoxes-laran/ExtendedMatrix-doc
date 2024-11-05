@@ -1,4 +1,4 @@
-Nodes overview:
+Nodes overview
 ==============
 
 .. _nodes_intro
