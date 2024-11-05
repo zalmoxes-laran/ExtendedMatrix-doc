@@ -5,6 +5,7 @@ The Extended Matrix utilizes a hierarchical data structure known as the **Data F
 
 .. image:: /images/data_funnel.png
    :alt: Diagram illustrating the Data Funnel with General Data at the top, Local Data in the middle, and Specific Data at the bottom.
+   :width: 600px
    :align: center
 
 *(Placeholder for the image showing where A) General Data, B) Local Data, and C) Specific Data are located.)*
