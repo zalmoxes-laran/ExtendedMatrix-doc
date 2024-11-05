@@ -25,9 +25,12 @@ Contents
    stratigraphic_nodes
    stratigraphic_approach
    validation_nodes
+   paradata_group
    properties
    alternate_hypotheses
    data_funnel
+   activity
+   
 
 Indices and tables
 ==================
