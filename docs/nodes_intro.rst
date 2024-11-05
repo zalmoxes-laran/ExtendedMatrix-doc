@@ -1,5 +1,5 @@
-Nodes of the Extended Matrix (short intro):
-===========================================
+Nodes overview:
+==============
 
 .. _nodes_intro
 
@@ -7,7 +7,7 @@ EM uses two sets of standardized nodes: Stratigraphic and validation nodes (see 
 
 .. note::
 
-   To have a clearer idea about WHY using stratigraphy is not archaeology-centered but it has a wider impact in the domain of Cultural Heritage
+    To have a clearer idea about `WHY using stratigraphy is not archaeology-centered but it has a wider impact in the domain of Cultural Heritage <stratigraphic_approach.rst>`_
 
 .. image:: img/EM_Reference_CHART_A.jpg
     :width: 400

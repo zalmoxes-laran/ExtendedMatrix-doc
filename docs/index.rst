@@ -23,7 +23,6 @@ Contents
    usage
    nodes_intro
    stratigraphic_nodes
-   stratigraphic_approach
    validation_nodes
    paradata_group
    properties
@@ -31,6 +30,12 @@ Contents
    data_funnel
    activity
    utils
+
+.. toctree::
+   :maxdepth: 2
+   :caption: Theoretical Aspects:
+
+   stratigraphic_approach
    
 
 Indices and tables
