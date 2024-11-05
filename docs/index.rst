@@ -30,6 +30,7 @@ Contents
    alternate_hypotheses
    data_funnel
    activity
+   utils
    
 
 Indices and tables
