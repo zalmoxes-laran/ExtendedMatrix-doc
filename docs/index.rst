@@ -27,6 +27,7 @@ Contents
    validation_nodes
    properties
    alternate_hypotheses
+   data_funnel
 
 Indices and tables
 ==================
