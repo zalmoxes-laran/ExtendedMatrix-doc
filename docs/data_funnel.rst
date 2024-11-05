@@ -3,7 +3,7 @@ Data Funnel Structure
 
 The Extended Matrix utilizes a hierarchical data structure known as the **Data Funnel**. This structure organizes data into three levels of granularity, ensuring consistency, avoiding duplication, and providing detailed information where necessary.
 
-.. image:: /images/data_funnel.png
+.. image:: /img/data_funnel.png
    :alt: Diagram illustrating the Data Funnel with General Data at the top, Local Data in the middle, and Specific Data at the bottom.
    :width: 600px
    :align: center
@@ -15,37 +15,39 @@ The Extended Matrix utilizes a hierarchical data structure known as the **Data F
 
 **Definition**: General Background Data encompasses information that applies uniformly to all nodes within the knowledge graph of the Extended Matrix. These data provide a global context, essential for maintaining coherence across different elements and preventing data duplication.
 
-**Examples**:
-
-- **ORCID**: Unique identifiers of authors involved in the project, allowing each node to be linked to a specific author in a structured and identifiable manner.
+**Values**:
 
 - **Extended Matrix ID**: An identifier assigned to a coherent stratigraphic portion of an archaeological site or monument. This ID helps avoid duplications and maintains consistency in node identification within the graph.
 
+- **ORCID**: Unique identifiers of authors involved in the project, allowing each node to be linked to a specific author in a structured and identifiable manner.
+
+- **Licence**: 
+
+- **Embargo**: expressed in months,  
+
 **Objective**: To ensure that every node in the graph is coherently linked to a set of common properties, maintaining the integrity of the system and providing adequate granularity.
 
-2. Local Background Data
+1. Local Background Data
 ------------------------
 
 **Definition**: Local Background Data are information that apply only to a subset of stratigraphic nodes. These data include properties shared among certain nodes that belong to the same context or chronological period, defined by a shared temporal property.
 
-**Examples**:
+**Values**:
 
-- **Temporal Delta (Epoch Node)**: A time interval assigned to a group of stratigraphic nodes sharing common characteristics. The temporal delta is based on an interpretation of evidence, such as formal coherence or the use of the same construction technique (e.g., Roman Era, 0-100 AD).
-
-- **Activity Context**: Groupings of interpretative actions that constitute a coherent set of activities related to a specific project (e.g., construction of foundations, columns, capitals, architraves).
+- **start and end**: A time interval (temporal delta) assigned to a group of stratigraphic nodes sharing common characteristics. The temporal delta is based on an interpretation of evidence, such as formal coherence or the use of the same construction technique (e.g., Roman Era, 0-100 AD).
 
 **Objective**: To connect groups of nodes to a common temporal or functional context, simplifying the representation of multiple nodes sharing similar properties within a specific context.
 
-3. Specific Node Data
+1. Specific Node Data
 ---------------------
 
 **Definition**: Specific Node Data represent the unique information that applies to individual stratigraphic units. These data take precedence over Local Background Data and can override shared properties when necessary.
 
-**Examples**:
+**Values**:
 
 - **Start Time** and **End Time**: The specific temporal properties of a stratigraphic unit indicating its chronological limits. These data override shared Temporal Deltas.
 
-- **Physical Properties**: Material, style, dimensions (height, width, length), and state (existing or destroyed) of the stratigraphic unit.
+- **Qualia**: Physical Properties like Material, style, dimensions (height, width, length), and state (existing or destroyed) of the stratigraphic unit or subjective properties to express how thigs were percived in the past (meaning, scope, etc...).
 
 **Objective**: To provide detailed descriptions of each node's unique characteristics, offering more granular and precise information compared to Local Background Data.
 
