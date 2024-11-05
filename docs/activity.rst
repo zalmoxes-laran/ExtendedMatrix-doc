@@ -16,8 +16,8 @@ By grouping related actions into node groups, we can better interpret the sequen
 
 .. image:: /img/activity_example.png
    :alt: Example of an activity node group in the Extended Matrix, showing nodes grouped together with a text background color of #ccffff
-   :width: 400px
-   :align: center
+   :width: 200px
+   :align: left
 
 *(The image shows an example from the yED palette EM 1.5, illustrating an activity node group characterized by a text background color of `#ccffff`.)*
 
@@ -31,17 +31,6 @@ In the Extended Matrix, activities are represented as **node groups** that encap
 - **Enhanced Interpretative Clarity**: Activity node groups provide context that helps in understanding the functional aspects of the stratigraphic units.
 
 - **Visual Consistency**: Using specific visual cues, such as the background color `#ccffff`, activity node groups are easily identifiable within the matrix.
-
-Components of an Activity Node Group
-------------------------------------
-
-An activity node group may include:
-
-- **Stratigraphic Units**: The physical elements involved in the activity (e.g., walls, floors, artifacts).
-
-- **Temporal Data**: Start and end times indicating when the activity occurred.
-
-- **Descriptive Information**: Details about the methods, materials, and agents involved.
 
 Implementing Activity Node Groups in the Extended Matrix
 --------------------------------------------------------

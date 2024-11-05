@@ -9,10 +9,10 @@ An important feature of paradata groups is the ability to **collapse** them into
 
 .. image:: /img/paradata_group_example.png
    :alt: Example of a paradata group in the Extended Matrix, showing nodes grouped together with a text background color of #ffcc99
-   :width: 400px
-   :align: center
+   :width: 200px
+   :align: left
 
-*(The image shows an example from the yED palette EM 1.5, illustrating a paradata group characterized by a text background color of `#ffcc99`.)*
+*The image shows an example from the yED palette EM 1.5, illustrating a paradata group characterized by a text background color of `#ffcc99`.*
 
 Collapsing Paradata Groups
 --------------------------
