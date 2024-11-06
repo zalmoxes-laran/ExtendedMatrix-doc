@@ -13,12 +13,10 @@ For the properties, see :ref:`properties`
 
    This documentation is related to a EM 1.5 development version: please pay attention that modifications may occur before releasing the final version.
 
-Contents
---------
 
 .. toctree::
    :maxdepth: 2
-   :caption: Contents:
+   :caption: Contents
 
    usage
    nodes_intro
