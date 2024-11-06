@@ -19,14 +19,14 @@ For the properties, see :ref:`properties`
    :caption: Contents
 
    usage
+   data_funnel
    nodes_intro
    stratigraphic_nodes
+   activity
    validation_nodes
    paradata_group
    properties
    alternate_hypotheses
-   data_funnel
-   activity
    utils
 
 .. toctree::
