@@ -1,7 +1,7 @@
-Validation Nodes
+Paradata Nodes
 ================
 
-Validation nodes (aka paradata nodes) are a set of special nodes devoted to express the data provenance (how we know something). An example is the *property* "material" (= marble) of a capital known through a *document* (= i.e. a report of an excavation fromn the XIX century) node (aka source node) that is interpreted by a reseaecher through an *extractor* node (= "at page 10 a description clearly refers to that capital"). In the case of multiple documents (each with its own interpretation), a *combiner* node (because of this interpretation of the document A and because of this interpretation of the document B, then the material is marble). Each node within the paradata "family" has a unique name (as well as the USs) in order to be correctly referenced. They follow a name convention model (see Fig. 1): extractor nodes are composed by the name of the document they are related to (i.e. “D.01”) plus a sequence of numbers (i.e the first extractor of the Docuemnt 1 will be D.01.01). Combiner and document nodes uses respectively the “C” and “D.” prefix.
+Paradata nodes (aka validation nodes) are a set of special nodes devoted to express the data provenance (how we know something). An example is the *property* "material" (= marble) of a capital known through a *document* (= i.e. a report of an excavation fromn the XIX century) node (aka source node) that is interpreted by a reseaecher through an *extractor* node (= "at page 10 a description clearly refers to that capital"). In the case of multiple documents (each with its own interpretation), a *combiner* node (because of this interpretation of the document A and because of this interpretation of the document B, then the material is marble). Each node within the paradata "family" has a unique name (as well as the USs) in order to be correctly referenced. They follow a name convention model (see Fig. 1): extractor nodes are composed by the name of the document they are related to (i.e. “D.01”) plus a sequence of numbers (i.e the first extractor of the Docuemnt 1 will be D.01.01). Combiner and document nodes uses respectively the “C” and “D.” prefix.
 
 .. image:: img/name-conventions.png
     :width: 200
@@ -9,7 +9,7 @@ Validation nodes (aka paradata nodes) are a set of special nodes devoted to expr
 
 .. _validation_nodes_examples_use:
 
-Validation nodes: examples of use
+Paradata nodes: examples of use
 ---------------------------------
 
 The USV is a hypothesis with three levels of certainty (structural-non structural-special find reintegration) that have some properties; these properties are based on: sources (nodes), interpretation of sources (extractor nodes) and reasoning (combiner nodes), following the DIKW schema Data-Information-Wisdom-Knowledge.
@@ -46,4 +46,4 @@ List of nodes used in the paragraphs 3.1 and 3.2:
 Taxonomy of the EM
 ------------------
 
-Validation nodes can have different values. These lists are not “closed”: users of the EM can add values in case of necessity.
+[DEPRECATED] Paradata nodes can have different values. These lists are not “closed”: users of the EM can add values in case of necessity.

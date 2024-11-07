@@ -1,7 +1,7 @@
-Paradata Grouping
-=================
+Paradata Nodes Group
+====================
 
-**Paradata Groups** are specialized node groups in the Extended Matrix that encapsulate all paradata related to a specific stratigraphic unit. Paradata refers to metadata about the data—information that provides context on how data was collected, processed, and interpreted. Grouping paradata enhances the organization and readability of the matrix.
+**Paradata Group** is a specialized node group in the Extended Matrix that encapsulate all paradata related to a specific stratigraphic unit (see the Paradata nodes section). Paradata refers to metadata about the data—information that provides context on how data was collected, processed, and interpreted. Grouping paradata enhances the organization and readability of the matrix.
 
 In the yED palette EM 1.5, paradata groups are visually distinguished by a text background color of `#ffcc99`. This consistent coloring helps users quickly identify paradata groups within the matrix.
 

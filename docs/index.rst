@@ -19,13 +19,13 @@ For the properties, see :ref:`properties`
    :caption: Contents
 
    usage
-   data_funnel
+   canvas
    nodes_intro
    stratigraphic_nodes
    activity
    validation_nodes
-   paradata_group
    properties
+   paradata_group
    alternate_hypotheses
    utils
 
