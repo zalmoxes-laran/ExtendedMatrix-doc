@@ -194,6 +194,8 @@ A **Stratigraphic Event Node** represents an event or action that precedes and r
 
 A stratigraphic event is the process or event that leads to the formation or alteration of a stratigraphic unit. It is distinct from the unit itself, which represents the result or outcome of the event. The event can be thought of as a precursor and can be paired with its resulting unit to provide a more detailed temporal range. This allows for the documentation of both the initial moment of action (e.g., the start of construction, a collapse, or an incision) and the final state (the resulting unit that persists over time).
 
+
+
 **Use Cases**
 
 The inclusion of **Stratigraphic Event Nodes** is useful in cases where the event is significant enough to be recorded, either because it marks a key phase in the creation of the unit or because it involves complex interactions such as displacement, rotation, or fragmentation. 
@@ -212,6 +214,9 @@ For example:
 4. **In case of bradisysm**:
    In the case of a bradisysm, a wall is no more in the same position as in the past: the present position is the found USM while the previous wall was simply 30 cm upper on the z axis: between such an original wall and the changed one (it changed the position due to the bradisysm) a Stratigraphic Event node is provided to ensure a full description of the bradisysm (using paradatat nodes).
 
+5. **Fire**:
+   Example in progress..
+
 **Properties**
 
 Each **Stratigraphic Event Node** can have the following properties:
@@ -221,6 +226,7 @@ Each **Stratigraphic Event Node** can have the following properties:
 - **Spatial Displacement**: If the event involves movement, this property records the spatial shift (e.g., distance fallen, rotation angle).
 - **Cause**: The reason for the event, such as construction, collapse, or erosion.
 - **Validation Source**: For events validated through simulations or analysis, this property records the source of validation.
+- **Visualization**: A simulation can provide a clear way to represent it.
 
 **Pairing with Stratigraphic Units**
 
