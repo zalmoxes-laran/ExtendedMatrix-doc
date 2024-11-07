@@ -16,7 +16,7 @@ Features of the Comment Node:
 - **Collaboration**: Facilitate communication among team members by annotating complex sections of the matrix.
 - **Flexibility**: You can place comment nodes anywhere within your matrix to provide context or clarification.
 
-.. image:: img/comment_example.png
+.. figure:: img/comment_example.png
    :width: 400px
    :align: center
    *Example of use of a comment Node within an Extended Matrix graph.*

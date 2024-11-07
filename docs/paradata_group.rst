@@ -1,7 +1,7 @@
 Paradata Nodes Group
 ====================
 
-.. image:: img/paradata_group_example.png
+.. figure:: img/paradata_group_example.png
    :width: 200px
    :align: left
    *Example of a paradata group in the Extended Matrix, showing nodes grouped together (background color `#ffcc99`).*
@@ -17,7 +17,7 @@ Collapsing Paradata Groups
 
 Paradata groups can be collapsed into a single node to enhance the matrix's readability. This is particularly useful when dealing with complex matrices that contain extensive paradata for multiple stratigraphic units.
 
-.. image:: img/paradata_collapsed.png
+.. figure:: img/paradata_collapsed.png
    :width: 200px
    :align: left
    *Paradata group collapsed into a single node for improved readability.*

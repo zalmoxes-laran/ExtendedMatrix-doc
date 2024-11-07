@@ -10,7 +10,7 @@ EM uses two sets of standardized nodes: Stratigraphic and validation nodes (see 
     To have a clearer idea about `WHY using stratigraphy is not archaeology-centered but it has a wider impact in the domain of Cultural Heritage <stratigraphic_approach.html>`_
 
 .. image:: img/EM_Reference_CHART_A.jpg
-    :width: 400
+    :width: 600
     :align: center
 
 
