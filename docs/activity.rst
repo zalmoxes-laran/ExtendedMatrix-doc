@@ -17,6 +17,7 @@ By grouping related actions into node groups, we can better interpret the sequen
 .. figure:: img/activity_example.png
    :width: 200px
    :align: left
+
    *Example of an activity node group in the Extended Matrix, showing nodes grouped together with a text background color of #ccffff*
 
 Understanding Activity Node Groups
