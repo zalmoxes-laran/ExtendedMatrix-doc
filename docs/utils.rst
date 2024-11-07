@@ -20,8 +20,7 @@ Example Usage:
    :alt: Example of a Comment Node in the Extended Matrix
    :width: 400px
    :align: center
-
-* Comment Node within an Extended Matrix diagram, illustrating how comments can be integrated into the matrix.*
+   *Comment Node within an Extended Matrix diagram, illustrating how comments can be integrated into the matrix.*
 
 Implementing Comment Nodes:
 
@@ -34,4 +33,3 @@ Benefits of Using Comment Nodes:
 - **Enhanced Clarity**: Provide additional explanations or context that may not be immediately apparent from the matrix structure alone.
 - **Collaboration**: Facilitate communication among team members by annotating complex sections of the matrix.
 - **Documentation**: Serve as in-line documentation, reducing the need to refer to external documents.
-
