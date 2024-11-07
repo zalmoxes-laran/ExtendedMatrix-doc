@@ -5,7 +5,15 @@ The Extended Matrix must be drawn within a canvas, which serves as the frame whe
 As in the Harris Matrix, the Y-axis represents time (newer elements at the top, older ones at the bottom). The canvas is typically divided into swimlanes (horizontal stripes) that define epochs or time periods. These divisions are established during the study of the context (for instance, when analyzing a Roman villa) as a preliminary, macroscopic organization of the archaeological remains (including elements that are no longer present or were never built) into different historical phases. This division can be iteratively modified at any time by adding new swimlanes and moving the necessary nodes to their correct epoch.
 The canvas can also be divided into sectors (vertical columns) to distinguish spatially separate areas of the site (such as the peristylium, room A, room B, fauces, etc.). At the top, there is a title that identifies the canvas. Formally, this title is a node and, like other nodes, can have a description (not mandatory) providing essential information.
 The canvas enables one of the most powerful features of the Extended Matrix formal language: the data funnel.
- 
+
+.. image:: /img/canvas_example.png
+   :alt: The canvas of the Extended Matrix, where all the nodes are drawn.
+   :width: 180px
+   :align: left
+
+* A) General Data, B) Local Data, and C) Specific Data are located.*
+
+
 Data Funnel Structure
 ---------------------
 
