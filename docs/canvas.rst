@@ -6,6 +6,7 @@ The Extended Matrix is drawn within a canvas, which serves as the frame where al
 .. figure:: img/canvas_example.png
    :width: 180px
    :align: left
+
    *The canvas of the Extended Matrix, where all the nodes are drawn.*
 
 As in the Harris Matrix, the Y-axis represents time (newer elements at the top, older ones at the bottom). The canvas is typically divided into swimlanes (horizontal stripes) that define epochs or time periods. These divisions are established during the study of the context (for instance, when analyzing a Roman villa) as a preliminary, macroscopic organization of the archaeological remains (including elements that are no longer present or were never built) into different historical phases. This division can be iteratively modified at any time by adding new swimlanes and moving the necessary nodes to their correct epoch.
@@ -20,6 +21,7 @@ The Extended Matrix utilizes a hierarchical data structure known as the **Data F
 .. figure:: img/data_funnel.png
    :width: 600px
    :align: center
+   
    *Data Funnel with: A) General Data, B) Local Data, and C) Specific Data are located.*
 
 1. General Background Data

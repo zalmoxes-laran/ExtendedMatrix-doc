@@ -10,4 +10,5 @@ Each time branch ereditates a defined start and end from the nodes it cluster, a
 .. figure:: img/TimeBranchNodeGroup.png
    :width: 400px
    :align: center
+   
    *Formalization of two alternative reconstructive hypotheses using time branches.*

@@ -44,6 +44,7 @@ Example
 .. figure:: img/B01.png
   :width: 400
   :align: center 
+  
   On top of a podium SU01 there is a SU02 (in situ), fragmented due to a -SU03 (destruction of the upper part of the column). A USV/s 100 hypothetical reconstruction is provisioned in order to restore the action of destruction -SU03.
 
 -----------------------
@@ -63,6 +64,7 @@ Example
 .. figure:: img/B02.png
   :width: 400
   :align: center 
+
   There are only the remains of a podium SU01. A USV/n 100 hypothetical reconstruction is provisioned (without physical destruction signs that prove the presence of a column).
 
 -----------------------
@@ -84,6 +86,7 @@ Example
 .. figure:: img/B03.png
   :width: 400
   :align: center 
+
   There are only the remains of a podium SU01. A USV/n 100 hypothetical reconstruction series of columns is provisioned (without physical destruction signs that prove the presence of a column). The series node allows to instance several USV/n at once.
 
 Example
@@ -92,6 +95,7 @@ Example
 .. figure:: img/B04.png
   :width: 400
   :align: center 
+
   On top of a podium SU01 there is a column SU02 (in situ) fragmented due to a -SU03 (destruction of the upper part of the column). A USV/s 100 hypothetical reconstruction is provisioned in order to restore the destruction’s action -SU03. A series USV/n 101 is provided in order to complete the peristasis of the temple.
 
 .. _sfnodes:
@@ -111,6 +115,7 @@ Example
 .. figure:: img/B05.png
   :width: 400
   :align: center 
+
   There are only the remains of a podium SU01 with a collapsed column SF01. A USV/n 100 hypothetical reconstruction is provisioned using the SF as a source. This kind of USV/n has a special status: see “USV and validation nodes” section on top of this page.
 
 Example 
@@ -119,6 +124,7 @@ Example
 .. figure:: img/B06.png
   :width: 400
   :align: center 
+
   There are only the remains of a podium SU01 with a collapsed column SF01 (special find 01). A USV/n 100 series hypothetical reconstruction of the colonnade is provisioned using the SF as a source.
 
 Cumulative example of different USV nodes used together
@@ -127,6 +133,7 @@ Cumulative example of different USV nodes used together
 .. figure:: img/B07.png
   :width: 400
   :align: center 
+  
   USV/s and USV/n are used together. Different -SU allow to propose different USV/s.
 
 .. _usd:

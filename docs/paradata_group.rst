@@ -4,6 +4,7 @@ Paradata Nodes Group
 .. figure:: img/paradata_group_example.png
    :width: 200px
    :align: left
+
    *Example of a paradata group in the Extended Matrix, showing nodes grouped together (background color `#ffcc99`).*
 
 **Paradata Group** is a specialized node group in the Extended Matrix that encapsulate all paradata related to a specific stratigraphic unit (see the Paradata nodes section). Paradata refers to metadata about the data—information that provides context on how data was collected, processed, and interpreted. Grouping paradata enhances the organization and readability of the matrix.
@@ -20,6 +21,7 @@ Paradata groups can be collapsed into a single node to enhance the matrix's read
 .. figure:: img/paradata_collapsed.png
    :width: 200px
    :align: left
+   
    *Paradata group collapsed into a single node for improved readability.*
 
 Connecting Paradata Groups to Stratigraphic Units

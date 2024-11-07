@@ -19,6 +19,7 @@ Features of the Comment Node:
 .. figure:: img/comment_example.png
    :width: 400px
    :align: center
+   
    *Example of use of a comment Node within an Extended Matrix graph.*
 
 Using Comment Nodes:
