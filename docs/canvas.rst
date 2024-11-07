@@ -39,7 +39,7 @@ The Extended Matrix utilizes a hierarchical data structure known as the **Data F
 
 **Objective**: To ensure that every node in the graph is coherently linked to a set of common properties, maintaining the integrity of the system and providing adequate granularity.
 
-1. Local Background Data
+2. Local Background Data
 ------------------------
 
 **Definition**: Local Background Data are information that apply only to a subset of stratigraphic nodes. These data include properties shared among certain nodes that belong to the same context or chronological period, defined by a shared temporal property.
@@ -50,7 +50,7 @@ The Extended Matrix utilizes a hierarchical data structure known as the **Data F
 
 **Objective**: To connect groups of nodes to a common temporal or functional context, simplifying the representation of multiple nodes sharing similar properties within a specific context.
 
-1. Specific Node Data
+3. Specific Node Data
 ---------------------
 
 **Definition**: Specific Node Data represent the unique information that applies to individual stratigraphic units. These data take precedence over Local Background Data and can override shared properties when necessary.

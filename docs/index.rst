@@ -11,7 +11,8 @@ The diagram shows the essential structure of Extended Matrix through its core co
 .. image:: img/EM_schema.png
    :width: 300px
    :align: left
-   *Core components of Extended Matrix: Language, Framework and Knowledge Graph.*
+   
+*Core components of Extended Matrix: Language, Framework and Knowledge Graph.*
 
 At the center, the s3Dgraphy Extended Matrix connects three fundamental elements: the Extended Matrix Language, which provides the formal notation system; the Extended Matrix Framework, which includes all necessary software tools; and the Multidimensional Knowledge Graph, which serves as the underlying graph database structure. These components work together to provide a comprehensive system for archaeological data management and interpretation.
 
