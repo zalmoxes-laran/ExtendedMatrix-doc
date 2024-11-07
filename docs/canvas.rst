@@ -4,7 +4,6 @@ Canvas
 The Extended Matrix is drawn within a canvas, which serves as the frame where all nodes and data are displayed, enabling their organization for a clear and effective representation of information.
 
 .. image:: img/canvas_example.png
-   :alt: The canvas of the Extended Matrix, where all the nodes are drawn.
    :width: 180px
    :align: left
    *The canvas of the Extended Matrix, where all the nodes are drawn.*
@@ -19,10 +18,9 @@ Data Funnel Structure
 The Extended Matrix utilizes a hierarchical data structure known as the **Data Funnel**. This structure organizes data into three levels of granularity, ensuring consistency, avoiding duplication, and providing detailed information where necessary.
 
 .. image:: img/data_funnel.png
-   :alt: Diagram illustrating the Data Funnel with General Data at the top, Local Data in the middle, and Specific Data at the bottom.
    :width: 600px
    :align: center
-   *A) General Data, B) Local Data, and C) Specific Data are located.*
+   *Data Funnel with: A) General Data, B) Local Data, and C) Specific Data are located.*
 
 1. General Background Data
 --------------------------

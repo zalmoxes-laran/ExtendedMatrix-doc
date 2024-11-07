@@ -17,7 +17,6 @@ Features of the Comment Node:
 - **Flexibility**: You can place comment nodes anywhere within your matrix to provide context or clarification.
 
 .. image:: img/comment_example.png
-   :alt: Example of a Comment Node in the Extended Matrix
    :width: 400px
    :align: center
    *Example of use of a comment Node within an Extended Matrix graph.*

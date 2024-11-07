@@ -15,11 +15,9 @@ Examples of activities include:
 By grouping related actions into node groups, we can better interpret the sequence and relationships between different stratigraphic units within an archaeological site.
 
 .. image:: img/activity_example.png
-   :alt: Example of an activity node group in the Extended Matrix, showing nodes grouped together with a text background color of #ccffff
    :width: 200px
    :align: left
-
-*(The image shows an example from the yED palette EM 1.5, illustrating an activity node group characterized by a text background color of `#ccffff`.)*
+  *Example of an activity node group in the Extended Matrix, showing nodes grouped together with a text background color of #ccffff*
 
 Understanding Activity Node Groups
 ----------------------------------
