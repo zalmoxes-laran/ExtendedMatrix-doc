@@ -10,7 +10,7 @@ Extended Matrix structure
 
 The diagram shows the essential structure of Extended Matrix through its core components.
 
-.. image:: /img/EM_schema.png
+.. image:: img/EM_schema.png
    :alt: Core components of Extended Matrix: Language, Framework and Knowledge Graph.
    :width: 200px
    :align: left
