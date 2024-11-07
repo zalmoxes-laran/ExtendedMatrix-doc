@@ -34,14 +34,17 @@ A Stratigraphic Unit indicates the result of an action that occurred at a specif
 
 .. _serusnode:
 
-1.2. Series of Stratigraphic Units - serSU
+1.2. Serial Stratigraphic Unit - serSU
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. image:: img/2D/serSU.png
   :width: 128px
   :align: left
 
-A series of Stratigraphic units 
+A Serial Stratigraphic Unit is employed when it is more practical and efficient to use a single unit to represent multiple serial elements of the same type. This approach is particularly useful for documenting architectural features such as a sequence of capitals, a series of column bases, a set of roof beams, or similar repetitive elements.
+This type of serial documentation is specifically used when the elements in the series are geometrically discontinuous - meaning they do not physically touch each other. Examples include multiple wall segments that are spatially separated, freestanding column bases, or other architectural elements that share similar characteristics but are not physically connected.
+The flexibility of this system allows for individual elements to be removed from the series and documented separately at any time, should they present unique characteristics or require detailed individual documentation. This might occur when an element shows distinctive decorative features, exhibits unusual wear patterns, or presents specific conservation issues that warrant individual attention.
+This method streamlines the documentation process while maintaining the ability to record detailed information when necessary, striking a balance between efficient recording and thorough archaeological documentation.
 
 .. _usd:
 
@@ -65,7 +68,6 @@ It connects to these properties:
 * material
 * color
 * etc..
-
 
 3. Virtual Stratigraphic Units (USV)
 ------------------------------------
