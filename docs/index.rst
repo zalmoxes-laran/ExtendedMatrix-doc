@@ -8,26 +8,28 @@ Extended Matrix structure
 
 .. _em_structure:
 
+The diagram shows the essential structure of Extended Matrix through its core components.
+
 .. image:: /img/EM_schema.png
    :alt: Core components of Extended Matrix: Language, Framework and Knowledge Graph.
    :width: 200px
    :align: left
    *Core components of Extended Matrix: Language, Framework and Knowledge Graph.*
 
-The diagram shows the essential structure of Extended Matrix through its core components. At the center, Extended Matrix connects three fundamental elements: the Extended Matrix Language, which provides the formal notation system; the Extended Matrix Framework, which includes all necessary software tools; and the Multidimensional Knowledge Graph, which serves as the underlying graph database structure. These components work together to provide a comprehensive system for archaeological data management and interpretation.
+At the center, Extended Matrix connects three fundamental elements: the Extended Matrix Language, which provides the formal notation system; the Extended Matrix Framework, which includes all necessary software tools; and the Multidimensional Knowledge Graph, which serves as the underlying graph database structure. These components work together to provide a comprehensive system for archaeological data management and interpretation.
 
 How can I start learning and using it ?
 ---------------------------------------
 
 Bare in mind that learning and using EM depends on your scope and your background. 
 
-You can just use EM to document your studies and your reconstruction
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+1. You can just use EM to document your studies and your reconstruction
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 it is reccommended to learn at least the EM language that is explained in this manual.
 
-If you want to connect your documentation to 3D models
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+2. If you want to connect your documentation to 3D models
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 it is a good idea to learn also some of the tools from the Extended Matrix Framework (EMF), starting from the EMtools for Blender. You can find the documentation `here <https://docs.extendedmatrix.org/projects/EM-tools/en/latest/index.html>`_.
 
@@ -35,8 +37,8 @@ it is a good idea to learn also some of the tools from the Extended Matrix Frame
 
    Tipically users can work in team splitting the effort between two or more members (i.e. one drawing the EM, one modelling in Blender). 
 
-If you want to improve your 3D survey
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+3. If you want to improve your 3D survey
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 namely the quality of 3D models, annotation of the survey process, etc.. consider to adopt the 3D Survey Collection suite (3DSC) for Blender and Metashape. You can find the documentation `here <https://docs.extendedmatrix.org/projects/3DSC/en/latest/>`_.
 
