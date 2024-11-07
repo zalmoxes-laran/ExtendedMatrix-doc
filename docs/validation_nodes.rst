@@ -5,7 +5,8 @@ Paradata nodes (aka validation nodes) are a set of special nodes devoted to expr
 
 .. image:: img/name-conventions.png
     :width: 200
-    :align: center 
+    :align: left
+    *Paradata nodes numbering rules* 
 
 .. _validation_nodes_examples_use:
 
