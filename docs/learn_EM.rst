@@ -4,7 +4,7 @@ Learn EM
 
 Bare in mind that learning and using EM depends on your scope and your background. 
 
-1. EM formal language (for samrt humanists)
+1. EM formal language (for smart humanists)
 -------------------------------------------
 
 You can just use EM to document your studies and your reconstruction: it is reccommended to learn at least the EM language (that can be done even with a pencil and a sheet of paper) as it is explained in this manual.
