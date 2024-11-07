@@ -32,6 +32,11 @@ In the Extended Matrix, activities are represented as **node groups** that encap
 
 - **Visual Consistency**: Using specific visual cues, such as the background color `#ccffff`, activity node groups are easily identifiable within the matrix.
 
+.. note::
+
+  The activity group typically includes both stratigraphic node and paradata ones. 
+
+
 Implementing Activity Node Groups in the Extended Matrix
 --------------------------------------------------------
 
@@ -39,11 +44,9 @@ When modeling activities:
 
 1. **Create an Activity Node Group**: Use the node grouping feature to encapsulate all related stratigraphic units within a single activity group.
 
-2. **Apply Visual Attributes**: Set the text background color to `#ccffff` (or the designated color) to visually distinguish the activity node group in the matrix.
+2. **Connect Related Units**: Include all relevant stratigraphic units in the activity node group to represent the complete scope of the activity.
 
-3. **Connect Related Units**: Include all relevant stratigraphic units in the activity node group to represent the complete scope of the activity.
-
-4. **Assign Temporal Data and Descriptions**: Define the time frame during which the activity took place and provide descriptive information about the activity.
+3. **Assign Temporal Data and Descriptions**: Define the time frame during which the activity took place and provide descriptive information about the activity.
 
 Example of an Activity Node Group
 ---------------------------------
@@ -68,9 +71,3 @@ Benefits of Activity Node Groups
 - **Enhanced Analytical Capabilities**: Facilitates querying and analyzing the dataset based on activities, enabling more focused research.
 
 - **Better Visualization**: The use of consistent visual cues, such as the background color `#ccffff`, enhances the readability and interpretability of the Extended Matrix.
-
-Conclusion
-----------
-
-Activity node groups play a vital role in the interpretation and representation of archaeological data within the Extended Matrix. By effectively grouping related nodes and applying consistent visual attributes, archaeologists can create more coherent and informative stratigraphic models, leading to deeper insights into past human activities.
-

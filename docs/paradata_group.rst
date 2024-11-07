@@ -1,18 +1,17 @@
 Paradata Nodes Group
 ====================
 
+.. image:: /img/paradata_group_example.png
+   :alt: Example of a paradata group in the Extended Matrix, showing nodes grouped together with a text background color of #ffcc99
+   :width: 200px
+   :align: left
+   *Paradata group example (background color `#ffcc99`).*
+
 **Paradata Group** is a specialized node group in the Extended Matrix that encapsulate all paradata related to a specific stratigraphic unit (see the Paradata nodes section). Paradata refers to metadata about the data—information that provides context on how data was collected, processed, and interpreted. Grouping paradata enhances the organization and readability of the matrix.
 
 In the yED palette EM 1.5, paradata groups are visually distinguished by a text background color of `#ffcc99`. This consistent coloring helps users quickly identify paradata groups within the matrix.
 
 An important feature of paradata groups is the ability to **collapse** them into a single node within yED. This functionality improves the readability of the matrix by reducing visual clutter when the detailed paradata information is not needed.
-
-.. image:: /img/paradata_group_example.png
-   :alt: Example of a paradata group in the Extended Matrix, showing nodes grouped together with a text background color of #ffcc99
-   :width: 200px
-   :align: left
-
-*The image shows an example from the yED palette EM 1.5, illustrating a paradata group characterized by a text background color of `#ffcc99`.*
 
 Collapsing Paradata Groups
 --------------------------
@@ -23,8 +22,7 @@ Paradata groups can be collapsed into a single node to enhance the matrix's read
    :alt: Collapsed paradata group represented as a single node
    :width: 200px
    :align: left
-
-*(The image shows a paradata group collapsed into a single node for improved readability.)*
+   *Paradata group collapsed into a single node for improved readability.*
 
 Connecting Paradata Groups to Stratigraphic Units
 -------------------------------------------------
