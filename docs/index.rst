@@ -6,8 +6,6 @@ Extended Matrix documentation
 Extended Matrix structure
 -------------------------
 
-.. _em_structure:
-
 The diagram shows the essential structure of Extended Matrix through its core components.
 
 .. image:: img/EM_schema.png
