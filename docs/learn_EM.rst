@@ -4,24 +4,24 @@ Learn EM
 
 Bare in mind that learning and using EM depends on your scope and your background. 
 
-1. You can just use EM to document your studies and your reconstruction
------------------------------------------------------------------------
+1. EM formal language (for humanists)
+-------------------------------------
 
-it is reccommended to learn at least the EM language (that can be done even with a pencil and a sheet of paper) as it is explained in this manual.
+You can just use EM to document your studies and your reconstruction: it is reccommended to learn at least the EM language (that can be done even with a pencil and a sheet of paper) as it is explained in this manual.
 
-1. If you want to connect your documentation to 3D models
----------------------------------------------------------
+2. Annotate stratigraphy on 3D models (humanists who crossed over to the dark side of the force)
+------------------------------------------------------------------------------------------------
 
-it is a good idea to learn also some of the tools from the Extended Matrix Framework (EMF), starting from the EMtools for Blender. You can find the documentation `here <https://docs.extendedmatrix.org/projects/EM-tools/en/latest/index.html>`_.
+If you want to connect your documentation to 3D models, it is a good idea to learn also some of the tools from the Extended Matrix Framework (EMF), starting from the EMtools for Blender. You can find the documentation `here <https://docs.extendedmatrix.org/projects/EM-tools/en/latest/index.html>`_.
 
 .. note::
 
    Tipically users can work in team splitting the effort between two or more members (i.e. one drawing the EM, one modelling in Blender). 
 
-3. If you want to improve your 3D survey
-----------------------------------------
+3. Prepare high-quality 3D models for EM workflows
+--------------------------------------------------
 
-namely the quality of 3D models, annotation of the survey process, etc.. consider to adopt the 3D Survey Collection suite (3DSC) for Blender and Metashape. You can find the documentation `here <https://docs.extendedmatrix.org/projects/3DSC/en/latest/>`_.
+To enhance your 3D survey quality, including model accuracy, survey process documentation, and metadata management, consider adopting the 3D Survey Collection suite (3DSC). This toolset integrates with Blender and Metashape, providing a comprehensive workflow for archaeological 3D documentation. The complete documentation is available `here <https://docs.extendedmatrix.org/projects/3DSC/en/latest/>`_.
 
 .. note::
 
