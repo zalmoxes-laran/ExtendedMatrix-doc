@@ -1,7 +1,7 @@
-Activity Grouping
-=================
+Activity Nodes Group
+====================
 
-**Activity Context** refers to groupings of interpretative actions that constitute a coherent set of activities related to a specific project. In the Extended Matrix, activities are always represented as **node groups**, which cluster related nodes together for better organization and visualization.
+**Activity** refers to a group of nodes that constitute a coherent set of actions related to a specific project. In the Extended Matrix, activities are always represented as **node groups**, which cluster related nodes together for better organization and visualization.
 
 These activity node groups are characterized by specific visual attributes to make them easily identifiable within the matrix. For instance, in the yED palette EM 1.5, activity node groups are displayed with a text background color of `#ccffff`.
 

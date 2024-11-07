@@ -1,7 +1,7 @@
-Validation Nodes of the EM
-==========================
+Validation Nodes
+================
 
-Validation nodes have a unique name (as well as the USs) in order to be correctly referenced. They follow a name convention model (see Fig. 1): extractor nodes are composed by a “D” plus a sequence of numbers  (i.e the first extractor of an EM will be #01). Combiner and document nodes uses respectively the “C” and “D.” prefix.
+Validation nodes (aka paradata nodes) are a set of special nodes devoted to express the data provenance (how we know something). An example is the *property* "material" (= marble) of a capital known through a *document* (= i.e. a report of an excavation fromn the XIX century) node (aka source node) that is interpreted by a reseaecher through an *extractor* node (= "at page 10 a description clearly refers to that capital"). In the case of multiple documents (each with its own interpretation), a *combiner* node (because of this interpretation of the document A and because of this interpretation of the document B, then the material is marble). Each node within the paradata "family" has a unique name (as well as the USs) in order to be correctly referenced. They follow a name convention model (see Fig. 1): extractor nodes are composed by the name of the document they are related to (i.e. “D.01”) plus a sequence of numbers (i.e the first extractor of the Docuemnt 1 will be D.01.01). Combiner and document nodes uses respectively the “C” and “D.” prefix.
 
 .. image:: img/name-conventions.png
     :width: 200
