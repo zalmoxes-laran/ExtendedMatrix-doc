@@ -103,19 +103,6 @@ Represents contrasting or mutually exclusive time branches in the documentation.
 
 .. _genericconnection:
 
-3.2. Generic Connection (generic_connection)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-.. image:: img/connectors/generic_connection.png
-   :width: 128px
-   :align: left
-
-Represents a non-specific connection between nodes when other specific relationship types don't apply.
-
-**Allowed Connections:**
-  * Source: Stratigraphic Unit, Property Node
-  * Target: Stratigraphic Unit, Property Node
-
 Technical Implementation Notes
 ------------------------------
 
