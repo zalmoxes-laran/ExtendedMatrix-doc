@@ -116,7 +116,7 @@ While the Extended Matrix formal language defines a single "provenance" connecto
 * When connecting an Extractor Node to a Document Node, it's processed as an "extracted_from" relationship
 * When connecting a Combiner Node to an Extractor Node, it's managed as a "combines" relationship
 
-This internal differentiation allows s3dgraphy to maintain appropriate validation rules and processing logic while presenting a simplified connection model to users.
+This internal differentiation allows s3dgraphy to maintain appropriate validation rules and processing logic while presenting a simplified connection model to users. The user has to do nothing, s3Dgrapy will take care of everything :-)
 
 Swimlanes and Groups in the Multi-Knowledge Graph (MKG)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -138,3 +138,4 @@ In the visualization of the Extended Matrix, swimlanes and groups are represente
    * This structure enables the representation of alternative interpretations or hypotheses about the stratigraphic sequence
 
 These internal representations allow s3dgraphy to maintain the logical structure of the Extended Matrix while providing an intuitive visual representation through swimlanes and groups in the user interface.
+

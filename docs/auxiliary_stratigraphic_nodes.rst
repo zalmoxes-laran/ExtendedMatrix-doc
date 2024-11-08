@@ -8,9 +8,23 @@ Auxiliary Stratigraphic Nodes help us better understand how layers of earth and 
 Continuity Node
 ---------------
 
-These show what happens when a stratigraphic unit ends. For example, when a wall collapses and is removed from the site, when wooden beams disappeared due to a fire or even during an excavation when a structure is destroyed (after it is fully documented).
+One aspect that remained inadequately addressed in the Matrix for many years was the method of expressing the lifespan of a stratigraphic unit—specifically, the duration between its creation and its destruction. Although various hypotheses and proposals have been put forward, the literature lacked a solution that was coherent with the Matrix's graph-based structure.
+
+.. image:: img/2D/continuity.png
+   :width: 128px
+   :align: left
+
+In the Extended Matrix (EM), this temporal continuity is expressed through a continuity node (represented by a black diamond), which marks the end of a stratigraphic unit's life cycle. For example, when a wall collapses and is removed from the site, when wooden beams disappeared due to a fire or even during an excavation when a structure is destroyed (after it is fully documented). The beginning of the unit's life is marked by the stratigraphic unit itself.
 
 
+This approach provides several advantages:
+
+1. **Graph Consistency**: The continuity node maintains the graph-based nature of the Matrix while adding temporal depth
+2. **Clear Temporal Boundaries**: It explicitly marks both the beginning (the stratigraphic unit) and end (the continuity node) of a unit's existence
+3. **Relationship Integration**: The node can participate in the stratigraphic sequence, allowing clear representation of how one unit's end relates to other units' beginnings or endings
+4. **Documentation Precision**: It enables precise documentation of when a unit ceased to function in its original capacity
+
+The introduction of the continuity node resolves a long-standing limitation in stratigraphic documentation, providing a formal way to represent not just the creation of stratigraphic units but their complete lifecycle within the archaeological record.
 
 .. _se:
 

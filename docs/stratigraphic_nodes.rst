@@ -21,7 +21,7 @@ These are tangible units that either still exist or have left clear stratigraphi
 
 .. _usnode:
 
-1.1. Stratigraphic Unit - US
+1.1. Stratigraphic Unit - US 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. image:: img/2D/US.png
