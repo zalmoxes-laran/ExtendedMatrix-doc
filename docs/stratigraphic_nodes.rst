@@ -136,8 +136,8 @@ These categories relate to anastylosis, where original architectural elements ha
 
 .. _sfnodes:
 
-4.1 SF - Special Find 
-~~~~~~~~~~~~~~~~~~~~~
+4.1 SF - Special Find (``SpecialFindNode``)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. image:: img/2D/SF.png
   :width: 128px
