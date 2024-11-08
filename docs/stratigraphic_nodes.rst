@@ -3,8 +3,8 @@ Stratigraphic Nodes
 
 .. _stratigraphicunits:
 
-General background on stratigraphic units
------------------------------------------
+General background on stratigraphic units (``StratigraphicNode``)
+-----------------------------------------------------------------
 
 A stratigraphic unit in some academic scholarships is also known as locus or context. It indicates the result of an action that occurred at a specific moment in time. The result (the construction of a wall, the destruction of a roof, is the silt deposited on top of structures following a flood, the chemical change of surfaces due to a fire) in turn have a life span that ends with the moment it is defunctionalized (destroyed, abandoned, buried). It has a spatio-temporal nature: temporal persistence of a geometry in a given point in space. When the position change, the US will change its nature.
 
@@ -21,7 +21,7 @@ These are tangible units that either still exist or have left clear stratigraphi
 
 .. _usnode:
 
-1.1. Stratigraphic Unit - US 
+1.1. SU - Stratigraphic Unit (``StratigraphicUnit``)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. image:: img/2D/US.png
@@ -32,8 +32,8 @@ A Stratigraphic Unit indicates the result of an action that occurred at a specif
 
 .. _serusnode:
 
-1.2. Serial Stratigraphic Unit - serSU
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+1.2. serSU - Serial Stratigraphic Unit (``SeriesOfStratigraphicUnit``)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. image:: img/2D/serSU.png
   :width: 128px
@@ -46,8 +46,8 @@ The flexibility of this system allows for individual elements to be removed from
 
 .. _usd:
 
-1. Documentary Stratigraphic Units (USD)
-----------------------------------------
+2. USD - Documentary Stratigraphic Units (``SeriesOfStratigraphicUnit``) 
+------------------------------------------------------------------------
 
 These units are known only through historical documentation. Their *existence* is verified through various historical sources considered reliable such as photographs, paintings and artistic representations, written descriptions, maps and plans, and oral histories. While not physically present, they can be reliably placed in the stratigraphic sequence based on documentary evidence. This category also includes repositioned elements (anastylosis) when their original position is confirmed by historical documentation.
 
@@ -65,7 +65,7 @@ It connects to these properties:
 * color
 * etc..
 
-1. Virtual Stratigraphic Units (USV)
+3. Virtual Stratigraphic Units (USV)
 ------------------------------------
 
 These represent elements that no longer exist and must be reconstructed. Their existence is inferred through presence of physical gaps on archaeological evidence, analysis of surrounding structures, architectural necessity, and comparative studies. Virtual units are essential for understanding the complete stratigraphic sequence, even though they cannot be directly observed. Their reconstruction requires careful analysis and interpretation of available evidence. 
@@ -74,8 +74,8 @@ They are divided into:
 
 .. _usvnodes:
 
-3.1 USV/s node:
-~~~~~~~~~~~~~~~
+3.1 USV/s - Structural Stratigraphic Unit (``StructuralVirtualStratigraphicUnit``)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. image:: img/2D/USVs.png
   :width: 128px
@@ -90,8 +90,8 @@ Structural Virtual Stratigraphic Unit, a reconstruction hypothesis based on an i
   Example: On top of a podium SU01 there is a SU02 (in situ), fragmented due to a -SU03 (destruction of the upper part of the column). A USV/s 100 hypothetical reconstruction is provisioned in order to restore the action of destruction -SU03.
 
 
-3.2 USV/n node:
-~~~~~~~~~~~~~~~
+3.2 USV/n - Non-Structural Stratigraphic unit (``NonStructuralVirtualStratigraphicUnit``)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. image:: img/2D/USVn.png
   :width: 128px
@@ -107,8 +107,8 @@ Non-structural Virtual Stratigraphic Unit, a reconstruction hypothesis based on 
 
 .. _usvseries:
 
-3.3 USV series node:
-~~~~~~~~~~~~~~~~~~~~
+3.3 serUSVn - Serial NonStructural Virtual Stratigraphic Unit (``SeriesOfNonStructuralVirtualStratigraphicUnit``)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. image:: img/2D/serUSV.png
   :width: 128px

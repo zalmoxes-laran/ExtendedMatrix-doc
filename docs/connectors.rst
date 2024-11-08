@@ -18,7 +18,7 @@ These connectors establish temporal relationships between stratigraphic units.
 
 .. _isbefore:
 
-1.1. Is Before (is_before)
+1.1. Is Before (``is_before``)
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. image:: img/connectors/is_before.png
@@ -33,7 +33,7 @@ Indicates a temporal sequence where one stratigraphic unit occurs before another
 
 .. _hassametime:
 
-1.2. Has Same Time (has_same_time)
+1.2. Has Same Time (``has_same_time``)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. image:: img/connectors/has_same_time.png
@@ -48,7 +48,7 @@ Indicates that two elements are contemporaneous, meaning they existed or were cr
 
 .. _changedfrom:
 
-1.3. Changed From (changed_from)
+1.3. Changed From (``changed_from``)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. image:: img/connectors/changed_from.png
@@ -66,7 +66,7 @@ Represents the transformation of an object over time, indicating that one strati
 
 .. _provenance:
 
-2.1. Provenance (provenance)
+2.1. Provenance (``provenance``)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. image:: img/connectors/provenance.png
@@ -88,7 +88,7 @@ These connectors handle specific cases and general relationships.
 
 .. _contrastswith:
 
-3.1. Contrasts With (contrasts_with)
+3.1. Contrasts With (``contrasts_with``)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. image:: img/connectors/contrasts_with.png
