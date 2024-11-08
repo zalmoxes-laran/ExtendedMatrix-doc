@@ -1,10 +1,7 @@
-Extended Matrix Connectors
-=========================
+Connectors
+==========
 
 .. _emconnectors:
-
-General background on Extended Matrix connections
--------------------------------------------------
 
 In the Extended Matrix formal language, connectors (or edges) represent relationships between different nodes in the stratigraphic documentation. These connections help establish temporal sequences, show relationships between elements, and document data provenance. Each connector type has specific rules about which kinds of nodes it can connect, ensuring that the resulting graph maintains logical consistency.
 
@@ -119,7 +116,7 @@ While the Extended Matrix formal language defines a single "provenance" connecto
 This internal differentiation allows s3dgraphy to maintain appropriate validation rules and processing logic while presenting a simplified connection model to users. The user has to do nothing, s3Dgrapy will take care of everything :-)
 
 Swimlanes and Groups in the Multi-Knowledge Graph (MKG)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 In the visualization of the Extended Matrix, swimlanes and groups are represented as visual containers. However, s3dgraphy internally interprets these as nodes with specific connections to the elements they contain:
 
