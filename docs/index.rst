@@ -34,10 +34,12 @@ At the center, the s3Dgraphy Extended Matrix connects three fundamental elements
    canvas
    nodes_intro
    stratigraphic_nodes
+   auxiliary_stratigraphic_nodes
    activity
    validation_nodes
    properties
    paradata_group
+   connectors
    alternate_hypotheses
    utils
 
