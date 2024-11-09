@@ -6,7 +6,7 @@ Paradata Nodes
 Introduction
 -----------
 
-Paradata nodes (also known as validation nodes) are a specialized set of nodes designed to express data provenance—documenting how we know what we know about stratigraphic units. These nodes form a "family" that works together to create a clear chain of evidence and interpretation.
+Paradata nodes (``ParadataNode``, also known as validation nodes) are a specialized set of nodes designed to express data provenance—documenting how we know what we know about stratigraphic units. These nodes form a "family" that works together to create a clear chain of evidence and interpretation.
 
 .. admonition:: Example
    :class: example
@@ -61,14 +61,14 @@ Paradata Node types
 
 .. _propertynode:
 
-Property Node
+Property Node (``PropertyNode``)
 ~~~~~~~~~~~~
 
 .. image:: img/2D/property.png
    :width: 128px
    :align: left
 
-A property node represents a specific characteristic or attribute of a stratigraphic unit. The name of a property corresponds to its type (e.g., "material", "height", "length").
+A property node represents a specific characteristic or attribute of a stratigraphic unit. The name of a property corresponds to its type (e.g., ``material``, ``height``, ``length``).
 
 .. note::
    For a complete taxonomy of property types and their relationships, please refer to the `Properties (Qualia) section of this documentation <https://docs.extendedmatrix.org/en/1.5.0dev/paradata_nodes.html>`_.
@@ -77,9 +77,7 @@ A property node represents a specific characteristic or attribute of a stratigra
    :class: example
 
    For a column base, properties might include:
-   * material = marble
-   * height = 45cm
-   * style = Doric
+   ``material`` = marble; ``height`` = 45cm; ``style`` = Doric
 
 .. admonition:: Technical Tip
    :class: technical-tip
@@ -88,7 +86,7 @@ A property node represents a specific characteristic or attribute of a stratigra
 
 .. _documentnode:
 
-Document Node
+Document Node (``DocumentNode``)
 ~~~~~~~~~~~~
 
 .. image:: img/2D/document.png
@@ -108,7 +106,7 @@ A document node represents primary sources that provide evidence about stratigra
 
 .. _extractornode:
 
-Extractor Node
+Extractor Node (``ExtractorNode``)
 ~~~~~~~~~~~~~
 
 .. image:: img/2D/extractor.png
@@ -124,7 +122,7 @@ An extractor node captures how researchers interpret information from source doc
 
 .. _combinernode:
 
-Combiner Node
+Combiner Node (``CombinerNode``)
 ~~~~~~~~~~~~
 
 .. image:: img/2D/combiner.png
@@ -202,8 +200,8 @@ Multiple Source Validation
 
    Example of complete paradata chain (Draft diagram - to be updated)
 
-Implementation Details
--------------------
+Name conventions
+----------------
 
 .. admonition:: Data Format
    :class: data-format
@@ -212,7 +210,7 @@ Implementation Details
    * Document nodes: "D.01", "D.02", etc.
    * Extractor nodes: [Document ID].[sequence], e.g., "D.01.01"
    * Combiner nodes: "C.01", "C.02", etc.
-   * Property nodes: [Unit ID].[property name], e.g., "USM100.height"
+   * Property nodes: same name as the property (height, material, etc..)
 
 Best Practices
 ------------
