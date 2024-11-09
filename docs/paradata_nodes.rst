@@ -71,7 +71,7 @@ Property Node
 A property node represents a specific characteristic or attribute of a stratigraphic unit. The name of a property corresponds to its type (e.g., "material", "height", "length").
 
 .. note::
-   For a complete taxonomy of property types and their relationships, please refer to the Properties and Qualia section of this documentation.
+   For a complete taxonomy of property types and their relationships, please refer to the `Properties (Qualia) section of this documentation <https://docs.extendedmatrix.org/en/1.5.0dev/paradata_nodes.html>`_.
 
 .. admonition:: Example
    :class: example
