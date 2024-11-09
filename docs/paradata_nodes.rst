@@ -11,40 +11,62 @@ Paradata nodes (also known as validation nodes) are a specialized set of nodes d
 .. admonition:: Example
    :class: example
 
-   Consider a Roman wall visible inside a modern building's basement. A user might need to document:
+   Consider a Roman wall visible inside a modern building's basement. A user needs to document various properties, each sitting at a different point along a gradient of certainty and evidence:
 
-   **Directly Observable Properties**:
-   * Height and width through direct measurement
-   * Surface material through visual inspection
-   * Construction technique through surface analysis
+   **Direct Observation**
+   * Surface material visible and touchable
+   * Exposed height measurable with tape
+   * Construction technique visible on surface
 
-   **Reconstructive Properties**:
-   * Wall thickness determined through georadar scanning
-   * Original height based on comparative analysis
-   * Complete layout based on historical documentation
+   **Instrumental Detection**
+   * Wall thickness measured through georadar
+   * Internal structure revealed by thermography
+   * Foundation depth from archaeological probes
 
-   Paradata nodes can systematically document both types of properties, making explicit:
-   * What is directly observed
-   * What is determined through instruments
-   * What is reconstructed through interpretation
-   * The certainty level of each property
-   * The methods and sources used for each determination
+   **Documentary Evidence**
+   * Original height suggested by historical descriptions
+   * Previous restoration work from archival records
+   * Past modifications from historical photographs
 
-This unified approach to documentation:
-* Maintains consistency between observed and reconstructed elements
-* Handles "grey zones" where properties mix direct and indirect evidence
-* Explicitly tracks how each property was determined
-* Supports different levels of certainty in documentation
-* Allows for transparent validation of both existing and reconstructed elements
+   **Comparative Analysis**
+   * Construction period inferred from technique
+   * Original function based on similar structures
+   * Architectural details reconstructed from parallels
+
+   **Complete Hypothesis**
+   * Full architectural reconstruction
+   * Original appearance and decoration
+   * Integration with surrounding structures
+
+Each property can be documented with its own paradata chain, regardless of where it falls on this gradient. This flexible approach allows:
+* Documentation chains that reflect the real complexity of knowledge acquisition
+* Multiple methods of determination for the same property
+* Clear tracking of evidence strength and certainty levels
+* Integration of physical evidence and interpretative reconstruction
+* Unified treatment of study and reconstruction
+
+The power of paradata nodes lies in their ability to model plastically around the phenomenon being studied or reconstructed, breaking down artificial barriers between observation and interpretation. A single stratigraphic unit might have properties documented through various means, each with its own evidence chain:
+
+.. admonition:: Technical Tip
+   :class: technical-tip
+
+   The paradata chains adapt to each property's nature:
+   * Direct measurements might have shorter, simpler chains
+   * Reconstructed elements typically have more complex chains with multiple sources
+   * Some properties might have parallel chains representing different interpretative approaches
 
 
-Node Types in Archaeological Context
----------------------------------
+Paradata Node types
+-------------------
 
 .. _propertynode:
 
 Property Node
 ~~~~~~~~~~~~
+
+.. image:: img/2D/property.png
+   :width: 128px
+   :align: left
 
 A property node represents a specific characteristic or attribute of a stratigraphic unit. The name of a property corresponds to its type (e.g., "material", "height", "length").
 
@@ -69,6 +91,10 @@ A property node represents a specific characteristic or attribute of a stratigra
 Document Node
 ~~~~~~~~~~~~
 
+.. image:: img/2D/document.png
+   :width: 128px
+   :align: left
+
 A document node represents primary sources that provide evidence about stratigraphic units.
 
 .. admonition:: Example
@@ -85,6 +111,10 @@ A document node represents primary sources that provide evidence about stratigra
 Extractor Node
 ~~~~~~~~~~~~~
 
+.. image:: img/2D/extractor.png
+   :width: 128px
+   :align: left
+
 An extractor node captures how researchers interpret information from source documents.
 
 .. admonition:: Example
@@ -96,6 +126,10 @@ An extractor node captures how researchers interpret information from source doc
 
 Combiner Node
 ~~~~~~~~~~~~
+
+.. image:: img/2D/combiner.png
+   :width: 128px
+   :align: left
 
 A combiner node represents the synthesis of multiple interpretations to support a single conclusion.
 
@@ -144,13 +178,29 @@ Multiple Source Validation
    * Synthesis: Combined measurements determine total length
    * Property: Final length attribution
 
+.. figure:: img/EM_Reference_CHART_C_a.jpg
+   :width: 400
+   :align: center
+   :alt: Single source example
+   :name: single_source_example
+
+   Example of property validation using a single source
+
+.. figure:: img/EM_Reference_CHART_C_b.jpg
+   :width: 400
+   :align: center
+   :alt: Multiple sources example
+   :name: multiple_sources_example
+
+   Example of property validation using multiple sources
+
 .. figure:: img/EM_Reference_CHART_C_graph.jpg
    :width: 400
    :align: center
    :alt: Paradata chain example
    :name: paradata_chain
 
-   Example of paradata chain (Draft diagram - to be updated)
+   Example of complete paradata chain (Draft diagram - to be updated)
 
 Implementation Details
 -------------------
