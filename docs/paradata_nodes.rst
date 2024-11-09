@@ -179,7 +179,7 @@ Multiple Source Validation
    * Property: Final length attribution
 
 .. figure:: img/EM_Reference_CHART_C_a.jpg
-   :width: 400
+   :width: 600
    :align: center
    :alt: Single source example
    :name: single_source_example
@@ -187,7 +187,7 @@ Multiple Source Validation
    Example of property validation using a single source
 
 .. figure:: img/EM_Reference_CHART_C_b.jpg
-   :width: 400
+   :width: 600
    :align: center
    :alt: Multiple sources example
    :name: multiple_sources_example
@@ -195,7 +195,7 @@ Multiple Source Validation
    Example of property validation using multiple sources
 
 .. figure:: img/EM_Reference_CHART_C_graph.jpg
-   :width: 400
+   :width: 600
    :align: center
    :alt: Paradata chain example
    :name: paradata_chain
