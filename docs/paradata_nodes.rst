@@ -92,7 +92,7 @@ Document Node
 ~~~~~~~~~~~~
 
 .. image:: img/2D/document.png
-   :width: 128px
+   :width: 64px
    :align: left
 
 A document node represents primary sources that provide evidence about stratigraphic units.
@@ -112,7 +112,7 @@ Extractor Node
 ~~~~~~~~~~~~~
 
 .. image:: img/2D/extractor.png
-   :width: 128px
+   :width: 90px
    :align: left
 
 An extractor node captures how researchers interpret information from source documents.
@@ -128,7 +128,7 @@ Combiner Node
 ~~~~~~~~~~~~
 
 .. image:: img/2D/combiner.png
-   :width: 128px
+   :width: 90px
    :align: left
 
 A combiner node represents the synthesis of multiple interpretations to support a single conclusion.
