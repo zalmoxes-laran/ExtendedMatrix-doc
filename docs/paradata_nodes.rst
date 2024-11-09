@@ -14,23 +14,23 @@ Paradata nodes (also known as validation nodes) are a specialized set of nodes d
    Consider a Roman wall visible inside a modern building's basement. A user needs to document various properties, each sitting at a different point along a gradient of certainty and evidence:
 
    **Direct Observation**
-   * Surface material visible and touchable
-   * Exposed height measurable with tape
+   * Surface ``material`` visible and touchable
+   * Exposed ``height`` measurable with tape
    * Construction technique visible on surface
 
    **Instrumental Detection**
-   * Wall thickness measured through georadar
+   * Wall ``thickness`` measured through georadar
    * Internal structure revealed by thermography
    * Foundation depth from archaeological probes
 
    **Documentary Evidence**
-   * Original height suggested by historical descriptions
+   * Original ``height`` suggested by historical descriptions
    * Previous restoration work from archival records
    * Past modifications from historical photographs
 
    **Comparative Analysis**
-   * Construction period inferred from technique
-   * Original function based on similar structures
+   * Construction period (``start_time``) inferred from technique
+   * Original ``function`` based on similar structures
    * Architectural details reconstructed from parallels
 
    **Complete Hypothesis**
@@ -38,7 +38,7 @@ Paradata nodes (also known as validation nodes) are a specialized set of nodes d
    * Original appearance and decoration
    * Integration with surrounding structures
 
-Each property can be documented with its own paradata chain, regardless of where it falls on this gradient. This flexible approach allows:
+Each ``property`` can be documented with its own paradata chain, regardless of where it falls on this gradient. This flexible approach allows:
 * Documentation chains that reflect the real complexity of knowledge acquisition
 * Multiple methods of determination for the same property
 * Clear tracking of evidence strength and certainty levels
