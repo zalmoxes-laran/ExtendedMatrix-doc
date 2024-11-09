@@ -36,7 +36,7 @@ At the center, the s3Dgraphy Extended Matrix connects three fundamental elements
    stratigraphic_nodes
    auxiliary_stratigraphic_nodes
    activity
-   validation_nodes
+   paradata_nodes
    qualia
    paradata_group
    connectors

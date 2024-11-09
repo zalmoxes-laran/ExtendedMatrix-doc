@@ -1,5 +1,5 @@
-Archaeological Properties and Qualia
-=================================
+Properties (Qualia)
+===================
 
 .. _properties_and_qualia:
 

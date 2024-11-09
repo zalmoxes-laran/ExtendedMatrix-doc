@@ -11,7 +11,32 @@ Paradata nodes (also known as validation nodes) are a specialized set of nodes d
 .. admonition:: Example
    :class: example
 
-   When an archaeologist documents a marble capital, they might need to support their assertions about its material, decoration, or dimensions with various sources and interpretations. Paradata nodes help track this chain of evidence systematically.
+   Consider a Roman wall visible inside a modern building's basement. A user might need to document:
+
+   **Directly Observable Properties**:
+   * Height and width through direct measurement
+   * Surface material through visual inspection
+   * Construction technique through surface analysis
+
+   **Reconstructive Properties**:
+   * Wall thickness determined through georadar scanning
+   * Original height based on comparative analysis
+   * Complete layout based on historical documentation
+
+   Paradata nodes can systematically document both types of properties, making explicit:
+   * What is directly observed
+   * What is determined through instruments
+   * What is reconstructed through interpretation
+   * The certainty level of each property
+   * The methods and sources used for each determination
+
+This unified approach to documentation:
+* Maintains consistency between observed and reconstructed elements
+* Handles "grey zones" where properties mix direct and indirect evidence
+* Explicitly tracks how each property was determined
+* Supports different levels of certainty in documentation
+* Allows for transparent validation of both existing and reconstructed elements
+
 
 Node Types in Archaeological Context
 ---------------------------------
