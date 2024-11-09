@@ -3,183 +3,168 @@ Paradata Nodes
 
 .. _paradatanodes:
 
-General background on paradata nodes
-----------------------------------
+Introduction
+-----------
 
-Paradata nodes (also known as validation nodes) are a specialized set of nodes designed to express data provenance—documenting how we know what we know about stratigraphic units. These nodes form a "family" that works together to create a clear chain of evidence and interpretation, following the DIKW (Data-Information-Knowledge-Wisdom) hierarchy.
+Paradata nodes (also known as validation nodes) are a specialized set of nodes designed to express data provenance—documenting how we know what we know about stratigraphic units. These nodes form a "family" that works together to create a clear chain of evidence and interpretation.
 
-Each node within the paradata family must have a unique identifier to enable precise referencing within the Extended Matrix. These identifiers follow specific naming conventions detailed under each node type.
+.. admonition:: Example
+   :class: example
 
-Node Types
----------
+   When an archaeologist documents a marble capital, they might need to support their assertions about its material, decoration, or dimensions with various sources and interpretations. Paradata nodes help track this chain of evidence systematically.
 
-
-1. Property Node
-----------------
+Node Types in Archaeological Context
+---------------------------------
 
 .. _propertynode:
 
-.. image:: img/2D/property.png
-   :width: 128px
-   :align: left
+Property Node
+~~~~~~~~~~~~
 
-A property node represents a specific characteristic or attribute of a stratigraphic unit. Examples include material composition, dimensions, color, or any other measurable or observable property.
+A property node represents a specific characteristic or attribute of a stratigraphic unit. The name of a property corresponds to its type (e.g., "material", "height", "length").
 
-**Naming Convention:**
-  The name of a property node corresponds to the type of property or qualia it represents (e.g., "material", "height", "length", "color"). s3Dgraphy automatically generates unique identifiers by combining the ID of the connected stratigraphic unit with the property name.
+.. note::
+   For a complete taxonomy of property types and their relationships, please refer to the Properties and Qualia section of this documentation.
 
-**Examples:**
-  * "USM100.height" for the height property of stratigraphic unit USM100
-  * "SF10.length" for the length property of special find SF10
-  * "USV50.material" for the material property of virtual stratigraphic unit USV50
+.. admonition:: Example
+   :class: example
 
-This naming approach ensures that:
-1. Properties are consistently categorized by their type
-2. Each property instance is uniquely identified in relation to its stratigraphic unit
-3. The relationship between properties and units is immediately clear from the identifier
+   For a column base, properties might include:
+   * material = marble
+   * height = 45cm
+   * style = Doric
 
-**Usage Example:**
-  Property "material = marble" associated with a capital
+.. admonition:: Technical Tip
+   :class: technical-tip
 
-
-2. Document Node
----------------
+   s3Dgraphy automatically generates unique identifiers by combining the ID of the connected stratigraphic unit with the property name (e.g., "USM100.height", "SF10.material").
 
 .. _documentnode:
 
-.. image:: img/2D/document.png
-   :width: 128px
-   :align: left
+Document Node
+~~~~~~~~~~~~
 
-Also known as a source node, a document node represents the primary source of information. This could be an excavation report, historical document, photograph, or any other form of documentation that provides evidence about a stratigraphic unit.
+A document node represents primary sources that provide evidence about stratigraphic units.
 
-**Naming Convention:**
-  * Prefix: "D."
-  * Example: "D.01" for the first document
+.. admonition:: Example
+   :class: example
 
-**Usage Example:**
-  An excavation report from the 19th century describing a marble capital
-
-1. Extractor Node
-----------------
+   Common document types include:
+   * Excavation reports
+   * Historical photographs
+   * Ancient texts
+   * Survey drawings
 
 .. _extractornode:
 
-.. image:: img/nodes/extractor.png
-   :width: 128px
-   :align: left
+Extractor Node
+~~~~~~~~~~~~~
 
-An extractor node represents the interpretation of information from a document node by a researcher. It captures the specific way in which information from a source is understood and applied to understanding a stratigraphic unit.
+An extractor node captures how researchers interpret information from source documents.
 
-**Naming Convention:**
-  * Composed of the related document name plus a sequence number
-  * Example: "D.01.01" for the first extraction from Document 1
+.. admonition:: Example
+   :class: example
 
-**Usage Example:**
-  "At page 10 of document D.01, a description clearly refers to that capital"
-
-4. Combiner Node
----------------
+   An archaeologist reading a 19th-century excavation report might note: "The description on page 10 clearly identifies this capital as being made of Pentelic marble, based on the crystalline structure described."
 
 .. _combinernode:
 
-.. image:: img/nodes/combiner.png
-   :width: 128px
-   :align: left
+Combiner Node
+~~~~~~~~~~~~
 
-A combiner node represents the synthesis of multiple interpretations from different sources. It is used when a property or characteristic is determined through the consideration of multiple pieces of evidence.
+A combiner node represents the synthesis of multiple interpretations to support a single conclusion.
 
-**Naming Convention:**
-  * Prefix: "C."
-  * Example: "C.01" for the first combiner node
+.. admonition:: Example
+   :class: example
 
-**Usage Example:**
-  "Based on the interpretation of document A and the interpretation of document B, we can conclude the material is marble"
+   An archaeologist might combine:
+   * A historical photograph showing column dimensions
+   * An excavation report describing material
+   * A comparative analysis of similar structures
+   To establish comprehensive documentation of a column's properties.
 
-
-Working Together: Practical Examples
+Working Together: The Paradata Chain
 ---------------------------------
 
-1. Single Source Property Validation
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+.. admonition:: Example
+   :class: example
 
-.. figure:: img/EM_Reference_CHART_C_a.jpg
-   :width: 400
-   :align: center
+   Consider documenting a fragmentary lintel:
 
-Consider a fragmentary lintel (SU003) with a reconstructed USV/s 100. A "decoration" property is established through:
-* Document Node (D.01): A photograph of the Temple of Mars in Rome
-* Extractor Node (D.01.01): Interpretation focusing on relevant decorative elements
-* Property Node (P.01): Final decoration attribution
+   1. **Physical Evidence**: Fragmentary lintel (SU003)
+   2. **Source**: Historical photograph of Temple of Mars, Rome (D01)
+   3. **Interpretation**: Analysis of decorative elements visible in photograph
+   4. **Property**: Decoration style attribution
 
-This example demonstrates how a single source can be used to validate a property of a virtual reconstruction.
+.. admonition:: Technical Tip
+   :class: technical-tip
 
-2. Multiple Source Property Validation
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   The paradata chain follows the DIKW (Data-Information-Knowledge-Wisdom) hierarchy:
+   * Data: Raw sources (Document Nodes)
+   * Information: Interpreted sources (Extractor Nodes)
+   * Knowledge: Combined interpretations (Combiner Nodes)
+   * Wisdom: Applied understanding (Property Nodes)
 
-.. figure:: img/EM_Reference_CHART_C_b.jpg
-   :width: 400
-   :align: center
+Multiple Source Validation
+------------------------
 
-In a more complex case, consider:
-* Physical elements: fragmentary lintel (SU003) atop two columns (SU001, SU002)
-* Virtual reconstruction: USV/s 100
-* Properties to validate: length and decoration
+.. admonition:: Example
+   :class: example
 
-The length property is particularly interesting as it's derived from two sources:
-* Document Nodes (D.01, D.02): Position measurements of both columns
-* Extractor Nodes: Interpretations of measurements
-* Combiner Node: Synthesis of measurements to determine total length
-* Property Node: Final length attribution
+   Complex properties often require multiple sources:
 
-Certainty Levels in Virtual Reconstructions
-----------------------------------------
-
-The Extended Matrix recognizes three levels of certainty in virtual reconstructions (USV):
-
-1. **Structural (USV/s)**
-   * Highest certainty level
-   * Based on physical evidence and clear stratigraphic relationships
-   * Properties typically supported by direct archaeological evidence
-
-2. **Non-structural (USV/n)**
-   * Medium certainty level
-   * Based on comparative analysis and architectural rules
-   * Properties often supported by multiple indirect sources
-
-3. **Special Find Reintegration (VSF)**
-   * Specific certainty level for repositioned elements
-   * Based on archaeological finds and architectural analysis
-   * Properties validated through both direct and comparative evidence
-
-Best Practices
--------------
-
-1. **Unique Identification**
-   * Ensure each node has a unique identifier following the naming conventions
-   * Use consistent prefixes (P., D., C.) for easy identification
-
-2. **Clear Documentation**
-   * Document the rationale for each extraction and combination
-   * Maintain clear references to specific sections or pages in source documents
-
-3. **Chain Integrity**
-   * Maintain clear connections between related nodes
-   * Document any assumptions or uncertainties in interpretations
-
-4. **Version Control**
-   * Track changes to interpretations over time
-   * Document when and why combinations of evidence are updated
-
-Implementation in Extended Matrix
-------------------------------
+   * Physical elements: Fragmentary lintel (SU003) atop two columns
+   * Sources: Position measurements of both columns
+   * Interpretation: Analysis of spatial relationships
+   * Synthesis: Combined measurements determine total length
+   * Property: Final length attribution
 
 .. figure:: img/EM_Reference_CHART_C_graph.jpg
    :width: 400
    :align: center
+   :alt: Paradata chain example
+   :name: paradata_chain
 
-The example above shows a complete paradata chain, demonstrating how different node types work together to validate properties of virtual reconstructions. This implementation follows the DIKW hierarchy:
-* Data: Raw sources (Document Nodes)
-* Information: Interpreted sources (Extractor Nodes)
-* Knowledge: Combined interpretations (Combiner Nodes)
-* Wisdom: Applied understanding (Property Nodes)
+   Example of paradata chain (Draft diagram - to be updated)
+
+Implementation Details
+-------------------
+
+.. admonition:: Data Format
+   :class: data-format
+
+   Node naming conventions:
+   * Document nodes: "D.01", "D.02", etc.
+   * Extractor nodes: [Document ID].[sequence], e.g., "D.01.01"
+   * Combiner nodes: "C.01", "C.02", etc.
+   * Property nodes: [Unit ID].[property name], e.g., "USM100.height"
+
+Best Practices
+------------
+
+1. **Documentation Chain Integrity**
+   * Maintain clear links between all nodes in the chain
+   * Document reasoning at each interpretation step
+   * Preserve connection to original sources
+
+2. **Multiple Source Handling**
+   * Use combiner nodes when synthesizing multiple sources
+   * Document conflicts or discrepancies between sources
+   * Explain reasoning for preferring certain interpretations
+
+3. **Property Documentation**
+   * Link properties to supporting evidence
+   * Document certainty levels
+   * Note alternative interpretations when relevant
+
+References
+---------
+
+The paradata chain concept is grounded in the DIKW (Data-Information-Knowledge-Wisdom) hierarchy:
+
+* Ackoff, R. L. (1989). "From Data to Wisdom". Journal of Applied Systems Analysis, 16(1), pp. 3-9.
+
+.. admonition:: Technical Note
+   :class: technical-tip
+
+   For details on implementing these concepts in s3Dgraphy and integration with other systems, please refer to the Technical Documentation section.
