@@ -41,6 +41,7 @@ At the center, the s3Dgraphy Extended Matrix connects three fundamental elements
    paradata_group
    connectors
    alternate_hypotheses
+   data_funnel
    utils
 
 .. toctree::
