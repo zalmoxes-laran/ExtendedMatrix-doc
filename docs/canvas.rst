@@ -4,7 +4,7 @@ Canvas
 The Extended Matrix is drawn within a canvas, which serves as the frame where all nodes and data are displayed, enabling their organization for a clear and effective representation of information.
 
 .. figure:: img/canvas_example.png
-   :width: 400px
+   :width: 300px
    :align: left
 
    *The canvas where all the nodes are drawn.*
