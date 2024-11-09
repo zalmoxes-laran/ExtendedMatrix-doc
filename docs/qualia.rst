@@ -1,207 +1,196 @@
 Properties (Qualia)
 ===================
 
-.. _properties_and_qualia:
+.. _qualia:
 
 Introduction
 -----------
 
-The Extended Matrix uses a structured system of properties based on philosophical qualia (Pustejovsky, 1995) and adapted for archaeological documentation. This system recognizes both fundamental properties and hierarchical relationships between properties, allowing for flexible and precise documentation of archaeological findings.
+The Extended Matrix adopts and extends Pustejovsky's qualia theory to create a comprehensive system for documenting both objective and subjective properties in archaeological documentation. While the original qualia structure provides a solid foundation for describing object properties, the Extended Matrix extends this framework to handle the specific needs of archaeological documentation, including temporal perceptions and degrees of certainty.
+
+Original Qualia Framework
+-----------------------
+
+Pustejovsky (1995) defined four fundamental qualia roles:
+
+1. **Formal quale**: What kind of thing is it?
+2. **Constitutive quale**: What is it made of?
+3. **Telic quale**: What is it for?
+4. **Agentive quale**: How did it come into being?
+
+.. admonition:: Example
+   :class: example
+
+   In Pustejovsky's original framework, a column might be described as:
+   * Formal: A vertical architectural support element
+   * Constitutive: Made of marble
+   * Telic: Supports the entablature
+   * Agentive: Carved from a single block
+
+Extended Matrix Qualia System
+--------------------------
+
+The Extended Matrix expands this framework to address the specific needs of archaeological documentation:
 
 1. Fundamental Properties
------------------------
+~~~~~~~~~~~~~~~~~~~~~~~
 
 .. _existence:
 
-1.1 Existence
-~~~~~~~~~~~~
+**Existence**
+   The foundational property that must be established before any other qualia can be considered.
+   
+   * Physical existence (for US/USM)
+   * Documented existence (for USD)
+   * Hypothetical existence (for USV)
+   * Reconstructed existence (for VSF)
 
-The existence property is fundamental in archaeological documentation, reflecting different levels of certainty about an element's historical presence.
+2. Extended Qualia Roles
+~~~~~~~~~~~~~~~~~~~~~~
 
-**Certainty Levels:**
-  * Confirmed (implicit for physical US/USM nodes)
-  * Documented (for USD nodes, requires source citation)
-  * Hypothetical (for USV/n nodes, requires justification)
-  * Reconstructed (for VSF nodes, based on evidence)
+2.1 Extended Formal Quale
+^^^^^^^^^^^^^^^^^^^^^^^
 
-2. Core Qualia Properties
------------------------
+Encompasses measurable and observable characteristics:
 
-Based on Pustejovsky's qualia structure and adapted for archaeological needs:
+**Dimensions** (container property)
+   * height
+   * width
+   * depth
+   
+   .. admonition:: Example
+      :class: example
 
-.. _formal:
+      A single "dimensions" property might contain "100,20,60 cm" instead of separate height, width, and depth properties.
 
-2.1 Formal Quale (What it is)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~
+**Position** (container property)
+   * coordinates
+   * orientation
+   * elevation
 
-Properties describing the physical nature and measurements of the element.
+2.2 Extended Constitutive Quale
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-**Dimensions:**
-  A container property that can be expressed either:
-  
-  * As a unified property:
-    - Value format: "height,width,depth" (e.g., "100,20,60")
-    - Units must be specified (e.g., "cm")
-    
-  * Or broken down into component properties:
-    - Height
-    - Width
-    - Depth
-    
-  .. note::
-     When dimensions are specified as a unified property, individual dimension properties should not be used.
+**Material** (container property)
+   * primary_material
+   * construction_technique
+   * surface_treatment
 
-**Position:**
-  A container property that can include:
-  
-  * Coordinates (x,y,z)
-  * Orientation
-  * Elevation
-  
-**Shape:**
-  * Basic geometry
-  * Architectural type
-  * Form classification
+2.3 Extended Telic Quale
+^^^^^^^^^^^^^^^^^^^^^^
 
-.. _constitutive:
+Includes both original and historical functions:
+   * primary_function
+   * secondary_uses
+   * spatial_role
+   * historical_adaptations
 
-2.2 Constitutive Quale (What it's made of)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+2.4 Extended Agentive Quale
+^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Properties describing the material composition.
+Documents creation and modifications:
+   * construction_date
+   * builder
+   * modification_history
+   * conservation_status
 
-**Material:**
-  A container property that can include:
-  
-  * Primary material
-  * Construction technique
-  * Surface treatment
-  
-**Physical Properties:**
-  * Color
-  * Texture
-  * Density
-  * State of conservation
+3. Temporal Perception System
+~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-.. _telic:
+.. _actornode:
 
-2.3 Telic Quale (What it's for)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+The Extended Matrix introduces the ActorNode concept to manage temporal perceptions:
 
-Properties describing function and use.
+.. image:: img/nodes/actor_node.png
+   :width: 128px
+   :align: left
 
-**Function:**
-  A container property that can include:
-  
-  * Primary function
-  * Secondary uses
-  * Spatial role
-  
-**Usage:**
-  * Period of use
-  * Type of use
-  * Usage patterns
+An ActorNode represents an individual or group whose interpretation of properties is being recorded. This allows documentation of how properties were perceived at different times by different observers.
 
-.. _agentive:
+.. admonition:: Example
+   :class: example
 
-2.4 Agentive Quale (How it came to be)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   A temple column's significance might be interpreted differently:
+   
+   **Ancient Priest (1st century CE)**
+   * Telic: Sacred support of temple structure
+   * Symbolic: Connection between earth and heavens
+   
+   **Medieval Chronicler (12th century)**
+   * Telic: Reminder of pagan past
+   * Symbolic: Example of ancient craftsmanship
+   
+   **Modern Archaeologist (21st century)**
+   * Telic: Evidence of construction techniques
+   * Symbolic: Indicator of economic resources
 
-Properties describing creation and modification.
+.. admonition:: Technical Tip
+   :class: technical-tip
 
-**Creation:**
-  A container property that can include:
-  
-  * Construction date
-  * Builder/workshop
-  * Construction technique
-  
-**Modifications:**
-  * Restoration history
-  * Adaptation phases
-  * Destruction events
+   The ActorNode connects to properties through temporal relationships, allowing multiple interpretations to coexist within the documentation system.
 
-3. Interpretative Layer
----------------------
+Implementation Details
+-------------------
 
-The interpretative layer connects properties to specific actors and epochs, allowing for the documentation of changing interpretations over time.
+.. admonition:: Data Format
+   :class: data-format
 
-**Structure:**
-  .. code-block:: json
-  
-  {
-    "property": "function",
-    "interpretations": [
-      {
-        "actor": "Archaeologist A",
-        "epoch": "1900-1920",
-        "value": "temple",
-        "confidence": "high",
-        "basis": "architectural features"
-      },
-      {
-        "actor": "Archaeologist A",
-        "epoch": "1920-1930",
-        "value": "administrative building",
-        "confidence": "medium",
-        "basis": "new inscriptions found"
-      }
-    ]
-  }
+   Property hierarchy example:
 
-4. Best Practices for Property Usage
----------------------------------
+   ```json
+   {
+     "column_01": {
+       "existence": {
+         "type": "physical",
+         "certainty": "confirmed"
+       },
+       "dimensions": {
+         "value": "450,60,60",
+         "unit": "cm",
+         "contains": ["height", "width", "depth"],
+         "method": "direct_measurement"
+       },
+       "perceptions": [
+         {
+           "actor": "ActorNode_01",
+           "epoch": "100_CE",
+           "properties": {
+             "significance": "ritual",
+             "status": "active_religious"
+           }
+         },
+         {
+           "actor": "ActorNode_02",
+           "epoch": "2023_CE",
+           "properties": {
+             "significance": "archaeological",
+             "status": "preserved"
+           }
+         }
+       ]
+     }
+   }
+   ```
 
-1. **Hierarchical Properties:**
-   * Use container properties when possible to reduce redundancy
-   * Document which sub-properties are covered by a container property
-   * Maintain consistency in property hierarchy across the documentation
+Best Practices
+------------
 
-2. **Property Values:**
-   * Use standardized formats for values
-   * Include units where applicable
-   * Document value conventions in metadata
+1. **Property Hierarchy Management**
+   * Use container properties when possible
+   * Document relationships between properties
+   * Maintain consistent property structures
 
-3. **Interpretative Documentation:**
-   * Always link interpretations to specific actors and epochs
-   * Document changes in interpretation over time
-   * Maintain clear chains of evidence through paradata nodes
+2. **Temporal Interpretation**
+   * Always link subjective interpretations to ActorNodes
+   * Document the temporal context of interpretations
+   * Preserve multiple historical perspectives
 
-5. Implementation in Extended Matrix
---------------------------------
-
-Example of property hierarchies in practice:
-
-.. code-block:: json
-
-{
-    "node_id": "USM100",
-    "properties": {
-        "existence": {
-            "value": "confirmed",
-            "certainty": "physical"
-        },
-        "dimensions": {
-            "value": "100,20,60",
-            "unit": "cm",
-            "contains": ["height", "width", "depth"]
-        },
-        "material": {
-            "value": "marble",
-            "contains": {
-                "type": "Pentelic",
-                "technique": "carved",
-                "surface": "polished"
-            }
-        }
-    },
-    "interpretations": [
-        // as shown in section 3
-    ]
-}
+3. **Evidence Documentation**
+   * Link properties to paradata chains
+   * Document certainty levels
+   * Maintain clear validation paths
 
 References
 ---------
 
 * Pustejovsky, J. (1995). "The Generative Lexicon". MIT Press.
-* [Additional references for archaeological property documentation conventions]
