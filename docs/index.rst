@@ -38,6 +38,7 @@ At the top is the Extended Matrix Language, which provides the formal notation s
    activity
    paradata_nodes
    qualia
+   source_node
    paradata_group
    connectors
    alternate_hypotheses
