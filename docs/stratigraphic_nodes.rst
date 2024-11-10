@@ -157,8 +157,8 @@ Refers to a non-in situ element (fragmented or intact) that needs to be repositi
 
   Example: There are only the remains of a podium SU01 with a collapsed column SF01 (special find 01). A USV/n 100 series hypothetical reconstruction of the colonnade is provisioned using the SF as a source.
 
-4.2 Virtual Special Find node:
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+4.2 Virtual Special Find (``VirtualSpecialFindNode``)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. image:: img/2D/VSF.png
   :width: 128px
