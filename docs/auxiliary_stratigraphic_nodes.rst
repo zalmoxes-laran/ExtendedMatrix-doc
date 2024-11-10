@@ -31,6 +31,10 @@ The introduction of the continuity node resolves a long-standing limitation in s
 Stratigraphic Event Node
 ------------------------
 
+.. image:: img/2D/stratigraphic_event.png
+  :width: 128px
+  :align: left
+
 A **Stratigraphic Event Node** represents an event or action that precedes and results in the formation of a stratigraphic unit. This new node captures not just the unit itself, but the process that leads to the creation, modification, or transformation of the unit. By introducing this concept, it is possible to model both the temporal and spatial dimensions of how a stratigraphic unit comes to exist.
 
 **Definition**
