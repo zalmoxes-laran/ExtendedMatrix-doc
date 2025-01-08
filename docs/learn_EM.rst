@@ -7,7 +7,7 @@ Bare in mind that the path to learn and use EM depends on your scope and your ba
 1. EM formal language (for smart humanists)
 -------------------------------------------
 
-You can just use EM to document your studies and your reconstructions: it is reccommended to learn at least the EM language (that can be done even with a pencil and a sheet of paper) as it is explained in the following sections onf this documentation.
+You can just use EM to document your studies and your reconstructions: it is reccommended to learn at least the EM language (that can be done even with a pencil and a sheet of paper) as it is explained in the following sections of this documentation.
 
 1. Annotate stratigraphy on 3D models (for jedi-humanists)
 ------------------------------------------------------------------------------------------------
