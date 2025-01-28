@@ -182,5 +182,27 @@ Cumulative example of different USV nodes used together
   
   USV/s and USV/n are used together. Different -SU allow to propose different USV/s.
 
+5. Transformation Stratigraphic Unit (``TransformationStratigraphicUnit``):
+--------------------------------------------------------
 
+These units represent the record of chemical, physical, or biological changes that have occurred over time on a specific surface or material. TSUs allow for the documentation and visualization of not only the current state of preservation but also the chronological sequence of transformative processes within a historic structure. This provides a dynamic perspective that captures all transformations affecting stratigraphic objects.
+By mapping these transformations, it becomes possible to analyze the life cycle of historic structures in greater detail, offering insights that support the planning of conservation and restoration strategies.
+
+Typologies of Transformation Stratigraphic Units
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+According to the international standards for identifying and classifying surface degradation pathologies [`ICOMOS-ISCS Glossary of Stone Terms (PDF) <http://openarchive.icomos.org/434/1/Monuments_and_Sites_15_ISCS_Glossary_Stone.pdf>`_
+], four primary types of transformations have been identified. These typologies are grouped based on the type of modification they produce on the surface, following the principles of stratigraphy:
+
+- **Colour Change**
+Refers to alterations in the color of a surface due to chemical, biological, or environmental factors.
+
+- **Negative/Subtractive Transformation**
+Includes processes like detachment or material loss, where portions of the surface are removed due to factors such as erosion, spalling, or mechanical damage.
+
+- **Positive/Additive Transformation**
+Encompasses processes where material is added to the surface, such as deposits of dust, salts, or bio-colonization like moss and lichens.
+
+- **Translational Transformation**
+Includes deformations or displacements such as cracks, shifts, or warping of the surface, which may result from structural movement, thermal expansion, or other stress factors.
 
