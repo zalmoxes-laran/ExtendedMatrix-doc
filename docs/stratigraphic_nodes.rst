@@ -46,10 +46,10 @@ The flexibility of this system allows for individual elements to be removed from
 
 .. _usd:
 
-2. USD - Documentary Stratigraphic Units (``SeriesOfStratigraphicUnit``) 
-------------------------------------------------------------------------
+2. USD - Documentary Stratigraphic Units (``DocumentaryStratigraphicUnit``) 
+---------------------------------------------------------------------------
 
-These units are known only through historical documentation. Their *existence* is verified through various historical sources considered reliable such as photographs, paintings and artistic representations, written descriptions, maps and plans, and oral histories. While not physically present, they can be reliably placed in the stratigraphic sequence based on documentary evidence. This category also includes repositioned elements (anastylosis) when their original position is confirmed by historical documentation.
+These units are identified through indirect documentation, such as historical records, geophysical surveys, and other analytical techniques. Their existence is substantiated by methods including geophysics, thermography, remote sensing, and by reliable historical sources such as photographs, paintings, artistic representations, written descriptions, maps, plans, and oral histories. Although not physically present, these units can be confidently positioned within the stratigraphic sequence based on documentary evidence. This category also encompasses repositioned elements (anastylosis) when their original placement is verified through historical documentation.
 
 .. image:: img/2D/USD.png
   :width: 128px
@@ -58,12 +58,12 @@ These units are known only through historical documentation. Their *existence* i
 It connects to these properties:
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-* existence
-* geometry
-* placement
-* material
-* color
-* etc..
+- existence
+- geometry
+- placement
+- material
+- color
+- etc..
 
 3. Virtual Stratigraphic Units (USV)
 ------------------------------------
