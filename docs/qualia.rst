@@ -1,147 +1,314 @@
-Properties (Qualia)
-===================
+Qualia
+======
 
 .. _qualia:
 
 Introduction
------------
+------------
 
-The term "qualia" originated in philosophy of mind to describe subjective sensory experiences. In computational linguistics, Pustejovsky (1995) redefined it as a structural framework to describe objects by combining objective properties with functional and generative aspects. This work was foundational for natural language processing and AI, as it provided a systematic way for machines to understand and generate context-dependent meanings of words and concepts. The Extended Matrix further develops this structured approach for Cultural Heritage documentation needs, maintaining its compatibility with computational processing while specializing it for the domain's requirements. The Extended Matrix further develops this concept for Cultural Heritage documentation needs.
+The term "qualia" originated in philosophy of mind to describe subjective sensory experiences. In computational linguistics, Pustejovsky (1995) redefined it as a structural framework to describe objects by combining objective properties with functional and generative aspects. This work was foundational for natural language processing and AI, as it provided a systematic way for machines to understand and generate context-dependent meanings of words and concepts. The Extended Matrix further develops this structured approach for Cultural Heritage documentation needs, maintaining its compatibility with computational processing while specializing it for the domain's requirements.
 
 While Pustejovsky's original framework (Formal, Constitutive, Telic, and Agentive roles) provides valuable theoretical foundations, the Extended Matrix adopts a more specialized structure optimized for Cultural Heritage documentation.
 
 Extended Matrix Qualia Categories
----------------------------------
+--------------------------------
 
-1. Physical and Material Properties
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+1. Physical and Material Qualia
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Properties describing tangible and measurable characteristics:
+Qualia describing tangible and measurable characteristics.
 
-* **Dimensional Properties**
-    * Height
-    * Width
-    * Depth
-    * Diameter
-    * Weight
+Dimensional Qualia
+^^^^^^^^^^^^^^^^^
+Properties describing measurable spatial characteristics:
 
-* **Material Properties**
-    * Material type (controlled Getty AAT vocabulary)
-    * Origin (natural/artificial)
-    * Composition
-    * Surface treatment
+* **Height**
+    * Getty AAT: 300055644
+    * CIDOC CRM: E54_Dimension
+    * Dublin Core: format.extent
+    * Units: cm, m, ft
+    * Expected extractors: direct measurement, 3D model measurement, drawing measurement
 
-* **Conservation Properties**
-    * Conservation state
-    * Integrity percentage
-    * Surface conditions
+* **Width**
+    * Getty AAT: 300055647
+    * CIDOC CRM: E54_Dimension
+    * Dublin Core: format.extent
+    * Units: cm, m, ft
+    * Expected extractors: direct measurement, 3D model measurement, drawing measurement
 
-* **Technical Properties**
-    * Construction technique
-    * Manufacturing process
-    * Assembly method
+* **Depth**
+    * Getty AAT: 300072633
+    * CIDOC CRM: E54_Dimension
+    * Dublin Core: format.extent
+    * Units: cm, m, ft
+    * Expected extractors: direct measurement, 3D model measurement, drawing measurement
 
-2. Spatiotemporal Properties
-~~~~~~~~~~~~~~~~~~~~~~~~~
+* **Weight**
+    * Getty AAT: 300056240
+    * CIDOC CRM: E54_Dimension
+    * Units: kg, g, lb
+    * Expected extractors: direct measurement
 
-Properties related to space and time coordinates:
+* **Diameter**
+    * Getty AAT: 300055624
+    * CIDOC CRM: E54_Dimension
+    * Dublin Core: format.extent
+    * Units: cm, m, ft
+    * Expected extractors: direct measurement, 3D model measurement, drawing measurement
 
-* **Spatial Properties**
-    * Absolute position
-    * Relative position
-    * Orientation
-    * Spatial relationship
+Material Qualia
+^^^^^^^^^^^^^
+Physical material characteristics:
 
-* **Temporal Properties**
-    * Absolute start date
-    * Absolute end date
-    * Chronological phase
-    * Dating method reliability
+* **Material Type**
+    * Getty AAT: 300010357
+    * CIDOC CRM: E57_Material
+    * Dublin Core: format.medium
+    * Vocabulary source: Getty AAT
+    * Expected extractors: visual inspection, laboratory analysis
 
-3. Functional Properties
-~~~~~~~~~~~~~~~~~~~~~
+* **Origin Type**
+    * Values: natural, artificial
+    * Data type: controlled vocabulary
 
-Properties describing use and performance:
+* **Surface Treatment**
+    * Getty AAT: 300053895
+    * CIDOC CRM: E11_Modification
+    * Dublin Core: description
+    * Expected extractors: visual inspection, surface analysis
 
-* **Functional Characteristics**
-    * Primary function
-    * Structural role
-    * Load-bearing capacity
-    * Performance specifications
+* **Granulometry**
+    * Getty AAT: 300417183
+    * CIDOC CRM: E54_Dimension
+    * Values: fine, medium, coarse
+    * Expected extractors: visual inspection, microscopic analysis
 
-* **Operational Properties**
-    * Use requirements
-    * Accessibility
-    * Operational constraints
+State Qualia
+^^^^^^^^^^^
+Current physical condition:
 
-4. Cultural and Interpretive Properties
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+* **Conservation State**
+    * Getty AAT: 300015332
+    * CIDOC CRM: E3_Condition_State
+    * ICOM CIDOC: Object Condition Information
+    * Values: excellent, good, fair, poor, very_poor
+    * Expected extractors: visual inspection, condition assessment
 
-Properties expressing cultural significance and meaning:
+* **Integrity**
+    * Getty AAT: 300388714
+    * CIDOC CRM: E3_Condition_State
+    * Dublin Core: description
+    * Data type: percentage (0-100)
+    * Expected extractors: visual inspection, 3D model analysis
 
-* **Stylistic Properties**
-    * Architectural style
-    * Artistic tradition
-    * Decorative elements
+Technical Qualia
+^^^^^^^^^^^^^^
+Construction and execution techniques:
 
-* **Semantic Properties**
-    * Symbolic meaning
-    * Cultural significance
-    * Historical importance
+* **Construction Technique**
+    * Getty AAT: 300000022
+    * CIDOC CRM: E29_Design_or_Procedure
+    * Dublin Core: description
+    * Vocabulary source: Getty AAT
+    * Expected extractors: visual inspection, technical analysis
 
-5. Contextual Properties
-~~~~~~~~~~~~~~~~~~~~
+2. Spatiotemporal Qualia
+~~~~~~~~~~~~~~~~~~~~~~~
 
-Properties for management and documentation:
+Spatial and temporal characteristics.
 
-* **Administrative Properties**
-    * Inventory number
-    * Legal status
-    * Reference ID
+Spatial Qualia
+^^^^^^^^^^^^^
 
-* **Documentation Properties**
-    * Bibliography
-    * Archival references
-    * Scientific analyses
+* **Absolute Position**
+    * Getty AAT: 300387565
+    * CIDOC CRM: E53_Place
+    * Coordinate system: cartesian_3d (x, y, z)
+    * Reference system: WGS84
+    * Expected extractors: GPS survey, total station survey, 3D model measurement
 
-Implementation Details
--------------------
+* **Orientation**
+    * Getty AAT: 300131574
+    * CIDOC CRM: E54_Dimension
+    * Components: azimuth, tilt, roll
+    * Units: degrees
+    * Expected extractors: compass measurement, 3D model analysis
 
-Each property in the Extended Matrix includes:
+* **Elevation**
+    * Getty AAT: 300447457
+    * CIDOC CRM: E54_Dimension
+    * Units: m, ft
+    * Expected extractors: GPS survey, total station survey, leveling
 
-* **Basic Information**
-    * Unique identifier
-    * Name
-    * Description
-    * Category
+* **Arrangement**
+    * Getty AAT: 300067654
+    * CIDOC CRM: E55_Type
+    * Values: linear, radial, grid, clustered, scattered, concentric
+    * Expected extractors: visual inspection, spatial analysis
 
-* **Vocabulary Control**
-    * Getty AAT reference
-    * CIDOC CRM mapping
-    * Controlled terms
+Temporal Qualia
+^^^^^^^^^^^^^
 
-* **Data Specifications**
-    * Data type
-    * Units (where applicable)
-    * Validation rules
+* **Absolute Start Date**
+    * Getty AAT: 300404284
+    * CIDOC CRM: E52_Time-Span
+    * Format: YYYY-MM-DD
 
-Best Practices
-------------
+* **Absolute End Date**
+    * Getty AAT: 300404284
+    * CIDOC CRM: E52_Time-Span
+    * Format: YYYY-MM-DD
 
-1. **Property Documentation**
-    * Use standardized terminology
-    * Document measurement methods
-    * Specify units and precision
-    * Maintain evidence chains
+* **Dating Method**
+    * Getty AAT: 300054714
+    * CIDOC CRM: E55_Type
+    * Values: stratigraphy, typology, c14, dendrochronology, historical_sources, stylistic_analysis
+    * Expected extractors: dating analysis, laboratory analysis
 
-2. **Quality Control**
-    * Validate measurements
-    * Cross-reference sources
-    * Document uncertainty levels
+3. Functional Qualia
+~~~~~~~~~~~~~~~~~~~
+
+Use and performance characteristics.
+
+Telic Qualia
+^^^^^^^^^^^
+Original and intended functions:
+
+* **Primary Function**
+    * Getty AAT: 300068003
+    * CIDOC CRM: E55_Type
+    * Vocabulary source: Getty AAT
+    * Expected extractors: functional analysis, historical research, comparative analysis
+
+* **Secondary Functions**
+    * Getty AAT: 300068003
+    * CIDOC CRM: E55_Type
+    * Vocabulary source: Getty AAT
+    * Expected extractors: functional analysis, historical research
+
+Structural Qualia
+^^^^^^^^^^^^^^^
+Structural and mechanical roles:
+
+* **Structural Role**
+    * Getty AAT: 300264518
+    * CIDOC CRM: E55_Type
+    * Values: load_bearing, non_load_bearing, reinforcing, connecting, supporting, decorative
+    * Expected extractors: structural analysis, architectural analysis
+
+* **Stress Type**
+    * Getty AAT: 300264519
+    * CIDOC CRM: E55_Type
+    * Values: compression, tension, bending, shear, torsion
+    * Expected extractors: structural analysis
+
+Performative Qualia
+^^^^^^^^^^^^^^^^^
+Performance and capability characteristics:
+
+* **Load Capacity**
+    * Getty AAT: 300265725
+    * CIDOC CRM: E54_Dimension
+    * Units: kN, kgf
+    * Expected extractors: structural analysis, load testing
+
+4. Cultural and Interpretive Qualia
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Cultural significance and meaning.
+
+Stylistic Qualia
+^^^^^^^^^^^^^^^
+Artistic and stylistic characteristics:
+
+* **Artistic Style**
+    * Getty AAT: 300015646
+    * CIDOC CRM: E55_Type
+    * Vocabulary source: Getty AAT
+    * Expected extractors: style analysis, comparative analysis
+
+* **Stylistic Influences**
+    * Getty AAT: 300015646
+    * CIDOC CRM: E55_Type
+    * Vocabulary source: Getty AAT
+    * Expected extractors: historical analysis, stylistic analysis
+
+5. Contextual Qualia
+~~~~~~~~~~~~~~~~~~~
+
+Management and administrative information (Experimental category).
+
+Administrative Qualia
+^^^^^^^^^^^^^^^^^^^
+
+* **Inventory Number**
+    * Getty AAT: 300312355
+    * CIDOC CRM: P48_has_preferred_identifier
+    * Expected extractors: archival research, museum documentation
+
+* **Legal Status**
+    * Getty AAT: 300435427
+    * CIDOC CRM: P104_is_subject_to
+    * Vocabulary source: Getty AAT
+    * Expected extractors: legal documentation, administrative research
+
+* **Intervention History**
+    * Getty AAT: 300379504
+    * CIDOC CRM: E11_Modification
+
+* **Conservation Status**
+    * Getty AAT: 300435429
+    * CIDOC CRM: P44_has_condition
+    * Vocabulary source: Getty AAT
+    * Expected extractors: conservation assessment, condition survey
+
+* **Access Conditions**
+    * Getty AAT: 300435430
+    * CIDOC CRM: P104_is_subject_to
+    * Vocabulary source: Getty AAT
+    * Expected extractors: access assessment, management review
+
+Implementation in s3Dgraphy
+--------------------------
+
+The Extended Matrix qualia framework is implemented in the s3Dgraphy library through a structured JSON schema that provides standardized definitions, controlled vocabularies, and mappings to established standards. The complete schema can be found in the s3Dgraphy library documentation [link to be provided].
+
+Temporal Perception System
+-------------------------
+
+.. _actornode:
+
+The Extended Matrix introduces the ActorNode concept to manage temporal perceptions:
+
+.. image:: img/nodes/actor_node.png
+   :width: 128px
+   :align: left
+
+An ActorNode represents an individual or group whose interpretation of properties is being recorded. This allows documentation of how properties were perceived at different times by different observers.
+
+.. admonition:: Example
+   :class: example
+
+   A temple column's significance might be interpreted differently:
+
+   **Ancient Priest (1st century CE)**
+    * Telic: Sacred support of temple structure
+    * Symbolic: Connection between earth and heavens
+
+   **Medieval Chronicler (12th century)**
+    * Telic: Reminder of pagan past
+    * Symbolic: Example of ancient craftsmanship
+
+   **Modern Archaeologist (21st century)**
+    * Telic: Evidence of construction techniques
+    * Symbolic: Indicator of economic resources
 
 References
----------
+----------
 
 * Pustejovsky, J. (1995). "The Generative Lexicon". MIT Press.
 * Getty Art & Architecture Thesaurus
 * CIDOC CRM Documentation
+
+
+
