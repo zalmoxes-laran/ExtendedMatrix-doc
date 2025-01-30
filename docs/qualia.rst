@@ -6,197 +6,142 @@ Properties (Qualia)
 Introduction
 -----------
 
-The Extended Matrix adopts and extends Pustejovsky's qualia theory to create a comprehensive system for documenting both objective and subjective properties in archaeological documentation. While the original qualia structure provides a solid foundation for describing object properties, the Extended Matrix extends this framework to handle the specific needs of archaeological documentation, including temporal perceptions and degrees of certainty.
+The term "qualia" originated in philosophy of mind to describe subjective sensory experiences. In computational linguistics, Pustejovsky (1995) redefined it as a structural framework to describe objects by combining objective properties with functional and generative aspects. This work was foundational for natural language processing and AI, as it provided a systematic way for machines to understand and generate context-dependent meanings of words and concepts. The Extended Matrix further develops this structured approach for Cultural Heritage documentation needs, maintaining its compatibility with computational processing while specializing it for the domain's requirements. The Extended Matrix further develops this concept for Cultural Heritage documentation needs.
 
-The term "qualia" originated in philosophy of mind to describe subjective sensory experiences (e.g., the redness of a sunset, the taste of chocolate). In computational linguistics, Pustejovsky (1995) redefined it as a structural framework to describe objects by combining objective properties (material, dimensions) with functional and generative aspects (use, origin). This shift transformed qualia from a purely subjective concept into a semantic tool for knowledge representation.
+While Pustejovsky's original framework (Formal, Constitutive, Telic, and Agentive roles) provides valuable theoretical foundations, the Extended Matrix adopts a more specialized structure optimized for Cultural Heritage documentation.
 
-The **Qualia Roles**, introduced by **James Pustejovsky** in *The Generative Lexicon* (1995), aim to model **the dynamic nature of meaning** in natural language. Traditional lexicons treat word meanings as fixed, but Qualia Roles explain **systematic polysemy** by defining four semantic dimensions: **Formal (what it is), Constitutive (what it’s made of), Telic (what it’s for), and Agentive (how it came to be)**. Rooted in **computational linguistics**, this framework enhances **natural language processing (NLP)** by allowing AI to infer context-dependent meanings. It emerged from the need to **overcome rigid lexical databases** in favor of **generative, flexible semantics**. Beyond linguistics, Qualia Roles resonate with **cognitive science, philosophy, and knowledge representation**, offering a **transdisciplinary** approach. By integrating **historical, functional, and structural aspects of meaning**, they **enable holistic knowledge modeling**, crucial for fields like **archaeology, AI, and digital humanities**, where **multifaceted interpretation** is essential.
+Extended Matrix Qualia Categories
+---------------------------------
 
-The **Extended Matrix** expands Qualia Roles into a **qualitative knowledge graph for Cultural Heritage**, integrating **temporal, material, and interpretative dimensions** to document archaeological data **holistically** and trace the **evolution of meaning across historical contexts**. It introduces **ActorNodes** to manage **temporal perceptions**, allowing **multiple interpretations** to coexist within the documentation system. By **linking properties to paradata chains** and **documenting certainty levels**, it ensures **transparent, validated data**. The Extended Matrix is a **flexible, generative framework** that **adapts to diverse archaeological contexts**, offering a **comprehensive, dynamic model** for **multidimensional knowledge representation**.
+1. Physical and Material Properties
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Original Qualia Framework
------------------------
+Properties describing tangible and measurable characteristics:
 
-Pustejovsky (1995) defined four fundamental qualia roles:
+* **Dimensional Properties**
+    * Height
+    * Width
+    * Depth
+    * Diameter
+    * Weight
 
-1. **Formal quale**: What kind of thing is it?
-2. **Constitutive quale**: What is it made of?
-3. **Telic quale**: What is it for?
-4. **Agentive quale**: How did it come into being?
+* **Material Properties**
+    * Material type (controlled Getty AAT vocabulary)
+    * Origin (natural/artificial)
+    * Composition
+    * Surface treatment
 
-.. admonition:: Example
-   :class: example
+* **Conservation Properties**
+    * Conservation state
+    * Integrity percentage
+    * Surface conditions
 
-   In Pustejovsky's original framework, a column might be described as:
-   * Formal: A vertical architectural support element
-   * Constitutive: Made of marble
-   * Telic: Supports the entablature
-   * Agentive: Carved from a single block
+* **Technical Properties**
+    * Construction technique
+    * Manufacturing process
+    * Assembly method
 
-Extended Matrix Qualia System
---------------------------
+2. Spatiotemporal Properties
+~~~~~~~~~~~~~~~~~~~~~~~~~
 
-The Extended Matrix expands this framework to address the specific needs of archaeological documentation:
+Properties related to space and time coordinates:
 
-1. Fundamental Properties
-~~~~~~~~~~~~~~~~~~~~~~~
+* **Spatial Properties**
+    * Absolute position
+    * Relative position
+    * Orientation
+    * Spatial relationship
 
-.. _existence:
+* **Temporal Properties**
+    * Absolute start date
+    * Absolute end date
+    * Chronological phase
+    * Dating method reliability
 
-**Existence**
-   The foundational property that must be established before any other qualia can be considered.
-   
-   * Physical existence (for US/USM)
-   * Documented existence (for USD)
-   * Hypothetical existence (for USV)
-   * Reconstructed existence (for VSF)
+3. Functional Properties
+~~~~~~~~~~~~~~~~~~~~~
 
-2. Extended Qualia Roles
-~~~~~~~~~~~~~~~~~~~~~~
+Properties describing use and performance:
 
-2.1 Extended Formal Quale
-^^^^^^^^^^^^^^^^^^^^^^^
+* **Functional Characteristics**
+    * Primary function
+    * Structural role
+    * Load-bearing capacity
+    * Performance specifications
 
-Encompasses measurable and observable characteristics:
+* **Operational Properties**
+    * Use requirements
+    * Accessibility
+    * Operational constraints
 
-**Dimensions** (container property)
-   * height
-   * width
-   * depth
-   
-   .. admonition:: Example
-      :class: example
+4. Cultural and Interpretive Properties
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-      A single "dimensions" property might contain "100,20,60 cm" instead of separate height, width, and depth properties.
+Properties expressing cultural significance and meaning:
 
-**Position** (container property)
-   * coordinates
-   * orientation
-   * elevation
+* **Stylistic Properties**
+    * Architectural style
+    * Artistic tradition
+    * Decorative elements
 
-2.2 Extended Constitutive Quale
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+* **Semantic Properties**
+    * Symbolic meaning
+    * Cultural significance
+    * Historical importance
 
-**Material** (container property)
-   * primary_material
-   * construction_technique
-   * surface_treatment
+5. Contextual Properties
+~~~~~~~~~~~~~~~~~~~~
 
-2.3 Extended Telic Quale
-^^^^^^^^^^^^^^^^^^^^^^
+Properties for management and documentation:
 
-Includes both original and historical functions:
-   * primary_function
-   * secondary_uses
-   * spatial_role
-   * historical_adaptations
+* **Administrative Properties**
+    * Inventory number
+    * Legal status
+    * Reference ID
 
-2.4 Extended Agentive Quale
-^^^^^^^^^^^^^^^^^^^^^^^^^
-
-Documents creation and modifications:
-   * construction_date
-   * builder
-   * modification_history
-   * conservation_status
-
-3. Temporal Perception System
-~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-.. _actornode:
-
-The Extended Matrix introduces the ActorNode concept to manage temporal perceptions:
-
-.. image:: img/nodes/actor_node.png
-   :width: 128px
-   :align: left
-
-An ActorNode represents an individual or group whose interpretation of properties is being recorded. This allows documentation of how properties were perceived at different times by different observers.
-
-.. admonition:: Example
-   :class: example
-
-   A temple column's significance might be interpreted differently:
-   
-   **Ancient Priest (1st century CE)**
-   * Telic: Sacred support of temple structure
-   * Symbolic: Connection between earth and heavens
-   
-   **Medieval Chronicler (12th century)**
-   * Telic: Reminder of pagan past
-   * Symbolic: Example of ancient craftsmanship
-   
-   **Modern Archaeologist (21st century)**
-   * Telic: Evidence of construction techniques
-   * Symbolic: Indicator of economic resources
-
-.. admonition:: Technical Tip
-   :class: technical-tip
-
-   The ActorNode connects to properties through temporal relationships, allowing multiple interpretations to coexist within the documentation system.
+* **Documentation Properties**
+    * Bibliography
+    * Archival references
+    * Scientific analyses
 
 Implementation Details
 -------------------
 
-.. admonition:: Data Format
-   :class: data-format
+Each property in the Extended Matrix includes:
 
-   Property hierarchy example:
+* **Basic Information**
+    * Unique identifier
+    * Name
+    * Description
+    * Category
 
-   ```json
-   {
-     "column_01": {
-       "existence": {
-         "type": "physical",
-         "certainty": "confirmed"
-       },
-       "dimensions": {
-         "value": "450,60,60",
-         "unit": "cm",
-         "contains": ["height", "width", "depth"],
-         "method": "direct_measurement"
-       },
-       "perceptions": [
-         {
-           "actor": "ActorNode_01",
-           "epoch": "100_CE",
-           "properties": {
-             "significance": "ritual",
-             "status": "active_religious"
-           }
-         },
-         {
-           "actor": "ActorNode_02",
-           "epoch": "2023_CE",
-           "properties": {
-             "significance": "archaeological",
-             "status": "preserved"
-           }
-         }
-       ]
-     }
-   }
-   ```
+* **Vocabulary Control**
+    * Getty AAT reference
+    * CIDOC CRM mapping
+    * Controlled terms
+
+* **Data Specifications**
+    * Data type
+    * Units (where applicable)
+    * Validation rules
 
 Best Practices
 ------------
 
-1. **Property Hierarchy Management**
-   * Use container properties when possible
-   * Document relationships between properties
-   * Maintain consistent property structures
+1. **Property Documentation**
+    * Use standardized terminology
+    * Document measurement methods
+    * Specify units and precision
+    * Maintain evidence chains
 
-2. **Temporal Interpretation**
-   * Always link subjective interpretations to ActorNodes
-   * Document the temporal context of interpretations
-   * Preserve multiple historical perspectives
-
-3. **Evidence Documentation**
-   * Link properties to paradata chains
-   * Document certainty levels
-   * Maintain clear validation paths
+2. **Quality Control**
+    * Validate measurements
+    * Cross-reference sources
+    * Document uncertainty levels
 
 References
 ---------
 
 * Pustejovsky, J. (1995). "The Generative Lexicon". MIT Press.
+* Getty Art & Architecture Thesaurus
+* CIDOC CRM Documentation
