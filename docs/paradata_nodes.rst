@@ -95,6 +95,9 @@ Document Node (``DocumentNode``)
 
 A document node represents primary sources that provide evidence about stratigraphic units.
 
+.. note::
+   For a complete taxonomy of document (source) types and their relationships, please refer to the `Document (Source) section of this documentation <https://docs.extendedmatrix.org/en/1.5.0dev/source_node.html>`_.
+
 .. admonition:: Example
    :class: example
 
@@ -114,6 +117,9 @@ Extractor Node (``ExtractorNode``)
    :align: left
 
 An extractor node captures how researchers interpret information from source documents.
+
+.. note::
+   For a complete taxonomy of extracto (interpretation) types and their relationships, please refer to the `Extractor (Interpretation) section of this documentation <https://docs.extendedmatrix.org/en/1.5.0dev/extractor_nodes.html>`_.
 
 .. admonition:: Example
    :class: example
