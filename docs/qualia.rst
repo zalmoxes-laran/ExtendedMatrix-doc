@@ -23,36 +23,36 @@ Dimensional Qualia
 Properties describing measurable spatial characteristics:
 
 * **Height**
-    * Getty AAT: 300055644
-    * CIDOC CRM: E54_Dimension
-    * Dublin Core: format.extent
+    * Getty AAT: `300055644 <http://vocab.getty.edu/aat/300055644>`_
+    * CIDOC CRM: :class:`E54_Dimension`
+    * Dublin Core: ``dcterms:extent``
     * Units: cm, m, ft
     * Expected extractors: direct measurement, 3D model measurement, drawing measurement
 
 * **Width**
-    * Getty AAT: 300055647
-    * CIDOC CRM: E54_Dimension
-    * Dublin Core: format.extent
+    * Getty AAT: `300055647 <http://vocab.getty.edu/aat/300055647>`_
+    * CIDOC CRM: :class:`E54_Dimension`
+    * Dublin Core: ``dcterms:extent``
     * Units: cm, m, ft
     * Expected extractors: direct measurement, 3D model measurement, drawing measurement
 
 * **Depth**
-    * Getty AAT: 300072633
-    * CIDOC CRM: E54_Dimension
-    * Dublin Core: format.extent
+    * Getty AAT: `300072633 <http://vocab.getty.edu/aat/300072633>`_
+    * CIDOC CRM: :class:`E54_Dimension`
+    * Dublin Core: ``dcterms:extent``
     * Units: cm, m, ft
     * Expected extractors: direct measurement, 3D model measurement, drawing measurement
 
 * **Weight**
-    * Getty AAT: 300056240
-    * CIDOC CRM: E54_Dimension
+    * Getty AAT: `300056240 <http://vocab.getty.edu/aat/300056240>`_
+    * CIDOC CRM: :class:`E54_Dimension`
     * Units: kg, g, lb
     * Expected extractors: direct measurement
 
 * **Diameter**
-    * Getty AAT: 300055624
-    * CIDOC CRM: E54_Dimension
-    * Dublin Core: format.extent
+    * Getty AAT: `300055624 <http://vocab.getty.edu/aat/300055624>`_
+    * CIDOC CRM: :class:`E54_Dimension`
+    * Dublin Core: ``dcterms:extent``
     * Units: cm, m, ft
     * Expected extractors: direct measurement, 3D model measurement, drawing measurement
 
@@ -61,9 +61,9 @@ Material Qualia
 Physical material characteristics:
 
 * **Material Type**
-    * Getty AAT: 300010357
-    * CIDOC CRM: E57_Material
-    * Dublin Core: format.medium
+    * Getty AAT: `300010357 <http://vocab.getty.edu/aat/300010357>`_
+    * CIDOC CRM: :class:`E57_Material`
+    * Dublin Core: ``dcterms:medium``
     * Vocabulary source: Getty AAT
     * Expected extractors: visual inspection, laboratory analysis
 
@@ -72,14 +72,14 @@ Physical material characteristics:
     * Data type: controlled vocabulary
 
 * **Surface Treatment**
-    * Getty AAT: 300053895
-    * CIDOC CRM: E11_Modification
-    * Dublin Core: description
+    * Getty AAT: `300053895 <http://vocab.getty.edu/aat/300053895>`_
+    * CIDOC CRM: :class:`E11_Modification`
+    * Dublin Core: ``dcterms:description``
     * Expected extractors: visual inspection, surface analysis
 
 * **Granulometry**
-    * Getty AAT: 300417183
-    * CIDOC CRM: E54_Dimension
+    * Getty AAT: `300417183 <http://vocab.getty.edu/aat/300417183>`_
+    * CIDOC CRM: :class:`E54_Dimension`
     * Values: fine, medium, coarse
     * Expected extractors: visual inspection, microscopic analysis
 
@@ -88,16 +88,16 @@ State Qualia
 Current physical condition:
 
 * **Conservation State**
-    * Getty AAT: 300015332
-    * CIDOC CRM: E3_Condition_State
-    * ICOM CIDOC: Object Condition Information
+    * Getty AAT: `300015332 <http://vocab.getty.edu/aat/300015332>`_
+    * CIDOC CRM: :class:`E3_Condition_State`
+    * ICOM CIDOC: ``Object Condition Information``
     * Values: excellent, good, fair, poor, very_poor
     * Expected extractors: visual inspection, condition assessment
 
 * **Integrity**
-    * Getty AAT: 300388714
-    * CIDOC CRM: E3_Condition_State
-    * Dublin Core: description
+    * Getty AAT: `300388714 <http://vocab.getty.edu/aat/300388714>`_
+    * CIDOC CRM: :class:`E3_Condition_State`
+    * Dublin Core: ``dcterms:description``
     * Data type: percentage (0-100)
     * Expected extractors: visual inspection, 3D model analysis
 
@@ -106,9 +106,9 @@ Technical Qualia
 Construction and execution techniques:
 
 * **Construction Technique**
-    * Getty AAT: 300000022
-    * CIDOC CRM: E29_Design_or_Procedure
-    * Dublin Core: description
+    * Getty AAT: `300000022 <http://vocab.getty.edu/aat/300000022>`_
+    * CIDOC CRM: :class:`E29_Design_or_Procedure`
+    * Dublin Core: ``dcterms:description``
     * Vocabulary source: Getty AAT
     * Expected extractors: visual inspection, technical analysis
 
@@ -121,28 +121,28 @@ Spatial Qualia
 ^^^^^^^^^^^^^
 
 * **Absolute Position**
-    * Getty AAT: 300387565
-    * CIDOC CRM: E53_Place
+    * Getty AAT: `300387565 <http://vocab.getty.edu/aat/300387565>`_
+    * CIDOC CRM: :class:`E53_Place`
     * Coordinate system: cartesian_3d (x, y, z)
     * Reference system: WGS84
     * Expected extractors: GPS survey, total station survey, 3D model measurement
 
 * **Orientation**
-    * Getty AAT: 300131574
-    * CIDOC CRM: E54_Dimension
+    * Getty AAT: `300131574 <http://vocab.getty.edu/aat/300131574>`_
+    * CIDOC CRM: :class:`E54_Dimension`
     * Components: azimuth, tilt, roll
     * Units: degrees
     * Expected extractors: compass measurement, 3D model analysis
 
 * **Elevation**
-    * Getty AAT: 300447457
-    * CIDOC CRM: E54_Dimension
+    * Getty AAT: `300447457 <http://vocab.getty.edu/aat/300447457>`_
+    * CIDOC CRM: :class:`E54_Dimension`
     * Units: m, ft
     * Expected extractors: GPS survey, total station survey, leveling
 
 * **Arrangement**
-    * Getty AAT: 300067654
-    * CIDOC CRM: E55_Type
+    * Getty AAT: `300067654 <http://vocab.getty.edu/aat/300067654>`_
+    * CIDOC CRM: :class:`E55_Type`
     * Values: linear, radial, grid, clustered, scattered, concentric
     * Expected extractors: visual inspection, spatial analysis
 
@@ -150,18 +150,18 @@ Temporal Qualia
 ^^^^^^^^^^^^^
 
 * **Absolute Start Date**
-    * Getty AAT: 300404284
-    * CIDOC CRM: E52_Time-Span
+    * Getty AAT: `300404284 <http://vocab.getty.edu/aat/300404284>`_
+    * CIDOC CRM: :class:`E52_Time-Span`
     * Format: YYYY-MM-DD
 
 * **Absolute End Date**
-    * Getty AAT: 300404284
-    * CIDOC CRM: E52_Time-Span
+    * Getty AAT: `300404284 <http://vocab.getty.edu/aat/300404284>`_
+    * CIDOC CRM: :class:`E52_Time-Span`
     * Format: YYYY-MM-DD
 
 * **Dating Method**
-    * Getty AAT: 300054714
-    * CIDOC CRM: E55_Type
+    * Getty AAT: `300054714 <http://vocab.getty.edu/aat/300054714>`_
+    * CIDOC CRM: :class:`E55_Type`
     * Values: stratigraphy, typology, c14, dendrochronology, historical_sources, stylistic_analysis
     * Expected extractors: dating analysis, laboratory analysis
 
@@ -175,14 +175,14 @@ Telic Qualia
 Original and intended functions:
 
 * **Primary Function**
-    * Getty AAT: 300068003
-    * CIDOC CRM: E55_Type
+    * Getty AAT: `300068003 <http://vocab.getty.edu/aat/300068003>`_
+    * CIDOC CRM: :class:`E55_Type`
     * Vocabulary source: Getty AAT
     * Expected extractors: functional analysis, historical research, comparative analysis
 
 * **Secondary Functions**
-    * Getty AAT: 300068003
-    * CIDOC CRM: E55_Type
+    * Getty AAT: `300068003 <http://vocab.getty.edu/aat/300068003>`_
+    * CIDOC CRM: :class:`E55_Type`
     * Vocabulary source: Getty AAT
     * Expected extractors: functional analysis, historical research
 
@@ -191,14 +191,14 @@ Structural Qualia
 Structural and mechanical roles:
 
 * **Structural Role**
-    * Getty AAT: 300264518
-    * CIDOC CRM: E55_Type
+    * Getty AAT: `300264518 <http://vocab.getty.edu/aat/300264518>`_
+    * CIDOC CRM: :class:`E55_Type`
     * Values: load_bearing, non_load_bearing, reinforcing, connecting, supporting, decorative
     * Expected extractors: structural analysis, architectural analysis
 
 * **Stress Type**
-    * Getty AAT: 300264519
-    * CIDOC CRM: E55_Type
+    * Getty AAT: `300264519 <http://vocab.getty.edu/aat/300264519>`_
+    * CIDOC CRM: :class:`E55_Type`
     * Values: compression, tension, bending, shear, torsion
     * Expected extractors: structural analysis
 
@@ -207,8 +207,8 @@ Performative Qualia
 Performance and capability characteristics:
 
 * **Load Capacity**
-    * Getty AAT: 300265725
-    * CIDOC CRM: E54_Dimension
+    * Getty AAT: `300265725 <http://vocab.getty.edu/aat/300265725>`_
+    * CIDOC CRM: :class:`E54_Dimension`
     * Units: kN, kgf
     * Expected extractors: structural analysis, load testing
 
@@ -222,14 +222,14 @@ Stylistic Qualia
 Artistic and stylistic characteristics:
 
 * **Artistic Style**
-    * Getty AAT: 300015646
-    * CIDOC CRM: E55_Type
+    * Getty AAT: `300015646 <http://vocab.getty.edu/aat/300015646>`_
+    * CIDOC CRM: :class:`E55_Type`
     * Vocabulary source: Getty AAT
     * Expected extractors: style analysis, comparative analysis
 
 * **Stylistic Influences**
-    * Getty AAT: 300015646
-    * CIDOC CRM: E55_Type
+    * Getty AAT: `300015646 <http://vocab.getty.edu/aat/300015646>`_
+    * CIDOC CRM: :class:`E55_Type`
     * Vocabulary source: Getty AAT
     * Expected extractors: historical analysis, stylistic analysis
 
@@ -242,29 +242,29 @@ Administrative Qualia
 ^^^^^^^^^^^^^^^^^^^
 
 * **Inventory Number**
-    * Getty AAT: 300312355
-    * CIDOC CRM: P48_has_preferred_identifier
+    * Getty AAT: `300312355 <http://vocab.getty.edu/aat/300312355>`_
+    * CIDOC CRM: :property:`P48_has_preferred_identifier`
     * Expected extractors: archival research, museum documentation
 
 * **Legal Status**
-    * Getty AAT: 300435427
-    * CIDOC CRM: P104_is_subject_to
+    * Getty AAT: `300435427 <http://vocab.getty.edu/aat/300435427>`_
+    * CIDOC CRM: :property:`P104_is_subject_to`
     * Vocabulary source: Getty AAT
     * Expected extractors: legal documentation, administrative research
 
 * **Intervention History**
-    * Getty AAT: 300379504
-    * CIDOC CRM: E11_Modification
+    * Getty AAT: `300379504 <http://vocab.getty.edu/aat/300379504>`_
+    * CIDOC CRM: :class:`E11_Modification`
 
 * **Conservation Status**
-    * Getty AAT: 300435429
-    * CIDOC CRM: P44_has_condition
+    * Getty AAT: `300435429 <http://vocab.getty.edu/aat/300435429>`_
+    * CIDOC CRM: :property:`P44_has_condition`
     * Vocabulary source: Getty AAT
     * Expected extractors: conservation assessment, condition survey
 
 * **Access Conditions**
-    * Getty AAT: 300435430
-    * CIDOC CRM: P104_is_subject_to
+    * Getty AAT: `300435430 <http://vocab.getty.edu/aat/300435430>`_
+    * CIDOC CRM: :property:`P104_is_subject_to`
     * Vocabulary source: Getty AAT
     * Expected extractors: access assessment, management review
 
@@ -307,8 +307,5 @@ References
 ----------
 
 * Pustejovsky, J. (1995). "The Generative Lexicon". MIT Press.
-* Getty Art & Architecture Thesaurus
-* CIDOC CRM Documentation
-
-
-
+* `Getty Art & Architecture Thesaurus <http://vocab.getty.edu/aat/>`_
+* `CIDOC CRM Documentation <http://www.cidoc-crm.org/>`_
