@@ -19,7 +19,8 @@ Extended Matrix Qualia Categories
 Qualia describing tangible and measurable characteristics.
 
 Dimensional Qualia
-^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^
+
 Properties describing measurable spatial characteristics:
 
 * **Height**
@@ -57,22 +58,19 @@ Properties describing measurable spatial characteristics:
     * Expected extractors: direct measurement, 3D model measurement, drawing measurement
 
 Material Qualia
-^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^
+
 Physical material characteristics:
 
 * **Material Type**
-    * Getty AAT: `300010357 <http://vocab.getty.edu/aat/300010357>`_
+    * Getty AAT: `300010358 <http://vocab.getty.edu/aat/300010358>`_
     * CIDOC CRM: :class:`E57_Material`
     * Dublin Core: ``dcterms:medium``
     * Vocabulary source: Getty AAT
     * Expected extractors: visual inspection, laboratory analysis
 
-* **Origin Type**
-    * Values: natural, artificial
-    * Data type: controlled vocabulary
-
 * **Surface Treatment**
-    * Getty AAT: `300053895 <http://vocab.getty.edu/aat/300053895>`_
+    * Getty AAT: `300053001 <http://vocab.getty.edu/aat/300053001>`_
     * CIDOC CRM: :class:`E11_Modification`
     * Dublin Core: ``dcterms:description``
     * Expected extractors: visual inspection, surface analysis
@@ -84,41 +82,43 @@ Physical material characteristics:
     * Expected extractors: visual inspection, microscopic analysis
 
 State Qualia
-^^^^^^^^^^^
+^^^^^^^^^^^^
+
 Current physical condition:
 
 * **Conservation State**
-    * Getty AAT: `300015332 <http://vocab.getty.edu/aat/300015332>`_
+    * Getty AAT: `300379396 <http://vocab.getty.edu/aat/300379396>`_
     * CIDOC CRM: :class:`E3_Condition_State`
     * ICOM CIDOC: ``Object Condition Information``
     * Values: excellent, good, fair, poor, very_poor
     * Expected extractors: visual inspection, condition assessment
 
 * **Integrity**
-    * Getty AAT: `300388714 <http://vocab.getty.edu/aat/300388714>`_
+    * Getty AAT: `300055863 <http://vocab.getty.edu/aat/300055863>`_
     * CIDOC CRM: :class:`E3_Condition_State`
     * Dublin Core: ``dcterms:description``
     * Data type: percentage (0-100)
     * Expected extractors: visual inspection, 3D model analysis
 
 Technical Qualia
-^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^
+
 Construction and execution techniques:
 
 * **Construction Technique**
-    * Getty AAT: `300000022 <http://vocab.getty.edu/aat/300000022>`_
+    * Getty AAT: `300053001 <http://vocab.getty.edu/aat/300053001>`_
     * CIDOC CRM: :class:`E29_Design_or_Procedure`
     * Dublin Core: ``dcterms:description``
     * Vocabulary source: Getty AAT
     * Expected extractors: visual inspection, technical analysis
 
 2. Spatiotemporal Qualia
-~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~
 
 Spatial and temporal characteristics.
 
 Spatial Qualia
-^^^^^^^^^^^^^
+^^^^^^^^^^^^^^
 
 * **Absolute Position**
     * Getty AAT: `300387565 <http://vocab.getty.edu/aat/300387565>`_
@@ -135,7 +135,7 @@ Spatial Qualia
     * Expected extractors: compass measurement, 3D model analysis
 
 * **Elevation**
-    * Getty AAT: `300447457 <http://vocab.getty.edu/aat/300447457>`_
+    * Getty AAT: `300055644 <http://vocab.getty.edu/aat/300055644>`_
     * CIDOC CRM: :class:`E54_Dimension`
     * Units: m, ft
     * Expected extractors: GPS survey, total station survey, leveling
@@ -165,7 +165,7 @@ Temporal Qualia
     * Values: stratigraphy, typology, c14, dendrochronology, historical_sources, stylistic_analysis
     * Expected extractors: dating analysis, laboratory analysis
 
-3. Functional Qualia
+1. Functional Qualia
 ~~~~~~~~~~~~~~~~~~~
 
 Use and performance characteristics.
