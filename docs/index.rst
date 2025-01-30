@@ -39,6 +39,7 @@ At the top is the Extended Matrix Language, which provides the formal notation s
    paradata_nodes
    qualia
    source_node
+   extractor_nodes
    paradata_group
    connectors
    alternate_hypotheses

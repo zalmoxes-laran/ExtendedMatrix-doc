@@ -1,5 +1,5 @@
-Qualia
-======
+Properties (Qualia)
+===================
 
 .. _qualia:
 
