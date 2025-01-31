@@ -39,11 +39,12 @@ Paradata nodes (``ParadataNode``, also known as validation nodes) are a speciali
    * Integration with surrounding structures
 
 Each ``property`` can be documented with its own paradata chain, regardless of where it falls on this gradient. This flexible approach allows:
-* Documentation chains that reflect the real complexity of knowledge acquisition
-* Multiple methods of determination for the same property
-* Clear tracking of evidence strength and certainty levels
-* Integration of physical evidence and interpretative reconstruction
-* Unified treatment of study and reconstruction
+
+_ Documentation chains that reflect the real complexity of knowledge acquisition
+- Multiple methods of determination for the same property
+- Clear tracking of evidence strength and certainty levels
+- Integration of physical evidence and interpretative reconstruction
+- Unified treatment of study and reconstruction
 
 The power of paradata nodes lies in their ability to model plastically around the phenomenon being studied or reconstructed, breaking down artificial barriers between observation and interpretation. A single stratigraphic unit might have properties documented through various means, each with its own evidence chain:
 
