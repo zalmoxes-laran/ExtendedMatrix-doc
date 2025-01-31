@@ -30,12 +30,16 @@ Dimensional Qualia
 
 Properties describing measurable spatial characteristics:
 
+.. _height_qualia:
+
 * **Height**
     * Getty AAT: `300055644 <http://vocab.getty.edu/aat/300055644>`_
     * CIDOC CRM: :class:`E54_Dimension`
     * Dublin Core: ``dcterms:extent``
     * Units: cm, m, ft
     * Expected extractors: direct measurement, 3D model measurement, drawing measurement
+
+.. _width_qualia:
 
 * **Width**
     * Getty AAT: `300055647 <http://vocab.getty.edu/aat/300055647>`_
@@ -44,12 +48,16 @@ Properties describing measurable spatial characteristics:
     * Units: cm, m, ft
     * Expected extractors: direct measurement, 3D model measurement, drawing measurement
 
+.. _length_qualia:
+
 * **Length**
     * Getty AAT: `300055644 <http://vocab.getty.edu/aat/300055644>`_
     * CIDOC CRM: :class:`E54_Dimension`
     * Dublin Core: ``dcterms:extent``
     * Units: cm, m, ft
     * Expected extractors: direct measurement, 3D model measurement, drawing measurement
+
+.. _thickness_qualia:
 
 * **Thickness**
     * Getty AAT: `300055650 <http://vocab.getty.edu/aat/300055650>`_
@@ -58,6 +66,8 @@ Properties describing measurable spatial characteristics:
     * Units: mm, cm, m
     * Expected extractors: direct measurement, material analysis, cross-section measurement
 
+.. _diameter_qualia:
+
 * **Diameter**
     * Getty AAT: `300055624 <http://vocab.getty.edu/aat/300055624>`_
     * CIDOC CRM: :class:`E54_Dimension`
@@ -65,12 +75,16 @@ Properties describing measurable spatial characteristics:
     * Units: cm, m, ft
     * Expected extractors: direct measurement, 3D model measurement, drawing measurement
 
+.. _depth_qualia:
+
 * **Depth**
     * Getty AAT: `300072633 <http://vocab.getty.edu/aat/300072633>`_
     * CIDOC CRM: :class:`E54_Dimension`
     * Dublin Core: ``dcterms:extent``
     * Units: cm, m, ft
     * Expected extractors: direct measurement, 3D model measurement, drawing measurement
+
+.. _weight_qualia:
 
 * **Weight**
     * Getty AAT: `300056240 <http://vocab.getty.edu/aat/300056240>`_
@@ -82,6 +96,8 @@ Material Qualia
 ^^^^^^^^^^^^^^^
 
 Physical material characteristics:
+
+.. _material_type:
 
 * **Material Type**
     * Getty AAT: `300010358 <http://vocab.getty.edu/aat/300010358>`_
@@ -133,7 +149,7 @@ Construction and execution techniques:
     * Vocabulary source: Getty AAT
     * Expected extractors: visual inspection, technical analysis
 
-2. Spatiotemporal Qualia
+1. Spatiotemporal Qualia
 ~~~~~~~~~~~~~~~~~~~~~~~~
 
 Spatial and temporal characteristics.
