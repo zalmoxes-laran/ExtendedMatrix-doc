@@ -13,6 +13,13 @@ While Pustejovsky's original framework (Formal, Constitutive, Telic, and Agentiv
 Extended Matrix Qualia Categories
 --------------------------------
 
+.. note::
+   :class: admonition-purple
+
+   The structure is accessible in a structured format via JSON at  
+   `EM Blender Tools - Qualia Types JSON <https://github.com/zalmoxes-laran/EM-blender-tools/blob/EMtools_3dgraphy/s3Dgraphy/JSON_config/em_qualia_types.json>`_.
+
+
 1. Physical and Material Qualia
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
@@ -37,6 +44,27 @@ Properties describing measurable spatial characteristics:
     * Units: cm, m, ft
     * Expected extractors: direct measurement, 3D model measurement, drawing measurement
 
+**Length**
+   * Getty AAT: `300055644 <http://vocab.getty.edu/aat/300055644>`_
+   * CIDOC CRM: :class:`E54_Dimension`
+   * Dublin Core: ``dcterms:extent``
+   * Units: cm, m, ft
+   * Expected extractors: direct measurement, 3D model measurement, drawing measurement
+
+**Thickness**
+   * Getty AAT: `300055650 <http://vocab.getty.edu/aat/300055650>`_
+   * CIDOC CRM: :class:`E54_Dimension`
+   * Dublin Core: ``dcterms:extent``
+   * Units: mm, cm, m
+   * Expected extractors: direct measurement, material analysis, cross-section measurement
+
+* **Diameter**
+    * Getty AAT: `300055624 <http://vocab.getty.edu/aat/300055624>`_
+    * CIDOC CRM: :class:`E54_Dimension`
+    * Dublin Core: ``dcterms:extent``
+    * Units: cm, m, ft
+    * Expected extractors: direct measurement, 3D model measurement, drawing measurement
+
 * **Depth**
     * Getty AAT: `300072633 <http://vocab.getty.edu/aat/300072633>`_
     * CIDOC CRM: :class:`E54_Dimension`
@@ -49,13 +77,6 @@ Properties describing measurable spatial characteristics:
     * CIDOC CRM: :class:`E54_Dimension`
     * Units: kg, g, lb
     * Expected extractors: direct measurement
-
-* **Diameter**
-    * Getty AAT: `300055624 <http://vocab.getty.edu/aat/300055624>`_
-    * CIDOC CRM: :class:`E54_Dimension`
-    * Dublin Core: ``dcterms:extent``
-    * Units: cm, m, ft
-    * Expected extractors: direct measurement, 3D model measurement, drawing measurement
 
 Material Qualia
 ^^^^^^^^^^^^^^^
