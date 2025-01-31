@@ -64,7 +64,6 @@ Methods for extracting dimensional data from various documents:
 * **3D Model Analysis**
     * Source documents: 3D scans, photogrammetric models, CAD models
     * Target qualia: height, width, depth, diameter, volume
-    * Accuracy level: High (85%)
     * Tools:
         * 3D software
         * Measurement tools
@@ -80,7 +79,6 @@ Methods for extracting dimensional data from various documents:
 * **Technical Drawing Analysis**
     * Source documents: architectural drawings, survey drawings, construction plans
     * Target qualia: height, width, depth, diameter
-    * Accuracy level: Medium High (75%)
     * Tools:
         * CAD software
         * Digital measurement tools
@@ -101,7 +99,6 @@ Material Analysis Extractors
 * **Photographic Analysis**
     * Source documents: photographs, microscope images, spectral images
     * Target qualia: material type, surface treatment, conservation state
-    * Accuracy level: Medium (65%)
     * Tools:
         * Image analysis software
         * Comparative databases
@@ -117,7 +114,6 @@ Material Analysis Extractors
 * **Laboratory Report Analysis**
     * Source documents: material analysis reports, scientific studies, test results
     * Target qualia: material composition, physical properties, chemical properties
-    * Accuracy level: Very High (95%)
     * Tools:
         * Scientific databases
         * Analysis protocols
@@ -138,7 +134,6 @@ Temporal Analysis Extractors
 * **Archival Document Analysis**
     * Source documents: historical documents, archival records, historical maps
     * Target qualia: construction date, modification date, historical phase
-    * Accuracy level: Medium High (75%)
     * Tools:
         * Archival databases
         * Document analysis software
@@ -154,7 +149,6 @@ Temporal Analysis Extractors
 * **Scientific Dating Analysis**
     * Source documents: laboratory reports, dating certificates, analysis results
     * Target qualia: absolute date, date range, chronological phase
-    * Accuracy level: Very High (95%)
     * Tools:
         * Dating databases
         * Calibration software
@@ -175,7 +169,6 @@ Functional Analysis Extractors
 * **Architectural Analysis**
     * Source documents: architectural plans, technical reports, building surveys
     * Target qualia: spatial organization, circulation pattern, structural role
-    * Accuracy level: High (85%)
     * Tools:
         * Architectural software
         * Spatial analysis tools
@@ -191,7 +184,6 @@ Functional Analysis Extractors
 * **Use Pattern Analysis**
     * Source documents: historical accounts, ethnographic studies, user documentation
     * Target qualia: primary function, secondary functions, use evolution
-    * Accuracy level: Medium (65%)
     * Tools:
         * Comparative databases
         * Pattern analysis software
@@ -212,7 +204,6 @@ Cultural Analysis Extractors
 * **Iconographic Analysis**
     * Source documents: photographs, drawings, historical illustrations
     * Target qualia: symbolic meaning, artistic style, iconographic program
-    * Accuracy level: Medium High (75%)
     * Tools:
         * Iconographic databases
         * Comparative catalogs
@@ -228,7 +219,6 @@ Cultural Analysis Extractors
 * **Historical Context Analysis**
     * Source documents: historical texts, period documents, contemporary accounts
     * Target qualia: cultural significance, historical context, social value
-    * Accuracy level: Medium (65%)
     * Tools:
         * Historical databases
         * Context analysis software
@@ -250,7 +240,6 @@ Conservation Analysis Extractors
 * **Condition Report Analysis**
     * Source documents: condition reports, conservation surveys, monitoring records
     * Target qualia: conservation state, degradation patterns, intervention needs
-    * Accuracy level: High (85%)
     * Tools:
         * Condition assessment software
         * Documentation databases
@@ -266,7 +255,6 @@ Conservation Analysis Extractors
 * **Intervention History Analysis**
     * Source documents: restoration reports, intervention documentation, maintenance records
     * Target qualia: previous interventions, treatment effectiveness, maintenance needs
-    * Accuracy level: Medium High (75%)
     * Tools:
         * Conservation databases
         * Intervention tracking software
