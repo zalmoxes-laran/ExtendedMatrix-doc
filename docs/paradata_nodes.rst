@@ -255,6 +255,7 @@ Name conventions
    :class: data-format
 
    Node naming conventions:
+   
    * Document nodes: "D.01", "D.02", etc.
    * Extractor nodes: [Document ID].[sequence], e.g., "D.01.01"
    * Combiner nodes: "C.01", "C.02", etc.
