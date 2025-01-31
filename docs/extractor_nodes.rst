@@ -6,47 +6,6 @@ Introduction
 
 Extractors are specialized tools and methodologies used in the Extended Matrix framework to derive qualia (properties) from source documents. Each extractor type is designed for specific kinds of analysis and has defined accuracy levels, validation requirements, and reliability factors.
 
-Example: Historical Photograph Analysis
-------------------------------------
-
-Let's examine how an extractor processes information from a historical source to establish a construction technique:
-
-.. admonition:: Practical Example
-   :class: example
-
-   **Context**: 
-   A historical photograph from 1892 shows the remains of a Roman wall before modern restoration work.
-   
-   **Source Document (D.01)**
-   - Type: Historical photograph
-   - Date: 1892
-   - Archive: State Archive of Rome
-   - Description: Black and white photograph showing the eastern wall of the Roman villa
-
-   **Extractor Analysis (D.01.01)**
-   The extractor node documents the interpretive process:
-   
-   "The photograph shows a clear pattern of regular courses in the wall face. 
-   Despite the grainy quality of the 19th-century photograph, the size and 
-   arrangement of the elements are consistent with opus testaceum (Roman 
-   brick facing technique). This is evidenced by:
-   
-   1. Regular horizontal coursing visible in the wall face
-   2. Uniform size of individual elements suggesting standard Roman brick dimensions
-   3. Characteristic pattern of headers and stretchers typical of 2nd century CE 
-      opus testaceum
-   4. Visible remains of mortar joints of approximately 1 finger width"
-
-   **Resulting Property Node**
-   - Property: construction_technique
-   - Value: opus testaceum
-   - Reliability: high
-   - Supporting evidence: Photographic documentation showing characteristic 
-     patterns of Roman brick construction technique
-
-    This example demonstrates how an extractor transforms visual information from a historical photograph into a documented construction technique property, creating a clear chain of evidence from source to interpretation.
-
-
 .. note::
    :class: admonition-purple
 
