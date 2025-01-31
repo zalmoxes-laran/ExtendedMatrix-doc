@@ -9,6 +9,13 @@ Introduction
 Document nodes (also known as source nodes) are fundamental elements in the Extended Matrix framework, representing primary and secondary sources that support our archaeological interpretations. As described in the paradata nodes section, they form part of the validation chain for archaeological properties. This chapter provides an operational deep-dive into how to effectively manage and organize these sources in practice.
 Each document is assigned a unique identifier (e.g., "D.01", "D.02") that serves as a reference throughout the documentation process.
 
+.. note::
+   :class: admonition-purple
+
+   The structured version of the Document (Source) Nodes is available in JSON format at  
+   `EM Blender Tools - Document Types JSON <https://github.com/zalmoxes-laran/EM-blender-tools/blob/EMtools_3dgraphy/s3Dgraphy/JSON_config/em_document_types.json>`_.
+
+
 Document Types and Classification
 -------------------------------
 
