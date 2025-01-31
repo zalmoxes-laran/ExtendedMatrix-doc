@@ -64,15 +64,6 @@ When adding paradata to the Extended Matrix:
 
 4. **Utilize Collapse Functionality**: In yED, collapse the paradata group into a single node when detailed paradata information is not required, enhancing the matrix's readability.
 
-Benefits of Paradata Groups
----------------------------
-
-- **Efficient Data Management**: Grouping paradata allows for easier management and navigation of metadata associated with stratigraphic units.
-
-- **Customizable Visualization**: The ability to collapse or expand paradata groups provides flexibility in how the matrix is viewed and analyzed.
-
-- **Data Integrity and Transparency**: By providing detailed context about the data, paradata groups contribute to the integrity and transparency of the archaeological interpretations.
-
 Conclusion
 ----------
 

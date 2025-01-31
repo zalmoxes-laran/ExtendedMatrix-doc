@@ -163,7 +163,7 @@ Refers to a non-in situ element (fragmented or intact) that needs to be repositi
   :width: 400
   :align: center 
 
-  Example: There are only the remains of a podium SU01 with a collapsed column SF01. A USV/n 100 hypothetical reconstruction is provisioned using the SF as a source. This kind of USV/n has a special status.
+  Example: Consider a collapsed column (SF01) found near a podium (SU01). The SF documents the actual found piece, while its corresponding VSF represents the restoration work needed to complete missing parts when the column is repositioned. This pairing allows clear distinction between the original element (SF) and its restoration/completion (VSF).
 
 .. figure:: img/B06.png
   :width: 400
@@ -196,7 +196,7 @@ Cumulative example of different USV nodes used together
   
   USV/s and USV/n are used together. Different -SU allow to propose different USV/s.
 
-5. Transformation Stratigraphic Unit (``TransformationStratigraphicUnit``):
+1. Transformation Stratigraphic Unit (``TransformationStratigraphicUnit``):
 --------------------------------------------------------
 
 These units represent the record of chemical, physical, or biological changes that have occurred over time on a specific surface or material. TSUs allow for the documentation and visualization of not only the current state of preservation but also the chronological sequence of transformative processes within a historic structure. This provides a dynamic perspective that captures all transformations affecting stratigraphic objects.
