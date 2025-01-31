@@ -44,19 +44,19 @@ Properties describing measurable spatial characteristics:
     * Units: cm, m, ft
     * Expected extractors: direct measurement, 3D model measurement, drawing measurement
 
-**Length**
-   * Getty AAT: `300055644 <http://vocab.getty.edu/aat/300055644>`_
-   * CIDOC CRM: :class:`E54_Dimension`
-   * Dublin Core: ``dcterms:extent``
-   * Units: cm, m, ft
-   * Expected extractors: direct measurement, 3D model measurement, drawing measurement
+* **Length**
+    * Getty AAT: `300055644 <http://vocab.getty.edu/aat/300055644>`_
+    * CIDOC CRM: :class:`E54_Dimension`
+    * Dublin Core: ``dcterms:extent``
+    * Units: cm, m, ft
+    * Expected extractors: direct measurement, 3D model measurement, drawing measurement
 
-**Thickness**
-   * Getty AAT: `300055650 <http://vocab.getty.edu/aat/300055650>`_
-   * CIDOC CRM: :class:`E54_Dimension`
-   * Dublin Core: ``dcterms:extent``
-   * Units: mm, cm, m
-   * Expected extractors: direct measurement, material analysis, cross-section measurement
+* **Thickness**
+    * Getty AAT: `300055650 <http://vocab.getty.edu/aat/300055650>`_
+    * CIDOC CRM: :class:`E54_Dimension`
+    * Dublin Core: ``dcterms:extent``
+    * Units: mm, cm, m
+    * Expected extractors: direct measurement, material analysis, cross-section measurement
 
 * **Diameter**
     * Getty AAT: `300055624 <http://vocab.getty.edu/aat/300055624>`_
