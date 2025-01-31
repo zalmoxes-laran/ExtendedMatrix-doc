@@ -142,9 +142,11 @@ A combiner node represents the synthesis of multiple interpretations to support 
    :class: example
 
    An archaeologist might combine:
-   * A historical photograph showing column dimensions
-   * An excavation report describing material
-   * A comparative analysis of similar structures
+
+   - A historical photograph showing column dimensions
+   - An excavation report describing material
+   - A comparative analysis of similar structures
+  
    To establish comprehensive documentation of a column's properties.
 
 Working Together: The Paradata Chain
