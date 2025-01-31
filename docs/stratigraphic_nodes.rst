@@ -8,6 +8,20 @@ General background on stratigraphic units (``StratigraphicNode``)
 
 A stratigraphic unit in some academic scholarships is also known as locus or context. It indicates the result of an action that occurred at a specific moment in time. The result (the construction of a wall, the destruction of a roof, is the silt deposited on top of structures following a flood, the chemical change of surfaces due to a fire) in turn have a life span that ends with the moment it is defunctionalized (destroyed, abandoned, buried). It has a spatio-temporal nature: temporal persistence of a geometry in a given point in space. When the position change, the US will change its nature.
 
+.. tip:: Stratigraphic Units as Storytelling Tools
+   
+   Think of stratigraphic units as a specialized alphabet for telling the story of a place through time. Just as a writer uses words to craft a narrative, archaeologists and heritage specialists use stratigraphic units to document the biography of a site, piece by piece:
+
+   - Each wall, window, column base, and architectural element is a character in the story
+   - Every destruction event (collapse, fire, removal) marks a dramatic turning point
+   - Each reconstruction or restoration represents a new chapter
+   - Additional elements (lanterns, furniture, decorations) enrich the setting
+   - Even historical figures who inhabited the space can be part of the narrative
+
+   Stratigraphic units are remarkably versatile - they can express both tangible and intangible concepts. As you read through the following node types, think of them as letters in your storytelling alphabet. Each node represents a moment in time that created a result, whether physical (like a new wall) or conceptual (like a change in function).
+
+   By combining these "letters" into "words" and "sentences," you can document everything from major architectural transformations to subtle changes in how spaces were used and perceived through time. This makes stratigraphy not just a technical tool, but a powerful narrative device for understanding and communicating the complete life story of a cultural heritage site.
+
 .. note::
   More details about the stratigraphic approach can be found  `here <stratigraphic_approach.html>`_
 
