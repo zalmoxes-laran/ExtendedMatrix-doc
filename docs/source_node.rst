@@ -15,6 +15,10 @@ Each document is assigned a unique identifier (e.g., "D.01", "D.02") that serves
    The structured version of the Document (Source) Nodes is available in JSON format at  
    `EM Blender Tools - Document Types JSON <https://github.com/zalmoxes-laran/EM-blender-tools/blob/EMtools_3dgraphy/s3Dgraphy/JSON_config/em_document_types.json>`_.
 
+`new` 3D representation of Document Nodes
+-----------------------------------------
+
+Document nodes can be represented in 3D space as a collection of digital assets, each corresponding to a specific source. These assets can be visualized in a virtual environment, providing a spatial representation of the documentation sources. The 3D representation is normally created withih the context of a 3D model of the archaeological site or object. In the EM framework, the 3D representation of document nodes is used to visualize the spatial distribution of sources and their relationships to the archaeological properties they validate. They are created using the Blender software and can be exported along with the overall scene in the GLTF format to be reused in EMviq or in Heriverse web-app.
 
 Document Types and Classification
 -------------------------------
