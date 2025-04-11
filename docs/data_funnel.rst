@@ -12,19 +12,43 @@ The Extended Matrix utilizes a hierarchical data structure known as the **Data F
 1. General Background Data
 --------------------------
 
-**Definition**: General Background Data encompasses information that applies uniformly to all nodes within the knowledge graph of the Extended Matrix. These data provide a global context, essential for maintaining coherence across different elements and preventing data duplication.
+General Background Data encompasses information that applies uniformly to all nodes within the knowledge graph of the Extended Matrix. These data provide a global context, essential for maintaining coherence across different elements and preventing data duplication.
 
 **Values**:
 
 - **Extended Matrix ID**: An identifier assigned to a coherent stratigraphic portion of an archaeological site or monument. This ID helps avoid duplications and maintains consistency in node identification within the graph.
-
 - **ORCID**: Unique identifiers of authors involved in the project, allowing each node to be linked to a specific author in a structured and identifiable manner.
+- **Licence**: It uses the Creative Commons license schema (i.e., CC-BY-NC).
+- **Embargo**: Expressed in months, it defines the disclosure moment in time when the dataset can be released to the public (using the license above).
 
-- **Licence**: it uses the Creative Commons licence schema (i.e. CC-BY-NC)
 
-- **Embargo**: expressed in months, it defines the disclosure moment in time when the dataset can be released to the public (using the licence above)
+To ensure that every node in the graph is coherently linked to a set of common properties, maintaining the integrity of the system and providing adequate granularity.
 
-**Objective**: To ensure that every node in the graph is coherently linked to a set of common properties, maintaining the integrity of the system and providing adequate granularity.
+The Extended Matrix ID serves as a prefix to make each stratigraphic unit identifier unique across multiple excavation projects. This approach solves a common archaeological data management challenge: the same identifier (like "USM100") may be used across different excavation sites.
+
+By adding a unique excavation ID prefix, we create globally unique identifiers. For example::
+
+    GTS16.USM100
+
+Where:
+
+- **GTS16** is the Extended Matrix ID for the Great Temple of Sarmizegetusa, 2016 campaign
+- **USM100** is the local stratigraphic unit identifier
+
+.. note::
+   **Moving from Individual Context to Landscape Analysis**
+
+   Traditional archaeological documentation manages each excavation as a separate entity, making inter-site analysis challenging. The Extended Matrix ID system allows archaeologists to:
+
+   1. **Manage multiple sites in a single Blender session**: Combine data from multiple excavations or monuments while maintaining distinct identification.
+
+   2. **Prevent ID collisions**: Even when two different sites have identically numbered units (e.g., USM100), the prefixed IDs (GTS16.USM100 vs. PTR19.USM100) remain distinct.
+
+   3. **Enable landscape-level analysis**: By integrating multiple sites with unique identifiers, researchers can shift from analyzing individual contexts to understanding entire archaeological landscapes.
+
+   4. **Facilitate collaboration**: Team members working on different sites can share a single data environment while maintaining organizational clarity.
+
+This approach creates a hierarchical namespace for archaeological data, similar to domain naming systems used in other fields, ensuring that local identifiers remain meaningful within their context while becoming globally unique when combined with the Extended Matrix ID.
 
 2. Local Background Data
 ------------------------
