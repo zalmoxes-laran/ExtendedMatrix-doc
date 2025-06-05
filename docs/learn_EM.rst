@@ -7,7 +7,13 @@ Bare in mind that the path to learn and use EM depends on your scope and your ba
 1. EM formal language (for smart humanists)
 -------------------------------------------
 
-You can just use EM to document your studies and your reconstructions: it is reccommended to learn at least the EM language (that can be done even with a pencil and a sheet of paper) as it is explained in the following sections of this documentation.
+"""
+Provides an overview of the EM language, a formal graphical notation used to describe stratigraphy and archaeological contexts. This documentation recommends learning the EM language, which can be studied using simple materials such as pencil and paper. The relevant sections of this documentation explain the basics of EM, emphasizing that it is not a programming language but a specialized tool for representing archaeological studies and reconstructions.
+"""
+
+.. tip::
+
+   The reference repository, which contains example cards, node icons, templates and other useful material, is available at https://github.com/zalmoxes-laran/ExtendedMatrix/tree/EM_1.5_dev/
 
 2. Annotate stratigraphy on 3D models (for jedi-humanists)
 ------------------------------------------------------------------------------------------------
