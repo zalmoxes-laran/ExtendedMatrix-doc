@@ -105,13 +105,16 @@ Benefits of the Data Funnel Structure
 
 - **Efficient Data Management**: The hierarchical structure facilitates easier data management and updates, as changes at higher levels automatically propagate to relevant nodes.
 
+Important Considerations
+------------------------
+
 .. note::
    **Setup of a new GrapML file**
 
-   1. A common error when setting up a new GrapML file is to forget to set the Extended Matrix ID in the General Background Data. This omission can lead to confusion and potential ID collisions when integrating data from multiple excavation projects.
+   1. **Set the ID in the upper part of the canvas.** A common error when setting up a new GrapML file is to forget to set the Extended Matrix ID in the General Background Data. This omission can lead to confusion and potential ID collisions when integrating data from multiple excavation projects.
 
-   2. You need to set the start
-
+   2. **Set start and end for each epoch.** You need to set the start and end dates for each Epoch in the Local Background Data. This step is crucial for establishing the temporal framework within which the stratigraphic nodes will be contextualized.
+   
 
 Conclusion
 ----------
