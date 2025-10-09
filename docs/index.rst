@@ -26,6 +26,7 @@ At the top is the Extended Matrix Language, which provides the formal notation s
 
    learn_EM
    usage
+   project_organization
 
 .. toctree::
    :maxdepth: 2
