@@ -1,0 +1,754 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   viewBox="0 0 1200 900"
+   style="font-family: 'Segoe UI', Arial, sans-serif;"
+   version="1.1"
+   id="svg67"
+   sodipodi:docname="em_repo_structure.svg"
+   inkscape:version="1.4.2 (ebf0e940, 2025-05-08)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview67"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     showgrid="false"
+     inkscape:zoom="0.87555556"
+     inkscape:cx="600.19036"
+     inkscape:cy="450"
+     inkscape:window-width="1792"
+     inkscape:window-height="1007"
+     inkscape:window-x="0"
+     inkscape:window-y="31"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg67" />
+  <!-- Background -->
+  <!-- Title -->
+  <!-- Main repository container -->
+  <rect
+     x="49.897457"
+     y="219.26294"
+     width="1100.2051"
+     height="650.8396"
+     rx="10.001864"
+     fill="#ffffff"
+     stroke="#3498db"
+     stroke-width="3"
+     id="rect2" />
+  <text
+     x="80"
+     y="258"
+     font-size="20px"
+     font-weight="bold"
+     fill="#2c3e50"
+     id="text3">📁 ExtendedMatrix/</text>
+  <!-- Grid layout for folders -->
+  <!-- Row 1 -->
+  <!-- 00_EMicons -->
+  <g
+     transform="matrix(0.96640788,0,0,0.96640788,79.966408,307.10346)"
+     id="g8">
+    <rect
+       width="250"
+       height="120"
+       rx="8"
+       fill="#e8f4f8"
+       stroke="#3498db"
+       stroke-width="2"
+       id="rect3"
+       x="0"
+       y="0" />
+    <text
+       x="15"
+       y="30"
+       font-size="28px"
+       id="text4">🎨</text>
+    <text
+       x="60"
+       y="35"
+       font-size="16px"
+       font-weight="bold"
+       fill="#2c3e50"
+       id="text5">00_EMicons</text>
+    <text
+       x="15"
+       y="60"
+       font-size="13px"
+       fill="#34495e"
+       id="text6">Node icon set (SVG/PNG)</text>
+    <text
+       x="15"
+       y="80"
+       font-size="12px"
+       fill="#7f8c8d"
+       id="text7">Standard visual language</text>
+    <text
+       x="15"
+       y="95"
+       font-size="12px"
+       fill="#7f8c8d"
+       id="text8">for all EM node types</text>
+  </g>
+  <!-- 01_ReferenceSheets -->
+  <g
+     transform="matrix(0.96640788,0,0,0.96640788,350.56062,307.10346)"
+     id="g13">
+    <rect
+       width="250"
+       height="120"
+       rx="8"
+       fill="#f0e8f8"
+       stroke="#9b59b6"
+       stroke-width="2"
+       id="rect8"
+       x="0"
+       y="0" />
+    <text
+       x="15"
+       y="30"
+       font-size="28px"
+       id="text9">📋</text>
+    <text
+       x="60"
+       y="35"
+       font-size="16px"
+       font-weight="bold"
+       fill="#2c3e50"
+       id="text10">01_ReferenceSheets</text>
+    <text
+       x="15"
+       y="60"
+       font-size="13px"
+       fill="#34495e"
+       id="text11">Quick reference materials</text>
+    <text
+       x="15"
+       y="80"
+       font-size="12px"
+       fill="#7f8c8d"
+       id="text12">Printable cheat sheets</text>
+    <text
+       x="15"
+       y="95"
+       font-size="12px"
+       fill="#7f8c8d"
+       id="text13">Visual guides workflows</text>
+  </g>
+  <!-- 02_ExtendedMatrix_palette -->
+  <g
+     transform="matrix(0.96640788,0,0,0.96640788,621.15482,307.10346)"
+     id="g18">
+    <rect
+       width="250"
+       height="120"
+       rx="8"
+       fill="#e8f8f0"
+       stroke="#27ae60"
+       stroke-width="2"
+       id="rect13"
+       x="0"
+       y="0" />
+    <text
+       x="15"
+       y="30"
+       font-size="28px"
+       id="text14">🎯</text>
+    <text
+       x="60"
+       y="35"
+       font-size="16px"
+       font-weight="bold"
+       fill="#2c3e50"
+       id="text15">02_EM_palette</text>
+    <text
+       x="15"
+       y="60"
+       font-size="13px"
+       fill="#34495e"
+       id="text16">yED palette files</text>
+    <text
+       x="15"
+       y="80"
+       font-size="12px"
+       fill="#7f8c8d"
+       id="text17">Ready-to-use EM 1.5</text>
+    <text
+       x="15"
+       y="95"
+       font-size="12px"
+       fill="#7f8c8d"
+       id="text18">nodes and connectors</text>
+  </g>
+  <!-- 03_Sources_list -->
+  <g
+     transform="matrix(0.96640788,0,0,0.96640788,891.74903,307.10346)"
+     id="g23">
+    <rect
+       width="250"
+       height="120"
+       rx="8"
+       fill="#fff4e8"
+       stroke="#e67e22"
+       stroke-width="2"
+       id="rect18"
+       x="0"
+       y="0" />
+    <text
+       x="15"
+       y="30"
+       font-size="28px"
+       id="text19">📄</text>
+    <text
+       x="60"
+       y="35"
+       font-size="16px"
+       font-weight="bold"
+       fill="#2c3e50"
+       id="text20">03_Sources_list</text>
+    <text
+       x="15"
+       y="60"
+       font-size="13px"
+       fill="#34495e"
+       id="text21">Document management</text>
+    <text
+       x="15"
+       y="80"
+       font-size="12px"
+       fill="#7f8c8d"
+       id="text22">DosCo templates</text>
+    <text
+       x="15"
+       y="95"
+       font-size="12px"
+       fill="#7f8c8d"
+       id="text23">Source metadata tracking</text>
+  </g>
+  <!-- Row 2 -->
+  <!-- 04_EMdb_template -->
+  <g
+     transform="matrix(0.96640788,0,0,0.96640788,79.966408,452.06465)"
+     id="g28">
+    <rect
+       width="250"
+       height="120"
+       rx="8"
+       fill="#f8e8e8"
+       stroke="#e74c3c"
+       stroke-width="2"
+       id="rect23"
+       x="0"
+       y="0" />
+    <text
+       x="15"
+       y="30"
+       font-size="28px"
+       id="text24">🗄️</text>
+    <text
+       x="60"
+       y="35"
+       font-size="16px"
+       font-weight="bold"
+       fill="#2c3e50"
+       id="text25">04_EMdb_template</text>
+    <text
+       x="15"
+       y="60"
+       font-size="13px"
+       fill="#34495e"
+       id="text26">Database templates</text>
+    <text
+       x="15"
+       y="80"
+       font-size="12px"
+       fill="#7f8c8d"
+       id="text27">SQL schemas scripts</text>
+    <text
+       x="15"
+       y="95"
+       font-size="12px"
+       fill="#7f8c8d"
+       id="text28">For large-scale projects</text>
+  </g>
+  <!-- 05_EMjson -->
+  <g
+     transform="matrix(0.96640788,0,0,0.96640788,350.56062,452.06465)"
+     id="g33">
+    <rect
+       width="250"
+       height="120"
+       rx="8"
+       fill="#fff8e8"
+       stroke="#f39c12"
+       stroke-width="2"
+       id="rect28"
+       x="0"
+       y="0" />
+    <text
+       x="15"
+       y="30"
+       font-size="28px"
+       id="text29">{ }</text>
+    <text
+       x="60"
+       y="35"
+       font-size="16px"
+       font-weight="bold"
+       fill="#2c3e50"
+       id="text30">05_EMjson</text>
+    <text
+       x="15"
+       y="60"
+       font-size="13px"
+       fill="#34495e"
+       id="text31">JSON schemas</text>
+    <text
+       x="15"
+       y="80"
+       font-size="12px"
+       fill="#7f8c8d"
+       id="text32">Property definitions</text>
+    <text
+       x="15"
+       y="95"
+       font-size="12px"
+       fill="#7f8c8d"
+       id="text33">Document extractor types</text>
+  </g>
+  <!-- 06_Ontology -->
+  <g
+     transform="matrix(0.96640788,0,0,0.96640788,621.15482,452.06465)"
+     id="g38">
+    <rect
+       width="250"
+       height="120"
+       rx="8"
+       fill="#f0f0f8"
+       stroke="#5d6d7e"
+       stroke-width="2"
+       id="rect33"
+       x="0"
+       y="0" />
+    <text
+       x="15"
+       y="30"
+       font-size="28px"
+       id="text34">🔗</text>
+    <text
+       x="60"
+       y="35"
+       font-size="16px"
+       font-weight="bold"
+       fill="#2c3e50"
+       id="text35">06_Ontology</text>
+    <text
+       x="15"
+       y="60"
+       font-size="13px"
+       fill="#34495e"
+       id="text36">Formal ontologies</text>
+    <text
+       x="15"
+       y="80"
+       font-size="12px"
+       fill="#7f8c8d"
+       id="text37">RDF/OWL definitions</text>
+    <text
+       x="15"
+       y="95"
+       font-size="12px"
+       fill="#7f8c8d"
+       id="text38">CIDOC-CRM mappings</text>
+  </g>
+  <!-- 07_FolderTree -->
+  <g
+     transform="matrix(0.96640788,0,0,0.96640788,891.74903,452.06465)"
+     id="g43">
+    <rect
+       width="250"
+       height="120"
+       rx="8"
+       fill="#e8f8e8"
+       stroke="#16a085"
+       stroke-width="2"
+       id="rect38"
+       x="0"
+       y="0" />
+    <text
+       x="15"
+       y="30"
+       font-size="28px"
+       id="text39">📂</text>
+    <text
+       x="60"
+       y="35"
+       font-size="16px"
+       font-weight="bold"
+       fill="#2c3e50"
+       id="text40">07_FolderTree</text>
+    <text
+       x="15"
+       y="60"
+       font-size="13px"
+       fill="#34495e"
+       id="text41">Project structure template</text>
+    <text
+       x="15"
+       y="80"
+       font-size="12px"
+       fill="#7f8c8d"
+       id="text42">Complete folder tree</text>
+    <text
+       x="15"
+       y="95"
+       font-size="12px"
+       fill="#7f8c8d"
+       id="text43">Ready for deployment</text>
+  </g>
+  <!-- Usage flow section -->
+  <g
+     transform="translate(80,608)"
+     id="g57">
+    <text
+       x="0"
+       y="0"
+       font-size="18px"
+       font-weight="bold"
+       fill="#2c3e50"
+       id="text44">Usage Flow:</text>
+    <!-- Flow arrows -->
+    <g
+       transform="translate(0,20)"
+       id="g52">
+      <!-- Step 1 -->
+      <rect
+         x="0"
+         y="0"
+         width="180"
+         height="60"
+         rx="5"
+         fill="#3498db"
+         opacity="0.1"
+         stroke="#3498db"
+         stroke-width="2"
+         id="rect44" />
+      <text
+         x="90"
+         y="25"
+         font-size="13px"
+         font-weight="bold"
+         text-anchor="middle"
+         fill="#2c3e50"
+         id="text45">1. Download Palette</text>
+      <text
+         x="90"
+         y="45"
+         font-size="11px"
+         text-anchor="middle"
+         fill="#34495e"
+         id="text46">02_EM_palette</text>
+      <path
+         d="m 180,30 h 30"
+         stroke="#3498db"
+         stroke-width="2"
+         marker-end="url(#arrowblue)"
+         id="path46" />
+      <!-- Step 2 -->
+      <rect
+         x="210"
+         y="0"
+         width="180"
+         height="60"
+         rx="5"
+         fill="#9b59b6"
+         opacity="0.1"
+         stroke="#9b59b6"
+         stroke-width="2"
+         id="rect46" />
+      <text
+         x="300"
+         y="25"
+         font-size="13px"
+         font-weight="bold"
+         text-anchor="middle"
+         fill="#2c3e50"
+         id="text47">2. Use Templates</text>
+      <text
+         x="300"
+         y="45"
+         font-size="11px"
+         text-anchor="middle"
+         fill="#34495e"
+         id="text48">01_ReferenceSheets</text>
+      <path
+         d="m 390,30 h 30"
+         stroke="#9b59b6"
+         stroke-width="2"
+         marker-end="url(#arrowpurple)"
+         id="path48" />
+      <!-- Step 3 -->
+      <rect
+         x="420"
+         y="0"
+         width="180"
+         height="60"
+         rx="5"
+         fill="#27ae60"
+         opacity="0.1"
+         stroke="#27ae60"
+         stroke-width="2"
+         id="rect48" />
+      <text
+         x="510"
+         y="25"
+         font-size="13px"
+         font-weight="bold"
+         text-anchor="middle"
+         fill="#2c3e50"
+         id="text49">3. Organize Sources</text>
+      <text
+         x="510"
+         y="45"
+         font-size="11px"
+         text-anchor="middle"
+         fill="#34495e"
+         id="text50">03_Sources_list</text>
+      <path
+         d="m 600,30 h 30"
+         stroke="#27ae60"
+         stroke-width="2"
+         marker-end="url(#arrowgreen)"
+         id="path50" />
+      <!-- Step 4 -->
+      <rect
+         x="630"
+         y="0"
+         width="180"
+         height="60"
+         rx="5"
+         fill="#e67e22"
+         opacity="0.1"
+         stroke="#e67e22"
+         stroke-width="2"
+         id="rect50" />
+      <text
+         x="720"
+         y="25"
+         font-size="13px"
+         font-weight="bold"
+         text-anchor="middle"
+         fill="#2c3e50"
+         id="text51">4. Setup Project</text>
+      <text
+         x="720"
+         y="45"
+         font-size="11px"
+         text-anchor="middle"
+         fill="#34495e"
+         id="text52">07_FolderTree</text>
+    </g>
+    <!-- Second row -->
+    <g
+       transform="translate(0,100)"
+       id="g56">
+      <!-- Step 5 -->
+      <rect
+         x="0"
+         y="0"
+         width="280"
+         height="60"
+         rx="5"
+         fill="#f39c12"
+         opacity="0.1"
+         stroke="#f39c12"
+         stroke-width="2"
+         id="rect52" />
+      <text
+         x="140"
+         y="25"
+         font-size="13px"
+         font-weight="bold"
+         text-anchor="middle"
+         fill="#2c3e50"
+         id="text53">5. Tool Integration</text>
+      <text
+         x="140"
+         y="45"
+         font-size="11px"
+         text-anchor="middle"
+         fill="#34495e"
+         id="text54">05_EMjson + EM-tools/s3Dgraphy</text>
+      <path
+         d="m 280,30 h 30"
+         stroke="#f39c12"
+         stroke-width="2"
+         marker-end="url(#arroworange)"
+         id="path54" />
+      <!-- Step 6 -->
+      <rect
+         x="310"
+         y="0"
+         width="280"
+         height="60"
+         rx="5"
+         fill="#16a085"
+         opacity="0.1"
+         stroke="#16a085"
+         stroke-width="2"
+         id="rect54" />
+      <text
+         x="450"
+         y="25"
+         font-size="13px"
+         font-weight="bold"
+         text-anchor="middle"
+         fill="#2c3e50"
+         id="text55">6. Semantic Publishing</text>
+      <text
+         x="450"
+         y="45"
+         font-size="11px"
+         text-anchor="middle"
+         fill="#34495e"
+         id="text56">06_Ontology (Optional)</text>
+    </g>
+  </g>
+  <!-- Legend -->
+  <g
+     transform="matrix(1.1296872,0,0,1.1296872,80,799.04585)"
+     id="g63">
+    <text
+       x="0"
+       y="0"
+       font-size="14px"
+       font-weight="bold"
+       fill="#2c3e50"
+       id="text57">Repository Access:</text>
+    <text
+       x="0"
+       y="25"
+       font-size="12px"
+       fill="#3498db"
+       font-weight="bold"
+       id="text58">🔗 Main:</text>
+    <text
+       x="50"
+       y="25"
+       font-size="11px"
+       fill="#34495e"
+       id="text59">github.com/zalmoxes-laran/ExtendedMatrix</text>
+    <text
+       x="400"
+       y="25"
+       font-size="12px"
+       fill="#16a085"
+       font-weight="bold"
+       id="text60">📦 Download:</text>
+    <text
+       x="480"
+       y="25"
+       font-size="11px"
+       fill="#34495e"
+       id="text61">Available as ZIP from releases</text>
+    <text
+       x="750"
+       y="25"
+       font-size="12px"
+       fill="#e67e22"
+       font-weight="bold"
+       id="text62">📖 Docs:</text>
+    <text
+       x="805"
+       y="25"
+       font-size="11px"
+       fill="#34495e"
+       id="text63">docs.extendedmatrix.org</text>
+  </g>
+  <!-- Version indicator -->
+  <g
+     transform="translate(1050, 850)"
+     id="g64"
+     inkscape:export-filename="g64.png"
+     inkscape:export-xdpi="96"
+     inkscape:export-ydpi="96">
+    <rect
+       x="0"
+       y="0"
+       width="100"
+       height="30"
+       rx="5"
+       fill="#3498db"
+       id="rect63" />
+    <text
+       x="50"
+       y="20"
+       font-size="12"
+       font-weight="bold"
+       text-anchor="middle"
+       fill="white"
+       id="text64">EM v1.5</text>
+  </g>
+  <!-- Arrow markers -->
+  <defs
+     id="defs67">
+    <marker
+       id="arrowblue"
+       markerWidth="10"
+       markerHeight="10"
+       refX="9"
+       refY="3"
+       orient="auto"
+       markerUnits="strokeWidth">
+      <path
+         d="M0,0 L0,6 L9,3 z"
+         fill="#3498db"
+         id="path64" />
+    </marker>
+    <marker
+       id="arrowpurple"
+       markerWidth="10"
+       markerHeight="10"
+       refX="9"
+       refY="3"
+       orient="auto"
+       markerUnits="strokeWidth">
+      <path
+         d="M0,0 L0,6 L9,3 z"
+         fill="#9b59b6"
+         id="path65" />
+    </marker>
+    <marker
+       id="arrowgreen"
+       markerWidth="10"
+       markerHeight="10"
+       refX="9"
+       refY="3"
+       orient="auto"
+       markerUnits="strokeWidth">
+      <path
+         d="M0,0 L0,6 L9,3 z"
+         fill="#27ae60"
+         id="path66" />
+    </marker>
+    <marker
+       id="arroworange"
+       markerWidth="10"
+       markerHeight="10"
+       refX="9"
+       refY="3"
+       orient="auto"
+       markerUnits="strokeWidth">
+      <path
+         d="M0,0 L0,6 L9,3 z"
+         fill="#f39c12"
+         id="path67" />
+    </marker>
+  </defs>
+</svg>
