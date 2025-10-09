@@ -13,7 +13,7 @@ Extended Matrix Repository Resources
 
 The `Extended Matrix repository <https://github.com/zalmoxes-laran/ExtendedMatrix>`_ contains essential resources for working with the formal language. Understanding this structure helps you locate the right tools for each phase of your work.
 
-.. figure:: img/em_repository_structure.png
+.. figure:: img/em_repo_structure.png
    :width: 600px
    :align: center
    
