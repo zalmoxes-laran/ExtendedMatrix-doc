@@ -529,7 +529,7 @@ Each epoch has its own representation showing:
     * Hypothetical elements (USV/n)
     * Documentary elements (USD)
 
-.. figure:: img/sb_model_workflow.png
+.. figure:: img/em_folder_workflow.png
    :width: 600px
    :align: center
    
