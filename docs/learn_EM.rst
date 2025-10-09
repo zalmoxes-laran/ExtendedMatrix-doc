@@ -119,7 +119,7 @@ s3dgraphy is part of the broader Extended Matrix Framework ecosystem:
 
 .. note::
 
-   s3dgraphy is currently under active development. Version 1.0 is planned for Q2 2025 with complete features for multi-platform integration. For the current development status, consult the `roadmap <https://github.com/zalmoxes-laran/s3dgraphy/blob/main/ROADMAP.md>`_.
+   s3dgraphy is currently under active development. Version 1.0 is planned for Q4 2025 with complete features for multi-platform integration. For the current development status, consult the `roadmap <https://github.com/zalmoxes-laran/s3dgraphy/blob/main/ROADMAP.md>`_.
 
 .. tip::
 

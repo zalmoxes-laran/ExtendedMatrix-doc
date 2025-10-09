@@ -850,8 +850,6 @@ Collaboration Workflows
 **Access Control**:
     * Use NAS permissions for role-based access
     * Cloud folders with selective sync
-    * Git branches for parallel development
-    * Regular team synchronization meetings
 
 Data Migration and Archival
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -948,16 +946,6 @@ Troubleshooting
     * Use ``00_Quick_Views/`` for commonly needed resources
     * Establish clear naming conventions
 
----
-
-**Problem**: Conflicts in version control
-
-**Solution**:
-    * Use branches for experimental work
-    * Communicate before major changes
-    * Pull before pushing
-    * Regular commits with clear messages
-    * Use Git LFS for larger files
 
 Practical Examples
 -----------------
