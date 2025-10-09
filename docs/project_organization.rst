@@ -533,7 +533,7 @@ Each epoch has its own representation showing:
    :width: 600px
    :align: center
    
-   *Workflow from reality-based data to source-based reconstruction models*
+   *Complete project workflow (all 6 stages from acquisition to publication)*
 
 09_Dataset_Publication - Zenodo Datasets
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
