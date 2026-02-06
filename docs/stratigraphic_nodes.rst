@@ -60,19 +60,6 @@ The flexibility of this system allows for individual elements to be removed from
 
 .. _serusdnode:
 
-1.3. serUSD - Serial Documentary Stratigraphic Unit (``SeriesOfDocumentaryStratigraphicUnit``)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-.. image:: img/2D/serUSD.png
-  :width: 128px
-  :align: left
-
-A Serial Documentary Stratigraphic Unit is employed when it is more practical and efficient to use a single unit to represent multiple serial documentary elements of the same type. This approach is particularly useful for documenting groups of documentary stratigraphic units that share similar characteristics and are identified through the same type of indirect documentation (historical records, geophysical surveys, etc.).
-
-Like the serSU, this type of serial documentation is used when the elements in the series are geometrically discontinuous. Individual elements can be removed from the series and documented separately at any time, should they present unique characteristics or require detailed individual documentation.
-
-.. _usd:
-
 2. USD - Documentary Stratigraphic Units (``DocumentaryStratigraphicUnit``)
 ---------------------------------------------------------------------------
 
@@ -91,6 +78,19 @@ It connects to these properties:
 - material
 - color
 - etc..
+
+2.1. serUSD - Serial Documentary Stratigraphic Unit (``SeriesOfDocumentaryStratigraphicUnit``)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. image:: img/2D/serUSD.png
+  :width: 128px
+  :align: left
+
+A Serial Documentary Stratigraphic Unit is employed when it is more practical and efficient to use a single unit to represent multiple serial documentary elements of the same type. This approach is particularly useful for documenting groups of documentary stratigraphic units that share similar characteristics and are identified through the same type of indirect documentation (historical records, geophysical surveys, etc.).
+
+Like the serSU, this type of serial documentation is used when the elements in the series are geometrically discontinuous. Individual elements can be removed from the series and documented separately at any time, should they present unique characteristics or require detailed individual documentation.
+
+.. _usd:
 
 3. Virtual Stratigraphic Units (USV)
 ------------------------------------
