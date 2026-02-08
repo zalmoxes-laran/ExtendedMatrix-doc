@@ -52,3 +52,4 @@ At the top is the Extended Matrix Language, which provides the formal notation s
    :caption: Theoretical Aspects:
 
    stratigraphic_approach
+   knowledge_tree

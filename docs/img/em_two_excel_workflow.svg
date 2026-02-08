@@ -1,0 +1,166 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 520" font-family="'Segoe UI', Arial, sans-serif">
+  <defs>
+    <linearGradient id="blueGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#4A90D9"/>
+      <stop offset="100%" stop-color="#2B6CB0"/>
+    </linearGradient>
+    <linearGradient id="greenGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#48BB78"/>
+      <stop offset="100%" stop-color="#2F855A"/>
+    </linearGradient>
+    <linearGradient id="orangeGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#ED8936"/>
+      <stop offset="100%" stop-color="#C05621"/>
+    </linearGradient>
+    <linearGradient id="purpleGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#9F7AEA"/>
+      <stop offset="100%" stop-color="#6B46C1"/>
+    </linearGradient>
+    <marker id="arrowBlue" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#4A90D9"/>
+    </marker>
+    <marker id="arrowGreen" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#48BB78"/>
+    </marker>
+    <marker id="arrowOrange" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#ED8936"/>
+    </marker>
+    <filter id="sh" x="-3%" y="-3%" width="106%" height="106%">
+      <feDropShadow dx="1" dy="2" stdDeviation="2" flood-opacity="0.15"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="900" height="520" fill="#FAFAF8" rx="10"/>
+
+  <!-- Title -->
+  <text x="450" y="32" text-anchor="middle" font-size="18" font-weight="bold" fill="#2C3E50">Extended Matrix: Two-Excel Workflow</text>
+  <text x="450" y="50" text-anchor="middle" font-size="12" fill="#666">From archaeological documentation to enriched knowledge graph</text>
+
+  <!-- ============== COLUMN 1: Sources ============== -->
+  <!-- Source box -->
+  <rect x="30" y="80" width="150" height="180" rx="10" fill="white" stroke="#CBD5E0" stroke-width="1.5" filter="url(#sh)"/>
+  <rect x="30" y="80" width="150" height="30" rx="10" fill="#E2E8F0"/>
+  <rect x="30" y="100" width="150" height="10" fill="#E2E8F0"/>
+  <text x="105" y="100" text-anchor="middle" font-size="12" font-weight="bold" fill="#4A5568">Sources</text>
+
+  <text x="45" y="130" font-size="20">📄</text>
+  <text x="70" y="132" font-size="10" fill="#4A5568">PDF Reports</text>
+  <text x="45" y="155" font-size="20">📷</text>
+  <text x="70" y="157" font-size="10" fill="#4A5568">Field Photos</text>
+  <text x="45" y="180" font-size="20">📝</text>
+  <text x="70" y="182" font-size="10" fill="#4A5568">Field Notes</text>
+  <text x="45" y="205" font-size="20">🗄️</text>
+  <text x="70" y="207" font-size="10" fill="#4A5568">Databases</text>
+  <text x="45" y="230" font-size="20">📊</text>
+  <text x="70" y="232" font-size="10" fill="#4A5568">Geophysics</text>
+
+  <!-- ============== COLUMN 2: AI / Manual extraction ============== -->
+  <!-- Arrow from sources to AI -->
+  <line x1="180" y1="170" x2="220" y2="170" stroke="#4A90D9" stroke-width="2" marker-end="url(#arrowBlue)"/>
+
+  <!-- AI Box -->
+  <rect x="225" y="100" width="140" height="140" rx="10" fill="white" stroke="#4A90D9" stroke-width="2" filter="url(#sh)"/>
+  <rect x="225" y="100" width="140" height="30" rx="10" fill="url(#blueGrad)"/>
+  <rect x="225" y="120" width="140" height="10" fill="url(#blueGrad)"/>
+  <text x="295" y="120" text-anchor="middle" font-size="12" font-weight="bold" fill="white">AI Extraction</text>
+
+  <text x="240" y="152" font-size="10" fill="#4A5568">Claude / GPT / Gemini</text>
+  <text x="240" y="168" font-size="10" fill="#4A5568">uses structured prompt</text>
+  <line x1="240" y1="178" x2="350" y2="178" stroke="#E2E8F0" stroke-width="1"/>
+  <text x="240" y="195" font-size="10" fill="#4A5568">Produces 2 tables:</text>
+  <text x="248" y="212" font-size="10" font-weight="bold" fill="#2B6CB0">1. Stratigraphy</text>
+  <text x="248" y="227" font-size="10" font-weight="bold" fill="#48BB78">2. Site Properties</text>
+
+  <!-- OR label for manual -->
+  <text x="295" y="260" text-anchor="middle" font-size="10" fill="#999">— or manual entry —</text>
+
+  <!-- ============== COLUMN 3: Two Excel files ============== -->
+  <!-- Arrow from AI to Excel 1 -->
+  <line x1="365" y1="140" x2="410" y2="140" stroke="#2B6CB0" stroke-width="2" marker-end="url(#arrowBlue)"/>
+  <!-- Arrow from AI to Excel 2 -->
+  <line x1="365" y1="210" x2="410" y2="330" stroke="#48BB78" stroke-width="2" marker-end="url(#arrowGreen)"/>
+
+  <!-- Excel 1: Stratigraphy (CORE) -->
+  <rect x="415" y="80" width="170" height="120" rx="8" fill="white" stroke="#2B6CB0" stroke-width="2" filter="url(#sh)"/>
+  <rect x="415" y="80" width="170" height="28" rx="8" fill="url(#blueGrad)"/>
+  <rect x="415" y="100" width="170" height="8" fill="url(#blueGrad)"/>
+  <text x="500" y="98" text-anchor="middle" font-size="11" font-weight="bold" fill="white">stratigraphy.xlsx</text>
+  <text x="425" y="125" font-size="9" fill="#4A5568">Sheet: "Stratigraphy"</text>
+  <text x="425" y="140" font-size="9" fill="#4A5568">24 standard columns</text>
+  <line x1="425" y1="148" x2="575" y2="148" stroke="#E2E8F0" stroke-width="1"/>
+  <text x="425" y="162" font-size="9" fill="#2B6CB0">Nodes + Relationships</text>
+  <text x="425" y="175" font-size="9" fill="#2B6CB0">Chronology + Paradata</text>
+  <text x="425" y="188" font-size="9" fill="#718096">= Trunk + Branches</text>
+
+  <!-- Excel 2: Site Properties (AUXILIARY) -->
+  <rect x="415" y="280" width="170" height="120" rx="8" fill="white" stroke="#2F855A" stroke-width="2" filter="url(#sh)"/>
+  <rect x="415" y="280" width="170" height="28" rx="8" fill="url(#greenGrad)"/>
+  <rect x="415" y="300" width="170" height="8" fill="url(#greenGrad)"/>
+  <text x="500" y="298" text-anchor="middle" font-size="11" font-weight="bold" fill="white">site_properties.xlsx</text>
+  <text x="425" y="325" font-size="9" fill="#4A5568">Sheet: "Properties"</text>
+  <text x="425" y="340" font-size="9" fill="#4A5568">15+ customizable columns</text>
+  <line x1="425" y1="348" x2="575" y2="348" stroke="#E2E8F0" stroke-width="1"/>
+  <text x="425" y="362" font-size="9" fill="#2F855A">Definitions, Materials</text>
+  <text x="425" y="375" font-size="9" fill="#2F855A">Techniques, Measures...</text>
+  <text x="425" y="388" font-size="9" fill="#718096">= Leaves (granularity)</text>
+
+  <!-- ============== COLUMN 4: Processing ============== -->
+  <!-- Arrow from Excel 1 to s3Dgraphy -->
+  <line x1="585" y1="140" x2="625" y2="140" stroke="#2B6CB0" stroke-width="2" marker-end="url(#arrowBlue)"/>
+
+  <!-- s3Dgraphy processing -->
+  <rect x="630" y="110" width="110" height="60" rx="8" fill="white" stroke="#ED8936" stroke-width="2" filter="url(#sh)"/>
+  <text x="685" y="135" text-anchor="middle" font-size="11" font-weight="bold" fill="#C05621">s3Dgraphy</text>
+  <text x="685" y="150" text-anchor="middle" font-size="9" fill="#718096">XLSX → GraphML</text>
+  <text x="685" y="163" text-anchor="middle" font-size="9" fill="#718096">mapping pipeline</text>
+
+  <!-- Arrow from s3Dgraphy to GraphML -->
+  <line x1="740" y1="140" x2="765" y2="140" stroke="#ED8936" stroke-width="2" marker-end="url(#arrowOrange)"/>
+
+  <!-- GraphML output -->
+  <rect x="770" y="95" width="110" height="90" rx="8" fill="white" stroke="#C05621" stroke-width="2.5" filter="url(#sh)"/>
+  <rect x="770" y="95" width="110" height="28" rx="8" fill="url(#orangeGrad)"/>
+  <rect x="770" y="115" width="110" height="8" fill="url(#orangeGrad)"/>
+  <text x="825" y="113" text-anchor="middle" font-size="12" font-weight="bold" fill="white">GraphML</text>
+  <text x="825" y="142" text-anchor="middle" font-size="10" fill="#C05621">Extended Matrix</text>
+  <text x="825" y="158" text-anchor="middle" font-size="9" fill="#718096">Knowledge Graph</text>
+  <text x="825" y="174" text-anchor="middle" font-size="10" fill="#C05621">🌳 TRUNK</text>
+
+  <!-- Arrow from GraphML down to EMtools -->
+  <line x1="825" y1="185" x2="825" y2="240" stroke="#6B46C1" stroke-width="2" marker-end="url(#arrowBlue)"/>
+
+  <!-- EMtools box -->
+  <rect x="700" y="245" width="180" height="85" rx="10" fill="white" stroke="#6B46C1" stroke-width="2" filter="url(#sh)"/>
+  <rect x="700" y="245" width="180" height="28" rx="10" fill="url(#purpleGrad)"/>
+  <rect x="700" y="265" width="180" height="8" fill="url(#purpleGrad)"/>
+  <text x="790" y="264" text-anchor="middle" font-size="12" font-weight="bold" fill="white">EMtools (Blender)</text>
+  <text x="790" y="292" text-anchor="middle" font-size="10" fill="#4A5568">Import GraphML</text>
+  <text x="790" y="306" text-anchor="middle" font-size="10" fill="#4A5568">+ Add Auxiliary Files</text>
+  <text x="790" y="320" text-anchor="middle" font-size="10" fill="#6B46C1">= Full Knowledge Graph</text>
+
+  <!-- Arrow from Excel 2 to EMtools (auxiliary) -->
+  <path d="M585,340 Q640,340 680,320 Q700,310 700,300" stroke="#2F855A" stroke-width="2" fill="none" marker-end="url(#arrowGreen)" stroke-dasharray="6,3"/>
+  <text x="640" y="355" text-anchor="middle" font-size="9" font-style="italic" fill="#2F855A">auxiliary import</text>
+
+  <!-- ============== BOTTOM: Team collaboration note ============== -->
+  <rect x="30" y="420" width="850" height="85" rx="10" fill="#F7FAFC" stroke="#CBD5E0" stroke-width="1" filter="url(#sh)"/>
+
+  <!-- Person icons and roles -->
+  <text x="55" y="448" font-size="14" font-weight="bold" fill="#2C3E50">👤 Collaborative Workflow</text>
+
+  <rect x="50" y="458" width="240" height="35" rx="6" fill="#EBF8FF" stroke="#4A90D9" stroke-width="1"/>
+  <text x="170" y="472" text-anchor="middle" font-size="10" font-weight="bold" fill="#2B6CB0">Project Leader</text>
+  <text x="170" y="486" text-anchor="middle" font-size="9" fill="#4A5568">manages GraphML (trunk + branches)</text>
+
+  <rect x="310" y="458" width="260" height="35" rx="6" fill="#F0FFF4" stroke="#48BB78" stroke-width="1"/>
+  <text x="440" y="472" text-anchor="middle" font-size="10" font-weight="bold" fill="#2F855A">Working Group</text>
+  <text x="440" y="486" text-anchor="middle" font-size="9" fill="#4A5568">updates auxiliary tables (leaves) in Excel / DB</text>
+
+  <rect x="590" y="458" width="270" height="35" rx="6" fill="#FAF5FF" stroke="#9F7AEA" stroke-width="1"/>
+  <text x="725" y="472" text-anchor="middle" font-size="10" font-weight="bold" fill="#6B46C1">s3Dgraphy + EMtools</text>
+  <text x="725" y="486" text-anchor="middle" font-size="9" fill="#4A5568">merges everything on-the-fly into the KG</text>
+
+  <!-- Footer -->
+  <text x="450" y="515" text-anchor="middle" font-size="9" fill="#A0AEC0">Extended Matrix v1.5 — extendedmatrix.org</text>
+</svg>

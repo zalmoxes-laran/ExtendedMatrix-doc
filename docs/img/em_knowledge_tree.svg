@@ -1,0 +1,153 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 700" font-family="'Segoe UI', Arial, sans-serif">
+  <defs>
+    <linearGradient id="trunkGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#8B6914"/>
+      <stop offset="100%" stop-color="#5C4A1C"/>
+    </linearGradient>
+    <linearGradient id="branchGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#6B8E23"/>
+      <stop offset="100%" stop-color="#4A7A2E"/>
+    </linearGradient>
+    <linearGradient id="leafGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#90EE90"/>
+      <stop offset="100%" stop-color="#32CD32"/>
+    </linearGradient>
+    <filter id="shadow" x="-5%" y="-5%" width="110%" height="110%">
+      <feDropShadow dx="2" dy="2" stdDeviation="3" flood-opacity="0.2"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="900" height="700" fill="#FAFAF5" rx="10"/>
+
+  <!-- Title -->
+  <text x="450" y="35" text-anchor="middle" font-size="20" font-weight="bold" fill="#2C3E50">The Extended Matrix Knowledge Tree</text>
+  <text x="450" y="55" text-anchor="middle" font-size="13" fill="#666">GraphML as trunk &amp; main branches — Auxiliary tables as leaves</text>
+
+  <!-- Ground line -->
+  <ellipse cx="450" cy="640" rx="320" ry="25" fill="#D4A76A" opacity="0.3"/>
+
+  <!-- TRUNK (GraphML) -->
+  <path d="M420,640 Q410,500 400,400 Q395,300 410,200 L430,200 Q445,300 440,400 Q450,500 460,640 Z" fill="url(#trunkGrad)" filter="url(#shadow)"/>
+  <!-- Trunk bark texture -->
+  <path d="M425,600 Q420,550 422,500" stroke="#4A3510" stroke-width="1" fill="none" opacity="0.3"/>
+  <path d="M440,580 Q445,520 438,460" stroke="#4A3510" stroke-width="1" fill="none" opacity="0.3"/>
+
+  <!-- Trunk label -->
+  <rect x="330" y="450" width="200" height="65" rx="8" fill="white" stroke="#8B6914" stroke-width="2" filter="url(#shadow)"/>
+  <text x="430" y="472" text-anchor="middle" font-size="15" font-weight="bold" fill="#5C4A1C">GraphML</text>
+  <text x="430" y="490" text-anchor="middle" font-size="11" fill="#666">Stratigraphic Sequence</text>
+  <text x="430" y="505" text-anchor="middle" font-size="11" fill="#666">Chronology &amp; Relationships</text>
+
+  <!-- ROOT LABEL -->
+  <rect x="340" y="590" width="180" height="35" rx="6" fill="#F5E6CC" stroke="#8B6914" stroke-width="1.5"/>
+  <text x="430" y="612" text-anchor="middle" font-size="12" font-weight="bold" fill="#5C4A1C">TRUNK = GraphML</text>
+
+  <!-- ============== LEFT BRANCH: Properties (Qualia) ============== -->
+  <path d="M410,350 Q350,300 240,250 Q200,235 170,220" stroke="#6B8E23" stroke-width="12" fill="none" stroke-linecap="round"/>
+  <!-- Sub-branches -->
+  <path d="M240,250 Q200,220 150,180" stroke="#6B8E23" stroke-width="6" fill="none" stroke-linecap="round"/>
+  <path d="M260,258 Q230,240 200,260" stroke="#6B8E23" stroke-width="5" fill="none" stroke-linecap="round"/>
+  <path d="M280,265 Q260,280 230,310" stroke="#6B8E23" stroke-width="5" fill="none" stroke-linecap="round"/>
+
+  <!-- Branch label -->
+  <rect x="95" y="195" width="160" height="45" rx="8" fill="white" stroke="#6B8E23" stroke-width="2" filter="url(#shadow)"/>
+  <text x="175" y="215" text-anchor="middle" font-size="13" font-weight="bold" fill="#4A7A2E">Main Properties</text>
+  <text x="175" y="232" text-anchor="middle" font-size="10" fill="#666">(Qualia in the Graph)</text>
+
+  <!-- Left leaves (Auxiliary data) -->
+  <ellipse cx="120" cy="160" rx="55" ry="22" fill="url(#leafGrad)" stroke="#228B22" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="120" y="164" text-anchor="middle" font-size="10" font-weight="bold" fill="#1A5C1A">Materials</text>
+
+  <ellipse cx="175" cy="125" rx="55" ry="22" fill="url(#leafGrad)" stroke="#228B22" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="175" y="129" text-anchor="middle" font-size="10" font-weight="bold" fill="#1A5C1A">Techniques</text>
+
+  <ellipse cx="80" cy="120" rx="50" ry="20" fill="url(#leafGrad)" stroke="#228B22" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="80" y="124" text-anchor="middle" font-size="9" font-weight="bold" fill="#1A5C1A">Measures</text>
+
+  <ellipse cx="175" cy="280" rx="52" ry="20" fill="url(#leafGrad)" stroke="#228B22" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="175" y="284" text-anchor="middle" font-size="9" font-weight="bold" fill="#1A5C1A">Definition</text>
+
+  <ellipse cx="200" cy="325" rx="58" ry="20" fill="url(#leafGrad)" stroke="#228B22" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="200" y="329" text-anchor="middle" font-size="9" font-weight="bold" fill="#1A5C1A">Interpretation</text>
+
+  <ellipse cx="130" cy="305" rx="52" ry="20" fill="url(#leafGrad)" stroke="#228B22" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="130" y="309" text-anchor="middle" font-size="9" font-weight="bold" fill="#1A5C1A">Color</text>
+
+  <!-- ============== RIGHT BRANCH: Paradata ============== -->
+  <path d="M440,330 Q510,280 600,240 Q650,220 700,200" stroke="#6B8E23" stroke-width="12" fill="none" stroke-linecap="round"/>
+  <!-- Sub-branches -->
+  <path d="M620,235 Q660,200 720,170" stroke="#6B8E23" stroke-width="6" fill="none" stroke-linecap="round"/>
+  <path d="M600,245 Q620,270 660,280" stroke="#6B8E23" stroke-width="5" fill="none" stroke-linecap="round"/>
+  <path d="M580,250 Q570,280 560,310" stroke="#6B8E23" stroke-width="5" fill="none" stroke-linecap="round"/>
+
+  <!-- Branch label -->
+  <rect x="620" y="185" width="165" height="45" rx="8" fill="white" stroke="#6B8E23" stroke-width="2" filter="url(#shadow)"/>
+  <text x="703" y="205" text-anchor="middle" font-size="13" font-weight="bold" fill="#4A7A2E">Paradata &amp; Sources</text>
+  <text x="703" y="222" text-anchor="middle" font-size="10" fill="#666">(Provenance in the Graph)</text>
+
+  <!-- Right leaves -->
+  <ellipse cx="740" cy="150" rx="60" ry="22" fill="url(#leafGrad)" stroke="#228B22" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="740" y="154" text-anchor="middle" font-size="10" font-weight="bold" fill="#1A5C1A">Documents</text>
+
+  <ellipse cx="800" cy="115" rx="55" ry="20" fill="url(#leafGrad)" stroke="#228B22" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="800" y="119" text-anchor="middle" font-size="9" font-weight="bold" fill="#1A5C1A">Source PDF</text>
+
+  <ellipse cx="680" cy="130" rx="55" ry="20" fill="url(#leafGrad)" stroke="#228B22" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="680" y="134" text-anchor="middle" font-size="9" font-weight="bold" fill="#1A5C1A">Extractors</text>
+
+  <ellipse cx="690" cy="295" rx="55" ry="20" fill="url(#leafGrad)" stroke="#228B22" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="690" y="299" text-anchor="middle" font-size="9" font-weight="bold" fill="#1A5C1A">Source Pages</text>
+
+  <ellipse cx="540" cy="320" rx="50" ry="20" fill="url(#leafGrad)" stroke="#228B22" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="540" y="324" text-anchor="middle" font-size="9" font-weight="bold" fill="#1A5C1A">Notes</text>
+
+  <!-- ============== TOP BRANCH: Chronology ============== -->
+  <path d="M420,280 Q420,220 410,170 Q405,130 420,90" stroke="#6B8E23" stroke-width="10" fill="none" stroke-linecap="round"/>
+  <path d="M415,150 Q380,120 340,100" stroke="#6B8E23" stroke-width="5" fill="none" stroke-linecap="round"/>
+  <path d="M425,140 Q460,110 510,95" stroke="#6B8E23" stroke-width="5" fill="none" stroke-linecap="round"/>
+
+  <!-- Top branch label -->
+  <rect x="355" y="75" width="130" height="40" rx="8" fill="white" stroke="#6B8E23" stroke-width="2" filter="url(#shadow)"/>
+  <text x="420" y="95" text-anchor="middle" font-size="13" font-weight="bold" fill="#4A7A2E">Chronology</text>
+  <text x="420" y="108" text-anchor="middle" font-size="10" fill="#666">(Epochs in Graph)</text>
+
+  <!-- Top leaves -->
+  <ellipse cx="320" cy="85" rx="50" ry="18" fill="url(#leafGrad)" stroke="#228B22" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="320" y="89" text-anchor="middle" font-size="9" font-weight="bold" fill="#1A5C1A">Periods</text>
+
+  <ellipse cx="530" cy="80" rx="45" ry="18" fill="url(#leafGrad)" stroke="#228B22" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="530" y="84" text-anchor="middle" font-size="9" font-weight="bold" fill="#1A5C1A">Phases</text>
+
+  <!-- ============== LEGEND ============== -->
+  <rect x="20" y="560" width="280" height="120" rx="10" fill="white" stroke="#CCC" stroke-width="1" filter="url(#shadow)"/>
+  <text x="35" y="582" font-size="13" font-weight="bold" fill="#333">Legend</text>
+
+  <!-- Trunk symbol -->
+  <rect x="35" y="592" width="30" height="14" rx="3" fill="url(#trunkGrad)"/>
+  <text x="75" y="603" font-size="11" fill="#333">Trunk = GraphML (necessary base)</text>
+
+  <!-- Branch symbol -->
+  <line x1="35" y1="622" x2="65" y2="622" stroke="#6B8E23" stroke-width="5" stroke-linecap="round"/>
+  <text x="75" y="626" font-size="11" fill="#333">Branches = Core properties in graph</text>
+
+  <!-- Leaf symbol -->
+  <ellipse cx="50" cy="648" rx="18" ry="10" fill="url(#leafGrad)" stroke="#228B22" stroke-width="1"/>
+  <text x="75" y="652" font-size="11" fill="#333">Leaves = Auxiliary tabular data</text>
+
+  <!-- ============== RIGHT SIDE ANNOTATION ============== -->
+  <rect x="580" y="430" width="295" height="150" rx="10" fill="#F0F8FF" stroke="#4682B4" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="728" y="452" text-anchor="middle" font-size="12" font-weight="bold" fill="#2C3E50">Collaborative Workflow</text>
+
+  <text x="595" y="472" font-size="10" fill="#444">GraphML (trunk): stratigraphic sequence,</text>
+  <text x="595" y="486" font-size="10" fill="#444">chronology, relationships — managed by</text>
+  <text x="595" y="500" font-size="10" fill="#444">the project leader in yEd / EMtools.</text>
+
+  <text x="595" y="520" font-size="10" fill="#444">Auxiliary tables (leaves): detailed properties</text>
+  <text x="595" y="534" font-size="10" fill="#444">updated by the working group in Excel /</text>
+  <text x="595" y="548" font-size="10" fill="#444">database — imported on-the-fly into the</text>
+  <text x="595" y="562" font-size="10" fill="#444">knowledge graph via s3Dgraphy.</text>
+
+  <!-- Footer -->
+  <text x="450" y="690" text-anchor="middle" font-size="10" fill="#999">Extended Matrix v1.5 — extendedmatrix.org</text>
+</svg>
