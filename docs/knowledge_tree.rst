@@ -22,6 +22,12 @@ The Extended Matrix knowledge system can be understood through the metaphor of a
 
    The Extended Matrix Knowledge Tree: GraphML as trunk and main branches, auxiliary tabular data as leaves.
 
+.. figure:: img/EM_KnowledgeTree.png
+   :width: 700
+   :align: center
+
+   The Extended Matrix Knowledge Tree: GraphML as trunk and main branches, auxiliary tabular data as leaves.
+
 
 Why Two Separate Systems?
 --------------------------
