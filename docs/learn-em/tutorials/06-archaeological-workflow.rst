@@ -64,8 +64,7 @@ Sketch the documentation workflow for a hypothetical excavation using the four E
 
 .. note::
 
-   The video for this tutorial is available on the StratiGraph private YouTube channel.
-   Clip filename: ``06_em_arch_workflow.mp4``
+   A video walkthrough for this tutorial will be available on the Extended Matrix YouTube channel.
 
 .. seealso::
 

@@ -66,8 +66,7 @@ Find the CIDOC CRM mapping for the 'construction' node type in the node types JS
 
 .. note::
 
-   The video for this tutorial is available on the StratiGraph private YouTube channel.
-   Clip filename: ``20_em_faq_vocabularies.mp4``
+   A video walkthrough for this tutorial will be available on the Extended Matrix YouTube channel.
 
 .. seealso::
 

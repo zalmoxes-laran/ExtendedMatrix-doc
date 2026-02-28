@@ -28,7 +28,7 @@ None — this is the starting point.
 Overview
 --------
 
-Extended Matrix (EM) is a formal language and Blender add-on for archaeological and paleontological documentation. This tutorial introduces EM's dual audience (end-users and technical experts), its role in the StratiGraph ecosystem, and the desktop↔online integration pipeline.
+Extended Matrix (EM) is a formal language and Blender add-on for archaeological and paleontological documentation. This tutorial introduces EM's dual audience (end-users and technical experts), its role in the Extended Matrix ecosystem, and the desktop↔online integration pipeline.
 
 .. figure:: /_static/screenshots/clip_01/0001_opening_slide.jpg
    :alt: The Extended Matrix 1.5 RC workshop title slide.
@@ -54,10 +54,10 @@ Screenshots
    EM serves two audiences: end-users and technical experts.
 
 .. figure:: /_static/screenshots/clip_01/0003_ecosystem_diagram.jpg
-   :alt: The StratiGraph ecosystem: desktop tools connected to online services.
+   :alt: The Extended Matrix ecosystem: desktop tools connected to online services.
    :width: 90%
 
-   The StratiGraph ecosystem: desktop tools connected to online services.
+   The Extended Matrix ecosystem: desktop tools connected to online services.
 
 .. figure:: /_static/screenshots/clip_01/0004_agenda_roadmap.jpg
    :alt: Roadmap for the full tutorial series: four workflow phases.
@@ -72,8 +72,7 @@ Open the ExtendedMatrix homepage at https://extendedmatrix.org and identify the 
 
 .. note::
 
-   The video for this tutorial is available on the StratiGraph private YouTube channel.
-   Clip filename: ``01_em_overview.mp4``
+   A video walkthrough for this tutorial will be available on the Extended Matrix YouTube channel.
 
 .. seealso::
 

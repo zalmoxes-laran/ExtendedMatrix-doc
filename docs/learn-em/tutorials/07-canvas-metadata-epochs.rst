@@ -70,8 +70,7 @@ In yEd, create a new canvas with your site code as the human ID and add two epoc
 
 .. note::
 
-   The video for this tutorial is available on the StratiGraph private YouTube channel.
-   Clip filename: ``07_em_canvas_epochs.mp4``
+   A video walkthrough for this tutorial will be available on the Extended Matrix YouTube channel.
 
 .. seealso::
 

@@ -70,8 +70,7 @@ In the playground dataset, identify three proxy volumes and examine which strati
 
 .. note::
 
-   The video for this tutorial is available on the StratiGraph private YouTube channel.
-   Clip filename: ``05_em_proxies_kg.mp4``
+   A video walkthrough for this tutorial will be available on the Extended Matrix YouTube channel.
 
 .. seealso::
 

@@ -66,8 +66,7 @@ Download the EM playground dataset from the ExtendedMatrix GitHub releases page.
 
 .. note::
 
-   The video for this tutorial is available on the StratiGraph private YouTube channel.
-   Clip filename: ``02_em_data_lifecycle.mp4``
+   A video walkthrough for this tutorial will be available on the Extended Matrix YouTube channel.
 
 .. seealso::
 

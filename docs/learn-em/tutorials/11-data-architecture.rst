@@ -73,8 +73,7 @@ Open the EM node types JSON in a text editor and add a new qualia property to th
 
 .. note::
 
-   The video for this tutorial is available on the StratiGraph private YouTube channel.
-   Clip filename: ``11_em_data_architecture.mp4``
+   A video walkthrough for this tutorial will be available on the Extended Matrix YouTube channel.
 
 .. seealso::
 
