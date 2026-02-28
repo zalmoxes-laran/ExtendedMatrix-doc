@@ -156,7 +156,7 @@ Three **learning paths** let you choose the right scope:
 
 .. note::
 
-   Videos are hosted on the StratiGraph private YouTube channel.
+   Videos will be available on the Extended Matrix YouTube channel.
    The tutorial pages work as standalone written guides even without
    watching the video — screenshots and step-by-step instructions
    are fully self-contained.
