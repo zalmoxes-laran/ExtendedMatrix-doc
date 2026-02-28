@@ -53,3 +53,9 @@ At the top is the Extended Matrix Language, which provides the formal notation s
 
    stratigraphic_approach
    knowledge_tree
+
+.. toctree::
+   :maxdepth: 2
+   :caption: Video Tutorial Series
+
+   learn-em/index
