@@ -56,6 +56,4 @@ At the top is the Extended Matrix Language, which provides the formal notation s
 
 .. toctree::
    :maxdepth: 2
-   :caption: Video Tutorial Series
-
-   learn-em/index
+   

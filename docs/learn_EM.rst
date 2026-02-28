@@ -124,39 +124,3 @@ s3dgraphy is part of the broader Extended Matrix Framework ecosystem:
 .. tip::
 
    For integration examples and complete workflows, consult the `Examples & Workflows <https://docs.extendedmatrix.org/projects/s3dgraphy/examples/>`_ section in the s3dgraphy documentation.
-
-5. Learn EM step by step — Video Tutorial Series (new!)
---------------------------------------------------------
-
-The fastest way to go from zero to a working Extended Matrix is to follow
-the **video tutorial series** recorded during the EM 1.5 RC workshop
-(February 2026). The series is divided into **20 short clips** (3–9 min each)
-covering the full workflow from installation to advanced export.
-
-Three **learning paths** let you choose the right scope:
-
-.. list-table::
-   :widths: 20 55 25
-   :header-rows: 1
-
-   * - Path
-     - Scope
-     - Time
-   * - ⚡ **Quick Start**
-     - Get EM installed and create your first matrix (4 clips)
-     - ~17 min
-   * - 📚 **Full Course**
-     - Complete workflow: 3D data, language, tools, export (20 clips)
-     - ~70 min
-   * - 🔧 **Developer Track**
-     - Python library, CIDOC mapping, export pipeline (6 clips)
-     - ~27 min
-
-:doc:`→ Go to the Learn EM tutorial section <learn-em/index>`
-
-.. note::
-
-   Videos will be available on the Extended Matrix YouTube channel.
-   The tutorial pages work as standalone written guides even without
-   watching the video — screenshots and step-by-step instructions
-   are fully self-contained.
