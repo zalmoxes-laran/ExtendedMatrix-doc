@@ -44,6 +44,22 @@ These are tangible units that either still exist or have left clear stratigraphi
 
 A Stratigraphic Unit indicates the result of an action that occurred at a specific moment in time. The SU defines objects found still *in situ* (and noted using the techniques of stratigraphic reading). These are tangible units that either still exist or have left clear stratigraphic evidence. They can be directly observed, measured, and analyzed in the field. Physical stratigraphic units include existing walls, floors, deposits, or archaeological remains that have been documented through proper stratigraphic methods.
 
+SU as Container
+^^^^^^^^^^^^^^^
+
+A Stratigraphic Unit can also act as a **container** for Special Finds (SF) or Virtual Special Finds (VSF). This represents the physical containment of elements within a stratigraphic unit -- for example, a reused capital (SF) embedded inside a wall (SU).
+
+In the yEd GraphML editor, this is represented by drawing the SU as a **group node** with a dark red background (``#9B3333``) and placing the contained elements inside it. On import, each contained element receives an ``is_part_of`` edge pointing to the SU container. The SU retains all its normal stratigraphic relationships.
+
+.. figure:: img/containment/us_container.png
+   :width: 400
+   :align: center
+
+   A Stratigraphic Unit (US10101) acting as a container for a Special Find (SF10102). In the GraphML, the SF is nested inside the US group node.
+
+.. seealso::
+   :ref:`ispartof` for details on the ``is_part_of`` connector.
+
 .. _serusnode:
 
 1.2. serSU - Serial Stratigraphic Unit (``SeriesOfStratigraphicUnit``)
@@ -78,6 +94,16 @@ It connects to these properties:
 - material
 - color
 - etc..
+
+USD as Container
+^^^^^^^^^^^^^^^^
+
+Like the SU, a Documentary Stratigraphic Unit can act as a **container** for Special Finds. This represents a documentary context that includes specific elements -- for example, a documentary unit identified from archival sources that is known to have contained a particular artifact.
+
+In yEd, this is represented as a **group node** with an orange background (``#D86400``). On import, contained elements receive ``is_part_of`` edges pointing to the USD container.
+
+.. seealso::
+   :ref:`ispartof` for details on the ``is_part_of`` connector.
 
 2.1. serUSD - Serial Documentary Stratigraphic Unit (``SeriesOfDocumentaryStratigraphicUnit``)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -199,6 +225,26 @@ SF records a partially preserved original column capital that has been repositio
 VSF documents the restoration work performed to complete missing parts of that same capital, maintaining consistency with the original's dimensions, material properties, and stylistic features
 
 This relationship between SF and VSF allows archaeologists to maintain a clear distinction between original repositioned elements (anastylosis - SF) and their subsequent restoration or completion work (VSF), while ensuring appropriate documentation of both the original fabric and conservation interventions.
+
+VSF as Container (Group Node)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+A Virtual Special Find can also act as a **container** for Special Finds. This represents the part--whole relationship where fragments (SF) belong to a reconstructed whole (VSF).
+
+For example: fragments of tiles (SF) that belong to a reconstructed roof (VSF), or individual moulding elements (SF) that compose a complete architectural moulding (VSF). In these cases the relationship is **mereological** (``is_part_of``), not stratigraphic.
+
+In the yEd GraphML editor, this is represented by drawing the VSF as a **group node** with a gold background (``#B19F61``) and placing the SF nodes inside it. On import, each contained SF receives an ``is_part_of`` edge pointing to the VSF container.
+
+.. figure:: img/containment/vsf_container.png
+   :width: 400
+   :align: center
+
+   A Virtual Special Find (USV140) acting as a container for a Special Find (T43). The moulding base (T43) is part of the complete moulding (USV140).
+
+The VSF container maintains all its normal stratigraphic relationships (epoch connections, temporal edges with other units, etc.) in addition to the containment relationships with its parts.
+
+.. seealso::
+   :ref:`ispartof` for details on the ``is_part_of`` connector.
 
 Cumulative example of different USV nodes used together
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

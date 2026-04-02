@@ -214,5 +214,14 @@ In the visualization of the Extended Matrix, swimlanes and groups are represente
    * Nodes within a time branch group are connected to that group through the ``has_timebranch`` relationship
    * This structure enables the representation of alternative interpretations or hypotheses about the stratigraphic sequence
 
+4. **Stratigraphic Container Groups (US, USD, VSF)**
+   * A group node with a specific background color identifies a stratigraphic container:
+     - ``#9B3333`` (dark red): US container (Stratigraphic Unit)
+     - ``#D86400`` (orange): USD container (Documentary Stratigraphic Unit)
+     - ``#B19F61`` (gold): VSF container (Virtual Special Find)
+   * On import, the group node is converted into a regular stratigraphic node of the appropriate type
+   * Child nodes inside the group receive ``is_part_of`` edges pointing to the container
+   * The container retains all normal stratigraphic relationships (epoch, activity, temporal edges)
+
 These internal representations allow s3dgraphy to maintain the logical structure of the Extended Matrix while providing an intuitive visual representation through swimlanes and groups in the user interface.
 
