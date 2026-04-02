@@ -255,7 +255,7 @@ Cumulative example of different USV nodes used together
   
   USV/s and USV/n are used together. Different -SU allow to propose different USV/s.
 
-1. Transformation Stratigraphic Unit (``TransformationStratigraphicUnit``):
+5. Transformation Stratigraphic Unit (``TransformationStratigraphicUnit``):
 --------------------------------------------------------
 
 These units represent the record of chemical, physical, or biological changes that have occurred over time on a specific surface or material. TSUs allow for the documentation and visualization of not only the current state of preservation but also the chronological sequence of transformative processes within a historic structure. This provides a dynamic perspective that captures all transformations affecting stratigraphic objects.
