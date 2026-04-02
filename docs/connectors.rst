@@ -152,7 +152,7 @@ Indicates physical containment: a node is physically contained within another st
 In the GraphML representation, containment is expressed through **group nodes**: a container (US, USD, or VSF) is drawn as a yEd group node, and the contained elements (typically SF or VSF) are placed visually inside it. On import, s3Dgraphy converts this visual nesting into explicit ``is_part_of`` edges.
 
 .. figure:: img/connectors/containment_example.png
-   :width: 500
+   :width: 200
    :align: center
 
    Example of containment: a wall (US10101) contains a reused capital (SF10102). The SF is drawn inside the US group node in yEd. On import, an ``is_part_of`` edge is created from SF10102 to US10101.
