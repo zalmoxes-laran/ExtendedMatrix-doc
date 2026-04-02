@@ -66,7 +66,7 @@ Instance Chains
 When the same conceptual object exists across multiple epochs -- each represented as a distinct stratigraphic unit -- the ``changed_from`` connector links these instances into a navigable **instance chain**. The chain is traversed transitively: if A ``changed_from`` B and B ``changed_from`` C, then A, B, and C form a single instance chain representing the complete biography of a physical object through time.
 
 .. figure:: img/connectors/instance_chain_example.png
-   :width: 500
+   :width: 200
    :align: center
 
    Example of an instance chain: a capital exists today on the ground as a Special Find (SF5000-C), in a previous epoch as a collapsed element (USD5000-B), and in the Roman era in its original structural position (USM5000-A). The three nodes are linked by dotted connectors.
