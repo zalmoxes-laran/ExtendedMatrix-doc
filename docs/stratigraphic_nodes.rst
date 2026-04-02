@@ -52,7 +52,7 @@ A Stratigraphic Unit can also act as a **container** for Special Finds (SF) or V
 In the yEd GraphML editor, this is represented by drawing the SU as a **group node** with a dark red background (``#9B3333``) and placing the contained elements inside it. On import, each contained element receives an ``is_part_of`` edge pointing to the SU container. The SU retains all its normal stratigraphic relationships.
 
 .. figure:: img/containment/us_container.png
-   :width: 400
+   :width: 200
    :align: center
 
    A Stratigraphic Unit (US10101) acting as a container for a Special Find (SF10102). In the GraphML, the SF is nested inside the US group node.
@@ -236,7 +236,7 @@ For example: fragments of tiles (SF) that belong to a reconstructed roof (VSF), 
 In the yEd GraphML editor, this is represented by drawing the VSF as a **group node** with a gold background (``#B19F61``) and placing the SF nodes inside it. On import, each contained SF receives an ``is_part_of`` edge pointing to the VSF container.
 
 .. figure:: img/containment/vsf_container.png
-   :width: 400
+   :width: 200
    :align: center
 
    A Virtual Special Find (USV140) acting as a container for a Special Find (T43). The moulding base (T43) is part of the complete moulding (USV140).
