@@ -279,3 +279,6 @@ Encompasses processes where material is added to the surface, such as deposits o
 - **Translational Transformation**
 Includes deformations or displacements such as cracks, shifts, or warping of the surface, which may result from structural movement, thermal expansion, or other stress factors.
 
+
+See :ref:`continuity_node` in the Auxiliary Stratigraphic Nodes section for the temporal semantics that govern how real and virtual units persist across epochs.
+
