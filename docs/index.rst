@@ -3,10 +3,29 @@ Extended Matrix documentation
 
 **Extended Matrix** is a formal language with which to document stratigraphy and virtual reconstruction processes. It is intended to be used by archaeologists and heritage specialists to keep track in a robust way of their scientific activities. The EM allows to record the sources used and the processes of analysis and synthesis that have led from scientific evidence to interpretation and reconstruction. It organises 3D archaeological record so that the 3D modelling steps are smoother, transparent and scientifically complete. Its development is leaded by E. Demetrescu at CNR-ISPC (Rome, former CNR-ITABC). EM is at its 1.4 version (a 1.5 version is currently under development).
 
-Extended Matrix structure
--------------------------
+From sources to validated reconstruction
+----------------------------------------
 
-The diagram shows the essential structure of Extended Matrix through its core components.
+The Extended Matrix is the connective tissue between five well-known moments of the archaeological reconstruction process — and what makes each step traceable to the next.
+
+.. figure:: img/EM_workflow.svg
+   :width: 100%
+   :align: center
+
+   *The Extended Matrix workflow at a glance: from the evidence you collect to a reconstruction that other researchers can verify, query and reuse.*
+
+You start with **sources and evidence** — photos, reports, drawings, the ruin itself. From these you carry out a **stratigraphic analysis**, identifying units, sequences, phases and activities. The **Extended Matrix graph** is where this analysis becomes formal: typed nodes for stratigraphic units, sources, paradata and hypotheses, connected by arcs with explicit semantic meaning. The graph then guides the **3D reconstruction**, where geometry is tied unit-by-unit to the graph nodes that justify it. The final step is **publication and paradata**: a reconstruction that other researchers can open and interrogate, because every interpretive choice is recorded in the graph and travels with the model.
+
+The remainder of this manual walks through each of these moments in detail: how to learn the formal language, how to organise a project, and how each kind of node and connector works.
+
+.. tip::
+
+   If this is your very first contact with EM, jump to :doc:`learn_EM` for a guided tour calibrated to four different starting points (humanist, archaeologist with 3D skills, 3D modeller, and developer).
+
+Components behind the workflow
+------------------------------
+
+The workflow above is supported by three core components — a formal language, a software framework, and a multidimensional knowledge graph — held together by the ``s3Dgraphy`` library.
 
 .. figure:: img/EM_schema_general.png
    :width: 400px

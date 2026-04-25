@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 450" font-family="-apple-system, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif">
+  <rect width="1200" height="450" fill="#fafaf7"/>
+
+  <!-- Headline -->
+  <text x="600" y="38" text-anchor="middle" font-size="22" fill="#2c3e50" font-weight="600">From archaeological evidence to validated 3D reconstruction</text>
+  <text x="600" y="62" text-anchor="middle" font-size="14" fill="#6a7b8c" font-style="italic">Every step traceable &#183; every hypothesis documented</text>
+
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="#a8b2bc"/>
+    </marker>
+  </defs>
+
+  <!-- Connecting arrows between stages -->
+  <g stroke="#a8b2bc" stroke-width="1.5" fill="none">
+    <line x1="252" y1="215" x2="271" y2="215" marker-end="url(#arrow)"/>
+    <line x1="477" y1="215" x2="496" y2="215" marker-end="url(#arrow)"/>
+    <line x1="702" y1="215" x2="721" y2="215" marker-end="url(#arrow)"/>
+    <line x1="927" y1="215" x2="946" y2="215" marker-end="url(#arrow)"/>
+  </g>
+
+  <!-- Stage 1: Sources & evidence -->
+  <g transform="translate(50,100)">
+    <rect width="200" height="230" rx="6" fill="#ffffff" stroke="#2c3e50" stroke-width="1"/>
+    <g transform="translate(64,30)">
+      <rect x="0"  y="14" width="56" height="68" fill="#f0ede4" stroke="#2c3e50" stroke-width="1" rx="3"/>
+      <rect x="8"  y="6"  width="56" height="68" fill="#f6f3ea" stroke="#2c3e50" stroke-width="1" rx="3"/>
+      <rect x="16" y="0"  width="56" height="68" fill="#ffffff" stroke="#2c3e50" stroke-width="1" rx="3"/>
+      <line x1="24" y1="14" x2="64" y2="14" stroke="#7d8a96" stroke-width="0.8"/>
+      <line x1="24" y1="22" x2="64" y2="22" stroke="#7d8a96" stroke-width="0.8"/>
+      <line x1="24" y1="30" x2="56" y2="30" stroke="#7d8a96" stroke-width="0.8"/>
+      <line x1="24" y1="38" x2="64" y2="38" stroke="#7d8a96" stroke-width="0.8"/>
+    </g>
+    <text x="100" y="152" text-anchor="middle" font-size="17" fill="#2c3e50" font-weight="600">Sources &amp; evidence</text>
+    <text x="100" y="172" text-anchor="middle" font-size="13" fill="#6a7b8c" font-style="italic">what you start from</text>
+    <text x="100" y="200" text-anchor="middle" font-size="13" fill="#2c3e50">photos &#183; reports</text>
+    <text x="100" y="218" text-anchor="middle" font-size="13" fill="#2c3e50">drawings &#183; ruins</text>
+  </g>
+
+  <!-- Stage 2: Stratigraphic analysis -->
+  <g transform="translate(275,100)">
+    <rect width="200" height="230" rx="6" fill="#ffffff" stroke="#2c3e50" stroke-width="1"/>
+    <g transform="translate(58,32)">
+      <rect x="0" y="0" width="84" height="76" fill="#fafaf7" stroke="#2c3e50" stroke-width="1"/>
+      <path d="M0,0 L84,0 L84,18 Q63,12 42,18 T0,16 Z" fill="#e8e1d0"/>
+      <path d="M0,18 Q21,12 42,18 T84,18 L84,34 Q63,28 42,34 T0,32 Z" fill="#dcd0b4"/>
+      <path d="M0,34 Q21,28 42,34 T84,34 L84,52 Q63,46 42,52 T0,50 Z" fill="#c4a988"/>
+      <path d="M0,52 Q21,46 42,52 T84,52 L84,76 L0,76 Z" fill="#a18563"/>
+    </g>
+    <text x="100" y="152" text-anchor="middle" font-size="17" fill="#2c3e50" font-weight="600">Stratigraphic analysis</text>
+    <text x="100" y="172" text-anchor="middle" font-size="13" fill="#6a7b8c" font-style="italic">what you observe</text>
+    <text x="100" y="200" text-anchor="middle" font-size="13" fill="#2c3e50">units &#183; sequences</text>
+    <text x="100" y="218" text-anchor="middle" font-size="13" fill="#2c3e50">phases &#183; activities</text>
+  </g>
+
+  <!-- Stage 3: Extended Matrix graph (accent) -->
+  <g transform="translate(500,100)">
+    <rect width="200" height="230" rx="6" fill="#ffffff" stroke="#c8541e" stroke-width="1.5"/>
+    <rect width="200" height="5" rx="2" fill="#c8541e"/>
+    <g transform="translate(58,34)">
+      <line x1="20" y1="60" x2="60" y2="20" stroke="#2c3e50" stroke-width="1.5"/>
+      <line x1="60" y1="20" x2="80" y2="60" stroke="#2c3e50" stroke-width="1.5"/>
+      <line x1="20" y1="60" x2="80" y2="60" stroke="#2c3e50" stroke-width="1.5"/>
+      <line x1="60" y1="20" x2="60" y2="60" stroke="#5a6b7a" stroke-width="1.2" stroke-dasharray="3,2"/>
+      <circle cx="20" cy="60" r="9" fill="#ffffff" stroke="#c8541e" stroke-width="2"/>
+      <circle cx="60" cy="20" r="9" fill="#c8541e" stroke="#c8541e" stroke-width="2"/>
+      <circle cx="80" cy="60" r="9" fill="#ffffff" stroke="#c8541e" stroke-width="2"/>
+      <circle cx="60" cy="60" r="6" fill="#ffffff" stroke="#5a6b7a" stroke-width="1.5"/>
+    </g>
+    <text x="100" y="152" text-anchor="middle" font-size="17" fill="#2c3e50" font-weight="600">Extended Matrix graph</text>
+    <text x="100" y="172" text-anchor="middle" font-size="13" fill="#c8541e" font-style="italic">what you formalize</text>
+    <text x="100" y="200" text-anchor="middle" font-size="13" fill="#2c3e50">nodes &#183; paradata</text>
+    <text x="100" y="218" text-anchor="middle" font-size="13" fill="#2c3e50">hypotheses &#183; sources</text>
+  </g>
+
+  <!-- Stage 4: 3D reconstruction -->
+  <g transform="translate(725,100)">
+    <rect width="200" height="230" rx="6" fill="#ffffff" stroke="#2c3e50" stroke-width="1"/>
+    <g transform="translate(64,28)">
+      <line x1="0" y1="78" x2="72" y2="78" stroke="#2c3e50" stroke-width="1.2"/>
+      <polygon points="2,14 70,14 36,2" fill="#c4b387" stroke="#2c3e50" stroke-width="1"/>
+      <rect x="2" y="14" width="68" height="10" fill="#d8c9a8" stroke="#2c3e50" stroke-width="1"/>
+      <rect x="8"  y="24" width="11" height="54" fill="#e8dfc8" stroke="#2c3e50" stroke-width="1"/>
+      <rect x="30" y="24" width="11" height="54" fill="#e8dfc8" stroke="#2c3e50" stroke-width="1"/>
+      <rect x="52" y="24" width="11" height="54" fill="#e8dfc8" stroke="#2c3e50" stroke-width="1"/>
+      <line x1="11" y1="26" x2="11" y2="76" stroke="#a18563" stroke-width="0.5" opacity="0.7"/>
+      <line x1="15" y1="26" x2="15" y2="76" stroke="#a18563" stroke-width="0.5" opacity="0.7"/>
+      <line x1="33" y1="26" x2="33" y2="76" stroke="#a18563" stroke-width="0.5" opacity="0.7"/>
+      <line x1="37" y1="26" x2="37" y2="76" stroke="#a18563" stroke-width="0.5" opacity="0.7"/>
+      <line x1="55" y1="26" x2="55" y2="76" stroke="#a18563" stroke-width="0.5" opacity="0.7"/>
+      <line x1="59" y1="26" x2="59" y2="76" stroke="#a18563" stroke-width="0.5" opacity="0.7"/>
+    </g>
+    <text x="100" y="152" text-anchor="middle" font-size="17" fill="#2c3e50" font-weight="600">3D reconstruction</text>
+    <text x="100" y="172" text-anchor="middle" font-size="13" fill="#6a7b8c" font-style="italic">what you build</text>
+    <text x="100" y="200" text-anchor="middle" font-size="13" fill="#2c3e50">geometry tied</text>
+    <text x="100" y="218" text-anchor="middle" font-size="13" fill="#2c3e50">to the graph</text>
+  </g>
+
+  <!-- Stage 5: Publication & paradata -->
+  <g transform="translate(950,100)">
+    <rect width="200" height="230" rx="6" fill="#ffffff" stroke="#2c3e50" stroke-width="1"/>
+    <g transform="translate(60,30)">
+      <circle cx="40" cy="40" r="34" fill="#ffffff" stroke="#2c3e50" stroke-width="1.2"/>
+      <ellipse cx="40" cy="40" rx="34" ry="14" fill="none" stroke="#2c3e50" stroke-width="0.8"/>
+      <ellipse cx="40" cy="40" rx="14" ry="34" fill="none" stroke="#2c3e50" stroke-width="0.8"/>
+      <line x1="6" y1="40" x2="74" y2="40" stroke="#2c3e50" stroke-width="0.8"/>
+      <line x1="40" y1="6" x2="40" y2="74" stroke="#2c3e50" stroke-width="0.8"/>
+      <circle cx="58" cy="22" r="3.2" fill="#c8541e"/>
+      <circle cx="22" cy="48" r="3.2" fill="#c8541e"/>
+      <circle cx="44" cy="62" r="3.2" fill="#c8541e"/>
+    </g>
+    <text x="100" y="152" text-anchor="middle" font-size="17" fill="#2c3e50" font-weight="600">Publication &amp; paradata</text>
+    <text x="100" y="172" text-anchor="middle" font-size="13" fill="#6a7b8c" font-style="italic">what you share</text>
+    <text x="100" y="200" text-anchor="middle" font-size="13" fill="#2c3e50">verifiable</text>
+    <text x="100" y="218" text-anchor="middle" font-size="13" fill="#2c3e50">queryable &#183; reusable</text>
+  </g>
+
+  <!-- Bottom note -->
+  <text x="600" y="386" text-anchor="middle" font-size="13" fill="#6a7b8c" font-style="italic">Built on the EM formal language and the s3Dgraphy library</text>
+  <text x="600" y="410" text-anchor="middle" font-size="12" fill="#95a5a6">Tools along the way: yEd &#183; em_data.xlsx &#183; Blender (EMtools) &#183; web platforms</text>
+</svg>
