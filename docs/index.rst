@@ -3,6 +3,55 @@ Extended Matrix documentation
 
 **Extended Matrix** is a formal language with which to document stratigraphy and virtual reconstruction processes. It is intended to be used by archaeologists and heritage specialists to keep track in a robust way of their scientific activities. The EM allows to record the sources used and the processes of analysis and synthesis that have led from scientific evidence to interpretation and reconstruction. It organises 3D archaeological record so that the 3D modelling steps are smoother, transparent and scientifically complete. Its development is leaded by E. Demetrescu at CNR-ISPC (Rome, former CNR-ITABC). EM is at its 1.4 version (a 1.5 version is currently under development).
 
+.. admonition:: First time here?
+   :class: tip
+
+   If this is your very first contact with the Extended Matrix project, the recommended landing page is `extendedmatrix.org <https://www.extendedmatrix.org>`__ — it explains *what* EM is, *who* it is for, and *which* of the manuals you should open next. This site you are reading now is the **language reference**: the place where the formal notation is defined and discussed.
+
+EM, EM Tools, 3DSC: who is who
+------------------------------
+
+A new user often meets three names at once. The distinction matters because each one solves a different problem:
+
+.. list-table::
+   :header-rows: 1
+   :widths: 22 38 40
+
+   * - Name
+     - What it is
+     - Where to learn it
+   * - **Extended Matrix (EM)**
+     - The *formal language* used to document stratigraphy and reconstruction processes. Drawn in yEd or produced from ``em_data.xlsx``.
+     - You are here.
+   * - **EM Tools**
+     - The *Blender add-on* that connects an EM graph to 3D content.
+     - `EM Tools manual <https://docs.extendedmatrix.org/projects/EM-tools/>`__
+   * - **3DSC**
+     - A complementary Blender environment for high-quality 3D survey processing that can feed EM Tools.
+     - `3D-survey-collection docs <https://docs.extendedmatrix.org/projects/3D-survey-collection>`__
+
+If you are unsure which one you need: stay here if you have *evidence to organise and a notation to learn*; switch to the EM Tools manual if you have *3D content to annotate in Blender*; reach for 3DSC if you have *raw survey data to clean and align*.
+
+Start here
+----------
+
+Pick the entry that fits you best. Each path eventually loops back to the formal language sections of this manual.
+
+.. admonition:: I work with sources, stratigraphy and reconstruction logic
+   :class: tip
+
+   You are exactly in the right place. Begin with :doc:`learn_EM`, then :doc:`stratigraphic_approach`, then walk through :doc:`stratigraphic_nodes`, :doc:`auxiliary_stratigraphic_nodes`, :doc:`paradata_nodes` and :doc:`connectors` — these four pages cover ~80% of the day-to-day vocabulary.
+
+.. admonition:: I build and texture 3D models and want to enrich them with EM data
+   :class: tip
+
+   The Blender side of EM lives in the `EM Tools manual <https://docs.extendedmatrix.org/projects/EM-tools/>`__ — start there for installation and the operational workflow. Come back here whenever you need to understand *what a node type actually means* (most often: :doc:`stratigraphic_nodes`, :doc:`paradata_nodes`).
+
+.. admonition:: I want to extend EM, integrate it, or contribute code
+   :class: tip
+
+   The implementation lives in the `s3Dgraphy library <https://github.com/zalmoxes-laran/EM-blender-tools>`__ (currently bundled inside EM-blender-tools). On this site, the most useful reading is :doc:`knowledge_tree` for the data architecture and :doc:`paradata_group` / :doc:`data_funnel` for how information propagates through the graph.
+
 From sources to validated reconstruction
 ----------------------------------------
 
