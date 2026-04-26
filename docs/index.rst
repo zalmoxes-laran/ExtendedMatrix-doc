@@ -29,8 +29,11 @@ A new user often meets three names at once. The distinction matters because each
    * - **3DSC**
      - A complementary Blender environment for high-quality 3D survey processing that can feed EM Tools.
      - `3D-survey-collection docs <https://docs.extendedmatrix.org/projects/3D-survey-collection>`__
+   * - **Heriverse**
+     - The *Heritage Science Metaverse* — web-based publication and collaborative VR for EM-aware scenes (paradata pop-ups, epoch switching, voice/screen sharing).
+     - `Heriverse docs <https://docs.extendedmatrix.org/projects/strativerse/en/latest/>`__
 
-If you are unsure which one you need: stay here if you have *evidence to organise and a notation to learn*; switch to the EM Tools manual if you have *3D content to annotate in Blender*; reach for 3DSC if you have *raw survey data to clean and align*.
+If you are unsure which one you need: stay here if you have *evidence to organise and a notation to learn*; switch to the EM Tools manual if you have *3D content to annotate in Blender*; reach for 3DSC if you have *raw survey data to clean and align*; open Heriverse when your reconstruction is *ready to be shared with the world*.
 
 Start here
 ----------
@@ -63,7 +66,7 @@ The Extended Matrix is the connective tissue between five well-known moments of 
 
    *The Extended Matrix workflow at a glance: from the evidence you collect to a reconstruction that other researchers can verify, query and reuse.*
 
-You start with **sources and evidence** — photos, reports, drawings, the ruin itself. From these you carry out a **stratigraphic analysis**, identifying units, sequences, phases and activities. The **Extended Matrix graph** is where this analysis becomes formal: typed nodes for stratigraphic units, sources, paradata and hypotheses, connected by arcs with explicit semantic meaning. The graph then guides the **3D reconstruction**, where geometry is tied unit-by-unit to the graph nodes that justify it. The final step is **publication and paradata**: a reconstruction that other researchers can open and interrogate, because every interpretive choice is recorded in the graph and travels with the model.
+You start with **sources and evidence** — photos, reports, drawings, the archaeological remains themselves. From these you carry out a **stratigraphic analysis**, identifying units, sequences, phases and activities. The **Extended Matrix graph** is where this analysis becomes formal: typed nodes for stratigraphic units, sources, paradata and hypotheses, connected by arcs with explicit semantic meaning. The graph then guides the **3D reconstruction**, where geometry is tied unit-by-unit to the graph nodes that justify it. The final step is **publication and paradata**: a reconstruction that other researchers can open and interrogate, because every interpretive choice is recorded in the graph and travels with the model.
 
 The remainder of this manual walks through each of these moments in detail: how to learn the formal language, how to organise a project, and how each kind of node and connector works.
 

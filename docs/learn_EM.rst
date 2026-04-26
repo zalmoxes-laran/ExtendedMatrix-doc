@@ -2,125 +2,112 @@
 Learn EM
 ========
 
-Bare in mind that the path to learn and use EM depends on your scope and your background. 
+The path to learn and use EM depends on your scope and your background. Pick the entry that fits where you are now — none of them is "harder" than another, they just emphasise different parts of the same workflow. Each section below ends with a **Take action** block: a short, concrete thing you can do today to get your hands on the method.
 
 1. EM formal language (for smart humanists)
 -------------------------------------------
 
-Provides an overview of the EM language, a formal graphical notation used to describe stratigraphy and archaeological contexts. This documentation recommends learning the EM language, which can be studied using simple materials such as pencil and paper. The relevant sections of this documentation explain the basics of EM, emphasizing that it is not a programming language but a specialized tool for representing archaeological studies and reconstructions.
+This is where every EM journey starts. The EM language is a typed graphical notation — nodes for stratigraphic units, sources, paradata; arcs for stratigraphic and provenance relations — that you can read and write *by hand*, with a pencil on paper, before any software is involved. The relevant sections of this site walk through each node type and connector. Crucially, EM is **not** a programming language: it is a notation for describing archaeological evidence and the reasoning that turns it into a reconstruction.
 
 .. tip::
 
-   The reference repository, which contains example cards, node icons, templates and other useful material, is available at https://github.com/zalmoxes-laran/ExtendedMatrix/tree/EM_1.5_dev/
+   The reference repository, with example cards, node icons, templates and assets, is at https://github.com/zalmoxes-laran/ExtendedMatrix/tree/EM_1.5_dev/
+
+.. admonition:: Take action — *learn by doing with yEd*
+   :class: tip
+
+   yEd is the free graph editor most EM authors use to draw GraphML files with the EM palette. A 30-minute hands-on:
+
+   1. Install yEd from `yworks.com <https://www.yworks.com/products/yed>`__.
+   2. Import the EM palette (instructions in the `EM Tools manual — Importing the EM palette <https://docs.extendedmatrix.org/projects/EM-tools/en/latest/installation.html#importing-the-em-palette-in-yed>`__).
+   3. Drag the EM canvas onto the workspace and fill in the metadata (site code, author, ORCID, licence).
+   4. Add two stratigraphic units and connect them with the appropriate stratigraphic relation.
+   5. Save as ``.graphml`` — that file is already a valid Extended Matrix.
+
+   Then come back to :doc:`stratigraphic_nodes` to read what you just drew.
 
 2. Annotate stratigraphy on 3D models (for jedi-humanists)
-------------------------------------------------------------------------------------------------
+----------------------------------------------------------
 
-If you want to connect your documentation to 3D models, it is a good idea to learn also some of the tools from the Extended Matrix Framework (EMF), starting from the EMtools for Blender. `You can find the documentation here <https://docs.extendedmatrix.org/projects/EM-tools/en/latest/index.html>`_.
+If you want to connect EM documentation to 3D models, learn one tool from the **EM Framework (EMF)** beyond yEd: the **EM Tools** add-on for Blender. With it, an EM graph drawn in yEd becomes a navigable, queryable 3D scene where every stratigraphic unit lights up next to its proxy. The full manual is at the `EM Tools docs <https://docs.extendedmatrix.org/projects/EM-tools/en/latest/index.html>`__.
+
+When you are ready to *publish* a reconstruction with its full paradata chain, the EMF web platform that closes the loop is **Heriverse** — the Heritage Science Metaverse — which opens any EM-aware scene in a browser, with epoch switching, source pop-ups, and collaborative VR. See the `Heriverse documentation <https://docs.extendedmatrix.org/projects/strativerse/en/latest/>`__.
 
 .. note::
 
-   Tipically users can work in team splitting the effort between two or more members (i.e. one drawing the EM, one modelling in Blender). 
+   Many users work in teams, splitting the effort across two or more members (for example, one drawing the EM in yEd, one annotating in Blender). EM is built for collaboration: every node carries author, licence and embargo metadata so contributions stay traceable.
 
-3. Prepare high-quality 3D models for EM workflows (not for the faint of heart!)
+.. admonition:: Take action — *open a real graph in Blender*
+   :class: tip
+
+   1. Install EM Tools (`installation guide <https://docs.extendedmatrix.org/projects/EM-tools/en/latest/installation.html>`__).
+   2. Download an example dataset from the `Extended Matrix download page <https://www.extendedmatrix.org/download>`__ — pick one with a ``.graphml`` and a ``DosCo`` folder.
+   3. In Blender, open the EM Setup panel, point it at the ``.graphml`` and the ``DosCo`` folder, and press *Reload*.
+   4. Browse the units in the Stratigraphy Manager, switch the Visual Manager to *Epochs* mode, and watch the scene change as you click on different time slices.
+
+   For a guided walk-through, follow :doc:`tutorials/13-first-matrix-creation <em-tools:tutorials/13-first-matrix-creation>` in the EM Tools manual.
+
+3. Prepare high-quality 3D models for EM workflows
 --------------------------------------------------
 
-To enhance your 3D survey quality, including model accuracy, survey process documentation, and metadata management, consider adopting the 3D Survey Collection suite (3DSC). This toolset integrates with Blender and Metashape (Reality Capture in progress), providing a comprehensive workflow for archaeological 3D documentation. `The complete documentation is available here <https://docs.extendedmatrix.org/projects/3DSC/en/latest/>`_.
+Good EM annotations need good 3D models underneath. The **3D Survey Collection (3DSC)** is the EMF toolset that helps you build them: workflow management for photogrammetry (Metashape, Reality Capture in progress), level-of-detail handling, metadata propagation, and direct integration with EM Tools. It runs entirely on modest hardware and is designed for archaeologists, not for visual-effects studios — so don't be put off by the words "3D survey". The complete documentation is `here <https://docs.extendedmatrix.org/projects/3DSC/en/latest/>`__.
 
 .. note::
 
-   High-quality 3D models, accessible even on modest computers through tools like 3DSC, are essential for effective stratigraphic documentation. These models enable direct 3D annotation and seamless connection to your database.
+   High-quality 3D models — accessible even on a laptop through 3DSC — are what make stratigraphic annotation *direct on the model* possible, instead of going through 2D drawings. They are also what makes Heriverse exports beautiful.
 
-4. If you want to customize EM for your workflow (join the bright side of the force!)
--------------------------------------------------------------------------------------
+.. admonition:: Take action — *try 3DSC on one wall*
+   :class: tip
+
+   You don't need a whole site. Pick a single feature you have already photogrammetered (one wall, one trench section, one find), bring it into 3DSC and let the LOD pipeline produce a clean low-poly proxy. That single object, used as a proxy in EM Tools, is enough to feel the difference.
+
+4. Customize EM for your workflow
+---------------------------------
 
 Contributing to add features
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-If you want to contribute to add new features to EM:
+If you want to contribute features to EM:
 
-* **For EMtools in Blender**: you can start learning Python for Blender `here <https://www.youtube.com/watch?v=rKGNc6CQ2cg>`_ (in Italian, with English subtitles) and ask for support from the EM community on `Facebook <https://www.facebook.com/groups/extendedmatrix>`_ or `Telegram <https://t.me/UserGroupEM>`_.
-
-* **To contribute to s3dgraphy**: consult the `Contributing Guidelines <https://github.com/zalmoxes-laran/s3dgraphy/blob/main/CONTRIBUTING.md>`_ on the GitHub repository.
+* **For EM Tools in Blender** — start with the Python-for-Blender introduction `here <https://www.youtube.com/watch?v=rKGNc6CQ2cg>`__ (Italian, English subtitles) and ask the community on `Telegram <https://t.me/UserGroupEM>`__ or `Facebook <https://www.facebook.com/groups/extendedmatrix>`__.
+* **For s3dgraphy** — see the `Contributing Guidelines <https://github.com/zalmoxes-laran/s3dgraphy/blob/main/CONTRIBUTING.md>`__ on GitHub.
 
 Porting EM to other platforms
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-To port Extended Matrix to other platforms like **Revit**, **3D Studio Max**, **Unity**, or **Unreal Engine**, we recommend using the **s3dgraphy** Python library.
+To bring EM to platforms beyond Blender — Revit, 3ds Max, Unity, Unreal — the recommended path is the **s3dgraphy** Python library. s3dgraphy is the computational implementation of EM as a property knowledge graph (GraphML / JSON), extracted from EM Tools so it can live anywhere Python runs. You write the visual layer for your platform; s3dgraphy enforces the EM data model under the hood. Full reference and examples in the `s3dgraphy documentation <https://docs.extendedmatrix.org/projects/s3dgraphy/>`__ *(under construction)* and in the `s3dgraphy repository <https://github.com/zalmoxes-laran/s3dgraphy>`__.
 
-**What is s3dgraphy?**
+.. admonition:: Take action — *write a 20-line Python script*
+   :class: tip
 
-s3dgraphy is the core Python library that implements the Extended Matrix formal language. It has been extracted from EM-tools to become a standalone library, enabling EM functionality to be brought to any platform that supports Python.
+   ``pip install s3dgraphy``, load an existing ``.graphml``, list every US with its first epoch, dump it as CSV. If that script runs, you have everything you need to bind s3dgraphy to any host platform.
 
-**Key features:**
+The EM Framework (EMF)
+----------------------
 
-* 🔗 **Graph-based architecture**: Native support for complex archaeological relationships
-* 📊 **Stratigraphic modeling**: Specialized node types for archaeological units
-* 🔄 **Format interoperability**: Import/export GraphML, JSON, and archaeological standard formats
-* 🏛️ **Archaeological standards**: Built-in support for CIDOC-CRM mapping
-* ⚡ **Extensible design**: Easy to extend with custom node types and relationship definitions
+When the documentation talks about *the framework*, it means the family of tools that all speak the same EM data model through s3dgraphy. As of EM 1.5:
 
-**Getting started:**
+.. list-table::
+   :header-rows: 1
+   :widths: 24 76
 
-1. **Installation**
-
-   .. code-block:: bash
-
-      pip install s3dgraphy
-
-2. **Basic usage example**
-
-   .. code-block:: python
-
-      from s3dgraphy import Graph
-      from s3dgraphy.nodes import StratigraphicNode, DocumentNode
-      
-      # Create a new graph
-      graph = Graph("my_site")
-      
-      # Add a stratigraphic unit
-      us001 = StratigraphicNode("US001", node_type="US")
-      us001.set_attribute("description", "Stone wall foundation")
-      graph.add_node(us001)
-      
-      # Add documentation
-      doc001 = DocumentNode("DOC001", "site_plan.pdf")
-      graph.add_node(doc001)
-      
-      # Create relationship
-      graph.add_edge(us001.node_id, doc001.node_id, "documented_by")
-      
-      # Export to GraphML
-      graph.export_graphml("my_site.graphml")
-
-3. **Integration with your platform**
-
-   To integrate s3dgraphy into your application:
-   
-   * Use s3dgraphy APIs to create and manage EM graphs
-   * Implement the visual interface specific to your platform
-   * Use supported export/import formats (GraphML, JSON) for interoperability
-
-**Available resources:**
-
-* 📖 **Complete documentation**: `s3dgraphy Documentation <https://docs.extendedmatrix.org/projects/s3dgraphy/>`_ *(coming soon)*
-* 💻 **GitHub Repository**: https://github.com/zalmoxes-laran/s3dgraphy
-* 🐛 **Issue Tracker**: https://github.com/zalmoxes-laran/s3dgraphy/issues
-* 📧 **Developer contact**: emanuel.demetrescu@cnr.it
-
-**Extended Matrix Ecosystem:**
-
-s3dgraphy is part of the broader Extended Matrix Framework ecosystem:
-
-* **EM-tools for Blender** - 3D visualization and annotation
-* **3D Survey Collection (3DSC)** - High-quality 3D model preparation
-* **ATON 3 Framework** - Web-based archaeological visualization
-* **Heriverse Platform** - Virtual heritage experiences
+   * - Component
+     - Role
+   * - **EM** (this manual)
+     - The formal language. The notation you read and write.
+   * - **s3dgraphy**
+     - Python library. The shared data model that every other component speaks.
+   * - **EM Tools** (Blender)
+     - 3D visualisation, annotation, paradata authoring, export. `Manual <https://docs.extendedmatrix.org/projects/EM-tools/en/latest/>`__.
+   * - **3D Survey Collection (3DSC)**
+     - Photogrammetry pipeline and 3D model preparation upstream of EM Tools. `Manual <https://docs.extendedmatrix.org/projects/3DSC/en/latest/>`__.
+   * - **Heriverse**
+     - Web-based publication and collaborative VR for EM-aware scenes. `Manual <https://docs.extendedmatrix.org/projects/strativerse/en/latest/>`__.
+   * - **ATON 3**
+     - Web visualisation framework underpinning Heriverse. `GitHub <https://github.com/phoenixbf/aton>`__.
+   * - **pyArchInit connector**
+     - Imports Harris matrices and field records from pyArchInit into EM. See the `EM Tools tutorial <https://docs.extendedmatrix.org/projects/EM-tools/en/latest/tutorials/15-pyarchinit-external-data.html>`__.
 
 .. note::
 
-   s3dgraphy is currently under active development. Version 1.0 is planned for Q4 2025 with complete features for multi-platform integration. For the current development status, consult the `roadmap <https://github.com/zalmoxes-laran/s3dgraphy/blob/main/ROADMAP.md>`_.
-
-.. tip::
-
-   For integration examples and complete workflows, consult the `Examples & Workflows <https://docs.extendedmatrix.org/projects/s3dgraphy/examples/>`_ section in the s3dgraphy documentation.
+   s3dgraphy is in active development; version 1.0 with full multi-platform support is on the roadmap. For status see the `s3dgraphy roadmap <https://github.com/zalmoxes-laran/s3dgraphy/blob/main/ROADMAP.md>`__.
