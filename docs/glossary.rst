@@ -1,0 +1,158 @@
+Glossary
+========
+
+This page collects the **formal terms** used by the Extended Matrix
+language. Each entry points back to the main chapter that defines the
+concept in detail; this glossary is meant as a quick-lookup reference,
+not as a substitute for the chapters themselves.
+
+.. note::
+
+   **Editors:** keep entries short (1–3 sentences). The canonical
+   definition lives in the linked chapter — this page only restates the
+   gist and points there.
+
+.. glossary::
+   :sorted:
+
+   Extended Matrix
+   EM
+      The formal language for documenting stratigraphy and virtual
+      reconstruction processes in cultural heritage. Defined as a typed
+      visual notation drawable in yEd or producible programmatically
+      via :term:`s3dgraphy`. See :doc:`stratigraphic_approach`.
+
+   Extended Matrix Framework
+   EMF
+      The set of software tools that operationalise the EM language —
+      yEd palette, EM Tools (Blender add-on), 3DSC (3D Survey
+      Collection), Heriverse (web platform) and the s3dgraphy library
+      that holds them together. See the
+      `framework overview <https://www.extendedmatrix.org/about>`__.
+
+   Stratigraphic Unit
+   US
+      The basic unit of archaeological stratigraphy: a discrete
+      physical entity (a layer, a wall, a cut) recorded during
+      excavation. EM extends this with virtual variants — see
+      :doc:`stratigraphic_nodes`.
+
+   Virtual Stratigraphic Unit
+   USV
+      A stratigraphic unit whose physical evidence is partial or
+      absent and whose existence is inferred. Comes in two flavours
+      — :term:`USVs` (with an in-situ anchor) and :term:`USVn`
+      (pure typology). See :doc:`stratigraphic_nodes`.
+
+   USVs
+      A Virtual Stratigraphic Unit anchored to an in-situ
+      archaeological remain. The anchor connects the inference back to
+      tangible evidence. See :doc:`stratigraphic_nodes`.
+
+   USVn
+      A Virtual Stratigraphic Unit defined purely by typology — no
+      in-situ anchor, the unit is reconstructed from comparanda and
+      type-based reasoning. See :doc:`stratigraphic_nodes`.
+
+   USD
+      A Documented Stratigraphic Unit — a unit attested by
+      bibliographic, archival or iconographic documentation rather
+      than by direct excavation. See :doc:`stratigraphic_nodes`.
+
+   Special Find
+   SF
+      A discrete object found in a stratigraphic unit, recorded as a
+      separate entity (e.g. an inscription, a coin). See
+      :doc:`auxiliary_stratigraphic_nodes`.
+
+   Virtual Special Find
+   VSF
+      A nodegroup containing SF fragments that have been
+      reconstructed virtually. The VSF is a *container*, not a single
+      reconstructed object. See :doc:`auxiliary_stratigraphic_nodes`.
+
+   Transformation Stratigraphic Unit
+   TSU
+      A node type introduced in EM 1.4 (and refined in 1.5) for
+      documenting *states* and *transformations* — decay, restoration,
+      thematic surveys — rather than the original construction events.
+
+   Property
+   PROP
+   Qualia
+      A typed paradata node carrying a measurable or qualitative
+      attribute attached to a stratigraphic unit. Connected upstream
+      to the :term:`Extractor` and :term:`Combiner` nodes that justify
+      the value. See :doc:`qualia` and :doc:`paradata_nodes`.
+
+   Document
+      A primary source — a survey drawing, a photograph, a manuscript,
+      a publication — referenced by an :term:`Extractor` to derive a
+      :term:`Property`. See :doc:`source_node`.
+
+   Extractor
+      A paradata node representing the *act of extraction* of an
+      attribute from a :term:`Document`. Materialises the
+      "from-source-to-property" reasoning step. See
+      :doc:`extractor_nodes`.
+
+   Combiner
+      A paradata node that *combines* multiple extractor outputs into
+      a single :term:`Property` value, typically when a single value
+      cannot be derived from a single source. See
+      :doc:`paradata_group`.
+
+   Paradata
+      The reasoning that connects sources to interpretive results:
+      what was used, how it was used, and what was concluded.
+      Mandatory in EM — every reconstructive node must be backed by a
+      paradata chain. See :doc:`paradata_nodes`.
+
+   Activity
+   ANG
+      An Activity Node Group — a set of stratigraphic units linked by
+      a common operation (e.g. "construction of the apse"). See
+      :doc:`activity`.
+
+   Epoch
+      A named time horizon used to attribute and filter stratigraphic
+      units (``has_first_epoch`` / ``has_last_epoch``). Epochs are not
+      stratigraphic units themselves; they are the calendar against
+      which units are placed. See :doc:`canvas`.
+
+   Canvas
+      The yEd diagram surface where the EM graph is authored. Carries
+      the metadata used by the framework — site code, epoch palette,
+      author, licence — typically inside an ``SL_PD`` nodegroup. See
+      :doc:`canvas`.
+
+   Knowledge Graph
+      The underlying property graph encoded by an EM diagram, made
+      programmatically accessible via :term:`s3dgraphy`. See
+      :doc:`knowledge_tree`.
+
+   s3dgraphy
+      The Python library that reads, writes, validates and converts
+      EM graphs (GraphML / JSON). It is the *computational
+      implementation* of the EM data model and is used by all
+      framework components. See the index page of this manual.
+
+   Heriverse
+      The web-based publication platform of the EM Framework — turns
+      EM graphs and 3D content into navigable, paradata-aware online
+      experiences. The public product name; the underlying conceptual
+      model is **StratiVerse** (used in academic papers and internal
+      manuals). See the
+      `Heriverse documentation <https://docs.extendedmatrix.org/projects/heriverse/>`__.
+
+   StratiVerse
+      The conceptual model that underlies the Heriverse product.
+      Referenced in academic papers and internal manuals; the public
+      tool name is **Heriverse**.
+
+.. note::
+
+   **Editors:** when you add a new term, place its short definition
+   here and link to the chapter where the full discussion lives.
+   Avoid redefining concepts in two places — the chapter is
+   authoritative; the glossary entry is the lookup.

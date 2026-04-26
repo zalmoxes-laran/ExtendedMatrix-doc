@@ -146,5 +146,8 @@ In practical terms: an archaeologist authors or reviews a stratigraphic sequence
    knowledge_tree
 
 .. toctree::
-   :maxdepth: 2
-   
+   :maxdepth: 1
+   :caption: Reference
+
+   glossary
+   references
