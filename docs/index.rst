@@ -31,7 +31,7 @@ A new user often meets three names at once. The distinction matters because each
      - `3D-survey-collection docs <https://docs.extendedmatrix.org/projects/3D-survey-collection>`__
    * - **Heriverse**
      - The *Heritage Science Metaverse* — web-based publication and collaborative VR for EM-aware scenes (paradata pop-ups, epoch switching, voice/screen sharing).
-     - `Heriverse docs <https://docs.extendedmatrix.org/projects/strativerse/en/latest/>`__
+     - `Heriverse docs <https://docs.extendedmatrix.org/projects/heriverse/en/latest/>`__
 
 If you are unsure which one you need: stay here if you have *evidence to organise and a notation to learn*; switch to the EM Tools manual if you have *3D content to annotate in Blender*; reach for 3DSC if you have *raw survey data to clean and align*; open Heriverse when your reconstruction is *ready to be shared with the world*.
 

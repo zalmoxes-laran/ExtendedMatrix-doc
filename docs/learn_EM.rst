@@ -31,7 +31,7 @@ This is where every EM journey starts. The EM language is a typed graphical nota
 
 If you want to connect EM documentation to 3D models, learn one tool from the **EM Framework (EMF)** beyond yEd: the **EM Tools** add-on for Blender. With it, an EM graph drawn in yEd becomes a navigable, queryable 3D scene where every stratigraphic unit lights up next to its proxy. The full manual is at the `EM Tools docs <https://docs.extendedmatrix.org/projects/EM-tools/en/latest/index.html>`__.
 
-When you are ready to *publish* a reconstruction with its full paradata chain, the EMF web platform that closes the loop is **Heriverse** — the Heritage Science Metaverse — which opens any EM-aware scene in a browser, with epoch switching, source pop-ups, and collaborative VR. See the `Heriverse documentation <https://docs.extendedmatrix.org/projects/strativerse/en/latest/>`__.
+When you are ready to *publish* a reconstruction with its full paradata chain, the EMF web platform that closes the loop is **Heriverse** — the Heritage Science Metaverse — which opens any EM-aware scene in a browser, with epoch switching, source pop-ups, and collaborative VR. See the `Heriverse documentation <https://docs.extendedmatrix.org/projects/heriverse/en/latest/>`__. (The underlying conceptual model, *StratiVerse*, is the topic of separate scientific papers; it is what makes Heriverse possible, but you do not need to learn it to use the platform.)
 
 .. note::
 
@@ -102,7 +102,7 @@ When the documentation talks about *the framework*, it means the family of tools
    * - **3D Survey Collection (3DSC)**
      - Photogrammetry pipeline and 3D model preparation upstream of EM Tools. `Manual <https://docs.extendedmatrix.org/projects/3DSC/en/latest/>`__.
    * - **Heriverse**
-     - Web-based publication and collaborative VR for EM-aware scenes. `Manual <https://docs.extendedmatrix.org/projects/strativerse/en/latest/>`__.
+     - Web-based publication and collaborative VR for EM-aware scenes. `Manual <https://docs.extendedmatrix.org/projects/heriverse/en/latest/>`__.
    * - **ATON 3**
      - Web visualisation framework underpinning Heriverse. `GitHub <https://github.com/phoenixbf/aton>`__.
    * - **pyArchInit connector**
