@@ -74,19 +74,6 @@ The remainder of this manual walks through each of these moments in detail: how 
 
    If this is your very first contact with EM, jump to :doc:`learn_EM` for a guided tour calibrated to four different starting points (humanist, archaeologist with 3D skills, 3D modeller, and developer).
 
-Components behind the workflow
-------------------------------
-
-The workflow above is supported by three core components — a formal language, a software framework, and a multidimensional knowledge graph — held together by the ``s3Dgraphy`` library.
-
-.. figure:: img/EM_schema_general.png
-   :width: 400px
-   :align: center
-
-   *Core components of Extended Matrix: Language, Framework and Knowledge Graph.*
-
-At the top is the Extended Matrix Language, which provides the formal notation system; the Extended Matrix Framework, which includes all necessary software tools; and the Multidimensional Knowledge Graph, which serves as the underlying graph database structure. These components work together to provide a comprehensive system for archaeological data management and interpretation. Their interconnection is ensured by the s3Dgraphy library (in the middle) that offers tools and rules to coherently read, write, manage, and convert the knowledge graph behind the EM.
-
 Extended Matrix and s3dgraphy: two complementary layers
 --------------------------------------------------------
 
