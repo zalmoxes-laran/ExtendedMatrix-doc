@@ -176,7 +176,7 @@ A series of USVn objects, like a colonnade or a sequence of acroteria, considere
   Example: There are only the remains of a podium SU01. A USV/n 100 hypothetical reconstruction series of columns is provisioned (without physical destruction signs that prove the presence of a column). The series node allows to instance several USV/n at once.
 
 .. figure:: img/B04.png
-  :width: 400
+  :width: 600
   :align: center 
 
   Example: On top of a podium SU01 there is a column SU02 (in situ) fragmented due to a -SU03 (destruction of the upper part of the column). A USV/s 100 hypothetical reconstruction is provisioned in order to restore the destruction’s action -SU03. A series USV/n 101 is provided in order to complete the peristasis of the temple.
@@ -199,13 +199,13 @@ These categories relate to anastylosis, where original architectural elements ha
 Refers to a non-in situ element (fragmented or intact) that needs to be repositioned. It is a real object with several known properties (color, material, etc.) except for the original position.
 
 .. figure:: img/B05.png
-  :width: 400
+  :width: 600
   :align: center 
 
   Example: Consider a collapsed column (SF01) found near a podium (SU01). The SF documents the actual found piece, while its corresponding VSF represents the restoration work needed to complete missing parts when the column is repositioned. This pairing allows clear distinction between the original element (SF) and its restoration/completion (VSF).
 
 .. figure:: img/B06.png
-  :width: 400
+  :width: 600
   :align: center 
 
   Example: There are only the remains of a podium SU01 with a collapsed column SF01 (special find 01). A USV/n 100 series hypothetical reconstruction of the colonnade is provisioned using the SF as a source.
