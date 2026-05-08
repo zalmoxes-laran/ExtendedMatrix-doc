@@ -88,16 +88,16 @@ not as a substitute for the chapters themselves.
       bibliographic, archival or iconographic documentation rather
       than by direct excavation. See :doc:`stratigraphic_nodes`.
 
-   Special Find
-   SF
+   Special Find (SF)
       A discrete object found in a stratigraphic unit, recorded as a
       separate entity (e.g. an inscription, a coin). See
       :doc:`auxiliary_stratigraphic_nodes`.
 
    Virtual Special Find (VSF)
-      A nodegroup containing :term:`SF` fragments that have been
-      reconstructed virtually. The VSF is a *container*, not a single
-      reconstructed object. See :doc:`auxiliary_stratigraphic_nodes`.
+      A nodegroup containing :term:`SF <Special Find (SF)>` fragments
+      that have been reconstructed virtually. The VSF is a *container*,
+      not a single reconstructed object. See
+      :doc:`auxiliary_stratigraphic_nodes`.
 
    Transformation Stratigraphic Unit (TSU)
       A node type introduced in EM 1.4 (and refined in 1.5) for
