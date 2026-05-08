@@ -205,6 +205,114 @@ The Source List is designed to track:
 * Document type (3D model, photo, drawing, text, etc.)
 * Preview (when available)
 
+.. _source-list-schema:
+
+Source List schema
+~~~~~~~~~~~~~~~~~~
+
+.. versionadded:: 1.3
+   Introduced as the *formalized source list for data collection*.
+
+The Source List is a single-purpose XLSX file (``source_list.xlsx``)
+sitting at the project root next to the ``.graphml``. It registers
+every bibliographic and archival source referenced by Document nodes
+in the graph and assigns each one a stable project-local identifier
+(``D.NN``) that propagates to the DosCo folder and to the graph itself.
+
+**Column reference**
+
+.. list-table::
+   :header-rows: 1
+   :widths: 14 24 18 32 12
+
+   * - Column
+     - Purpose
+     - Format
+     - Example
+     - Required
+   * - **Name**
+     - Project-local unique ID
+     - ``D.NN`` (zero-padded, sequential)
+     - ``D.01``
+     - yes
+   * - **Description**
+     - Natural-language description of the source
+     - Free text, ~1 sentence
+     - "Photogrammetric model of the Great Temple, 2015"
+     - yes
+   * - **Url**
+     - Citation / DOI / web URL
+     - Bibliographic citation or URL
+     - "Daicoviciu H. et al., *Sargetia* XIV, 1979"
+     - recommended
+   * - **Property that can validate**
+     - Qualia / properties this source can support
+     - Comma-separated names (see :doc:`qualia`)
+     - ``geometry, material, elevation``
+     - recommended
+   * - **original id.**
+     - Archive or library reference
+     - Free text
+     - "ASR, Fondo Disegni, b.12, c.34r"
+     - optional
+   * - **Type**
+     - Source typology
+     - Free text
+     - ``PDF``, ``3D``, ``image``, ``map``
+     - yes
+   * - **Preview**
+     - Optional thumbnail
+     - Embedded image cell
+     - —
+     - optional
+   * - **Notes**
+     - Free-form annotations
+     - Free text
+     - "OCR quality low for pp. 142–148"
+     - optional
+
+**Worked example (excerpt)**
+
+.. list-table::
+   :header-rows: 1
+   :widths: 8 28 26 24 6 8
+
+   * - Name
+     - Description
+     - Url
+     - Property that can validate
+     - Type
+     - Notes
+   * - D.01
+     - Photogrammetric model of the Great Temple
+     - Demetrescu E., 2015 (unpublished)
+     - geometry, material, elevation, surface_treatment
+     - 3D
+     -
+   * - D.02
+     - Excavation report 1975–1977
+     - Daicoviciu H. et al., *Sargetia* XIV, 1979, pp. 139–154
+     - stratigraphy, architecture, dimensions, construction_technique
+     - PDF
+     - OCR low pp. 142–148
+
+.. note::
+   A revised schema with a two-sheet split (Analytical Sources /
+   Comparative Sources), a closed *Type* controlled vocabulary and an
+   explicit mapping to the DocumentNode three-axis classification is
+   being prepared for **EM 1.6** under DP-58. See the development
+   projects index at https://docs.extendedmatrix.org/projects/development-projects/
+   for the design status. The schema documented above remains the
+   stable, supported one for the entire 1.5.x line.
+
+.. seealso::
+
+   * :doc:`extractor_nodes` — how the *Property that can validate*
+     column drives the validation chain.
+   * :doc:`qualia` — the property vocabulary used in column 4.
+   * :doc:`project_organization` — DosCo folder layout and ``D.NN`` ID
+     propagation from the Source List to the file system.
+
 Team Organization: The Source Hunter
 ---------------------------------
 

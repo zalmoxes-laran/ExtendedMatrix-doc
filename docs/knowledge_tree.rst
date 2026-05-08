@@ -127,7 +127,7 @@ Once the GraphML exists, it can be enriched through auxiliary files:
 - **EMdb Excel files**: Tabular data with custom column mappings (site properties, detailed descriptions, laboratory analyses)
 - **pyArchInit databases**: SQLite databases imported as auxiliary sources, adding properties to existing graph nodes
 - **DosCo folders**: Documentary source collections linked to stratigraphic units
-- **Source lists**: Excel files with structured source descriptions
+- **Source lists**: Excel files with structured source descriptions (see :ref:`source-list-schema` for the column reference)
 
 Each auxiliary file type uses a specific mapping that defines how tabular columns translate to graph node properties. The s3Dgraphy mapping system (``MappingRegistry``) supports custom mapping directories, enabling project-specific data schemas.
 
