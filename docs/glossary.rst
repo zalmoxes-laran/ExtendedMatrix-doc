@@ -12,23 +12,36 @@ not as a substitute for the chapters themselves.
    definition lives in the linked chapter — this page only restates the
    gist and points there.
 
+Concepts and entities
+---------------------
+
 .. glossary::
    :sorted:
 
+   Extended Matrix (EM)
    Extended Matrix
    EM
       The formal language for documenting stratigraphy and virtual
       reconstruction processes in cultural heritage. Defined as a typed
       visual notation drawable in yEd or producible programmatically
-      via :term:`s3dgraphy`. See :doc:`stratigraphic_approach`.
+      via :term:`S3DGraphy`. See :doc:`stratigraphic_approach`.
 
    Extended Matrix Framework
    EMF
-      The set of software tools that operationalise the EM language —
-      yEd palette, EM Tools (Blender add-on), 3DSC (3D Survey
-      Collection), Heriverse (web platform) and the s3dgraphy library
-      that holds them together. See the
+      The set of open-source software tools that operationalise the EM
+      language — yEd palette, EM Tools (Blender add-on), 3DSC (3D
+      Survey Collection), :term:`Heriverse` (web platform) and the
+      :term:`S3DGraphy` library that holds them together. See the
       `framework overview <https://www.extendedmatrix.org/about>`__.
+
+   Extended Matrix Ecosystem
+      The combined whole of the formal language and its toolset:
+      :term:`EM` (the language) together with :term:`EMF` (the
+      open-source Extended Matrix Framework — EM Tools for Blender,
+      :term:`S3DGraphy`, :term:`Heriverse`, 3DSC, and the yEd palette).
+      Used when you need to refer to the entire EM-aware stack as a
+      single thing — e.g. when contrasting it with neighbouring
+      ecosystems in the heritage-science landscape.
 
    Stratigraphic Unit
    US
@@ -78,12 +91,14 @@ not as a substitute for the chapters themselves.
       thematic surveys — rather than the original construction events.
 
    Property
-   PROP
    Qualia
-      A typed paradata node carrying a measurable or qualitative
-      attribute attached to a stratigraphic unit. Connected upstream
-      to the :term:`Extractor` and :term:`Combiner` nodes that justify
-      the value. See :doc:`qualia` and :doc:`paradata_nodes`.
+      A typed paradata attribute attached to a stratigraphic unit —
+      a measurable or qualitative value (length, material, dating,
+      construction technique). Connected upstream to the
+      :term:`Extractor` and :term:`Combiner` nodes that justify the
+      value. The corresponding short label used in EM graphs and yEd
+      palettes is :term:`PROP`. See :doc:`qualia` and
+      :doc:`paradata_nodes`.
 
    Document
       A primary source — a survey drawing, a photograph, a manuscript,
@@ -121,34 +136,81 @@ not as a substitute for the chapters themselves.
       which units are placed. See :doc:`canvas`.
 
    Canvas
-      The yEd diagram surface where the EM graph is authored. Carries
+      The yEd surface where the :term:`EM graph` is authored. Carries
       the metadata used by the framework — site code, epoch palette,
       author, licence — typically inside an ``SL_PD`` nodegroup. See
       :doc:`canvas`.
 
-   Knowledge Graph
-      The underlying property graph encoded by an EM diagram, made
-      programmatically accessible via :term:`s3dgraphy`. See
-      :doc:`knowledge_tree`.
+   EM graph
+      The **visual notation** of an Extended Matrix — the typed nodes
+      and arcs as drawn on paper, in yEd with the EM palette, or
+      produced by AI-extraction workflows. The human-readable face of
+      EM. Distinct from the in-memory :term:`s3D graph` that
+      :term:`S3DGraphy` builds from it.
 
+   Knowledge Graph
+      The underlying property graph encoded by an :term:`EM graph`,
+      made programmatically accessible via :term:`S3DGraphy` as an
+      :term:`s3D graph`. See :doc:`knowledge_tree`.
+
+   S3DGraphy
    s3dgraphy
-      The Python library that reads, writes, validates and converts
-      EM graphs (GraphML / JSON). It is the *computational
-      implementation* of the EM data model and is used by all
-      framework components. See the index page of this manual.
+      The open-source Python library that handles the mapping between
+      tool-specific data formats (GraphML, JSON, XLSX) and the
+      Stratigraphic :term:`Knowledge Graph`. It is the *package* — the
+      runtime artifact it produces is the :term:`s3D graph`. Used by
+      every framework component (EM Tools, :term:`Heriverse`, 3DSC)
+      for any programmatic access to EM data. See the index page of
+      this manual.
+
+      *See also:* a long-term perspective for this work, if it grows
+      into a formalisation of CIDOC-CRM for 3D stratigraphy and virtual
+      reconstruction, is the working name **CRM-s3D** (not currently
+      in use; mentioned here for forward reference only).
+
+   s3D graph
+   S3DGraph
+      The **in-memory property graph** produced by :term:`S3DGraphy`.
+      It is the runtime data structure with all methods for reading,
+      writing and querying stratigraphic relationships, and is
+      serialisable to JSON. Distinct from the visual notation
+      (:term:`EM graph`) which is the human-readable face — the s3D
+      graph is the machine-processable face of the same knowledge.
 
    Heriverse
       The web-based publication platform of the EM Framework — turns
       EM graphs and 3D content into navigable, paradata-aware online
       experiences. The public product name; the underlying conceptual
-      model is **StratiVerse** (used in academic papers and internal
-      manuals). See the
+      model is :term:`StratiVerse` (used in academic papers and
+      internal manuals). See the
       `Heriverse documentation <https://docs.extendedmatrix.org/projects/heriverse/>`__.
 
    StratiVerse
-      The conceptual model that underlies the Heriverse product.
-      Referenced in academic papers and internal manuals; the public
-      tool name is **Heriverse**.
+      The conceptual model that underlies the :term:`Heriverse`
+      product. Referenced in academic papers and internal manuals;
+      the public tool name is **Heriverse**.
+
+Node type labels
+----------------
+
+The short alphabetic labels used in EM graphs and in the yEd palette
+to type each node. They are typographic identifiers, not concepts: the
+underlying meanings are documented in the *Concepts and entities*
+section above. Most labels are documented inline with their concept
+(``US`` with :term:`Stratigraphic Unit`, ``USV`` with :term:`Virtual
+Stratigraphic Unit`, etc.); this section covers the ones whose label
+deserves a separate entry to avoid confusion with the concept they
+denote.
+
+.. glossary::
+
+   PROP
+      The node-type label for a property node in EM graphs and yEd
+      palettes (drawn as the typed paradata box marked ``PROP``). The
+      semantic concept is :term:`Property` (also known as
+      :term:`Qualia`) — see that entry for the full definition,
+      including the role of property nodes in the paradata chain
+      that justifies a value.
 
 .. note::
 
