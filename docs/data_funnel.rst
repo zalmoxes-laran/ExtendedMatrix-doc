@@ -1,16 +1,57 @@
+.. _data_funnel:
+
 Data Funnel Structure
 =====================
 
-The Extended Matrix utilizes a hierarchical data structure known as the **Data Funnel**. This structure organizes data into three levels of granularity, ensuring consistency, avoiding duplication, and providing detailed information where necessary.
+The Extended Matrix uses a **hierarchical data structure** — the
+*Data Funnel* — to spread context across the graph without duplicating
+it on every node. Three scopes hold values at increasing levels of
+specificity: the :term:`Canvas` (global default), the :term:`Epoch`
+swimlane (period-wide), and the individual stratigraphic node
+(per-unit). When the resolver looks up a property, it walks these
+scopes from the **most specific to the most general** and returns the
+**first non-null value** it finds.
 
-.. figure:: img/data_funnel.png
-   :width: 600px
-   :align: center
-   
-   *Data Funnel with: A) General Data, B) Local Data, and C) Specific Data are located.*
+.. code-block:: text
+
+   ┌─────────────────────────────────────────────────────────┐
+   │   Resolution order — first non-null value wins          │
+   └─────────────────────────────────────────────────────────┘
+
+      ┌───────────────────────────────┐    ◄── HIGHEST priority
+      │  Specific Node                │
+      │  (US, USV, USD, SF, ...)      │
+      │  start · end · qualia         │
+      └───────────────┬───────────────┘
+                      │  if not on the node ↓
+                      ▼
+      ┌───────────────────────────────┐
+      │  Epoch Node   (swimlane)      │
+      │  start · end                  │
+      └───────────────┬───────────────┘
+                      │  if not on the epoch ↓
+                      ▼
+      ┌───────────────────────────────┐    ◄── LOWEST priority (default)
+      │  Canvas   (graph header)      │
+      │  EM ID · ORCID · License ·    │
+      │  Embargo                      │
+      └───────────────────────────────┘
+
+In plain prose: a value declared on a single node **wins over** the
+value carried by its epoch swimlane; the epoch's value in turn **wins
+over** the canvas-level default. In the opposite direction this is
+*inheritance* — a node with no explicit value picks up its epoch's
+value, and an epoch with no explicit value picks up the canvas
+default.
+
+The next three sections describe what each scope typically holds,
+listed from the broadest (canvas) to the narrowest (specific node).
 
 1. General Background Data
 --------------------------
+
+*Canvas-level scope — lowest priority, the default fallback that
+applies to every node when no narrower scope declares the value.*
 
 General Background Data encompasses information that applies uniformly to all nodes within the knowledge graph of the Extended Matrix. These data provide a global context, essential for maintaining coherence across different elements and preventing data duplication.
 
@@ -53,6 +94,10 @@ This approach creates a hierarchical namespace for archaeological data, similar 
 2. Local Background Data
 ------------------------
 
+*Epoch-level scope — wins over the canvas default; applies uniformly
+to every node placed in the same swimlane unless overridden at the
+node level.*
+
 **Definition**: Local Background Data are information that apply only to a subset of stratigraphic nodes. These data include properties shared among certain nodes that belong to the same context or chronological period, defined by a shared temporal property.
 
 **Values**:
@@ -62,6 +107,9 @@ This approach creates a hierarchical namespace for archaeological data, similar 
 
 3. Specific Node Data
 ---------------------
+
+*Node-level scope — highest priority, wins over both the epoch
+swimlane and the canvas default.*
 
 **Definition**: Specific Node Data represent the unique information that applies to individual stratigraphic units. These data take precedence over Local Background Data and can override shared properties when necessary.
 
@@ -76,23 +124,33 @@ This approach creates a hierarchical namespace for archaeological data, similar 
 Data Propagation Protocol
 -------------------------
 
-**Definition**: The Data Propagation Protocol is the mechanism by which temporal data are propagated among nodes in the graph. It is based on the hierarchical levels of the Data Funnel and uses a fallback system when specific data are missing.
+The mechanism by which a query for the value of a property on a node
+walks the Data Funnel. The rule is the same as the resolution order
+above and applies uniformly to temporal bounds, authorship, licence,
+embargo and any other propagatable property:
 
-**Rules of the Protocol**:
+1. If the **specific node** carries the value, use it.
+2. Otherwise, fall back to the value declared on the **epoch
+   swimlane** the node belongs to.
+3. Otherwise, fall back to the **canvas**-level default.
+4. If none of the three scopes carries the value, the property is
+   undefined at that point in the graph.
 
-1. If a node has both **Start Time** and **End Time**, these values are used as its temporal reference.
+**Worked example — temporal resolution on a USM node:**
 
-2. If the **End Time** is missing, the system ascends to the parent stratigraphic node to find an appropriate **End Time**.
+- The node declares ``start = 20 AD, end = 40 AD`` → both bounds
+  resolve to the node's own values; the node is included in a
+  chronological query for the ``30–35 AD`` window.
+- The node declares ``start = 20 AD`` and no ``end`` → ``start``
+  resolves to the node, ``end`` falls back to the epoch swimlane's
+  ``end``.
+- The node declares no times at all → both ``start`` and ``end``
+  resolve to the epoch swimlane's bounds.
 
-3. If no **End Time** is found in any parent node, the **End Time** from the shared **Temporal Delta (Epoch Node)** is used to temporally contextualize the node.
-
-**Example of Application**:
-
-- A node with a Start Time of 20 AD and an End Time of 40 AD will be included in a chronological query between 30 and 35 AD.
-
-- If a node lacks an End Time, the system uses the End Time from the parent node or the shared Temporal Delta to determine its temporal context.
-
-**Objective**: To ensure that temporal data are correctly inherited or propagated among nodes, maintaining consistency in chronological visualizations.
+**Objective**: ensure that values are correctly inherited or
+overridden along the node → epoch → canvas chain, keeping the graph
+consistent without forcing every node to redeclare context that is
+already shared at a broader scope.
 
 Benefits of the Data Funnel Structure
 -------------------------------------
