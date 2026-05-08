@@ -121,7 +121,6 @@ In practical terms: an archaeologist authors or reviews a stratigraphic sequence
    extractor_nodes
    paradata_group
    connectors
-   alternate_hypotheses
    data_funnel
    utils
 
