@@ -6,7 +6,7 @@ The Extended Matrix language includes several utility nodes and minor elements t
 Comment Node
 ------------
 
-The **Comment Node** is a utility node that enables you to insert comments or notes into your Extended Matrix diagram. This is particularly useful for adding explanations, reminders, or any supplementary information that doesn't fit into the standard nodes.
+The **Comment Node** is a utility node that enables you to insert comments or notes into your Extended Matrix graph. This is particularly useful for adding explanations, reminders, or any supplementary information that doesn't fit into the standard nodes.
 
 Features of the Comment Node:
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

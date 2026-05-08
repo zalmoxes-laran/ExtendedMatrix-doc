@@ -15,30 +15,59 @@ not as a substitute for the chapters themselves.
 .. glossary::
    :sorted:
 
-   Extended Matrix
+   Extended Matrix (EM)
    EM
       The formal language for documenting stratigraphy and virtual
       reconstruction processes in cultural heritage. Defined as a typed
       visual notation drawable in yEd or producible programmatically
-      via :term:`s3dgraphy`. See :doc:`stratigraphic_approach`.
+      via :term:`s3Dgraphy`. See :doc:`stratigraphic_approach`.
 
-   Extended Matrix Framework
-   EMF
-      The set of software tools that operationalise the EM language —
-      yEd palette, EM Tools (Blender add-on), 3DSC (3D Survey
-      Collection), Heriverse (web platform) and the s3dgraphy library
+   Extended Matrix Framework (EMF)
+      The set of open-source software tools that operationalise the EM
+      language: the :term:`yEd palette`, :term:`EM Tools for Blender`,
+      :term:`3DSC`, :term:`Heriverse` and the :term:`s3Dgraphy` library
       that holds them together. See the
       `framework overview <https://www.extendedmatrix.org/about>`__.
 
-   Stratigraphic Unit
-   US
+   Extended Matrix Ecosystem
+      The combined whole of the formal language and its toolset:
+      :term:`EM` (the language) together with the
+      :term:`Extended Matrix Framework (EMF)` (the open-source toolset
+      that operationalises it — :term:`yEd palette`,
+      :term:`EM Tools for Blender`, :term:`s3Dgraphy`,
+      :term:`Heriverse`, :term:`3DSC`). Used when you need to refer to
+      the entire EM-aware stack as a single thing.
+
+   EM Tools for Blender
+   EM Tools
+      The open-source Blender add-on that connects an :term:`EM graph`
+      to 3D content inside Blender — browse stratigraphic units, link
+      proxies, drive visualisation by epoch and property, export to
+      :term:`Heriverse` and CSV. Part of the
+      :term:`Extended Matrix Framework (EMF)`. See the
+      `EM Tools manual <https://docs.extendedmatrix.org/projects/EM-tools/>`__.
+
+   3DSC
+      3D Survey Collection — the open-source Blender add-on (with a
+      companion Metashape pipeline) for managing photogrammetric and
+      3D survey data: level-of-detail handling, texture baking, and
+      asset preparation ready to be linked to an :term:`EM graph`.
+      Part of the :term:`Extended Matrix Framework (EMF)`. See the
+      `3DSC documentation <https://docs.extendedmatrix.org/projects/3DSC/>`__.
+
+   yEd palette
+      The palette of EM-typed nodes and arcs that turns yEd (a free
+      graph editor) into an :term:`EM graph` authoring tool. The
+      starting point for anyone drawing an EM by hand. Part of the
+      :term:`Extended Matrix Framework (EMF)`.
+
+   Stratigraphic Unit (US)
       The basic unit of archaeological stratigraphy: a discrete
       physical entity (a layer, a wall, a cut) recorded during
       excavation. EM extends this with virtual variants — see
       :doc:`stratigraphic_nodes`.
 
-   Virtual Stratigraphic Unit
-   USV
+   Virtual Stratigraphic Unit (USV)
       A stratigraphic unit whose physical evidence is partial or
       absent and whose existence is inferred. Comes in two flavours
       — :term:`USVs` (with an in-situ anchor) and :term:`USVn`
@@ -59,36 +88,33 @@ not as a substitute for the chapters themselves.
       bibliographic, archival or iconographic documentation rather
       than by direct excavation. See :doc:`stratigraphic_nodes`.
 
-   Special Find
-   SF
+   Special Find (SF)
       A discrete object found in a stratigraphic unit, recorded as a
       separate entity (e.g. an inscription, a coin). See
       :doc:`auxiliary_stratigraphic_nodes`.
 
-   Virtual Special Find
-   VSF
-      A nodegroup containing SF fragments that have been
-      reconstructed virtually. The VSF is a *container*, not a single
-      reconstructed object. See :doc:`auxiliary_stratigraphic_nodes`.
+   Virtual Special Find (VSF)
+      A nodegroup containing :term:`SF <Special Find (SF)>` fragments
+      that have been reconstructed virtually. The VSF is a *container*,
+      not a single reconstructed object. See
+      :doc:`auxiliary_stratigraphic_nodes`.
 
-   Transformation Stratigraphic Unit
-   TSU
+   Transformation Stratigraphic Unit (TSU)
       A node type introduced in EM 1.4 (and refined in 1.5) for
       documenting *states* and *transformations* — decay, restoration,
       thematic surveys — rather than the original construction events.
 
-   Property
-   PROP
-   Qualia
-      A typed paradata node carrying a measurable or qualitative
-      attribute attached to a stratigraphic unit. Connected upstream
-      to the :term:`Extractor` and :term:`Combiner` nodes that justify
-      the value. See :doc:`qualia` and :doc:`paradata_nodes`.
+   Property (Qualia)
+      A typed paradata attribute attached to a stratigraphic unit —
+      a measurable or qualitative value (length, material, dating,
+      construction technique). Connected upstream to the
+      :term:`Extractor` and :term:`Combiner` nodes that justify the
+      value. See :doc:`qualia` and :doc:`paradata_nodes`.
 
    Document
       A primary source — a survey drawing, a photograph, a manuscript,
       a publication — referenced by an :term:`Extractor` to derive a
-      :term:`Property`. See :doc:`source_node`.
+      :term:`Property (Qualia)`. See :doc:`source_node`.
 
    Extractor
       A paradata node representing the *act of extraction* of an
@@ -98,8 +124,8 @@ not as a substitute for the chapters themselves.
 
    Combiner
       A paradata node that *combines* multiple extractor outputs into
-      a single :term:`Property` value, typically when a single value
-      cannot be derived from a single source. See
+      a single :term:`Property (Qualia)` value, typically when a
+      single value cannot be derived from a single source. See
       :doc:`paradata_group`.
 
    Paradata
@@ -109,46 +135,73 @@ not as a substitute for the chapters themselves.
       paradata chain. See :doc:`paradata_nodes`.
 
    Activity
-   ANG
       An Activity Node Group — a set of stratigraphic units linked by
       a common operation (e.g. "construction of the apse"). See
       :doc:`activity`.
 
    Epoch
       A named time horizon used to attribute and filter stratigraphic
-      units (``has_first_epoch`` / ``has_last_epoch``). Epochs are not
-      stratigraphic units themselves; they are the calendar against
-      which units are placed. See :doc:`canvas`.
-
-   Canvas
-      The yEd diagram surface where the EM graph is authored. Carries
-      the metadata used by the framework — site code, epoch palette,
-      author, licence — typically inside an ``SL_PD`` nodegroup. See
+      units (``has_first_epoch`` / ``has_last_epoch``). It is the
+      temporal counterpart of a *swimlane* in the :term:`Canvas` —
+      every node that belongs to that period is contained within its
+      swimlane, which acts as the visual home of the epoch in the
+      :term:`EM graph`. Epochs are not stratigraphic units themselves;
+      they are the calendar against which units are placed. See
       :doc:`canvas`.
 
-   Knowledge Graph
-      The underlying property graph encoded by an EM diagram, made
-      programmatically accessible via :term:`s3dgraphy`. See
-      :doc:`knowledge_tree`.
+   Canvas
+      The yEd surface where the :term:`EM graph` is authored. Carries
+      the metadata used by the framework — site code, epoch palette,
+      author, licence — typically inside an ``SL_PD`` nodegroup, and
+      organises nodes by :term:`Epoch` through swimlanes. See
+      :doc:`canvas`.
 
-   s3dgraphy
-      The Python library that reads, writes, validates and converts
-      EM graphs (GraphML / JSON). It is the *computational
-      implementation* of the EM data model and is used by all
-      framework components. See the index page of this manual.
+   EM graph
+      The **visual notation** of an Extended Matrix — the typed nodes
+      and arcs as drawn on paper, in yEd with the :term:`yEd palette`,
+      or produced by AI-extraction workflows. The human-readable face
+      of EM. Distinct from the in-memory :term:`S3D Graph` that
+      :term:`s3Dgraphy` builds from it.
+
+   Knowledge Graph
+      The underlying property graph encoded by an :term:`EM graph`,
+      made programmatically accessible via :term:`s3Dgraphy` as an
+      :term:`S3D Graph`. See :doc:`knowledge_tree`.
+
+   s3Dgraphy
+      The open-source Python library that handles the mapping between
+      tool-specific data formats (GraphML, JSON, XLSX) and the
+      Stratigraphic :term:`Knowledge Graph`. It is the *package* — the
+      runtime artifact it produces is the :term:`S3D Graph`. Used by
+      every framework component (:term:`EM Tools for Blender`,
+      :term:`Heriverse`, :term:`3DSC`) for any programmatic access to
+      EM data. See the index page of this manual.
+
+      *See also:* a long-term perspective for this work, if it grows
+      into a formalisation of CIDOC-CRM for 3D stratigraphy and virtual
+      reconstruction, is the working name **CRM-s3D** (not currently
+      in use; mentioned here for forward reference only).
+
+   S3D Graph
+      The **in-memory property graph** produced by :term:`s3Dgraphy`.
+      It is the runtime data structure with all methods for reading,
+      writing and querying stratigraphic relationships, and is
+      serialisable to JSON. Distinct from the visual notation
+      (:term:`EM graph`) which is the human-readable face — the S3D
+      Graph is the machine-processable face of the same knowledge.
 
    Heriverse
       The web-based publication platform of the EM Framework — turns
-      EM graphs and 3D content into navigable, paradata-aware online
-      experiences. The public product name; the underlying conceptual
-      model is **StratiVerse** (used in academic papers and internal
-      manuals). See the
+      :term:`EM graphs <EM graph>` and 3D content into navigable,
+      paradata-aware online experiences. The public product name; the
+      underlying conceptual model is :term:`StratiVerse` (used in
+      academic papers and internal manuals). See the
       `Heriverse documentation <https://docs.extendedmatrix.org/projects/heriverse/>`__.
 
    StratiVerse
-      The conceptual model that underlies the Heriverse product.
-      Referenced in academic papers and internal manuals; the public
-      tool name is **Heriverse**.
+      The conceptual model that underlies the :term:`Heriverse`
+      product. Referenced in academic papers and internal manuals;
+      the public tool name is **Heriverse**.
 
 .. note::
 
