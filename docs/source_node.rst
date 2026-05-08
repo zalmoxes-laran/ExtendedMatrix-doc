@@ -205,6 +205,155 @@ The Source List is designed to track:
 * Document type (3D model, photo, drawing, text, etc.)
 * Preview (when available)
 
+.. _source-list-schema:
+
+Source List schema
+~~~~~~~~~~~~~~~~~~
+
+.. versionadded:: 1.3
+   Introduced as the *formalized source list for data collection*.
+
+.. versionchanged:: 1.6
+   Two-sheet structure (Analytical / Comparative Sources) canonicalised.
+   The *Type* column is promoted to a closed controlled vocabulary
+   aligned with the DocumentNode three-axis classification (DP-07).
+   The Source List can now be merged directly into the ``Documents``
+   sheet of ``em_data.xlsx`` (DP-02) without manual duplication. See
+   DP-58 in the development projects index at
+   https://docs.extendedmatrix.org/projects/development-projects/.
+
+The Source List is a single-purpose XLSX file (``source_list.xlsx``)
+sitting at the project root next to the ``.graphml``. It registers
+every bibliographic and archival source referenced by Document nodes
+in the graph and assigns each one a stable project-local identifier
+(``D.NN``) that propagates to the DosCo folder and to the graph itself.
+
+**Sheet structure (Analytical vs Comparative)**
+
+A 1.6 Source List workbook contains two sheets, anchored on
+DocumentNode Axis 1 (*role*):
+
+* ``Analytical Sources`` — primary sources for *this* reconstruction
+  (excavation reports of the site, surveys, dossiers).
+* ``Comparative Sources`` — external references and analogies
+  (parallels from other sites, treatises, comparative iconography).
+
+Both sheets share the same 8-column schema. Single-sheet workbooks
+named ``sources`` (the legacy 1.3 layout) are still accepted by all
+importers for backward compatibility.
+
+**Column reference**
+
+.. list-table::
+   :header-rows: 1
+   :widths: 14 22 16 24 10 14
+
+   * - Column
+     - Purpose
+     - Format
+     - Example
+     - Required
+     - Maps to (DP-07)
+   * - **Name**
+     - Project-local unique ID
+     - ``D.NN`` (zero-padded, sequential)
+     - ``D.01``
+     - yes
+     - DocumentNode ``id``
+   * - **Description**
+     - Natural-language description of the source
+     - Free text, ~1 sentence
+     - "Photogrammetric model of the Great Temple, 2015"
+     - yes
+     - DocumentNode ``description``
+   * - **Url**
+     - Citation / DOI / web URL
+     - Bibliographic citation or URL
+     - "Daicoviciu H. et al., *Sargetia* XIV, 1979"
+     - recommended
+     - DocumentNode ``url``
+   * - **Property that can validate**
+     - Qualia / properties this source can support
+     - Comma-separated names (see :doc:`qualia`)
+     - ``geometry, material, elevation``
+     - recommended
+     - Drives ExtractorNode targeting
+   * - **original id.**
+     - Archive or library reference
+     - Free text
+     - "ASR, Fondo Disegni, b.12, c.34r"
+     - optional
+     - DocumentNode ``archive_reference``
+   * - **Type**
+     - Source typology (closed vocabulary [#typevocab16]_)
+     - One of: ``3d``, ``pdf``, ``image``, ``map``, ``text``, ``audio``, ``dataset``
+     - ``pdf``
+     - yes
+     - Axis 2 ``content_nature`` + Axis 3 ``geometry``
+   * - **Preview**
+     - Optional thumbnail
+     - Embedded image cell
+     - —
+     - optional
+     - UI hint (Document Manager)
+   * - **Notes**
+     - Free-form annotations
+     - Free text
+     - "OCR quality low for pp. 142–148"
+     - optional
+     - DocumentNode ``notes``
+
+.. [#typevocab16] The 1.6 *Type* vocabulary is the canonical projection
+   of DP-07 Axes 2 and 3 onto a flat label set:
+   ``3d`` → 3d_object + reality_based;
+   ``pdf`` / ``text`` → 2d_object (no geometry);
+   ``image`` / ``map`` → 2d_object + observable;
+   ``audio`` / ``dataset`` → no geometry.
+   Importers translate each Type back into the full three-axis tuple at
+   ingest time.
+
+**Worked example (excerpt)**
+
+.. list-table::
+   :header-rows: 1
+   :widths: 8 28 26 24 6 8
+
+   * - Name
+     - Description
+     - Url
+     - Property that can validate
+     - Type
+     - Notes
+   * - D.01
+     - Photogrammetric model of the Great Temple
+     - Demetrescu E., 2015 (unpublished)
+     - geometry, material, elevation, surface_treatment
+     - 3d
+     -
+   * - D.02
+     - Excavation report 1975–1977
+     - Daicoviciu H. et al., *Sargetia* XIV, 1979, pp. 139–154
+     - stratigraphy, architecture, dimensions, construction_technique
+     - pdf
+     - OCR low pp. 142–148
+
+**Integration with em_data.xlsx (DP-02)**
+
+When a ``Documents`` sheet is missing in a project's ``em_data.xlsx``
+(DP-02 StratiMiner pipeline), the importer can pull it directly from
+``source_list.xlsx``: the 8 columns above map one-to-one onto the
+em_data Documents schema with the *Type* column unfolding into the
+two DP-07 axes. This eliminates the previous duplication where authors
+had to maintain the same source registry in two files.
+
+.. seealso::
+
+   * :doc:`extractor_nodes` — how the *Property that can validate*
+     column drives the validation chain.
+   * :doc:`qualia` — the property vocabulary used in column 4.
+   * :doc:`project_organization` — DosCo folder layout and ``D.NN`` ID
+     propagation from the Source List to the file system.
+
 Team Organization: The Source Hunter
 ---------------------------------
 

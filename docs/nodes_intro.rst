@@ -50,7 +50,7 @@ The four pieces play complementary roles:
    * - **em_data.xlsx**
      - Optional spreadsheet companion that carries the *leaves* — descriptions, properties, dates, materials — and can also generate the GraphML in batch via the unified importer.
    * - **source_list.xlsx**
-     - Registry of every source referenced by the graph (id, title, year, file path, licence). The single point of truth for citations.
+     - Registry of every source referenced by the graph (id, title, year, file path, licence). The single point of truth for citations. See :ref:`source-list-schema` for the column reference.
    * - **DosCo folder**
      - Where the actual source files live: photographs, reports, drawings, analyses. Document nodes in the graph point here by relative path.
 
