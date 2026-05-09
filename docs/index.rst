@@ -141,6 +141,12 @@ In practical terms: an archaeologist authors or reviews a stratigraphic sequence
 
 .. toctree::
    :maxdepth: 1
+   :caption: Ecosystem
+
+   ecosystem
+
+.. toctree::
+   :maxdepth: 1
    :caption: Reference
 
    glossary
