@@ -13,6 +13,23 @@ In the yED palette EM 1.5, paradata groups are visually distinguished by a text 
 
 An important feature of paradata groups is the ability to **collapse** them into a single node within yED. This functionality improves the readability of the matrix by reducing visual clutter when the detailed paradata information is not needed.
 
+.. note::
+   Formalised in EM 1.5 as **DP-60 — Paradata NodeGroup**. The
+   ``ParadataNodeGroup`` class (s3Dgraphy) is the structural counterpart
+   of the yEd palette entry: it aggregates the per-US paradata chain
+   (``PropertyNode → ExtractorNode → CombinerNode → Document``) into a
+   single ``<US>_PD`` container that inherits the US's
+   ``is_in_activity`` edge and links its children via
+   ``is_in_paradata_nodegroup``. The decluttering benefit is therefore
+   structural, not just visual: paradata that previously sprawled around
+   each Stratigraphic Unit collapses into a single per-US group both at
+   the GraphML level and in yEd, and feeds the per-source ParaData
+   bundling consumed by the Heriverse exporter and the Paradata Manager.
+   Backward-compatible: scattered-style paradata graphs from EM 1.4
+   continue to round-trip and render correctly. See the development
+   projects index at https://docs.extendedmatrix.org/projects/development-projects/
+   (DP-60) for the formalisation details.
+
 Collapsing Paradata Groups
 --------------------------
 
