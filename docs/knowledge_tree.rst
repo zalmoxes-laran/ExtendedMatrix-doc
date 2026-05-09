@@ -1,139 +1,304 @@
-The Knowledge Tree: GraphML and Auxiliary Data
-================================================
+The Knowledge Tree
+===================
 
 .. contents::
    :local:
    :depth: 2
 
-The Tree Metaphor
+A living metaphor
 ------------------
 
-The Extended Matrix knowledge system can be understood through the metaphor of a tree:
+The Extended Matrix is best understood through the metaphor of a living tree.
+The metaphor is *anthropocentric*: it organises the system around how a human
+researcher reads, writes, and grows an Extended Matrix over time. It is built
+up here in three additive stages — each figure is the previous one with a new
+layer added. Same silhouette, same palette, more detail.
 
-- The **trunk** is the GraphML file: it defines the stratigraphic sequence, the chronological scaffolding, and the fundamental relationships between units. It is the necessary base upon which everything else grows.
+Throughout the chapter, *sap* stands for the data that flows through the tree:
+it rises from the roots when you load a file, courses through the trunk while
+EMtools and s3Dgraphy operate on it, reaches the leaves when external
+containers are linked, and descends back to the roots when you save. The tree
+is alive because the data flows in both directions.
 
-- The **main branches** are the core properties already embedded in the graph: node types (US, USVs, USVn, SF, VSF, USD, etc.), stratigraphic relationships (overlies, cuts, fills, abuts, bonds, equals), and the chronological framework (periods, phases, subphases with their temporal boundaries). These are the *qualia* that are intrinsic to the matrix structure.
 
-- The **leaves** are the detailed, granular data brought in through auxiliary tabular files: definitions, interpretations, materials, construction techniques, measurements, conservation states, and all those properties that give richness and depth to each stratigraphic unit. These are the data that benefit most from being managed in spreadsheets or databases by the working group.
+Stage 1 — Trunk, branches, leaves
+----------------------------------
 
-.. figure:: img/em_knowledge_tree.svg
-   :width: 700
+.. figure:: img/knowledge_tree_stage1.png
+   :width: 760
    :align: center
 
-   The Extended Matrix Knowledge Tree: GraphML as trunk and main branches, auxiliary tabular data as leaves.
+   Stage 1 — the basic anatomy of the Extended Matrix as a knowledge tree.
 
-.. figure:: img/EM_KnowledgeTree.png
-   :width: 700
+The **trunk** is the Extended Matrix itself: the formalism, the stratigraphic
+structure, the chronology. Its fibres are the things that hold the matrix
+together — the stratigraphic relationships of *overlies*, *cuts*, *fills*,
+*abuts*, *bonds*, *equals*, and the temporal scaffolding of periods, phases,
+and subphases. The trunk is what makes a matrix recognisable as an Extended
+Matrix, and it is the part that is written most carefully and changed most
+infrequently.
+
+The **branches** are the node types that articulate from the trunk: ``US``,
+``USVs``, ``USVn``, ``SF``, ``USD``, ``VSF``, and the others described in
+:doc:`nodes_intro`. They are the structural arms of the formalism — the places
+where data finds a meaningful home. A property has to attach somewhere; the
+branches are the somewheres.
+
+The **leaves** are the *external content* the matrix leans on. A leaf is any
+container of information attached to a branch by reference — its content
+lives outside the trunk, in its own ecosystem, and is *borrowed* by the tree
+each time the project is opened. Leaves come in two visually similar but
+technically distinct families:
+
+- **Tabular leaves** — Excel/database/CSV containers that hold per-unit
+  attributes. ``EMdb`` catalogs of stratigraphic units attach to the ``US``
+  branch; ``pyArchInit`` rows attach to ``US`` or ``USVs``; the *source list*
+  and the ``DosCo`` documentary folder attach to ``USD``. Their content is
+  scalar, temporal, relational — the same kind of fibre the trunk's wood is
+  made of.
+
+- **Object-storage leaves** — non-tabular containers that hold content of a
+  different nature: a Blender ``.blend`` scene with proxies and
+  representational models, a 3DSC point-cloud catalogue, a folder of
+  high-resolution photogrammetric meshes, an image library, a multimedia
+  bundle. They attach to the branch that matches their semantics (a 3D
+  proxy of a ``US`` to the ``US`` branch, a textured surface to ``USVs``
+  or ``VSF``).
+
+A single auxiliary system like ``EMdb`` commonly produces several leaves on
+different branches at once — one per category of material — each attached
+where it makes sense.
+
+**Leaves are linked, not absorbed.** They live in their own containers and
+are read into the in-memory ``s3D graph`` (the *living wood* of the trunk)
+each time the project is opened. While the s3D graph is alive, the leaf's
+content is accessible through the matrix as if it had always been there.
+But at save time, *by default*, the leaf's content does **not** travel with
+the trunk into its serialised forms (``em_data.xlsx``, ``GraphML``, ``JSON``,
+and the forthcoming ``RDF/CIDOC`` triplestore): the auxiliary container
+remains the source of truth, the trunk only borrows. Leaves can fall and
+grow back without changing the trunk.
+
+This default — *link, not absorb* — is itself a feature, not a limitation.
+It lets a project run two ecosystems in parallel: the EM serialised stack
+(``em_data.xlsx``, ``GraphML``, ``JSON``, ``RDF``) on one side, the external
+stack (``pyArchInit``, ``EMdb``, ``DosCo``, ``Blender``, ``3DSC``, image
+libraries) on the other — without forcing a fusion that neither side wants.
+Authors keep editorial control on each stack and decide, leaf by leaf,
+whether and when to commit to integration.
+
+That deliberate decision to integrate is the *graft* (Stage 2).
+
+
+Stage 2 — Grafts
+-----------------
+
+.. figure:: img/knowledge_tree_stage2.png
+   :width: 760
    :align: center
 
-   The Extended Matrix Knowledge Tree: GraphML as trunk and main branches, auxiliary tabular data as leaves.
+   Stage 2 — Stage 1 plus the grafts: leaves the author has deliberately
+   let take root.
+
+A **graft** is a leaf the author has decided to *let take root* — to fuse
+permanently with the trunk's wood. Where a leaf is a borrowing, a graft is
+an integration: its content stops being a runtime reference and becomes part
+of the matrix the next time the trunk is saved. The technical operation that
+realises a graft is the **bake**: it reads the leaf's content and writes it
+into the trunk's serialised forms (``em_data.xlsx``, ``GraphML``, ``JSON``,
+``RDF/CIDOC``). After bake, the leaf is no longer a leaf — it is fibre.
+
+Not every leaf is graftable. The constraint comes from what the trunk's
+wood can hold:
+
+- **Tabular leaves are graftable.** Their content is scalar, temporal,
+  relational — exactly the kind of fibre the trunk is made of. Once baked,
+  a tabular leaf's values are written into the serialised forms and travel
+  with the matrix wherever it goes. The author can keep the original
+  spreadsheet/database alive on the side; the matrix now also carries its
+  own copy.
+
+- **Object-storage leaves are not graftable, by construction.** A Blender
+  mesh, a point cloud, a high-resolution image, a textured surface — none
+  of these can fuse into a node-and-edge structure. They remain leaves
+  forever: attached, accessible from the in-memory s3D graph, but never
+  absorbed. The trunk holds a reference; the content stays in its own
+  ecosystem. This is not a choice — it is the shape of the wood.
+
+The grafting metaphor is not casual. A graft is something the gardener
+*chooses*, joins, and tends. It carries content the trunk could not produce
+on its own, and it earns its place in the tree by being deliberately let
+take root.
+
+.. note::
+
+   The bake is reversible only in the weak sense that you can always
+   restart from the auxiliary container if you have kept it around. Once
+   the trunk has been saved with baked content, that content *is* fibre:
+   there is no "un-bake" operation that surgically removes it from the
+   serialised forms without manual editing.
 
 
-Why Two Separate Systems?
+Stage 3 — Roots
+----------------
+
+.. figure:: img/knowledge_tree_stage3.png
+   :width: 760
+   :align: center
+
+   Stage 3 — Stage 2 plus the roots: the file formats from which the
+   Extended Matrix draws its sap and into which it deposits it back.
+
+The trunk is not a single file. The Extended Matrix is one entity expressed
+in several **roots** — the file formats that the tree both draws from and
+deposits back into:
+
+- ``em_data.xlsx`` — the unified workbook with five sheets (``Units``,
+  ``Epochs``, ``Claims``, ``Authors``, ``Documents``), produced by humans
+  manually or by AI through the StratiMiner prompt. It is the root through
+  which the matrix can be planted from scratch from documentary sources, or
+  grown by patient hand from existing tabular data. The workbook's shape,
+  authoring conventions (multi-valued cells, hierarchical paths, kind
+  prefixes), and per-concept column contracts are documented on the
+  dedicated :doc:`em_data` page — that is the canonical reference both
+  for human authors and for the StratiMiner AI extractor.
+
+- ``GraphML`` — the human-readable root, opened in yEd Graph Editor with the
+  Extended Matrix palette. This is where humans see the matrix as a network
+  they can read, edit, and reason about visually.
+
+- ``JSON`` for Heriverse — the export root that feeds the public Heriverse
+  environment, where the matrix becomes a navigable spatial-temporal
+  experience.
+
+- ``RDF / CIDOC`` triplestore — *forthcoming.* The semantic-web root that
+  will let the matrix participate in the broader cultural-heritage knowledge
+  graph, exposing its content through CIDOC-CRM mappings as triples,
+  query-able through SPARQL.
+
+The roots are bidirectional where round-trip makes sense. Sap rises when you
+load (``em_data.xlsx`` → in-memory ``s3D Graph``; ``GraphML`` → ``s3D
+Graph``), and it descends when you save (``s3D Graph`` → ``em_data.xlsx``;
+``s3D Graph`` → ``GraphML``; ``s3D Graph`` → ``JSON``; ``s3D Graph`` →
+``RDF``). The in-memory ``s3D Graph`` is the living wood of the trunk: the
+moment-by-moment state of the tree, machine-actionable, the pivot through
+which all roots communicate.
+
+**What travels through the roots:** the trunk's own fibre — the EM formalism,
+its branches, the stratigraphic structure — *plus* any **baked grafts** that
+have been integrated into it. These elements move freely between
+``em_data.xlsx``, ``GraphML``, ``JSON`` and ``RDF`` — wherever you save,
+they follow.
+
+**What does not travel:** plain leaves that have not been let take root. At
+each new session they reload from their own auxiliary containers, just as
+before. **Object-storage leaves never travel** through the roots — they are
+non-graftable by construction and stay anchored to the trunk by reference,
+with their content untouched in its own ecosystem (a Blender ``.blend``,
+a 3DSC catalogue, an image library).
+
+This is what frees the modern Extended Matrix from any single canonical
+file. You can enter through whichever root suits your work — AI-driven
+extraction through ``em_data.xlsx``, manual stratigraphy through
+``GraphML``/yEd, archaeological fieldwork through ``pyArchInit``, semantic-
+web alignment through the triplestore — and the tree will still be the
+same tree.
+
+
+Two orthogonal dimensions
 --------------------------
 
-The separation between graph (trunk) and tables (leaves) is not a limitation but a deliberate architectural choice that enables:
+The figure now describes two things at once, and it is worth keeping them
+distinct in your mind:
 
-**1. Collaborative work with different tools**
+1. **Anthropocentric integration** (above ground): how a human researcher
+   composes a complete Extended Matrix project — the trunk of the formalism,
+   the branches of node types, the leaves of all external content (tabular
+   and object-storage), and the grafts of those leaves the author has
+   deliberately integrated. This is *what is in the matrix*.
 
-The GraphML is best managed by the project leader using graph editors (yEd) or through AI-assisted extraction and EMtools. It requires a specific understanding of stratigraphic logic and the Extended Matrix formal language.
+2. **Representation and exchange** (below ground): how the matrix is
+   serialised and shared — the roots of ``em_data.xlsx``, ``GraphML``,
+   ``JSON``, and the forthcoming ``RDF/CIDOC`` triplestore. This is *how
+   the matrix moves between formats and between people*.
 
-The auxiliary tables, on the other hand, can be maintained by any team member using familiar tools: Excel, LibreOffice Calc, Google Sheets, or archaeological database systems like pyArchInit. No knowledge of graph theory or the EM formalism is needed to fill in a column of building techniques or material descriptions.
-
-**2. Different update rhythms**
-
-The stratigraphic sequence tends to stabilize relatively early in a project: once the relationships between units are established, they rarely change. The graph is edited infrequently but with great care.
-
-Properties and detailed descriptions, conversely, are continuously updated as analysis progresses: new laboratory results arrive, interpretations evolve, measurements are refined. Keeping this data in tabular form means it can be updated quickly without touching the graph structure.
-
-**3. Best of both worlds**
-
-We do not want to abolish the tabular format by forcing everything into the knowledge graph, nor do we want to reduce the graph to a flat table. Instead:
-
-- The **graph** provides what tables cannot: structural relationships, temporal ordering, provenance chains, and the ability to navigate the stratigraphic sequence as a connected network.
-- The **tables** provide what graphs handle less elegantly: dense, columnar data that is easy to sort, filter, search, and bulk-edit.
-
-Thanks to the s3Dgraphy library, EMtools, and other compatible tools, these two worlds are merged **on-the-fly** into a unified knowledge graph. The import is non-destructive: auxiliary data enriches existing nodes without altering the graph structure.
+These dimensions are independent. You can change which roots you use without
+changing what is in the tree; you can let new leaves take root without
+changing how the tree is serialised. Keeping them visually distinct (above
+the ground line vs. below it) is a way of keeping them distinct in practice.
 
 
-The Two-Excel Workflow
------------------------
+Working with leaves: linking and grafting in practice
+------------------------------------------------------
 
-When creating an Extended Matrix from documentary sources (whether manually or with AI assistance), the recommended workflow produces two standardized Excel files:
+In day-to-day work the leaves of a project are managed through ``EMtools``
+and ``s3Dgraphy``. Each auxiliary type uses a specific *mapping* that
+defines how its columns or fields translate to graph node properties. The
+``s3Dgraphy MappingRegistry`` ships three default mappings — ``pyarchinit``,
+``emdb``, ``generic`` — and supports custom project-specific mapping
+directories.
 
-.. figure:: img/em_two_excel_workflow.svg
-   :width: 700
-   :align: center
+The principle for the **default link mode** is *non-destructive enrichment*:
+auxiliary data adds attributes to existing nodes; it does not alter the
+trunk's structure, and it does not change the trunk's serialised forms at
+save time. The auxiliary container keeps editorial autonomy; the matrix
+just borrows the values while running. This is the right mode for data that
+is still evolving — laboratory results that come in over months,
+interpretations that get refined, image inventories that grow.
 
-   The two-Excel workflow: from sources through AI extraction to the enriched knowledge graph.
+When a particular auxiliary becomes stable enough that you want it to be
+permanently part of the matrix, you **bake** it: this promotes the linked
+properties from runtime borrowings into trunk fibre, writing them into
+``em_data.xlsx`` / ``GraphML`` / ``JSON`` / ``RDF``. From that point on the
+values travel with the matrix wherever it goes, even if the original
+auxiliary container is no longer at hand.
 
-**Excel 1: stratigraphy.xlsx** (the trunk and main branches)
-   Contains the 24 standard columns that generate the GraphML: node IDs, types, descriptions, chronological data (period, phase, subphase with temporal boundaries), all stratigraphic relationships (overlies, cuts, fills, abuts, bonds, equals), and paradata (extractor, source document).
-
-   This file is processed by s3Dgraphy's ``MappedXLSXImporter`` to produce a valid Extended Matrix GraphML file.
-
-**Excel 2: site_properties.xlsx** (the leaves)
-   Contains site-specific properties: definitions, interpretations, building techniques, materials, measurements, conservation states, and any project-specific attributes. The columns are customizable per project.
-
-   This file is imported as an **auxiliary file** in EMtools, where it enriches the existing graph nodes with detailed attributes.
-
-
-Data Flow
-----------
-
-The complete data flow from source to knowledge graph follows this path::
-
-   Archaeological Sources (PDF, photos, field notes, databases)
-          │
-          ▼
-   AI Extraction or Manual Entry
-          │
-          ├──────────────────────────┐
-          ▼                          ▼
-   stratigraphy.xlsx          site_properties.xlsx
-   (24 standard columns)      (15+ custom columns)
-          │                          │
-          ▼                          │
-   s3Dgraphy MappedXLSXImporter     │
-          │                          │
-          ▼                          │
-   GraphML (Extended Matrix)         │
-          │                          │
-          ▼                          ▼
-   EMtools (Blender) ◄──── Auxiliary File Import
-          │
-          ▼
-   Enriched Knowledge Graph
-   (trunk + branches + leaves)
+The bake is available only for tabular leaves — the kind of content the
+trunk's wood can hold. Object-storage leaves stay linked forever, by
+construction; they are accessed at runtime through the s3D graph but their
+content never enters the trunk. That is a good thing: it keeps the trunk
+small and the storage of large 3D / image content where it belongs.
 
 
-Creating the GraphML
----------------------
+Entering the tree: a practical summary
+---------------------------------------
 
-The GraphML (the trunk) can be created through several methods:
+A reader who has followed the metaphor this far will want to know how to
+actually start a project. The Extended Matrix can be entered through any of
+its roots; the choice depends on the nature of the source material and on
+the team:
 
-1. **Manual creation in yEd**: The traditional approach using the yEd Graph Editor with the Extended Matrix palette. Best for small-medium projects where the stratigrapher directly builds the graph. See the `yEd workflow guide <https://docs.extendedmatrix.org/projects/EM-tools/en/1.5.0/creating_em.html#from-graphml-yed>`_.
+- **Through** ``yEd`` **with the EM palette** — manual, traditional, ideal
+  for small-to-medium projects where the stratigrapher builds the graph
+  directly. See the
+  `yEd workflow guide <https://docs.extendedmatrix.org/projects/EM-tools/en/1.5.0/creating_em.html#from-graphml-yed>`_.
 
-2. **From Excel via s3Dgraphy**: Using the standardized ``template_stratigraphy.xlsx`` and the mapping pipeline. Ideal for AI-assisted extraction. See the `Excel import guide <https://docs.extendedmatrix.org/projects/EM-tools/en/1.5.0/creating_em.html#from-excel-standard-stratigraphy>`_.
+- **Through** ``em_data.xlsx`` **via StratiMiner or by hand** — the unified
+  workbook approach. AI extraction through the StratiMiner prompt populates
+  the workbook from PDFs and field notes; alternatively a human team can
+  fill it manually from existing tabular data. The s3Dgraphy
+  ``UnifiedXLSXImporter`` parses the workbook into an in-memory ``s3D
+  Graph`` and from there into ``GraphML``. The workbook itself — sheets,
+  columns, authoring conventions, per-concept contracts — is documented on
+  :doc:`em_data`, which is the contract that both human authors and
+  StratiMiner are held to. See also the
+  `Excel import guide <https://docs.extendedmatrix.org/projects/EM-tools/en/1.5.0/creating_em.html#from-excel-standard-stratigraphy>`_
+  for the operational details on the EM Tools side.
 
-3. **From pyArchInit**: The pyArchInit archaeological information system can export GraphML files in Extended Matrix format directly. See the `pyArchInit documentation <https://pyarchinit.readthedocs.io/it/latest/novit%C3%A0.html#herris-matrix-per-extended-matrix-tool>`_.
+- **Through** ``pyArchInit`` — the archaeological information system can
+  export GraphML files in Extended Matrix format directly, bringing
+  fieldwork records into the tree as a starting point. See the
+  `pyArchInit documentation <https://pyarchinit.readthedocs.io/it/latest/novit%C3%A0.html#herris-matrix-per-extended-matrix-tool>`_.
 
-
-Enriching with Auxiliary Data
-------------------------------
-
-Once the GraphML exists, it can be enriched through auxiliary files:
-
-- **EMdb Excel files**: Tabular data with custom column mappings (site properties, detailed descriptions, laboratory analyses)
-- **pyArchInit databases**: SQLite databases imported as auxiliary sources, adding properties to existing graph nodes
-- **DosCo folders**: Documentary source collections linked to stratigraphic units
-- **Source lists**: Excel files with structured source descriptions (see :ref:`source-list-schema` for the column reference)
-
-Each auxiliary file type uses a specific mapping that defines how tabular columns translate to graph node properties. The s3Dgraphy mapping system (``MappingRegistry``) supports custom mapping directories, enabling project-specific data schemas.
+Each entry point produces (or contributes to) the same trunk. From there
+you link your leaves (tabular and object-storage) and let take root — by
+baking — those that you want to integrate permanently.
 
 .. seealso::
 
-   - :doc:`qualia` — The property taxonomy in Extended Matrix
-   - :doc:`paradata_nodes` — How data provenance is tracked
-   - :doc:`data_funnel` — The three-level data hierarchy
+   - :doc:`em_data` — the canonical reference for the ``em_data.xlsx``
+     workbook (sheets, conventions, per-concept column contracts)
+   - :doc:`qualia` — the property taxonomy that lives along the branches
+   - :doc:`paradata_nodes` — how data provenance is recorded along the trunk
+   - :doc:`data_funnel` — the three-level data hierarchy
    - `Creating EM from Different Sources (EMtools docs) <https://docs.extendedmatrix.org/projects/EM-tools/en/1.5.0/creating_em.html>`_

@@ -115,6 +115,7 @@ In practical terms: an archaeologist authors or reviews a stratigraphic sequence
    stratigraphic_nodes
    auxiliary_stratigraphic_nodes
    activity
+   location
    paradata_nodes
    qualia
    source_node
@@ -124,6 +125,12 @@ In practical terms: an archaeologist authors or reviews a stratigraphic sequence
    alternate_hypotheses
    data_funnel
    utils
+
+.. toctree::
+   :maxdepth: 2
+   :caption: Data layer
+
+   em_data
 
 .. toctree::
    :maxdepth: 2
