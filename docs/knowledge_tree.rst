@@ -117,7 +117,11 @@ deposits back into:
   ``Epochs``, ``Claims``, ``Authors``, ``Documents``), produced by humans
   manually or by AI through the StratiMiner prompt. It is the root through
   which the matrix can be planted from scratch from documentary sources, or
-  grown by patient hand from existing tabular data.
+  grown by patient hand from existing tabular data. The workbook's shape,
+  authoring conventions (multi-valued cells, hierarchical paths, kind
+  prefixes), and per-concept column contracts are documented on the
+  dedicated :doc:`em_data` page — that is the canonical reference both
+  for human authors and for the StratiMiner AI extractor.
 
 - ``GraphML`` — the human-readable root, opened in yEd Graph Editor with the
   Extended Matrix palette. This is where humans see the matrix as a network
@@ -206,8 +210,12 @@ team:
   the workbook from PDFs and field notes; alternatively a human team can fill
   it manually from existing tabular data. The s3Dgraphy
   ``UnifiedXLSXImporter`` parses the workbook into an in-memory ``s3D Graph``
-  and from there into ``GraphML``. See the
-  `Excel import guide <https://docs.extendedmatrix.org/projects/EM-tools/en/1.5.0/creating_em.html#from-excel-standard-stratigraphy>`_.
+  and from there into ``GraphML``. The workbook itself — sheets, columns,
+  authoring conventions, per-concept contracts — is documented on
+  :doc:`em_data`, which is the contract that both human authors and
+  StratiMiner are held to. See also the
+  `Excel import guide <https://docs.extendedmatrix.org/projects/EM-tools/en/1.5.0/creating_em.html#from-excel-standard-stratigraphy>`_
+  for the operational details on the EM Tools side.
 
 - **Through** ``pyArchInit`` — the archaeological information system can
   export GraphML files in Extended Matrix format directly, bringing fieldwork
@@ -219,6 +227,8 @@ graft your 3D content, link your leaves, and let the tree grow.
 
 .. seealso::
 
+   - :doc:`em_data` — the canonical reference for the ``em_data.xlsx``
+     workbook (sheets, conventions, per-concept column contracts)
    - :doc:`qualia` — the property taxonomy that lives along the branches
    - :doc:`paradata_nodes` — how data provenance is recorded along the trunk
    - :doc:`data_funnel` — the three-level data hierarchy
