@@ -196,7 +196,7 @@ not as a substitute for the chapters themselves.
       paradata-aware online experiences. The public product name; the
       underlying conceptual model is :term:`StratiVerse` (used in
       academic papers and internal manuals). See the
-      `Heriverse documentation <https://docs.extendedmatrix.org/projects/heriverse/>`__.
+      `Heriverse documentation <https://docs.extendedmatrix.org/projects/heriverse/en/latest/>`__.
 
    StratiVerse
       The conceptual model that underlies the :term:`Heriverse`
