@@ -103,7 +103,9 @@ In practical terms: an archaeologist authors or reviews a stratigraphic sequence
    :caption: How to start
 
    learn_EM
+   em_workspace_preparation
    usage
+   draw_the_matrix
    project_organization
 
 .. toctree::
