@@ -9,6 +9,12 @@ Draw the Extended Matrix in yEd
    Reconstructive Archaeology handbook. The reference dataset folder is
    ``M2E``.
 
+.. note::
+
+   **Prerequisite**: the Extended Matrix palette must be installed in
+   yEd before you can draw the matrix. See
+   :doc:`/mini_tutorials/setup_yed_palette` for the one-time setup.
+
 In this exercise we will draw the stratigraphic units inside an Extended
 Matrix using yEd and the EM palette. By the end you will have a small
 ``.graphml`` file ready to feed into the downstream tools of the EM
