@@ -47,7 +47,7 @@ A Stratigraphic Unit indicates the result of an action that occurred at a specif
 SU as Container
 ^^^^^^^^^^^^^^^
 
-A Stratigraphic Unit can also act as a **container** for Special Finds (SF) or Virtual Special Finds (VSF). This represents the physical containment of elements within a stratigraphic unit -- for example, a reused capital (SF) embedded inside a wall (SU).
+A Stratigraphic Unit can also act as a **container** for Special Finds (SF), Virtual Special Finds (VSF) or Reused Special Finds (RSF). This represents the physical containment of elements within a stratigraphic unit -- for example, a reused capital (:ref:`RSF <rsfnode>`) embedded inside a wall (SU).
 
 In the yEd GraphML editor, this is represented by drawing the SU as a **group node** with a dark red background (``#9B3333``) and placing the contained elements inside it. On import, each contained element receives an ``is_part_of`` edge pointing to the SU container. The SU retains all its normal stratigraphic relationships.
 
@@ -182,10 +182,12 @@ A series of USVn objects, like a colonnade or a sequence of acroteria, considere
   Example: On top of a podium SU01 there is a column SU02 (in situ) fragmented due to a -SU03 (destruction of the upper part of the column). A USV/s 100 hypothetical reconstruction is provisioned in order to restore the destruction’s action -SU03. A series USV/n 101 is provided in order to complete the peristasis of the temple.
 
 
-4. Special Finds and Virtual Special Finds (SF and VSF):
---------------------------------------------------------
+4. Special Finds, Virtual Special Finds and Reused Special Finds (SF, VSF and RSF):
+-----------------------------------------------------------------------------------
 
 These categories relate to anastylosis, where original architectural elements have been found *not in situ* and repositioned. When an element exists but its original position cannot be determined with absolute certainty (i.e. uncertain attribution to a given context or specific position), it is recorded as a Special Find (SF). When this element is repositioned in a hypothetical location based on archaeological interpretation rather than documentary evidence, its new position is recorded as a Virtual Special Find (VSF). This dual recording system allows archaeologists to track both the physical element and its interpretative repositioning separately.
+
+A third sibling category, the **Reused Special Find (RSF)**, covers objects that have been permanently re-incorporated into a later structure (spolia). Unlike SF, which remains movable, an RSF is defined by *structural immobility*: it cannot be removed without destroying its host masonry. See section 4.3.
 
 .. _sfnodes:
 
@@ -245,6 +247,87 @@ The VSF container maintains all its normal stratigraphic relationships (epoch co
 
 .. seealso::
    :ref:`ispartof` for details on the ``is_part_of`` connector.
+
+.. _rsfnode:
+
+4.3 RSF - Reused Special Find (``ReusedSpecialFindNode``)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. image:: img/2D/RSF.png
+  :width: 128px
+  :align: left
+
+A **Reused Special Find (RSF)** is a stratigraphic node category for
+artefacts that have been re-used inside another, later context — the
+typical *spolia* case. The defining property is **structural
+immobility**: an object becomes RSF only when it has been cemented,
+embedded, or otherwise permanently incorporated into a host structure
+from which it cannot be moved without damaging the host.
+
+Distinction from Special Find (SF)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+The boundary between SF and RSF is *physical mobility*, not curatorial
+status:
+
+- An architectural block in a museum exhibition or in a storage
+  facility — even if it once stood in a different position — is still
+  a **Special Find (SF)**. It is movable, can be transported for a
+  temporary exhibition, can be re-displayed elsewhere. The same applies
+  to objects merely resting on the archaeological site.
+
+- An ancient inscription cemented into the masonry of a later building,
+  a frieze fragment embedded as filler in a Roman wall, a column drum
+  re-used as a threshold and locked into place — these are
+  **Reused Special Finds (RSF)**. Their immobility is *structural*:
+  removing them means destroying the host masonry.
+
+Container relationship
+^^^^^^^^^^^^^^^^^^^^^^
+
+An RSF always belongs to a Stratigraphic Unit (SU) acting as a
+**container** — typically the later wall or masonry that physically
+incorporates the reused element. The relationship is expressed via the
+standard ``is_part_of`` connector, exactly like an SF inside an SU
+container:
+
+- **container SU** → contains → **RSF**
+
+This relationship is foundational: an RSF cannot exist outside a
+container SU, because being *reused* implies being embedded in one.
+The container SU may itself belong to any epoch and any reconstructive
+status; the RSF carries its own dating and provenance, independent
+from the host.
+
+.. seealso::
+   :ref:`ispartof` for details on the ``is_part_of`` connector, and
+   the *SU as Container* paragraph in section 1.1 for the
+   group-node rendering convention.
+
+Visual representation
+^^^^^^^^^^^^^^^^^^^^^
+
+In yEd the RSF is rendered as an **octagon with a red border**
+(``#9B3333``) and a white fill — visually distinct from SF (also
+octagon, but with the SF gold border ``#AF8208``) and from VSF (gold
+border ``#70581E``). The red border signals the *reuse / spolia*
+context and makes it immediately readable in the matrix.
+
+Archaeological examples
+^^^^^^^^^^^^^^^^^^^^^^^
+
+- An ancient inscription bearing a dedication, originally part of a
+  Roman temple, cemented into the wall of a medieval church built on
+  the temple's ruins.
+- A column capital re-used as the base of a sundial in a later
+  courtyard.
+- A frieze fragment from a destroyed building, embedded as filler
+  during the construction of a Byzantine fortification wall.
+
+In each case the same physical object is recorded as an RSF for the
+later context (where it is now immobile); if its earlier life is
+documented, the RSF can carry additional links back to its original
+context as paradata.
 
 Cumulative example of different USV nodes used together
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

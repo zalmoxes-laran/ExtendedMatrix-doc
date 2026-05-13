@@ -46,6 +46,12 @@ multi-year fieldwork. For a first project, a small replica, or a teaching
 exercise, the four pieces above are enough — and every EM-aware tool will
 work with them.
 
+.. note::
+
+   Once the workspace is set up, you also need to install the Extended
+   Matrix palette in yEd. See the mini tutorial:
+   :doc:`/mini_tutorials/setup_yed_palette`.
+
 The DosCo folder
 ----------------
 
@@ -119,6 +125,54 @@ filled in iteratively as the dossier grows.
      nodes in the graph.
    * :doc:`project_organization` — the full production folder structure,
      for multi-year fieldwork projects.
+
+.. _enrich-dosco-iterative:
+
+Iterating the DosCo
+-------------------
+
+The DosCo folder is not a one-off setup — it's expected to grow and
+change throughout the lifetime of a project. New sources surface
+during fieldwork, additional documents are found in archives, an
+image needs to be replaced with a higher-quality scan. The
+``source_list.xlsx`` register and the DosCo folder are designed to
+absorb these changes without forcing a workspace rebuild.
+
+The iteration pattern
+~~~~~~~~~~~~~~~~~~~~~
+
+1. **Add new files to the DosCo folder** with the next sequential
+   identifier (``D.04``, ``D.05``, …). Don't renumber existing
+   entries — once a document has been cited in the graph as ``D.03``,
+   its identifier is part of the graph's history.
+2. **Update** ``source_list.xlsx`` with the new entries: identifier,
+   title, author, license, brief description. Save.
+3. **Re-import the source list** into the graph through your authoring
+   tool. For EM Tools in Blender, this is done from the auxiliary
+   files panel — see `Loading DosCo documents into the graph
+   <https://docs.extendedmatrix.org/projects/EM-tools/en/latest/panels/em_setup.html#em-tools-aux-load>`_
+   in the EM Tools manual for the panel commands. The reimport is
+   additive: new ``D.NN`` entries appear as document nodes ready to be
+   referenced, while existing references are preserved.
+4. **Reference the new documents** from the relevant stratigraphic
+   or paradata nodes as you continue the reconstruction work.
+
+Notes
+~~~~~
+
+- **DosCo is not bound to EM Tools.** The folder + register pattern
+  is a generic EM convention. EM Tools is one consumer; custom
+  mappers can read the DosCo from external systems (the PyArchInit
+  bridge is an example — see :doc:`/cookbook/pyarchinit_integration`).
+- **Iteration is not blocking.** You can start drawing the matrix
+  and modelling proxies before the DosCo is "complete". Add evidence
+  as you go.
+- **Avoid renaming existing files.** A renamed file breaks every
+  reference in the graph that pointed to its old identifier. If you
+  really need to rename (e.g., an obvious typo in the descriptive
+  label), do so via the authoring tool's "rename document" command
+  which propagates the change to all referring nodes; do not rename
+  through the filesystem.
 
 Why these three artifacts, set up now
 -------------------------------------
