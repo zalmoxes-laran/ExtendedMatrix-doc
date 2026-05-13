@@ -157,4 +157,6 @@ cython_debug/
 docs/.DS_Store
 .DS_Store
 /.vscode
+
+# Cowork local work notes
 .cowork-work/
