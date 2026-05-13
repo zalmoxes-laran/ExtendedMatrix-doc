@@ -156,9 +156,5 @@ cython_debug/
 # End of https://www.toptal.com/developers/gitignore/api/python,jupyternotebooks
 docs/.DS_Store
 .DS_Store
-.DS_Store
-docs/.DS_Store
-.DS_Store
 /.vscode
-docs/.DS_Store
-docs/.DS_Store
+.cowork-work/
