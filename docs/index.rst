@@ -28,7 +28,7 @@ A new user often meets three names at once. The distinction matters because each
      - `EM Tools manual <https://docs.extendedmatrix.org/projects/EM-tools/>`__
    * - **3DSC**
      - A complementary Blender environment for high-quality 3D survey processing that can feed EM Tools.
-     - `3D-survey-collection docs <https://docs.extendedmatrix.org/projects/3D-survey-collection>`__
+     - `3DSC docs <https://docs.extendedmatrix.org/projects/3DSC>`__
    * - **Heriverse**
      - The *Heritage Science Metaverse* — web-based publication and collaborative VR for EM-aware scenes (paradata pop-ups, epoch switching, voice/screen sharing).
      - `Heriverse docs <https://docs.extendedmatrix.org/projects/heriverse/en/latest/>`__
