@@ -182,6 +182,16 @@ not as a substitute for the chapters themselves.
       reconstruction, is the working name **CRM-s3D** (not currently
       in use; mentioned here for forward reference only).
 
+   pyArchInit
+      An open-source `QGIS <https://qgis.org>`_ plugin for archaeological data
+      management, with particular strength in 2D GIS visualization of
+      stratigraphic data. Maintained by an active community led by Luca Mandolesi.
+      In the Extended Matrix ecosystem, pyArchInit projects are consumed through
+      the `s3Dgraphy <https://github.com/zalmoxes-laran/s3Dgraphy>`_ library,
+      either by reference or by baking their records into the EM graph.
+      See the :doc:`cookbook/pyarchinit_integration` recipe for the integration
+      workflow and the :doc:`ecosystem` registry entry.
+
    S3D Graph
       The **in-memory property graph** produced by :term:`s3Dgraphy`.
       It is the runtime data structure with all methods for reading,
