@@ -26,10 +26,10 @@ Quick start
    :header-rows: 0
    :class: longtable
 
-   * - `Discover EM ↗ <https://www.extendedmatrix.org/discover>`__
+   * - `Start EM ↗ <https://www.extendedmatrix.org/start>`__
      - First contact with Extended Matrix — what it is, who it is for and
        why it matters.
-   * - `Choose your path ↗ <https://www.extendedmatrix.org/how-to>`__
+   * - `Choose your Path ↗ <https://www.extendedmatrix.org/find-your-path>`__
      - Guided picker on the project website to find the right entry point
        for your role and project.
    * - :doc:`learn_EM`
