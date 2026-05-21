@@ -7,7 +7,7 @@ documentation is published at
 hosted on Read the Docs.
 
 This branch tracks the **EM 1.5** release line; the rendered output is
-served at https://docs.extendedmatrix.org/en/1.5.0/.
+served at https://docs.extendedmatrix.org/en/1.5/.
 
 About Extended Matrix
 ---------------------
@@ -38,7 +38,7 @@ of the manual on Read the Docs.
 Branch        Release line                                      Published at
 ============  ================================================  ===========================================
 ``main``      Landing / aggregator                              ``docs.extendedmatrix.org``
-``1.5.0``     **Current LTS — EM 1.5 (this branch)**            ``docs.extendedmatrix.org/en/1.5.0/``
+``1.5.0``     **Current LTS — EM 1.5 (this branch)**            ``docs.extendedmatrix.org/en/1.5/``
 ``1.4.0``     Legacy LTS — EM 1.4                               ``docs.extendedmatrix.org/en/1.4.0/``
 ``1.6``       Development — EM 1.6 (work in progress)           ``docs.extendedmatrix.org/en/1.6/``
 ============  ================================================  ===========================================
