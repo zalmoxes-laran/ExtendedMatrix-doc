@@ -72,7 +72,7 @@ Property Node (``PropertyNode``)
 A property node represents a specific characteristic or attribute of a stratigraphic unit. The name of a property corresponds to its type (e.g., :ref:`material <material_type>`, :ref:`height <height_qualia>`, :ref:`length <length_qualia>`).
 
 .. note::
-   For a complete taxonomy of property types and their relationships, please refer to the `Properties (Qualia) section of this documentation <https://docs.extendedmatrix.org/en/1.5.0dev/paradata_nodes.html>`_.
+   For a complete taxonomy of property types and their relationships, please refer to the `Properties (Qualia) section of this documentation <https://docs.extendedmatrix.org/en/1.5/paradata_nodes.html>`_.
 
 .. admonition:: Example
    :class: example
@@ -97,7 +97,7 @@ Document Node (``DocumentNode``)
 A document node represents primary sources that provide evidence about stratigraphic units.
 
 .. note::
-   For a complete taxonomy of document (source) types and their relationships, please refer to the `Document (Source) section of this documentation <https://docs.extendedmatrix.org/en/1.5.0dev/source_node.html>`_.
+   For a complete taxonomy of document (source) types and their relationships, please refer to the `Document (Source) section of this documentation <https://docs.extendedmatrix.org/en/1.5/source_node.html>`_.
 
 .. admonition:: Example
    :class: example
@@ -159,7 +159,7 @@ An extractor node captures how researchers interpret information from source doc
 
 
 .. note::
-   For a complete taxonomy of extracto (interpretation) types and their relationships, please refer to the `Extractor (Interpretation) section of this documentation <https://docs.extendedmatrix.org/en/1.5.0dev/extractor_nodes.html>`_.
+   For a complete taxonomy of extracto (interpretation) types and their relationships, please refer to the `Extractor (Interpretation) section of this documentation <https://docs.extendedmatrix.org/en/1.5/extractor_nodes.html>`_.
 
 .. admonition:: Example
    :class: example

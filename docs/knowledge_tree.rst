@@ -271,7 +271,7 @@ the team:
 - **Through** ``yEd`` **with the EM palette** — manual, traditional, ideal
   for small-to-medium projects where the stratigrapher builds the graph
   directly. See the
-  `yEd workflow guide <https://docs.extendedmatrix.org/projects/EM-tools/en/1.5.0/creating_em.html#from-graphml-yed>`_.
+  `yEd workflow guide <https://docs.extendedmatrix.org/projects/EM-tools/en/1.5/creating_em.html#from-graphml-yed>`_.
 
 - **Through** ``em_data.xlsx`` **via StratiMiner or by hand** — the unified
   workbook approach. AI extraction through the StratiMiner prompt populates
@@ -282,7 +282,7 @@ the team:
   columns, authoring conventions, per-concept contracts — is documented on
   :doc:`em_data`, which is the contract that both human authors and
   StratiMiner are held to. See also the
-  `Excel import guide <https://docs.extendedmatrix.org/projects/EM-tools/en/1.5.0/creating_em.html#from-excel-standard-stratigraphy>`_
+  `Excel import guide <https://docs.extendedmatrix.org/projects/EM-tools/en/1.5/creating_em.html#from-excel-standard-stratigraphy>`_
   for the operational details on the EM Tools side.
 
 - **Through** ``pyArchInit`` — the archaeological information system can
@@ -301,4 +301,4 @@ baking — those that you want to integrate permanently.
    - :doc:`qualia` — the property taxonomy that lives along the branches
    - :doc:`paradata_nodes` — how data provenance is recorded along the trunk
    - :doc:`data_funnel` — the three-level data hierarchy
-   - `Creating EM from Different Sources (EMtools docs) <https://docs.extendedmatrix.org/projects/EM-tools/en/1.5.0/creating_em.html>`_
+   - `Creating EM from Different Sources (EMtools docs) <https://docs.extendedmatrix.org/projects/EM-tools/en/1.5/creating_em.html>`_
