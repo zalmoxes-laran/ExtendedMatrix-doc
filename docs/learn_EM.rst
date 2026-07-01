@@ -21,7 +21,10 @@
      • Each path adds a short "→ Also on the site" cross-ref to the
        corresponding /start entry point so readers can pivot between
        manual and site.
-     • The EM Framework (EMF) table stays intact at the bottom.
+     • The trailing components table stays intact but is now framed
+       as "The EM Ecosystem — EM + EMF" instead of "The EM Framework
+       (EMF)" — since the umbrella term for the whole is "EM
+       Ecosystem" and EMF specifically means the tool layer.
      • "Contributing" and "Porting to other platforms" are folded
        into the Developer path (they are what a developer DOES).
 
@@ -134,10 +137,10 @@ Extended Matrix projects compose **eight canonical professional figures** — st
 
 → See the full typology at `extendedmatrix.org/personas/ <https://www.extendedmatrix.org/personas/>`__.
 
-The EM Framework (EMF)
-----------------------
+The EM Ecosystem — EM + EMF
+---------------------------
 
-When the documentation talks about *the framework*, it means the family of tools that all speak the same EM data model through s3dgraphy. As of EM 1.5:
+The **EM Ecosystem** is the umbrella that groups **EM** (this manual — the formal language) with the **EM Framework (EMF)** — the family of tools that speak EM through s3dgraphy. The two layers are distinct but complementary: EM is the notation; EMF is the toolset that reads, writes, visualises and publishes what the notation describes. As of EM 1.5:
 
 .. list-table::
    :header-rows: 1

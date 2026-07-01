@@ -1,13 +1,16 @@
 =========================================
-Extended Matrix Framework — Documentation
+Extended Matrix Ecosystem — Documentation
 =========================================
 
 .. note::
 
    You are reading the **manual of the Extended Matrix (EM)** — the formal
-   language at the heart of the Extended Matrix Framework. For an overview
-   of the project, the tools that build on EM and the latest news, the
-   reference site is `extendedmatrix.org <https://www.extendedmatrix.org>`__.
+   language at the heart of the **EM Ecosystem**. The Ecosystem is the
+   umbrella that groups two layers: **EM** (this manual — the formal
+   language) and the **EM Framework (EMF)** — the family of tools that
+   speak EM. For an overview of the project, the tools that build on EM
+   and the latest news, the reference site is
+   `extendedmatrix.org <https://www.extendedmatrix.org>`__.
 
    This documentation covers **EM 1.5** (current stable version).
 
@@ -36,12 +39,13 @@ Quick start
      - The guided tour through this manual — calibrated for humanists,
        archaeologists, 3D modellers and developers.
 
-Documentation ecosystem
-=======================
+Documentation across the EM Ecosystem
+=====================================
 
-The Extended Matrix Framework is documented across several manuals, each
-focused on a specific layer of the ecosystem. The table below shows where
-to go for what.
+The **EM Ecosystem** is documented across several manuals, each focused on
+a specific layer. **EM** (this manual) is the formal language; **EMF** —
+the EM Framework — is the family of tools that speak it. The table below
+shows where to go for what.
 
 .. list-table::
    :widths: 25 15 60
