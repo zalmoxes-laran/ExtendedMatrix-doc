@@ -91,6 +91,36 @@ For the broader project layout (``my_project.graphml`` /
 :doc:`nodes_intro` and :doc:`project_organization`.
 
 
+The native document format: ``.em.json``
+-----------------------------------------
+
+.. note::
+   Introduced with the EM 1.6 development cycle (format v1 frozen on
+   11 July 2026; reference implementation in `s3Dgraphy
+   <https://github.com/zalmoxes-laran/s3Dgraphy>`_:
+   ``emjson_exporter`` / ``emjson_importer``).
+
+``.em.json`` is the native, round-trip document format of the Extended
+Matrix ecosystem, designed to progressively replace GraphML as the
+working file. It has three sections: ``header`` (format semver,
+generating tool, versions of the JSON datamodels and of the reference
+ontologies — CIDOC CRM family + CRMem — the document was authored
+against); ``graph`` (the property graph as flat lists — ``nodes[]``
+with id / ``node_type`` / name / description / ``data{}``, and
+``edges[]`` with id / ``edge_type`` / source / target — one canonical
+shape for every consumer: EMStudio, Heriverse 1.6+, s3Dgraphy, EM
+tools); and ``layout`` (optional and always reconstructable: canvas,
+epoch swimlanes, sector columns, node positions, folded groups with
+their per-context positions for hypergraph navigation, edge routes).
+
+Policy: **GraphML becomes a legacy one-way import** (yEd authoring
+remains fully supported during the transition to the EMStudio editor),
+while GraphML *export* carries an explicit non-lossless disclaimer.
+Consumers of ``.em.json`` must ignore unknown sections; the ``graph``
+section is the single source of truth — a tool that rewrites the graph
+must update or drop the ``layout``.
+
+
 Authoring conventions
 ---------------------
 
