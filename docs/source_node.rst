@@ -20,6 +20,35 @@ Each document is assigned a unique identifier (e.g., "D.01", "D.02") that serves
 
 Document nodes can be represented in 3D space as a collection of digital assets, each corresponding to a specific source. These assets can be visualized in a virtual environment, providing a spatial representation of the documentation sources. The 3D representation is normally created withih the context of a 3D model of the archaeological site or object. In the EM framework, the 3D representation of document nodes is used to visualize the spatial distribution of sources and their relationships to the archaeological properties they validate. They are created using the Blender software and can be exported along with the overall scene in the GLTF format to be reused in EMviq or in Heriverse web-app.
 
+The canonical document and its use-instances
+--------------------------------------------
+
+A document usually appears in the matrix more than once: it is drawn where it
+was produced, and again wherever a reasoning chain leans on it. Those are not
+different documents — they are the same one, seen from different places in the
+argument. The Extended Matrix keeps **one** document node in the graph and
+distinguishes two roles in the drawing:
+
+- the **canonical** document — the node placed at the moment the source itself
+  came into being, carrying its identity, its dating and its classification;
+- its **use-instances** — the repetitions that appear wherever the document is
+  used, positioned at the time of *use*, not of creation.
+
+The distinction is visual as well as structural: the canonical document is drawn
+with a **thick** border, an instance with a thin one; the border **colour**
+classifies the canonical document along the geometry axis (see the three-axis
+classification below).
+
+.. note::
+   :class: admonition-purple
+
+   Until EM 1.6 this role was called *master document*. The name was misleading:
+   a digital document is always a copy, and "master" suggested an original among
+   copies. What the role actually marks is the document **at its own moment of
+   creation**, against the instances that re-use it — hence *canonical*. Files
+   written before the rename keep loading: the older keys are read and
+   normalised, nothing is lost.
+
 Document Types and Classification
 -------------------------------
 
