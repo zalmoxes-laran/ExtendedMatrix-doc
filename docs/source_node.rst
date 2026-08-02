@@ -49,6 +49,129 @@ classification below).
    written before the rename keep loading: the older keys are read and
    normalised, nothing is lost.
 
+Where the document lands in 3D: the RMDoc
+-----------------------------------------
+
+.. versionadded:: 1.6
+
+A document and its position in space are two different things, and the Extended
+Matrix keeps them apart. The document is a source: it exists, and its existence
+is not a matter of degree. What *is* a matter of degree is the act of putting it
+somewhere in the 3D scene — and that act has its own node, the **RMDoc**
+(Representation Model Document).
+
+The RMDoc belongs to a family of nodes that are all the same idea applied to
+different conceptual nodes — the **spatial instance** of something the matrix
+already knows about:
+
+.. list-table::
+   :header-rows: 1
+   :widths: 20 20 60
+
+   * - Spatial instance
+     - of the node
+     - typical case
+   * - proxy
+     - US
+     - the volume standing for a stratigraphic unit
+   * - RMSF
+     - SF
+     - a scanned capital repositioned by an anastylosis hypothesis
+   * - RM
+     - state
+     - the model of a reconstructed state of the monument
+   * - **RMDoc**
+     - **Document**
+     - a historical photograph placed where it was taken
+
+An RMDoc is for an asset that **cannot sit in 3D without a transformation
+matrix** — the origin (0,0,0) is an improbable place for it — and that normally
+involves a point of view, a camera sighting the document: a section, an
+elevation, an image. The typical case is a georeferenced 2D document used as a
+base.
+
+Two cases that look similar and are not:
+
+* a **photogrammetric model used as a source** is *not* an RMDoc. It is an RM
+  bound to its epoch, plus a Document. The document role and the spatial role
+  are two facets of the same resource, and they are not exclusive;
+* an asset that is **already 3D and already an RM** does not generate an RMDoc.
+  It is already in space on its own terms.
+
+Unlike an RM, an RMDoc is never anchored to an epoch or to a stratigraphic unit.
+It hangs from its document:
+
+.. code-block:: text
+
+   Document ──has_representation_model_doc──▶ RMDoc ──has_linked_resource──▶ file
+
+The position itself — X, Y, Z and rotation — lives **on the RMDoc and nowhere
+else**. The Document may show the same classification on its border in yEd, for
+the convenience of reading the diagram, but it does not carry a position.
+
+The geometry axis: how metric is the placement
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Axis 3 of the classification, ``geometry``, is a scale of **metric authority of
+placement**. It grades the spatialisation, not the document: it answers "on what
+authority does this thing sit here?", from a measurement to a gesture.
+
+.. list-table::
+   :header-rows: 1
+   :widths: 18 12 70
+
+   * - Value
+     - Border
+     - What it claims
+   * - ``reality_based``
+     - red
+     - Sensor or algorithmic positioning: a photogrammetric model, a photo from
+       a calibrated sequence, an instrumentally surveyed find.
+   * - ``observable``
+     - orange
+     - Reconstructed with approximation from rigorous documentation (plans,
+       sections, measured drawings). Criterion-based; residual uncertainty
+       remains.
+   * - ``asserted``
+     - yellow
+     - Compositional positioning asserted by the operator, with no claim of
+       restitution — placing a comparative element where it can be looked at.
+   * - ``symbolic``
+     - grey
+     - The base is **not metric at all**: a map not to scale, a schematic plan,
+       a sketch. The placement is useful, not measurable.
+
+.. versionadded:: 1.6
+   ``symbolic`` is the lowest rung, added so that a non-metric base is not
+   forced to masquerade as ``asserted``. The difference is where the missing
+   metric lies: with ``asserted`` the base could have carried a measurement and
+   the operator chose not to use one; with ``symbolic`` there was never a
+   measurement to use.
+
+``em_based`` sits outside this ladder. It is not a degree of metric authority
+but a statement of provenance — the asset *is* itself an EM-derived
+reconstruction, typically a hypothesis model built from another EM graph. That
+says nothing about how well it is placed.
+
+A canonical document that has no geometry classification yet is drawn with a
+**thick black** border (``canonical_unknown``): not classified, which is not the
+same as classified as non-metric. Grey means someone looked and decided.
+
+Spatialisation has degrees; temporality is an attribution
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+These two are easy to confuse and must not be. For an RMDoc:
+
+* the **spatialisation** has degrees, and they are the four values above.
+  "Where is it, and on what authority" is a graded question;
+* the **temporality** is an *attribution*, not a grade. A document is dated
+  either with certainty or through a paradata chain that argues the dating.
+  There is no rung of the geometry axis that means "probably 1930s".
+
+Keeping them apart is what lets a photograph be firmly dated and loosely placed,
+or precisely placed and vaguely dated, without either statement contaminating
+the other.
+
 Document Types and Classification
 -------------------------------
 
