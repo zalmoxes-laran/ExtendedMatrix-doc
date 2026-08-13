@@ -32,6 +32,63 @@ Geometry
 The geometry property defines the dimensions of the object (length, width, thickness, shape).  
 Within the Extended Matrix, the geometry property can be defined, for example, by a floor plan or photogrammetric model of the area to be reconstructed.
 
+**The proxy IS this property.** What has always been called the *proxy* of a
+stratigraphic unit — its geometry-without-material, the volume you segment out
+of a photogrammetric model — is not a thing standing beside the unit: it is one
+of the unit's properties, a quale like colour or dating, that answers *what
+shape does this unit have, and where*.
+
+Two parts, and the division is the whole point:
+
+.. list-table::
+   :header-rows: 1
+   :widths: 22 78
+
+   * - Part
+     - What it holds
+   * - the **property** (``geometry``)
+     - the assertion — *this unit has this shape* — and, through the ordinary
+       paradata chain, **how we know it**: which extractor read it, from which
+       source, and which combiner reconciled several readings.
+   * - the **semantic shape**
+     - the numbers: convex hulls and spheres, or a ``.glb`` file. Attached to the
+       property with ``has_semantic_shape``.
+
+The shape carries no argument and the property carries no coordinates. That is
+deliberate: the numbers can live in a file when they are large and inline when
+they are small, without changing anything about what the property *says*.
+
+Why it matters — a lone shape cannot say where it came from. As a property, the
+geometry inherits the same chain every other quale has, and one consequence
+follows immediately: **the same geometry can be synthesised from several
+sources**. A recent but incomplete photogrammetric survey and a historical
+photograph become two extractors, joined by a combiner, concluding in one
+geometry — instead of two disconnected shapes with nothing to say which is
+which.
+
+The sources may include a **2D annotation**: a region traced on a photograph or
+a drawing is evidence, and an extractor can be based on it. See
+:doc:`extractor_nodes` and :ref:`paradatanodes`.
+
+.. admonition:: Changed in EM 1.6
+   :class: warning
+
+   Until EM 1.6 the proxy was modelled as an object of its own, attached
+   directly to the unit. From EM 1.6 it is a **property of type ``geometry``**
+   whose payload is the semantic shape (``has_semantic_shape``).
+
+   Nothing was taken away from the shape — same geometry, same file, same
+   meaning. What changed is **who points at it**: the unit points at the
+   property, and the property points at the shape.
+
+   *Consequences for existing material.* Graphs authored before EM 1.6 keep
+   their geometry and keep working; what they lack is the chain of paradata,
+   because a standalone shape never had one. A one-shot migration of legacy
+   graphs (standalone shape → geometry property + payload) is planned. Software
+   that reads the proxy — EM Tools for Blender, Heriverse, any parser walking
+   the graph — must follow the property instead of looking for a shape hanging
+   off the unit.
+
 .. _placement:
 
 Placement

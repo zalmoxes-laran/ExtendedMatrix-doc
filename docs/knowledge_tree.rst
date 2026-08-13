@@ -65,6 +65,13 @@ technically distinct families:
   proxy of a ``US`` to the ``US`` branch, a textured surface to ``USVs``
   or ``VSF``).
 
+  .. note::
+
+     Since EM 1.6 a *proxy* attaches to its unit **as a property** — the quale
+     ``geometry`` — whose payload is the semantic shape held in the leaf. The
+     leaf still holds the numbers; what reaches the branch is the property that
+     asserts them and the paradata that justifies them. See :ref:`geometry`.
+
 A single auxiliary system like ``EMdb`` commonly produces several leaves on
 different branches at once — one per category of material — each attached
 where it makes sense.

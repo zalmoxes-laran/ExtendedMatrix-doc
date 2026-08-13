@@ -6,6 +6,30 @@ Introduction
 
 Extractors are specialized tools and methodologies used in the Extended Matrix framework to derive qualia (properties) from source documents. Each extractor type is designed for specific kinds of analysis and has defined accuracy levels, validation requirements, and reliability factors.
 
+.. admonition:: What an extractor is based on (EM 1.6)
+   :class: note
+
+   An extractor cites the evidence it read. That is usually a **source document**
+   — the relation is ``extracted_from`` — and since EM 1.6 it can also be an
+   **AnnotationRegion**: a region traced on an image, which is a *more precise
+   citation* than the whole picture, the way a page number is more precise than a
+   book. The region remains attached to its own image, so nothing is lost by
+   citing the part instead of the whole.
+
+   This is the same relation, not a second one: "this extraction is based on
+   that" already had a name, and a traced region is evidence.
+
+   It is also the doorway between the 2D and 3D worlds. A region traced on a
+   photograph is evidence for a **geometry** property — the proxy — once the
+   photograph is spatialised; see :ref:`geometry` and
+   :doc:`learn-em/tutorials/05-proxies-knowledge-graph`.
+
+   **Annotating is extracting.** Tracing "this and not that" on an image is
+   already an interpretation, so a region never appears bare: it is created
+   inside a chain, together with its extractor and its property. A mark made
+   just to say "look here" is a *note*, not paradata — it carries no claim and
+   belongs outside the chain.
+
 .. note::
    :class: admonition-purple
 

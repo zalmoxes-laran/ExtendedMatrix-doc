@@ -169,6 +169,16 @@ Non-structural Virtual Stratigraphic Unit, a reconstruction hypothesis based on 
 
 A series of USVn objects, like a colonnade or a sequence of acroteria, considered as a whole. This seriation node acts as a proxy for the entire group.
 
+.. note::
+
+   **"Proxy" in two senses — do not confuse them.** Here the word is used
+   informally: a seriation node *stands for* a group of objects. The other sense
+   — the 3D *proxy* of a stratigraphic unit, the segmented volume — is, since
+   EM 1.6, a **property** of that unit (the quale ``geometry``) and not a node of
+   its own: the geometry attaches to the US as a property, carrying its own
+   paradata chain, with the numbers held in a semantic shape. See
+   :ref:`geometry`.
+
 .. figure:: img/B03.png
   :width: 600
   :align: center 

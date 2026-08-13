@@ -8,6 +8,16 @@ Introduction
 
 Paradata nodes (``ParadataNode``, also known as validation nodes) are a specialized set of nodes designed to express data provenance—documenting how we know what we know about stratigraphic units. These nodes form a "family" that works together to create a clear chain of evidence and interpretation.
 
+.. note::
+
+   **Geometry has a chain too (EM 1.6).** The *proxy* of a unit — its shape — is
+   a property (the quale ``geometry``), which means it hangs from the same
+   family described here: extractor → combiner → property. So "how do we know
+   the wall had this volume?" is answered the same way as "how do we know it was
+   brick". Evidence for it may be a document *or* a region traced on an image
+   (an **AnnotationRegion**, cited with ``extracted_from``). See :ref:`geometry`
+   and :doc:`extractor_nodes`.
+
 .. admonition:: Example
    :class: example
 

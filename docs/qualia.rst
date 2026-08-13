@@ -183,6 +183,31 @@ Spatial Qualia
     * Values: linear, radial, grid, clustered, scattered, concentric
     * Expected extractors: visual inspection, spatial analysis
 
+.. _geometry_qualia:
+
+* **Geometry** *(the proxy, as a quale — new in EM 1.6)*
+    * CIDOC CRM: :class:`SP5_Geometric_Place_Expression` (CRMgeo)
+    * Payload: a **semantic shape** attached with ``has_semantic_shape`` —
+      convex hulls and spheres, or a ``.glb``
+    * Expected extractors: 3D model measurement, photogrammetric reprojection,
+      2D annotation reprojection, geometric calculation
+
+  The geometry-without-material of a unit: what shape it has and where, without
+  saying what it is made of. This is what used to be called *the proxy* of a
+  stratigraphic unit, and it is a property like any other — so it carries an
+  assertion *and* the chain that justifies it. See :ref:`geometry` in
+  :doc:`properties`.
+
+  .. note::
+     :class: admonition-purple
+
+     **CIDOC mapping to be confirmed.** ``crmgeo:SP5_Geometric_Place_Expression``
+     is a defensible default, not a settled answer: the alternative under
+     discussion is :class:`E36_Visual_Item`. It is the same question left open
+     for the 2D **AnnotationRegion**, and the two should be decided together
+     (with F. Felicetti). Whichever wins changes how this one quale is projected
+     into RDF — not the fact that the proxy is a property.
+
 Temporal Qualia
 ^^^^^^^^^^^^^
 

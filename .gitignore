@@ -160,3 +160,4 @@ docs/.DS_Store
 
 # Cowork local work notes
 .cowork-work/
+.claude
