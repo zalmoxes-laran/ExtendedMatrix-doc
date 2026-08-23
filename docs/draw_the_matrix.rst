@@ -128,7 +128,7 @@ collected sources live.
 
 This ``.graphml`` file is the input you will feed to the downstream tools
 of the EM ecosystem. The typical next step is the
-`EM Setup panel in EM Tools (Blender) <https://docs.extendedmatrix.org/projects/EM-tools/en/latest/panels/em_setup.html>`_,
+`EM Setup panel in EM Tools (Blender) <https://docs.extendedmatrix.org/projects/EM-tools/en/1.5/panels/em_setup.html>`_,
 which loads the matrix and exposes the stratigraphic units for 3D modelling.
 
 See also
@@ -138,5 +138,5 @@ See also
   file is expected to live in.
 * :doc:`canvas`, :doc:`stratigraphic_nodes`, :doc:`connectors` — the
   formal definitions behind every element you have just drawn.
-* `Build the stratigraphic proxies in Blender <https://docs.extendedmatrix.org/projects/EM-tools/en/latest/tutorials/build-proxies.html>`_
+* `Build the stratigraphic proxies in Blender <https://docs.extendedmatrix.org/projects/EM-tools/en/1.5/tutorials/build-proxies.html>`_
   — what to do, in EM Tools, once the matrix is drawn.

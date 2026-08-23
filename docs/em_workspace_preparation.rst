@@ -150,7 +150,7 @@ The iteration pattern
 3. **Re-import the source list** into the graph through your authoring
    tool. For EM Tools in Blender, this is done from the auxiliary
    files panel — see `Loading DosCo documents into the graph
-   <https://docs.extendedmatrix.org/projects/EM-tools/en/latest/panels/em_setup.html#em-tools-aux-load>`_
+   <https://docs.extendedmatrix.org/projects/EM-tools/en/1.5/panels/em_setup.html#em-tools-aux-load>`_
    in the EM Tools manual for the panel commands. The reimport is
    additive: new ``D.NN`` entries appear as document nodes ready to be
    referenced, while existing references are preserved.

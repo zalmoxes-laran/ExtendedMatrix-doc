@@ -9,7 +9,7 @@ The legacy GraphML migration utility is documented in the
 sub-panel):
 
 → `Convert 1.x->1.5 in the EM Tools manual
-<https://docs.extendedmatrix.org/projects/EM-tools/en/latest/panels/em_setup.html#convert-legacy-em-graph>`_
+<https://docs.extendedmatrix.org/projects/EM-tools/en/1.5/panels/em_setup.html#convert-legacy-em-graph>`_
 
 This stub is kept for backward compatibility with links that
 predate the move; new content lives in the EM Tools manual.
