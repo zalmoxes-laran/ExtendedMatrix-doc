@@ -14,7 +14,7 @@ Extended Matrix Ecosystem — Documentation
 
    This documentation covers **EM 1.6** — currently under active
    development. For the current stable language reference, see the
-   `EM 1.5 manual <https://docs.extendedmatrix.org/en/latest/>`__.
+   `EM 1.5 manual <https://docs.extendedmatrix.org/en/1.5/>`__.
 
 **Extended Matrix** is a formal language used to document stratigraphy and
 virtual reconstruction processes. It is intended for archaeologists and
