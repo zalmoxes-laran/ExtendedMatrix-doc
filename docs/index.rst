@@ -62,7 +62,7 @@ shows where to go for what.
      - The formal language: stratigraphic nodes, paradata, sources,
        connectors, epochs, qualia.
    * - **EM-Tools**
-     - `Open ↗ <https://docs.extendedmatrix.org/projects/EM-tools/en/latest/>`__
+     - `Open ↗ <https://docs.extendedmatrix.org/projects/EM-tools/en/1.5/>`__
      - Blender add-on that connects an EM graph to 3D content for
        reconstruction work.
    * - **3DSC**
@@ -74,7 +74,7 @@ shows where to go for what.
      - Python library — the computational implementation of EM as a
        property knowledge graph (GraphML/JSON).
    * - **Heriverse**
-     - `Open ↗ <https://docs.extendedmatrix.org/projects/heriverse/en/latest/>`__
+     - `Open ↗ <https://docs.extendedmatrix.org/projects/heriverse/en/1.5/>`__
      - Heritage Science Metaverse — web-based publication and
        collaborative VR for EM-aware scenes.
 

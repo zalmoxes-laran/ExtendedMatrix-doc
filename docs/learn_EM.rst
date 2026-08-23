@@ -56,7 +56,7 @@ This is where every EM journey starts. The EM language is a typed graphical nota
    yEd is the free graph editor most EM authors use to draw GraphML files with the EM palette. A 30-minute hands-on:
 
    1. Install yEd from `yworks.com <https://www.yworks.com/products/yed>`__.
-   2. Import the EM palette (instructions in the `EM Tools manual — Importing the EM palette <https://docs.extendedmatrix.org/projects/EM-tools/en/latest/installation.html#importing-the-em-palette-in-yed>`__).
+   2. Import the EM palette (instructions in the `EM Tools manual — Importing the EM palette <https://docs.extendedmatrix.org/projects/EM-tools/en/1.5/installation.html#importing-the-em-palette-in-yed>`__).
    3. Drag the EM canvas onto the workspace and fill in the metadata (site code, author, ORCID, licence).
    4. Add two stratigraphic units and connect them with the appropriate stratigraphic relation.
    5. Save as ``.graphml`` — that file is already a valid Extended Matrix.
@@ -91,9 +91,9 @@ Good EM annotations need good 3D models underneath. The **3D Survey Collection (
 
 *Persona: Basic modeller (the Golden Twelve figure).*
 
-Once you have a mesh from 2a — or one you've been handed by the survey specialist — you can connect EM documentation to it via the **EM Tools** add-on for Blender. With it, an EM graph drawn in yEd becomes a navigable, queryable 3D scene where every stratigraphic unit lights up next to its proxy. The full manual is at the `EM Tools docs <https://docs.extendedmatrix.org/projects/EM-tools/en/latest/index.html>`__. The foundational Blender-modelling shortcuts you need — proxy modelling, control-point modelling, LOD work, semantic shapes — are covered by *The Golden Twelve*, a two-page reference card (`doi:10.5281/zenodo.21068528 <https://zenodo.org/records/21068528>`__).
+Once you have a mesh from 2a — or one you've been handed by the survey specialist — you can connect EM documentation to it via the **EM Tools** add-on for Blender. With it, an EM graph drawn in yEd becomes a navigable, queryable 3D scene where every stratigraphic unit lights up next to its proxy. The full manual is at the `EM Tools docs <https://docs.extendedmatrix.org/projects/EM-tools/en/1.5/index.html>`__. The foundational Blender-modelling shortcuts you need — proxy modelling, control-point modelling, LOD work, semantic shapes — are covered by *The Golden Twelve*, a two-page reference card (`doi:10.5281/zenodo.21068528 <https://zenodo.org/records/21068528>`__).
 
-When you are ready to *publish* a reconstruction with its full paradata chain, the EMF web platform that closes the loop is **Heriverse** — the Heritage Science Metaverse — which opens any EM-aware scene in a browser, with epoch switching, source pop-ups, and collaborative VR. See the `Heriverse documentation <https://docs.extendedmatrix.org/projects/heriverse/en/latest/>`__. (The underlying conceptual model, *StratiVerse*, is the topic of separate scientific papers; it is what makes Heriverse possible, but you do not need to learn it to use the platform.)
+When you are ready to *publish* a reconstruction with its full paradata chain, the EMF web platform that closes the loop is **Heriverse** — the Heritage Science Metaverse — which opens any EM-aware scene in a browser, with epoch switching, source pop-ups, and collaborative VR. See the `Heriverse documentation <https://docs.extendedmatrix.org/projects/heriverse/en/1.5/>`__. (The underlying conceptual model, *StratiVerse*, is the topic of separate scientific papers; it is what makes Heriverse possible, but you do not need to learn it to use the platform.)
 
 .. note::
 
@@ -102,7 +102,7 @@ When you are ready to *publish* a reconstruction with its full paradata chain, t
 .. admonition:: Take action — *open a real graph in Blender*
    :class: tip
 
-   1. Install EM Tools (`installation guide <https://docs.extendedmatrix.org/projects/EM-tools/en/latest/installation.html>`__).
+   1. Install EM Tools (`installation guide <https://docs.extendedmatrix.org/projects/EM-tools/en/1.5/installation.html>`__).
    2. Download an example dataset from the `Extended Matrix download page <https://www.extendedmatrix.org/download>`__ — pick one with a ``.graphml`` and a ``DosCo`` folder.
    3. In Blender, open the EM Setup panel, point it at the ``.graphml`` and the ``DosCo`` folder, and press *Reload*.
    4. Browse the units in the Stratigraphy Manager, switch the Visual Manager to *Epochs* mode, and watch the scene change as you click on different time slices.
@@ -153,15 +153,15 @@ The **EM Ecosystem** is the umbrella that groups **EM** (this manual — the for
    * - **s3dgraphy**
      - Python library. The shared data model that every other component speaks.
    * - **EM Tools** (Blender)
-     - 3D visualisation, annotation, paradata authoring, export. `Manual <https://docs.extendedmatrix.org/projects/EM-tools/en/latest/>`__.
+     - 3D visualisation, annotation, paradata authoring, export. `Manual <https://docs.extendedmatrix.org/projects/EM-tools/en/1.5/>`__.
    * - **3D Survey Collection (3DSC)**
      - Photogrammetry pipeline and 3D model preparation upstream of EM Tools. `Manual <https://docs.extendedmatrix.org/projects/3DSC/en/latest/>`__.
    * - **Heriverse**
-     - Web-based publication and collaborative VR for EM-aware scenes. `Manual <https://docs.extendedmatrix.org/projects/heriverse/en/latest/>`__.
+     - Web-based publication and collaborative VR for EM-aware scenes. `Manual <https://docs.extendedmatrix.org/projects/heriverse/en/1.5/>`__.
    * - **ATON 3**
      - Web visualisation framework underpinning Heriverse. `GitHub <https://github.com/phoenixbf/aton>`__.
    * - **pyArchInit connector**
-     - Imports Harris matrices and field records from pyArchInit into EM. See the `EM Tools tutorial <https://docs.extendedmatrix.org/projects/EM-tools/en/latest/tutorials/15-pyarchinit-external-data.html>`__.
+     - Imports Harris matrices and field records from pyArchInit into EM. See the `EM Tools tutorial <https://docs.extendedmatrix.org/projects/EM-tools/en/1.5/tutorials/15-pyarchinit-external-data.html>`__.
 
 .. note::
 
