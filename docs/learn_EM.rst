@@ -116,7 +116,7 @@ When you are ready to *publish* a reconstruction with its full paradata chain, t
 
 *Persona: Information Technology specialist.*
 
-EM is implemented as a Python knowledge-graph library (**s3dgraphy**) that you can plug into any platform — Revit, 3ds Max, Unity, Unreal, custom pipelines. s3dgraphy is the computational implementation of EM as a property knowledge graph (GraphML / JSON), extracted from EM Tools so it can live anywhere Python runs. You write the visual layer for your platform; s3dgraphy enforces the EM data model under the hood. Full reference in the `s3dgraphy documentation <https://docs.extendedmatrix.org/projects/s3dgraphy/>`__ *(under construction)* and in the `s3dgraphy repository <https://github.com/zalmoxes-laran/s3dgraphy>`__.
+EM is implemented as a Python knowledge-graph library (**s3dgraphy**) that you can plug into any platform — Revit, 3ds Max, Unity, Unreal, custom pipelines. s3dgraphy is the computational implementation of EM as a property knowledge graph (GraphML / JSON), extracted from EM Tools so it can live anywhere Python runs. You write the visual layer for your platform; s3dgraphy enforces the EM data model under the hood. Full reference in the `s3dgraphy documentation <https://docs.extendedmatrix.org/projects/s3dgraphy/en/v1.6/>`__ *(under construction)* and in the `s3dgraphy repository <https://github.com/zalmoxes-laran/s3dgraphy>`__.
 
 Contributing features back:
 

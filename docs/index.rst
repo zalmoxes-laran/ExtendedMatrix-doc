@@ -70,7 +70,7 @@ shows where to go for what.
      - Blender environment for high-quality 3D survey processing that
        feeds EM-Tools.
    * - **s3dgraphy**
-     - `Open ↗ <https://docs.extendedmatrix.org/projects/s3dgraphy/en/latest/>`__
+     - `Open ↗ <https://docs.extendedmatrix.org/projects/s3dgraphy/en/v1.6/>`__
      - Python library — the computational implementation of EM as a
        property knowledge graph (GraphML/JSON).
    * - **Heriverse**
