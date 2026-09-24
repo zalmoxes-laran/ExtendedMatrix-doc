@@ -177,14 +177,20 @@ not as a substitute for the chapters themselves.
       :term:`Heriverse`, :term:`3DSC`) for any programmatic access to
       EM data. See the index page of this manual.
 
-      *See also:* the long-term perspective for this work — its
-      formalisation as a CIDOC-CRM family extension for stratigraphy
-      and virtual reconstruction — carries the working name **CRMem**
-      (formerly *CRM-s3D* / *CIDOC-S3D*). Its current formal draft is
-      the ``em:`` namespace declared in ``em.ttl`` (s3Dgraphy,
-      dereferenceable via w3id.org/em/); the ``s3d:`` namespace
-      remains reserved for library-internal terms that are not part
-      of the ontology.
+      *See also:* the formalisation of this work as a CIDOC-CRM family
+      extension for stratigraphy and virtual reconstruction is named
+      **CRMem** (formerly *CRM-s3D* / *CIDOC-S3D*, two names that pointed
+      at nothing anyone could look up). It is declared and versioned: the
+      ``em:`` namespace of ``em.ttl``, shipped inside s3Dgraphy, holds
+      **45 classes and 4 object properties of its own**, every class
+      declared beneath at least one class of the reference family. The
+      virtual stratigraphic unit, for instance, is declared beneath both
+      ``crminf:I4_Proposition_Set`` and
+      ``crmarchaeo:A8_Stratigraphic_Unit`` at once — argued, and in the
+      sequence. The ``s3d:`` namespace remains reserved for
+      library-internal terms that are not part of the ontology. See the
+      CRMem page of the s3Dgraphy documentation for the term-by-term
+      specification.
 
    pyArchInit
       An open-source `QGIS <https://qgis.org>`_ plugin for archaeological data

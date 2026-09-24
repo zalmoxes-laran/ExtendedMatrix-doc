@@ -260,11 +260,14 @@ em graph, the s3d graph, and the triplestore.
    The identifiers in the ``s3d:`` namespace introduced for the
    Location concept (``s3d:KindToponym``, ``s3d:KindStudy``,
    ``s3d:KindFunctional``, ``s3d:isPrimary``) are *candidate
-   primitives* for the forthcoming **CRMem extension** (formerly
-   referred to as *CIDOC-S3D*; in the spirit of CRMarchaeo / CRMsci /
-   CRMinf — an extension of the CIDOC-CRM dedicated to the concepts
-   of the Extended Matrix that CIDOC-core does not cover; the
-   ``em:`` namespace of ``em.ttl`` is its current formal draft).
+   primitives* for **CRMem** (formerly referred to as *CIDOC-S3D*): the
+   CIDOC-CRM family extension dedicated to the concepts of the Extended
+   Matrix that CIDOC-core does not cover, in the spirit of CRMarchaeo /
+   CRMsci / CRMinf. CRMem exists and is versioned — the ``em:`` namespace
+   of ``em.ttl`` — but these four identifiers have **not** entered it:
+   a term enters CRMem only when it is needed to say what the Extended
+   Matrix asserts about the non-observed, and on what basis, and these
+   have not yet been through that examination.
    Their stability level is
    ``proposed``: consumers should expect potential URI rename when
    the extension is formalised. The s3dgraphy JSON datamodel

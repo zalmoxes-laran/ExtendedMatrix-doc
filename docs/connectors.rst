@@ -16,7 +16,7 @@ These connectors establish temporal relationships between stratigraphic units.
 .. _isbefore:
 
 1.1. Is Before (``is_before``)
-~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. image:: img/connectors/is_before.png
    :width: 128px
@@ -31,7 +31,7 @@ Indicates a temporal sequence where one stratigraphic unit occurs before another
 .. _hassametime:
 
 1.2. Has Same Time (``has_same_time``)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. image:: img/connectors/has_same_time.png
    :width: 128px
@@ -46,7 +46,7 @@ Indicates that two elements are contemporaneous, meaning they existed or were cr
 .. _changedfrom:
 
 1.3. Changed From (``changed_from``)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. image:: img/connectors/changed_from.png
    :width: 128px
@@ -96,12 +96,12 @@ These three nodes are connected by ``changed_from`` edges, forming a chain that 
    (e.g., US to USD to SF) are fully supported and common in practice.
 
 2. Provenance Relationships
---------------------------
+---------------------------
 
 .. _provenance:
 
 2.1. Provenance (``provenance``)
-~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. image:: img/connectors/provenance.png
    :width: 128px
@@ -116,14 +116,14 @@ Represents all data and property provenance relationships in the Extended Matrix
   * Between Combiner Nodes and Extractor Nodes
 
 3. Special Relationships
------------------------
+------------------------
 
 These connectors handle specific cases and general relationships.
 
 .. _contrastswith:
 
 3.1. Contrasts With (``contrasts_with``)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. image:: img/connectors/contrasts_with.png
    :width: 128px
@@ -145,7 +145,7 @@ These connectors express mereological (part--whole) relationships between strati
 .. _ispartof:
 
 4.1. Is Part Of (``is_part_of``)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Indicates physical containment: a node is physically contained within another stratigraphic unit. This relationship is **mereological** (part--whole), not chronological or stratigraphic.
 
@@ -184,7 +184,7 @@ Technical Implementation Notes
 ------------------------------
 
 Provenance Implementation in s3dgraphy
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 While the Extended Matrix formal language defines a single "provenance" connector type, the s3dgraphy library internally differentiates this connection based on the types of nodes being connected:
 
@@ -196,7 +196,7 @@ While the Extended Matrix formal language defines a single "provenance" connecto
 This internal differentiation allows s3dgraphy to maintain appropriate validation rules and processing logic while presenting a simplified connection model to users. The user has to do nothing, s3Dgrapy will take care of everything :-)
 
 Swimlanes and Groups in the Multi-Knowledge Graph (MKG)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 In the visualization of the Extended Matrix, swimlanes and groups are represented as visual containers. However, s3dgraphy internally interprets these as nodes with specific connections to the elements they contain:
 

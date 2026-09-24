@@ -258,7 +258,9 @@ Scientific Documentation
 Historical Documentation
 ~~~~~~~~~~~~~~~~~~~~~~
 :Getty AAT: `300343082 <http://vocab.getty.edu/aat/300343082>`_
-:CIDOC CRM: :class:`E31_Document` with property :property:`P70_documents`
+:CIDOC CRM: :class:`E31_Document`; the graph emits
+   :property:`P70i_is_documented_in` from the documented node to the document
+   (the inverse, so the subject is the thing being documented)
 :Dublin Core: ``dcterms:source``
 
 * **Archival Documents**
