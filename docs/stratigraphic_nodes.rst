@@ -199,6 +199,18 @@ These categories relate to anastylosis, where original architectural elements ha
 
 A third sibling category, the **Reused Special Find (RSF)**, covers objects that have been permanently re-incorporated into a later structure (spolia). Unlike SF, which remains movable, an RSF is defined by *structural immobility*: it cannot be removed without destroying its host masonry. See section 4.3.
 
+.. note:: **Redeposited and repositioned are not the same thing.**
+
+   Archaeological usage has codified neither term, so Extended Matrix fixes them here and keeps to them.
+
+   **Redeposited** describes how the object arrived where it was found: a process moved it — collapse, dumping, levelling, erosion. A block in secondary deposition lying inside a layer is redeposited.
+
+   **Repositioned** describes what the archaeologist has done: the object has been put back into a position argued from evidence. This is anastylosis, and it is the sense the word carries throughout this section.
+
+   Both are recorded as **SF**, because in both cases the object is movable and its present location does not give its original one. The difference is not the distance travelled but whether anyone built with it: an object permanently incorporated into a later structure is an RSF (section 4.3).
+
+   A redeposited find is attached to the unit that holds it with an ``is_part_of`` edge. The unit does not change type — there is no container node type and no "US node group": containment is a relation, and the presence of ``is_part_of`` edges is the only thing that makes a unit a container. The find gives that unit a *terminus post quem* and nothing further; the chronological statement travels on the epoch edges, never on the containment.
+
 .. _sfnodes:
 
 4.1 SF - Special Find (``SpecialFindNode``)
@@ -208,7 +220,7 @@ A third sibling category, the **Reused Special Find (RSF)**, covers objects that
   :width: 128px
   :align: left
 
-Refers to a non-in situ element (fragmented or intact) that needs to be repositioned. It is a real object with several known properties (color, material, etc.) except for the original position.
+Refers to a non-in situ element (fragmented or intact) that needs to be repositioned. It is a real object with several known properties (color, material, etc.) except for the original position. The same node records a **redeposited** object — a block in secondary deposition found inside a layer — which is observed where it lies but not where it was made to lie.
 
 .. figure:: img/B05.png
   :width: 400
@@ -272,7 +284,10 @@ artefacts that have been re-used inside another, later context — the
 typical *spolia* case. The defining property is **structural
 immobility**: an object becomes RSF only when it has been cemented,
 embedded, or otherwise permanently incorporated into a host structure
-from which it cannot be moved without damaging the host.
+from which it cannot be moved without damaging the host. Having
+travelled is not the criterion: a redeposited block lying in a layer has
+moved just as far as a reused one, but nobody built with it, so it remains
+an SF.
 
 Distinction from Special Find (SF)
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
