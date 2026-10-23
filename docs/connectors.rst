@@ -79,6 +79,10 @@ For example:
 
 These three nodes are connected by ``changed_from`` edges, forming a chain that documents the complete life of a single physical object.
 
+**Each instance has its own position and its own state.** Being a unit, every instance of the chain has its epochs, its representation models — whose transformation is the position of the object in that epoch — and its *conservation state* property: the capital in its Roman place may be "excellent", the same piece found today "poor". The proxy of the object has **one geometry**, held by one instance; the others are drawn with it, each at its own position. An earlier instance is a Special Find only when the piece we have can be estimated equal to the ancient one; otherwise it is a Virtual Special Find (see :ref:`sfnodes`).
+
+A unit that merely **survives** unchanged into later epochs is not a chain: it is one node that also *survives in* those epochs, with one position.
+
 .. tip:: Naming Convention for Instance Chains
 
    A recommended (but not enforced) naming convention for instance chains is:
