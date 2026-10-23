@@ -288,6 +288,20 @@ The VSF container maintains all its normal stratigraphic relationships (epoch co
 .. seealso::
    :ref:`ispartof` for details on the ``is_part_of`` connector.
 
+.. _servsfnode:
+
+4.2.1 serVSF - Serial Virtual Special Find (``SeriesOfVirtualSpecialFindUnit``)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+A series of Virtual Special Finds is the **repetition of one and the same object**. Like the other series (serSU, serUSD, serUSV/n, serUSV/s), the series is itself a unit.
+
+*Example*: a broken tile found in the collapse (SF) is completed with a VSF; the roof is then covered with that same tile, instanced over its whole surface with a **serVSF**. The repaired tile (the VSF) is part of the series (``is_part_of``); the series says "this, repeated", and its paradata say where and how many.
+
+.. warning::
+   A serVSF is **not** for pieces that are all different. The drums of a column that tapers are each a VSF of their own (or an SF), held by the VSF of the column: the discriminant is the identity of form, not the number of pieces.
+
+In yEd a serVSF is drawn as an **ellipse** (the shape of every series) with the border of the VSF (``#B19F61``).
+
 .. _rsfnode:
 
 4.3 RSF - Repositioned Special Find (``ReusedSpecialFindNode``)
