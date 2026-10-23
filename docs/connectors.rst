@@ -155,16 +155,17 @@ In the GraphML representation, containment is expressed through **group nodes**:
    :width: 200
    :align: center
 
-   Example of containment: a wall (US10101) contains a reused capital (SF10102). The SF is drawn inside the US group node in yEd. On import, an ``is_part_of`` edge is created from SF10102 to US10101.
+   Example of containment: a wall (US10101) contains a reused capital (SF10102). The find is drawn inside the US group node in yEd. (Under the current definition a capital built into a wall, fixed and immovable, is a Repositioned Special Find, RSF: see :ref:`rsfnode`; the figure predates it.) On import, an ``is_part_of`` edge is created from SF10102 to US10101.
 
 **Common use cases:**
 
-* A wall (US) contains a reused capital (SF) -- the SF ``is_part_of`` the US
+* A wall (US) contains a reused capital (RSF) -- the RSF ``is_part_of`` the US
+* A layer (US) contains a block fallen in position (SF) -- the SF ``is_part_of`` the US
 * A reconstructed roof (VSF) is composed of tile fragments (SF) -- each SF ``is_part_of`` the VSF
 * A documentary unit (USD) contains a special find (SF) identified through archival sources
 
 **Allowed Connections:**
-  * Source: Special Find (SF), Virtual Special Find (VSF), Reused Special Find (RSF), Stratigraphic Unit (US), Documentary Stratigraphic Unit (USD), Virtual Stratigraphic Unit (USV), Functional Unit
+  * Source: Special Find (SF), Virtual Special Find (VSF), Repositioned Special Find (RSF), Stratigraphic Unit (US), Documentary Stratigraphic Unit (USD), Virtual Stratigraphic Unit (USV), Functional Unit
   * Target: Stratigraphic Unit (US), Documentary Stratigraphic Unit (USD), Virtual Special Find (VSF)
 
 .. note::

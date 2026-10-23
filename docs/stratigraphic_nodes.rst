@@ -47,7 +47,7 @@ A Stratigraphic Unit indicates the result of an action that occurred at a specif
 SU as Container
 ^^^^^^^^^^^^^^^
 
-A Stratigraphic Unit can also act as a **container** for Special Finds (SF), Virtual Special Finds (VSF) or Reused Special Finds (RSF). This represents the physical containment of elements within a stratigraphic unit -- for example, a reused capital (:ref:`RSF <rsfnode>`) embedded inside a wall (SU).
+A Stratigraphic Unit can also act as a **container** for Special Finds (SF), Virtual Special Finds (VSF) or Repositioned Special Finds (RSF). This represents the physical containment of elements within a stratigraphic unit -- for example, a reused capital (:ref:`RSF <rsfnode>`) embedded inside a wall (SU).
 
 In the yEd GraphML editor, this is represented by drawing the SU as a **group node** with a dark red background (``#9B3333``) and placing the contained elements inside it. On import, each contained element receives an ``is_part_of`` edge pointing to the SU container. The SU retains all its normal stratigraphic relationships.
 
@@ -192,24 +192,32 @@ A series of USVn objects, like a colonnade or a sequence of acroteria, considere
   Example: On top of a podium SU01 there is a column SU02 (in situ) fragmented due to a -SU03 (destruction of the upper part of the column). A USV/s 100 hypothetical reconstruction is provisioned in order to restore the destruction’s action -SU03. A series USV/n 101 is provided in order to complete the peristasis of the temple.
 
 
-4. Special Finds, Virtual Special Finds and Reused Special Finds (SF, VSF and RSF):
------------------------------------------------------------------------------------
+4. Special Finds, Virtual Special Finds and Repositioned Special Finds (SF, VSF and RSF):
+-----------------------------------------------------------------------------------------
 
-These categories relate to anastylosis, where original architectural elements have been found *not in situ* and repositioned. When an element exists but its original position cannot be determined with absolute certainty (i.e. uncertain attribution to a given context or specific position), it is recorded as a Special Find (SF). When this element is repositioned in a hypothetical location based on archaeological interpretation rather than documentary evidence, its new position is recorded as a Virtual Special Find (VSF). This dual recording system allows archaeologists to track both the physical element and its interpretative repositioning separately.
+These three categories describe the life of an object that can be told apart from the layers around it — a block, a column drum, a tile, a coin — from the moment it is found to the moment it is put back, physically or virtually.
 
-A third sibling category, the **Reused Special Find (RSF)**, covers objects that have been permanently re-incorporated into a later structure (spolia). Unlike SF, which remains movable, an RSF is defined by *structural immobility*: it cannot be removed without destroying its host masonry. See section 4.3.
+* The **Special Find (SF)** is the object as it was **found and documented**: movable, found erratic or inside a layer, taken out during the excavation.
+* The **Repositioned Special Find (RSF)** is an object **fixed and immovable**, intentionally put back into a stable unit or into a new functional placement.
+* The **Virtual Special Find (VSF)** is the object **as it was**: a hypothesis supported by paradata, which holds the fragments or completes what was restored.
 
-.. note:: **Redeposited and repositioned are not the same thing.**
+The invariant between SF and RSF is **movable / immovable**. Neither the distance travelled nor what we know about the original position decides the category.
 
-   Archaeological usage has codified neither term, so Extended Matrix fixes them here and keeps to them.
+.. note:: **How the object lay is an attribute, not a class.**
 
-   **Redeposited** describes how the object arrived where it was found: a process moved it — collapse, dumping, levelling, erosion. A block in secondary deposition lying inside a layer is redeposited.
+   Archaeological usage has codified none of these words, so Extended Matrix fixes them here and keeps to them.
 
-   **Repositioned** describes what the archaeologist has done: the object has been put back into a position argued from evidence. This is anastylosis, and it is the sense the word carries throughout this section.
+   **In situ**: the object lies where it was made to lie.
 
-   Both are recorded as **SF**, because in both cases the object is movable and its present location does not give its original one. The difference is not the distance travelled but whether anyone built with it: an object permanently incorporated into a later structure is an RSF (section 4.3).
+   **Redeposited**: a process moved it where it was found — dumping, levelling, erosion. A block in secondary deposition lying inside a layer is redeposited.
 
-   A redeposited find is attached to the unit that holds it with an ``is_part_of`` edge. The unit does not change type — there is no container node type and no "US node group": containment is a relation, and the presence of ``is_part_of`` edges is the only thing that makes a unit a container. The find gives that unit a *terminus post quem* and nothing further; the chronological statement travels on the epoch edges, never on the containment.
+   **Fallen in position**: a collapse found where it fell — the stones of a vault on the floor beneath it. The position is accidental but measurable, and it documents the collapse.
+
+   In all three cases the object is a **Special Find (SF)**: these are ways of lying, recorded on the find, not kinds of node. In particular a collapse found in position is an SF, never a "repositioned" find.
+
+   **Repositioned** is no longer said of an SF. An object put back *intentionally* and fixed — a spolium in a wall, a column drum set as street furniture, a historical physical anastylosis — is an **RSF** (section 4.3). An object put back *virtually*, in a position argued from evidence, is a **VSF** reconstructed from the SF (section 4.2): every anastylosis we propose is a VSF.
+
+   A find is attached to the unit that holds it with an ``is_part_of`` edge. The unit does not change type — there is no container node type and no "US node group": containment is a relation, and the presence of ``is_part_of`` edges is the only thing that makes a unit a container. A redeposited find gives that unit a *terminus post quem* and nothing further; the chronological statement travels on the epoch edges, never on the containment.
 
 .. _sfnodes:
 
@@ -220,19 +228,21 @@ A third sibling category, the **Reused Special Find (RSF)**, covers objects that
   :width: 128px
   :align: left
 
-Refers to a non-in situ element (fragmented or intact) that needs to be repositioned. It is a real object with several known properties (color, material, etc.) except for the original position. The same node records a **redeposited** object — a block in secondary deposition found inside a layer — which is observed where it lies but not where it was made to lie.
+A **movable** physical object, found erratic or inside a layer and taken out during the excavation, documented **where it was found**. The definition is positive: the SF is what was observed — its findspot, its way of lying, its colour, material, dimensions — and not "an object whose original position is unknown". Fragmented or intact, in situ, redeposited or fallen in position, it is an SF.
 
 .. figure:: img/B05.png
   :width: 400
-  :align: center 
+  :align: center
 
-  Example: Consider a collapsed column (SF01) found near a podium (SU01). The SF documents the actual found piece, while its corresponding VSF represents the restoration work needed to complete missing parts when the column is repositioned. This pairing allows clear distinction between the original element (SF) and its restoration/completion (VSF).
+  Example: Consider a collapsed column (SF01) found near a podium (SU01). The SF documents the actual found piece, while its corresponding VSF represents the column as it was, completing the missing parts. This pairing allows clear distinction between the original element (SF) and its reconstruction (VSF).
 
 .. figure:: img/B06.png
   :width: 400
-  :align: center 
+  :align: center
 
   Example: There are only the remains of a podium SU01 with a collapsed column SF01 (special find 01). A USV/n 100 series hypothetical reconstruction of the colonnade is provisioned using the SF as a source.
+
+**The SF in an earlier epoch.** The same object can be drawn in more than one epoch (see :ref:`instancechains`). An earlier instance is an **SF** only when the piece we have today can be estimated **equal** to the ancient one — a very good state of preservation. Otherwise the ancient object is a **VSF**. The representation models of an SF and of its VSF are almost always different: the SF is the surveyed piece, the VSF the object as it was.
 
 4.2 Virtual Special Find (``VirtualSpecialFindNode``)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -241,14 +251,22 @@ Refers to a non-in situ element (fragmented or intact) that needs to be repositi
   :width: 128px
   :align: left
 
-A Virtual Special Find (VSF) represents the restoration, integration, or completion of an original architectural element that has been repositioned through anastylosis (recorded as Special Find - SF). While the SF documents the anastylosis - the repositioning of an original found piece - the VSF records any additional restoration work, completion, or integration necessary to enhance the understanding or stability of that element.
-Like other virtual stratigraphic units (VSU/s), a VSF inherits specific physical properties from its corresponding SF, such as material characteristics, certain dimensions, decorative features, and construction techniques. This inheritance of properties ensures that any restoration or completion work remains coherent with the original element's characteristics.
-For example:
+A Virtual Special Find (VSF) is the object **as it was**, a hypothesis supported by paradata. It has **two roles**:
 
-SF records a partially preserved original column capital that has been repositioned through anastylosis
-VSF documents the restoration work performed to complete missing parts of that same capital, maintaining consistency with the original's dimensions, material properties, and stylistic features
+(a) **The VSF that holds the fragments.** The SF are part of it (``is_part_of``; in RDF the VSF ``em:reconstructsFrom`` each SF): the column reassembled from its drums, the moulding from its blocks. The VSF is one whole proxy; no boolean is needed.
 
-This relationship between SF and VSF allows archaeologists to maintain a clear distinction between original repositioned elements (anastylosis - SF) and their subsequent restoration or completion work (VSF), while ensuring appropriate documentation of both the original fabric and conservation interventions.
+(b) **The VSF that completes what was restored.** The missing part around the piece that survives: the capital completed around its preserved half, the roof around the tile that was put back.
+
+Two schools of work are both correct, and Extended Matrix records either:
+
+* **restore the block** — the surveyed piece is integrated where it is missing;
+* **remodel the ancient version under control** — a new model of the intact object, with a correct topology (splines, clean surfaces) and the surveyed piece as its reference.
+
+In both cases the difference between the piece that survives (SF) and the intact ancient one (VSF) is obtained by a **boolean** operation: the VSF minus the SF is the integration, the VSF alone the object as it was.
+
+Like other virtual stratigraphic units (VSU/s), a VSF inherits specific physical properties from its corresponding SF, such as material characteristics, certain dimensions, decorative features, and construction techniques. This inheritance of properties ensures that the reconstruction remains coherent with the original element's characteristics.
+
+An **anastylosis** — putting a find back where it stood — is always a VSF, a whole block put back virtually included (a VSF with one member).
 
 VSF as Container (Group Node)
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -272,22 +290,26 @@ The VSF container maintains all its normal stratigraphic relationships (epoch co
 
 .. _rsfnode:
 
-4.3 RSF - Reused Special Find (``ReusedSpecialFindNode``)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+4.3 RSF - Repositioned Special Find (``ReusedSpecialFindNode``)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. image:: img/2D/RSF.png
   :width: 128px
   :align: left
 
-A **Reused Special Find (RSF)** is a stratigraphic node category for
-artefacts that have been re-used inside another, later context — the
-typical *spolia* case. The defining property is **structural
-immobility**: an object becomes RSF only when it has been cemented,
-embedded, or otherwise permanently incorporated into a host structure
-from which it cannot be moved without damaging the host. Having
-travelled is not the criterion: a redeposited block lying in a layer has
-moved just as far as a reused one, but nobody built with it, so it remains
-an SF.
+A **Repositioned Special Find (RSF)** is a physical object, **fixed and immovable**, that has been **intentionally** put back:
+
+- into a **stable unit** — a wall, a pavement: the typical *spolia* case, an inscription cemented into the masonry of a later church;
+- or into a **new functional placement** — a column drum set in a square as street furniture.
+
+A historical **physical anastylosis** (the blocks of a temple put back on site by a restoration of the past) is an RSF too. Reuse, the *spolia*, is one case within this definition, not the definition itself.
+
+The defining property is **immobility**. Having travelled is not the criterion: a redeposited block lying in a layer has moved just as far, and a collapse fallen in position lies in a measurable place too, but nobody put them there and they can be lifted: they are SF.
+
+.. note::
+   The node keeps its historical identifiers — the class ``ReusedSpecialFind`` and the
+   ontology URI ``em:ReusedSpecialFind`` — so that every file and every triple already
+   written still resolves. What changed is its label and its definition.
 
 Distinction from Special Find (SF)
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -299,27 +321,27 @@ status:
   facility — even if it once stood in a different position — is still
   a **Special Find (SF)**. It is movable, can be transported for a
   temporary exhibition, can be re-displayed elsewhere. The same applies
-  to objects merely resting on the archaeological site.
+  to objects merely resting on the archaeological site, and to a
+  collapse found where it fell.
 
 - An ancient inscription cemented into the masonry of a later building,
   a frieze fragment embedded as filler in a Roman wall, a column drum
-  re-used as a threshold and locked into place — these are
-  **Reused Special Finds (RSF)**. Their immobility is *structural*:
-  removing them means destroying the host masonry.
+  re-used as a threshold and locked into place, a drum fixed in a square
+  as a bollard — these are **Repositioned Special Finds (RSF)**. Their
+  immobility is *structural*: removing them means destroying or
+  dismantling what holds them.
 
 Container relationship
 ^^^^^^^^^^^^^^^^^^^^^^
 
-An RSF always belongs to a Stratigraphic Unit (SU) acting as a
+An RSF put back into a stable unit belongs to that unit as a
 **container** — typically the later wall or masonry that physically
-incorporates the reused element. The relationship is expressed via the
+incorporates it. The relationship is expressed via the
 standard ``is_part_of`` connector, exactly like an SF inside an SU
 container:
 
 - **container SU** → contains → **RSF**
 
-This relationship is foundational: an RSF cannot exist outside a
-container SU, because being *reused* implies being embedded in one.
 The container SU may itself belong to any epoch and any reconstructive
 status; the RSF carries its own dating and provenance, independent
 from the host.
@@ -335,8 +357,8 @@ Visual representation
 In yEd the RSF is rendered as an **octagon with a red border**
 (``#9B3333``) and a white fill — visually distinct from SF (also
 octagon, but with the SF gold border ``#AF8208``) and from VSF (gold
-border ``#70581E``). The red border signals the *reuse / spolia*
-context and makes it immediately readable in the matrix.
+border ``#70581E``). The red border signals that the object has been
+put back and fixed, and makes it immediately readable in the matrix.
 
 Archaeological examples
 ^^^^^^^^^^^^^^^^^^^^^^^
@@ -348,6 +370,9 @@ Archaeological examples
   courtyard.
 - A frieze fragment from a destroyed building, embedded as filler
   during the construction of a Byzantine fortification wall.
+- A column drum set upright in a modern square as street furniture.
+- The blocks of a temple front put back on site by a restoration of the
+  early twentieth century.
 
 In each case the same physical object is recorded as an RSF for the
 later context (where it is now immobile); if its earlier life is
