@@ -48,6 +48,49 @@ The continuity node is therefore the single mechanism that inverts the default t
 
 This asymmetry reflects the epistemic status of the two categories: physical evidence is assumed to survive until proven otherwise, while reconstructions are taken as local hypotheses unless explicitly propagated.
 
+How the unit ends: a type
+~~~~~~~~~~~~~~~~~~~~~~~~~
+
+A continuity node marks the end of a unit **as a whole**. A cut that takes away only a part of a unit leaves no continuity node: the unit continues. When a cut takes the whole unit away, the continuity node and the negative unit (-SU) are one act: the continuity node takes the date of the cut, and the cut is its observed trace.
+
+*How* the unit ends is recorded as a **type** of the continuity node, chosen from the EM vocabulary. The continuity node stays one kind of node; the type decides how it is read in CIDOC CRM.
+
+.. list-table::
+   :header-rows: 1
+   :widths: 16 34 20 30
+
+   * - Type
+     - When
+     - CIDOC CRM class
+     - Property towards the unit
+   * - destroyed
+     - nothing of the unit survives as an object (a wall razed, a floor burnt away)
+     - E6 Destruction
+     - P13 destroyed
+   * - transformed
+     - the unit became another one (a room turned into a cistern)
+     - E81 Transformation
+     - P124 transformed (+ P123 resulted in, towards the units that *changed from* it)
+   * - removed
+     - the unit was taken out of the unit that held it (a block taken out of a wall, a mosaic lifted)
+     - E80 Part Removal
+     - P113 removed (+ P112 diminished, towards the unit it was part of)
+   * - relocated
+     - the unit was moved and survives elsewhere (a column carried away)
+     - E9 Move
+     - P25 moved (+ P27 moved from, towards its place)
+   * - unknown (default)
+     - the unit ends, and how is not known
+     - E64 End of Existence
+     - P93 took out of existence
+
+Removed and relocated are not ends of existence: the object survives. For the Extended Matrix the continuity node is the end of the unit's **presence in this context**; a removed or relocated unit is what reappears elsewhere as a Special Find or a Repositioned Special Find.
+
+In the graph the edge from the continuity node to its unit stays **is after** (the continuity node is more recent than the unit), so the Matrix and the propagation of dates read it as always. Only the export to RDF writes it with the property of the type instead of a temporal relation, and the import reads it back as *is after*.
+
+**The continuity node is a spatiotemporal unit like the others.** It can have its paradata, a start and an end of its own (the properties *absolute time start* / *absolute time end*, with their sources). Its epoch is **inherited** — the last epoch in which the unit lives — until it has a date of its own; then it stands in the epoch of that date.
+
+
 .. _se:
 
 Stratigraphic Event Node
