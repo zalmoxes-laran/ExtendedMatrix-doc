@@ -266,7 +266,7 @@ In both cases the difference between the piece that survives (SF) and the intact
 
 Like other virtual stratigraphic units (VSU/s), a VSF inherits specific physical properties from its corresponding SF, such as material characteristics, certain dimensions, decorative features, and construction techniques. This inheritance of properties ensures that the reconstruction remains coherent with the original element's characteristics.
 
-An **anastylosis** — putting a find back where it stood — is always a VSF, a whole block put back virtually included (a VSF with one member).
+An **anastylosis** — putting a find back where it stood — is always a VSF, a whole block put back virtually included (a VSF with one member). The passage of each fragment from its findspot to its place is carried by a document of type "anastylosis" (section :ref:`anastylosis_document`).
 
 VSF as Container (Group Node)
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -392,6 +392,21 @@ In each case the same physical object is recorded as an RSF for the
 later context (where it is now immobile); if its earlier life is
 documented, the RSF can carry additional links back to its original
 context as paradata.
+
+.. _anastylosis_document:
+
+4.4 The anastylosis as a dynamic document
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+An anastylosis moves nothing in the record: the SF keeps the position where it was found, the VSF holds the position where the object stood. What passes from one to the other is a **document of type "anastylosis"**: for each fragment, the trajectory from its findspot to its original position, in **versions** (each version the output of the step that made it, in the digital chain of the project).
+
+The Extended Matrix reads it in three parts:
+
+* **the argument** is the *paradata of the VSF*: one extractor for each join read on an SF — the fracture surfaces that match, the dowel holes, the modules, the measures — and the combiner that puts them together into the position of the VSF;
+* **the act** is an *activity group* "Anastylosis": who did it, when, and which version of the document;
+* **the same reading backwards** — from the original position to the findspot — is the **simulation of the collapse**, a Stratigraphic Event (SE) whose 3D simulation is a paradata of its own.
+
+*Example.* The vault of room 44 is found fallen in position on the floor: its fragments are SF, inside the collapse layer (``is_part_of``). The vault as it was is a VSF that holds them. The anastylosis document "Room 44 — vault, v2" carries, for each SF, its trajectory to the vault; the paradata group of the VSF holds the extractors of the joins (two fracture surfaces, a dowel hole, the module of the coffers) and the combiner that proposes the position; the activity group "Anastylosis 2026" says who made version 2 and when. Read backwards, the trajectories give the SE "collapse of the vault", whose kinematic simulation is a paradata of the event.
 
 Cumulative example of different USV nodes used together
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
