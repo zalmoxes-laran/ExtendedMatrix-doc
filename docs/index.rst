@@ -161,6 +161,13 @@ reconstruction is *ready to be shared with the world*.
 .. toctree::
    :hidden:
    :maxdepth: 1
+   :caption: Onboarding
+
+   onboarding
+
+.. toctree::
+   :hidden:
+   :maxdepth: 1
    :caption: Reference
 
    glossary
