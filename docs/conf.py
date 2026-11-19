@@ -33,6 +33,18 @@ templates_path = ['_templates']
 # -- Options for HTML output
 
 html_theme = 'sphinx_rtd_theme'
+html_static_path = ['_static']
+
+# Il marchio, vendorizzato da `stratigraph-brand` con il suo
+# `docs-theme/sync-brand-docs.sh`, come lo vendorizzano le applicazioni. Chiaro
+# e scuro seguono l'impostazione di sistema di chi legge.
+# EPUB non conosce il tipo di un .woff2: la sua lamentela è silenziata per nome.
+suppress_warnings = ['epub.unknown_project_files']
+html_css_files = [
+    'brand/stratigraph-theme.css',
+    'brand/skins.css',
+    'brand/sphinx-rtd-bridge.css',
+]
 
 # -- Options for EPUB output
 epub_show_urls = 'footnote'

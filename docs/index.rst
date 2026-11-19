@@ -42,19 +42,19 @@ Quick start
 Documentation across the EM Ecosystem
 =====================================
 
-The **EM Ecosystem** is documented across several manuals, each focused on
-a specific layer. **EM** (this manual) is the formal language; **EMF** —
-the EM Framework — is the family of tools that speak it. The table below
-shows where to go for what.
+The **EM Ecosystem** is documented across several manuals, each kept beside
+the code it describes. **EM** (this manual) is the formal language; **EMF** —
+the EM Framework — is the family of tools that speak it. Every manual below
+is published under ``docs.extendedmatrix.org``.
 
 .. list-table::
-   :widths: 25 15 60
+   :widths: 26 16 58
    :header-rows: 1
-   :class: longtable
+   :class: em-manuals
 
    * - Manual
      - Open
-     - Focus
+     - What it answers
    * - **Extended Matrix** *(this manual)*
      - *you are here*
      - The formal language: stratigraphic nodes, paradata, sources,
@@ -75,6 +75,43 @@ shows where to go for what.
      - `Open ↗ <https://docs.extendedmatrix.org/projects/heriverse/en/1.5/>`__
      - Heritage Science Metaverse — web-based publication and
        collaborative VR for EM-aware scenes.
+   * - **EMStudio** *(from EM 1.6)*
+     - `Open ↗ <https://docs.extendedmatrix.org/projects/emstudio-doc/en/1.6/>`__
+       · `IT ↗ <https://docs.extendedmatrix.org/projects/emstudio-doc/it/1.6/>`__
+     - The standalone editor, recommended for authoring from EM 1.6 onwards.
+       It reads the graphs authored on this line and opens them in place.
+
+The StratiGraph tools
+=====================
+
+`StratiGraph <https://stratigraph-eccch.eu>`__ is the Horizon Europe project
+that builds the shared node around the Extended Matrix. Its manuals have an
+address of their own, ``docs.stratigraph-eccch.eu``, and they cite this one
+rather than repeating it.
+
+.. list-table::
+   :widths: 26 16 58
+   :header-rows: 1
+   :class: em-manuals
+
+   * - Manual
+     - Open
+     - What it answers
+   * - **The node, and its catalogue**
+     - `Open ↗ <https://docs.stratigraph-eccch.eu/projects/node/en/latest/>`__
+     - The place a team shares: rooms, studies, documents, who may see what,
+       and the catalogue that publishes what a room decides to publish.
+   * - **StratiField**
+     - `Open ↗ <https://docs.stratigraph-eccch.eu/projects/field/en/latest/>`__
+     - The field assistant: recording on site with no network, and the
+       synchronisation with the node when there is one.
+   * - **Recording templates**
+     - `Open ↗ <https://docs.stratigraph-eccch.eu/projects/templates/en/v0.1.0/>`__
+     - The sheets and the controlled vocabularies a team starts from.
+   * - **StratiGraph Academy**
+     - `Open ↗ <https://academy.stratigraph-eccch.eu>`__
+     - Not a manual: where you learn the craft — the competence nodes and
+       the five working phases of an investigation.
 
 If you are unsure where to start: stay here if you have *evidence to
 organise and a notation to learn*; open **EM-Tools** if you have *3D
