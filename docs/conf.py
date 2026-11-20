@@ -3,7 +3,7 @@
 # -- Project information
 
 project = 'Extended Matrix'
-copyright = '2024, Emanuel Demetrescu'
+copyright = '2024, Consiglio Nazionale delle Ricerche (CNR) — Istituto di Scienze del Patrimonio Culturale'
 author = 'Emanuel Demetrescu'
 
 release = '1.5'
